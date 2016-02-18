@@ -1,0 +1,476 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: RPN_toplevel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RPN_toplevel.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RPN_toplevel"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : RPN_toplevel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/debounce.vhd" in Library work.
+Architecture logic of Entity debounce is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/UXCntl_Unit-Logic.vhd" in Library work.
+Entity <uxcntl_unit> compiled.
+Entity <uxcntl_unit> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/alu_arithmetic_unit.vhd" in Library work.
+Architecture combinational of Entity arith_unit is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/alu_logic_unit.vhd" in Library work.
+Architecture combinational of Entity logic_unit is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/alu_shift_unit.vhd" in Library work.
+Architecture combinational of Entity alu_shift_unit is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/load_store_unit.vhd" in Library work.
+Architecture behavioral of Entity load_store_unit is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/alu_mux.vhd" in Library work.
+Architecture combinational of Entity alu_mux is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/SevenSeg.vhd" in Library work.
+Architecture behavioral of Entity ssegdriver is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.vhd" in Library work.
+Architecture structural of Entity rpn_toplevel is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <RPN_toplevel> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <debounce> in library <work> (architecture <Logic>) with generics.
+	wait_time = 20
+
+Analyzing hierarchy for entity <UXCntl_Unit> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Arith_Unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <Logic_Unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <ALU_Shift_Unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <Load_Store_Unit> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ALU_Mux> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <SSegDriver> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <RPN_toplevel> in library <work> (Architecture <structural>).
+Entity <RPN_toplevel> analyzed. Unit <RPN_toplevel> generated.
+
+Analyzing generic Entity <debounce> in library <work> (Architecture <Logic>).
+	wait_time = 20
+Entity <debounce> analyzed. Unit <debounce> generated.
+
+Analyzing Entity <UXCntl_Unit> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/UXCntl_Unit-Logic.vhd" line 50: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <INPUT>
+WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/UXCntl_Unit-Logic.vhd" line 56: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <INPUT>
+INFO:Xst:2679 - Register <outgoinga> in unit <UXCntl_Unit> has a constant value of 11110000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <outgoinga> in unit <UXCntl_Unit> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <outgoingb> in unit <UXCntl_Unit> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <outgoingop> in unit <UXCntl_Unit> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+Entity <UXCntl_Unit> analyzed. Unit <UXCntl_Unit> generated.
+
+Analyzing Entity <Arith_Unit> in library <work> (Architecture <Combinational>).
+Entity <Arith_Unit> analyzed. Unit <Arith_Unit> generated.
+
+Analyzing Entity <Logic_Unit> in library <work> (Architecture <Combinational>).
+Entity <Logic_Unit> analyzed. Unit <Logic_Unit> generated.
+
+Analyzing Entity <ALU_Shift_Unit> in library <work> (Architecture <Combinational>).
+Entity <ALU_Shift_Unit> analyzed. Unit <ALU_Shift_Unit> generated.
+
+Analyzing Entity <Load_Store_Unit> in library <work> (Architecture <Behavioral>).
+Entity <Load_Store_Unit> analyzed. Unit <Load_Store_Unit> generated.
+
+Analyzing Entity <ALU_Mux> in library <work> (Architecture <Combinational>).
+Entity <ALU_Mux> analyzed. Unit <ALU_Mux> generated.
+
+Analyzing Entity <SSegDriver> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/SevenSeg.vhd" line 98: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <clk240hz>
+INFO:Xst:1561 - "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/SevenSeg.vhd" line 120: Mux is complete : default of case is discarded
+Entity <SSegDriver> analyzed. Unit <SSegDriver> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <debounce>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/debounce.vhd".
+    Found 1-bit register for signal <OUTPUT>.
+    Found 21-bit up counter for signal <Count>.
+    Found 1-bit xor2 for signal <D_SET>.
+    Found 2-bit register for signal <D_STATE>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <debounce> synthesized.
+
+
+Synthesizing Unit <UXCntl_Unit>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/UXCntl_Unit-Logic.vhd".
+WARNING:Xst:737 - Found 8-bit latch for signal <outgoingb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <outgoingop>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <UXCntl_Unit> synthesized.
+
+
+Synthesizing Unit <Arith_Unit>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/alu_arithmetic_unit.vhd".
+    Found 1-bit xor2 for signal <CCR<1>>.
+    Found 9-bit addsub for signal <arith>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Arith_Unit> synthesized.
+
+
+Synthesizing Unit <Logic_Unit>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/alu_logic_unit.vhd".
+WARNING:Xst:653 - Signal <cmp<1:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+    Found 8-bit comparator equal for signal <cmp_2$cmp_eq0000> created at line 42.
+    Found 8-bit comparator less for signal <cmp_3$cmp_lt0000> created at line 41.
+    Summary:
+	inferred   2 Comparator(s).
+Unit <Logic_Unit> synthesized.
+
+
+Synthesizing Unit <ALU_Shift_Unit>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/alu_shift_unit.vhd".
+    Found 8-bit shifter logical left for signal <shift_left>.
+    Found 8-bit shifter logical right for signal <shift_right>.
+    Summary:
+	inferred   2 Combinational logic shifter(s).
+Unit <ALU_Shift_Unit> synthesized.
+
+
+Synthesizing Unit <Load_Store_Unit>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/load_store_unit.vhd".
+WARNING:Xst:647 - Input <IMMED> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <reg>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <Load_Store_Unit> synthesized.
+
+
+Synthesizing Unit <ALU_Mux>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/alu_mux.vhd".
+Unit <ALU_Mux> synthesized.
+
+
+Synthesizing Unit <SSegDriver>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/SevenSeg.vhd".
+WARNING:Xst:647 - Input <COL_EN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16x7-bit ROM for signal <segnum>.
+    Found 4x4-bit ROM for signal <AN_OUT$mux0001> created at line 104.
+    Found 4-bit register for signal <AN_OUT>.
+    Found 1-bit register for signal <DP_OUT>.
+    Found 1-bit register for signal <clk240hz>.
+    Found 17-bit up counter for signal <count240hz>.
+    Found 1-bit 4-to-1 multiplexer for signal <DP_OUT$mux0001> created at line 104.
+    Found 4-bit register for signal <hexnum>.
+    Found 4-bit 4-to-1 multiplexer for signal <hexnum$mux0001> created at line 104.
+    Found 2-bit up counter for signal <pos>.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   2 Counter(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <SSegDriver> synthesized.
+
+
+Synthesizing Unit <RPN_toplevel>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.vhd".
+WARNING:Xst:1306 - Output <SEG<7>> is never assigned.
+WARNING:Xst:653 - Signal <s3> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <s2<3:2>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <s2<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <RFLAGS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <ENABLED> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:653 - Signal <DISABLED> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <RPN_toplevel> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 1
+ 9-bit addsub                                          : 1
+# Counters                                             : 6
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 21-bit up counter                                     : 4
+# Registers                                            : 17
+ 1-bit register                                        : 14
+ 4-bit register                                        : 2
+ 8-bit register                                        : 1
+# Latches                                              : 2
+ 4-bit latch                                           : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 2
+ 8-bit comparator equal                                : 1
+ 8-bit comparator less                                 : 1
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 8-bit shifter logical left                            : 1
+ 8-bit shifter logical right                           : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 1
+ 9-bit addsub                                          : 1
+# Counters                                             : 6
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 21-bit up counter                                     : 4
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+# Latches                                              : 2
+ 4-bit latch                                           : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 2
+ 8-bit comparator equal                                : 1
+ 8-bit comparator less                                 : 1
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 8-bit shifter logical left                            : 1
+ 8-bit shifter logical right                           : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<7>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Signal <UXCntl_Unit/outgoinga<7>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<6>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Signal <UXCntl_Unit/outgoinga<6>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<5>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Signal <UXCntl_Unit/outgoinga<5>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<4>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Signal <UXCntl_Unit/outgoinga<4>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<3>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Signal <UXCntl_Unit/outgoinga<3>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<2>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Signal <UXCntl_Unit/outgoinga<2>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<1>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Signal <UXCntl_Unit/outgoinga<1>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<0>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Signal <UXCntl_Unit/outgoinga<0>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<7>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <UXCntl_Unit/outgoingb/7/0>
+   Signal <UXCntl_Unit/outgoingb<7>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<6>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <UXCntl_Unit/outgoingb/6/0>
+   Signal <UXCntl_Unit/outgoingb<6>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<5>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <UXCntl_Unit/outgoingb/5/0>
+   Signal <UXCntl_Unit/outgoingb<5>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<4>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <UXCntl_Unit/outgoingb/4/0>
+   Signal <UXCntl_Unit/outgoingb<4>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<3>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <UXCntl_Unit/outgoingb/3/0>
+   Signal <UXCntl_Unit/outgoingb<3>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<2>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <UXCntl_Unit/outgoingb/2/0>
+   Signal <UXCntl_Unit/outgoingb<2>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<1>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <UXCntl_Unit/outgoingb/1/0>
+   Signal <UXCntl_Unit/outgoingb<1>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<0>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <UXCntl_Unit/outgoingb/0/0>
+   Signal <UXCntl_Unit/outgoingb<0>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingop<3>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <UXCntl_Unit/outgoingop/3/0>
+   Signal <UXCntl_Unit/outgoingop<3>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingop<2>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <UXCntl_Unit/outgoingop/2/0>
+   Signal <UXCntl_Unit/outgoingop<2>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingop<1>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <UXCntl_Unit/outgoingop/1/0>
+   Signal <UXCntl_Unit/outgoingop<1>> in Unit <UXCntl_Unit> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingop<0>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of LD instance <UXCntl_Unit/outgoingop/0/0>
+   Signal <UXCntl_Unit/outgoingop<0>> in Unit <UXCntl_Unit> is assigned to GND
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.50 secs
+ 
+--> 
+
+
+Total memory usage is 515580 kilobytes
+
+Number of errors   :   20 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

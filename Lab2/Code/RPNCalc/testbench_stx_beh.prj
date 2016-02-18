@@ -1,0 +1,2 @@
+vhdl isim_temp "UXCntl_Unit-Logic.vhd"
+vhdl isim_temp "UXCtrl_tb_vhd.vhd"

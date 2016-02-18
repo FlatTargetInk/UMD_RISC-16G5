@@ -1,0 +1,66 @@
+###################################################
+## School: University of Massachusetts Dartmouth
+## Department: Computer and Electrical Engineering
+## Engineer: Daniel Noyes
+## 
+## Create Date:    SPRING 2015
+## Module Name:    Button Control ucf
+## Project Name:   Button Controller
+## Target Devices: Spartan-3E
+## Tool versions:  Xilinx ISE 14.7
+## Description:
+##    Nexys 2 Pin Assignments
+##    
+###################################################
+
+
+NET "CLK" LOC = B8;
+
+#Button Assignment
+NET "BTN<0>" LOC = B18;
+NET "BTN<1>" LOC = D18;
+NET "BTN<2>" LOC = E18;
+NET "BTN<3>" LOC = H13;
+
+#LED Assignment
+NET "LED<0>" LOC = J14;
+NET "LED<1>" LOC = J15;
+NET "LED<2>" LOC = K15;
+NET "LED<3>" LOC = K14;
+#NET "LED<4>" LOC = E16;
+#NET "LED<5>" LOC = P16;
+#NET "LED<6>" LOC = E4;
+#NET "LED<7>" LOC = P4;
+
+##Secondary LED Assignment incase you have the s3e500
+NET "LED<4>" LOC = E17;
+NET "LED<5>" LOC = P15;
+NET "LED<6>" LOC = F4;
+NET "LED<7>" LOC = R4;
+
+##Switch Assignment
+NET "SW<0>" LOC = G18;
+NET "SW<1>" LOC = H18;
+NET "SW<2>" LOC = K18;
+NET "SW<3>" LOC = K17;
+NET "SW<4>" LOC = L14;
+NET "SW<5>" LOC = L13;
+NET "SW<6>" LOC = N17;
+NET "SW<7>" LOC = R17;
+
+##Button Assignment
+NET "BTN" LOC = B18;
+
+##7 Segment Display
+Net "SEG<0>" LOC = L18;
+Net "SEG<1>" LOC = F18;
+Net "SEG<2>" LOC = D17;
+Net "SEG<3>" LOC = D16;
+Net "SEG<4>" LOC = G14;
+Net "SEG<5>" LOC = J17;
+Net "SEG<6>" LOC = H14;
+Net "DP"     LOC = C17;
+Net "AN<0>"  LOC = F17;
+Net "AN<1>"  LOC = H17;
+Net "AN<2>"  LOC = C18;
+Net "AN<3>"  LOC = F15;

@@ -1,0 +1,14 @@
+ISim log file
+Running: /home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/testbench_isim_beh.wdb 
+ISim P.20131013 (signature 0xfbc00daa)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 100 ns: Note: Start ALU Test Bench (/testbench/).
+at 300 ns, Instance /testbench/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 300 ns: Error: Failed LATCH A. VALA=0
+# exit 0

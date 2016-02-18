@@ -1,0 +1,28 @@
+Command line:
+   UXCntl_Unit_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  58546
+
+Wed Feb 17 19:26:42 2016
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 197.792 Meg
+
+ Total Signals          : 5
+ Total Nets             : 32
+ Total Signal Drivers   : 6
+ Total Blocks           : 4
+ Total Primitive Blocks : 4
+ Total Processes        : 4
+ Total Traceable Variables  : 10
+ Total Scalar Nets and Variables : 410
+
+ Total Simulation Time: 0.04 sec
+
+ Current Memory Usage: 273.293 Meg
+
+Wed Feb 17 19:26:46 2016
+

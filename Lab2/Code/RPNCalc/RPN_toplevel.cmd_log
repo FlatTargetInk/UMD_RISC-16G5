@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.syr" 
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.syr" 
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.syr" 
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.syr" 
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.syr" 
