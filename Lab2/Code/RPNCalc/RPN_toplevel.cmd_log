@@ -3,3 +3,23 @@ xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_topleve
 xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.syr" 
 xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.syr" 
 xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.syr" 
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RPN-ucf.ucf -p xc3s500e-fg320-4 RPN_toplevel.ngc RPN_toplevel.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RPN-ucf.ucf -p xc3s500e-fg320-4 RPN_toplevel.ngc RPN_toplevel.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RPN-ucf.ucf -p xc3s500e-fg320-4 RPN_toplevel.ngc RPN_toplevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o RPN_toplevel_map.ncd RPN_toplevel.ngd RPN_toplevel.pcf 
+par -w -intstyle ise -ol high -t 1 RPN_toplevel_map.ncd RPN_toplevel.ncd RPN_toplevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RPN_toplevel.twx RPN_toplevel.ncd -o RPN_toplevel.twr RPN_toplevel.pcf -ucf RPN-ucf.ucf 
+bitgen -intstyle ise -f RPN_toplevel.ut RPN_toplevel.ncd 
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RPN-ucf.ucf -p xc3s500e-fg320-4 RPN_toplevel.ngc RPN_toplevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o RPN_toplevel_map.ncd RPN_toplevel.ngd RPN_toplevel.pcf 
+par -w -intstyle ise -ol high -t 1 RPN_toplevel_map.ncd RPN_toplevel.ncd RPN_toplevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RPN_toplevel.twx RPN_toplevel.ncd -o RPN_toplevel.twr RPN_toplevel.pcf -ucf RPN-ucf.ucf 
+bitgen -intstyle ise -f RPN_toplevel.ut RPN_toplevel.ncd 
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RPN-ucf.ucf -p xc3s500e-fg320-4 RPN_toplevel.ngc RPN_toplevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o RPN_toplevel_map.ncd RPN_toplevel.ngd RPN_toplevel.pcf 
+par -w -intstyle ise -ol high -t 1 RPN_toplevel_map.ncd RPN_toplevel.ncd RPN_toplevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RPN_toplevel.twx RPN_toplevel.ncd -o RPN_toplevel.twr RPN_toplevel.pcf -ucf RPN-ucf.ucf 
+bitgen -intstyle ise -f RPN_toplevel.ut RPN_toplevel.ncd 

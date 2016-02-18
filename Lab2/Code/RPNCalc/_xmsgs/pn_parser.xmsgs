@@ -8,7 +8,31 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/SevenSeg.vhd&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/UXCntl_Unit-Logic.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/alu_arithmetic_unit.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/alu_logic_unit.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/alu_mux.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/alu_shift_unit.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/debounce.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/load_store_unit.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

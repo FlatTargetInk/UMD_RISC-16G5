@@ -7,8 +7,8 @@ Parsing VHDL file "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/UXCntl_Unit-Logi
 Parsing VHDL file "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/UXCtrl_tb_vhd.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 97952 KB
-Fuse CPU Usage: 1170 ms
+Fuse Memory Usage: 97948 KB
+Fuse CPU Usage: 1510 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -17,8 +17,9 @@ Compiling package std_logic_unsigned
 Compiling architecture behavioral of entity UXCntl_Unit [uxcntl_unit_default]
 Compiling architecture behavior of entity testbench
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 8 VHDL Units
 Built simulation executable /home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/testbench_isim_beh.exe
-Fuse Memory Usage: 673688 KB
-Fuse CPU Usage: 1330 ms
-GCC CPU Usage: 1660 ms
+Fuse Memory Usage: 673684 KB
+Fuse CPU Usage: 1660 ms
+GCC CPU Usage: 260 ms

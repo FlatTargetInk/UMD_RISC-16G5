@@ -79,10 +79,18 @@
 		  mCMD <= "1000";
 		  
 		  wait for 100 ns;
+		  mCMD <= "0000";
+		  wait for 100 ns;
 		  
 		  assert (mVALA = mINPUT)  report "Failed LATCH A. VALA=" & integer'image(to_integer(unsigned(mVALA))) severity ERROR;
 
         -- Add user defined stimulus here
+			mINPUT <= "11001100";
+			mCMD <= "0100";	-- latch b
+			
+			wait for 100 ns;
+			mCMD <= "0000";
+			assert (mVALB = mINPUT)  report "Failed LATCH A. VALA=" & integer'image(to_integer(unsigned(mVALB))) severity ERROR;
 
         wait; -- will wait forever
      END PROCESS tb;

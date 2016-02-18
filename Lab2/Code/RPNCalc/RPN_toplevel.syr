@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Reading design: RPN_toplevel.prj
@@ -161,14 +161,12 @@ Analyzing generic Entity <debounce> in library <work> (Architecture <Logic>).
 Entity <debounce> analyzed. Unit <debounce> generated.
 
 Analyzing Entity <UXCntl_Unit> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/UXCntl_Unit-Logic.vhd" line 44: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <INPUT>
 WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/UXCntl_Unit-Logic.vhd" line 50: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <INPUT>
 WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/UXCntl_Unit-Logic.vhd" line 56: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <INPUT>
-INFO:Xst:2679 - Register <outgoinga> in unit <UXCntl_Unit> has a constant value of 11110000 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <outgoinga> in unit <UXCntl_Unit> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <outgoingb> in unit <UXCntl_Unit> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <outgoingop> in unit <UXCntl_Unit> has a constant value of 0000 during circuit operation. The register is replaced by logic.
 Entity <UXCntl_Unit> analyzed. Unit <UXCntl_Unit> generated.
 
 Analyzing Entity <Arith_Unit> in library <work> (Architecture <Combinational>).
@@ -213,8 +211,9 @@ Unit <debounce> synthesized.
 
 Synthesizing Unit <UXCntl_Unit>.
     Related source file is "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/UXCntl_Unit-Logic.vhd".
-WARNING:Xst:737 - Found 8-bit latch for signal <outgoingb>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 4-bit latch for signal <outgoingop>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <VALA>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <VALB>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <OPCODE>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 Unit <UXCntl_Unit> synthesized.
 
 
@@ -311,9 +310,9 @@ Macro Statistics
  1-bit register                                        : 14
  4-bit register                                        : 2
  8-bit register                                        : 1
-# Latches                                              : 2
+# Latches                                              : 3
  4-bit latch                                           : 1
- 8-bit latch                                           : 1
+ 8-bit latch                                           : 2
 # Comparators                                          : 2
  8-bit comparator equal                                : 1
  8-bit comparator less                                 : 1
@@ -348,9 +347,9 @@ Macro Statistics
  21-bit up counter                                     : 4
 # Registers                                            : 30
  Flip-Flops                                            : 30
-# Latches                                              : 2
+# Latches                                              : 3
  4-bit latch                                           : 1
- 8-bit latch                                           : 1
+ 8-bit latch                                           : 2
 # Comparators                                          : 2
  8-bit comparator equal                                : 1
  8-bit comparator less                                 : 1
@@ -368,109 +367,319 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch DP_OUT hinder the constant cleaning in the block SSegDriver.
+   You should achieve better results by setting this init to 0.
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<7>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Signal <UXCntl_Unit/outgoinga<7>> in Unit <UXCntl_Unit> is assigned to GND
+Optimizing unit <RPN_toplevel> ...
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<6>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Signal <UXCntl_Unit/outgoinga<6>> in Unit <UXCntl_Unit> is assigned to GND
+Optimizing unit <debounce> ...
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<5>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Signal <UXCntl_Unit/outgoinga<5>> in Unit <UXCntl_Unit> is assigned to GND
+Optimizing unit <Load_Store_Unit> ...
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<4>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Signal <UXCntl_Unit/outgoinga<4>> in Unit <UXCntl_Unit> is assigned to GND
+Optimizing unit <SSegDriver> ...
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<3>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Signal <UXCntl_Unit/outgoinga<3>> in Unit <UXCntl_Unit> is assigned to GND
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RPN_toplevel, actual ratio is 3.
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<2>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Signal <UXCntl_Unit/outgoinga<2>> in Unit <UXCntl_Unit> is assigned to GND
+Final Macro Processing ...
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<1>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Signal <UXCntl_Unit/outgoinga<1>> in Unit <UXCntl_Unit> is assigned to GND
+=========================================================================
+Final Register Report
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoinga<0>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Signal <UXCntl_Unit/outgoinga<0>> in Unit <UXCntl_Unit> is assigned to GND
+Macro Statistics
+# Registers                                            : 133
+ Flip-Flops                                            : 133
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<7>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <UXCntl_Unit/outgoingb/7/0>
-   Signal <UXCntl_Unit/outgoingb<7>> in Unit <UXCntl_Unit> is assigned to GND
+=========================================================================
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<6>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <UXCntl_Unit/outgoingb/6/0>
-   Signal <UXCntl_Unit/outgoingb<6>> in Unit <UXCntl_Unit> is assigned to GND
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<5>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <UXCntl_Unit/outgoingb/5/0>
-   Signal <UXCntl_Unit/outgoingb<5>> in Unit <UXCntl_Unit> is assigned to GND
+Partition Implementation Status
+-------------------------------
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<4>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <UXCntl_Unit/outgoingb/4/0>
-   Signal <UXCntl_Unit/outgoingb<4>> in Unit <UXCntl_Unit> is assigned to GND
+  No Partitions were found in this design.
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<3>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <UXCntl_Unit/outgoingb/3/0>
-   Signal <UXCntl_Unit/outgoingb<3>> in Unit <UXCntl_Unit> is assigned to GND
+-------------------------------
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<2>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <UXCntl_Unit/outgoingb/2/0>
-   Signal <UXCntl_Unit/outgoingb<2>> in Unit <UXCntl_Unit> is assigned to GND
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : RPN_toplevel.ngr
+Top Level Output File Name         : RPN_toplevel
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<1>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <UXCntl_Unit/outgoingb/1/0>
-   Signal <UXCntl_Unit/outgoingb<1>> in Unit <UXCntl_Unit> is assigned to GND
+Design Statistics
+# IOs                              : 25
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingb<0>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <UXCntl_Unit/outgoingb/0/0>
-   Signal <UXCntl_Unit/outgoingb<0>> in Unit <UXCntl_Unit> is assigned to GND
+Cell Usage :
+# BELS                             : 487
+#      GND                         : 1
+#      INV                         : 12
+#      LUT1                        : 96
+#      LUT2                        : 32
+#      LUT3                        : 34
+#      LUT3_L                      : 1
+#      LUT4                        : 80
+#      LUT4_L                      : 2
+#      MUXCY                       : 108
+#      MUXF5                       : 11
+#      VCC                         : 1
+#      XORCY                       : 109
+# FlipFlops/Latches                : 153
+#      FDC                         : 10
+#      FDCE                        : 18
+#      FDE                         : 20
+#      FDP                         : 1
+#      FDRE                        : 84
+#      LD                          : 20
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 23
+#      IBUF                        : 12
+#      OBUF                        : 11
+=========================================================================
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingop<3>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <UXCntl_Unit/outgoingop/3/0>
-   Signal <UXCntl_Unit/outgoingop<3>> in Unit <UXCntl_Unit> is assigned to GND
+Device utilization summary:
+---------------------------
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingop<2>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <UXCntl_Unit/outgoingop/2/0>
-   Signal <UXCntl_Unit/outgoingop<2>> in Unit <UXCntl_Unit> is assigned to GND
+Selected Device : 3s500efg320-4 
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingop<1>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <UXCntl_Unit/outgoingop/1/0>
-   Signal <UXCntl_Unit/outgoingop<1>> in Unit <UXCntl_Unit> is assigned to GND
+ Number of Slices:                      138  out of   4656     2%  
+ Number of Slice Flip Flops:            153  out of   9312     1%  
+ Number of 4 input LUTs:                257  out of   9312     2%  
+ Number of IOs:                          25
+ Number of bonded IOBs:                  24  out of    232    10%  
+ Number of GCLKs:                         1  out of     24     4%  
 
-ERROR:Xst:528 - Multi-source in Unit <UXCntl_Unit> on signal <outgoingop<0>>; this signal is connected to multiple drivers.
-Drivers are: 
-   Output signal of LD instance <UXCntl_Unit/outgoingop/0/0>
-   Signal <UXCntl_Unit/outgoingop<0>> in Unit <UXCntl_Unit> is assigned to GND
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.50 secs
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------+------------------------------+-------+
+Clock Signal                                                   | Clock buffer(FF name)        | Load  |
+---------------------------------------------------------------+------------------------------+-------+
+UXCntl_Unit/VALA_cmp_eq0000(UXCntl_Unit/VALA_cmp_eq00001:O)    | NONE(*)(UXCntl_Unit/VALA_7)  | 8     |
+UXCntl_Unit/VALB_cmp_eq0000(UXCntl_Unit/VALB_cmp_eq00001:O)    | NONE(*)(UXCntl_Unit/VALB_7)  | 8     |
+UXCntl_Unit/OPCODE_cmp_eq0000(UXCntl_Unit/OPCODE_cmp_eq00001:O)| NONE(*)(UXCntl_Unit/OPCODE_3)| 4     |
+CLK                                                            | BUFGP                        | 122   |
+SSeg/clk240hz                                                  | NONE(SSeg/pos_1)             | 11    |
+---------------------------------------------------------------+------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+DISABLED(XST_GND:G)                | NONE(SSeg/AN_OUT_0)    | 29    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.522ns (Maximum Frequency: 181.094MHz)
+   Minimum input arrival time before clock: 2.057ns
+   Maximum output required time after clock: 5.870ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.522ns (frequency: 181.094MHz)
+  Total number of paths / destination ports: 1656 / 283
+-------------------------------------------------------------------------
+Delay:               5.522ns (Levels of Logic = 18)
+  Source:            SSeg/count240hz_1 (FF)
+  Destination:       SSeg/count240hz_16 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: SSeg/count240hz_1 to SSeg/count240hz_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.591   0.622  SSeg/count240hz_1 (SSeg/count240hz_1)
+     LUT1:I0->O            1   0.704   0.000  SSeg/Mcount_count240hz_cy<1>_rt (SSeg/Mcount_count240hz_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  SSeg/Mcount_count240hz_cy<1> (SSeg/Mcount_count240hz_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg/Mcount_count240hz_cy<2> (SSeg/Mcount_count240hz_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg/Mcount_count240hz_cy<3> (SSeg/Mcount_count240hz_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg/Mcount_count240hz_cy<4> (SSeg/Mcount_count240hz_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg/Mcount_count240hz_cy<5> (SSeg/Mcount_count240hz_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg/Mcount_count240hz_cy<6> (SSeg/Mcount_count240hz_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg/Mcount_count240hz_cy<7> (SSeg/Mcount_count240hz_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg/Mcount_count240hz_cy<8> (SSeg/Mcount_count240hz_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg/Mcount_count240hz_cy<9> (SSeg/Mcount_count240hz_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg/Mcount_count240hz_cy<10> (SSeg/Mcount_count240hz_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg/Mcount_count240hz_cy<11> (SSeg/Mcount_count240hz_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg/Mcount_count240hz_cy<12> (SSeg/Mcount_count240hz_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg/Mcount_count240hz_cy<13> (SSeg/Mcount_count240hz_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg/Mcount_count240hz_cy<14> (SSeg/Mcount_count240hz_cy<14>)
+     MUXCY:CI->O           0   0.059   0.000  SSeg/Mcount_count240hz_cy<15> (SSeg/Mcount_count240hz_cy<15>)
+     XORCY:CI->O           1   0.804   0.499  SSeg/Mcount_count240hz_xor<16> (SSeg/Result<16>)
+     LUT2:I1->O            1   0.704   0.000  SSeg/Mcount_count240hz_eqn_161 (SSeg/Mcount_count240hz_eqn_16)
+     FDCE:D                    0.308          SSeg/count240hz_16
+    ----------------------------------------
+    Total                      5.522ns (4.401ns logic, 1.121ns route)
+                                       (79.7% logic, 20.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SSeg/clk240hz'
+  Clock period: 3.723ns (frequency: 268.601MHz)
+  Total number of paths / destination ports: 21 / 10
+-------------------------------------------------------------------------
+Delay:               3.723ns (Levels of Logic = 2)
+  Source:            SSeg/pos_0 (FF)
+  Destination:       SSeg/hexnum_3 (FF)
+  Source Clock:      SSeg/clk240hz rising
+  Destination Clock: SSeg/clk240hz rising
+
+  Data Path: SSeg/pos_0 to SSeg/hexnum_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.591   0.882  SSeg/pos_0 (SSeg/pos_0)
+     MUXF5:S->O            1   0.739   0.499  SSeg/Mmux_hexnum_mux00018290 (SSeg/Mmux_hexnum_mux00018290)
+     LUT2:I1->O            1   0.704   0.000  SSeg/Mmux_hexnum_mux00018298 (SSeg/hexnum_mux0001<3>)
+     FDC:D                     0.308          SSeg/hexnum_3
+    ----------------------------------------
+    Total                      3.723ns (2.342ns logic, 1.381ns route)
+                                       (62.9% logic, 37.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UXCntl_Unit/VALA_cmp_eq0000'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.057ns (Levels of Logic = 1)
+  Source:            SW<3> (PAD)
+  Destination:       UXCntl_Unit/VALA_3 (LATCH)
+  Destination Clock: UXCntl_Unit/VALA_cmp_eq0000 falling
+
+  Data Path: SW<3> to UXCntl_Unit/VALA_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.531  SW_3_IBUF (SW_3_IBUF)
+     LD:D                      0.308          UXCntl_Unit/VALA_3
+    ----------------------------------------
+    Total                      2.057ns (1.526ns logic, 0.531ns route)
+                                       (74.2% logic, 25.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UXCntl_Unit/VALB_cmp_eq0000'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.057ns (Levels of Logic = 1)
+  Source:            SW<3> (PAD)
+  Destination:       UXCntl_Unit/VALB_3 (LATCH)
+  Destination Clock: UXCntl_Unit/VALB_cmp_eq0000 falling
+
+  Data Path: SW<3> to UXCntl_Unit/VALB_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.531  SW_3_IBUF (SW_3_IBUF)
+     LD:D                      0.308          UXCntl_Unit/VALB_3
+    ----------------------------------------
+    Total                      2.057ns (1.526ns logic, 0.531ns route)
+                                       (74.2% logic, 25.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UXCntl_Unit/OPCODE_cmp_eq0000'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              2.057ns (Levels of Logic = 1)
+  Source:            SW<3> (PAD)
+  Destination:       UXCntl_Unit/OPCODE_3 (LATCH)
+  Destination Clock: UXCntl_Unit/OPCODE_cmp_eq0000 falling
+
+  Data Path: SW<3> to UXCntl_Unit/OPCODE_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.531  SW_3_IBUF (SW_3_IBUF)
+     LD:D                      0.308          UXCntl_Unit/OPCODE_3
+    ----------------------------------------
+    Total                      2.057ns (1.526ns logic, 0.531ns route)
+                                       (74.2% logic, 25.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              1.946ns (Levels of Logic = 1)
+  Source:            BTN<3> (PAD)
+  Destination:       BTN_3/D_STATE_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: BTN<3> to BTN_3/D_STATE_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  BTN_3_IBUF (BTN_3_IBUF)
+     FDE:D                     0.308          BTN_3/D_STATE_0
+    ----------------------------------------
+    Total                      1.946ns (1.526ns logic, 0.420ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SSeg/clk240hz'
+  Total number of paths / destination ports: 32 / 11
+-------------------------------------------------------------------------
+Offset:              5.870ns (Levels of Logic = 2)
+  Source:            SSeg/hexnum_1 (FF)
+  Destination:       SEG<6> (PAD)
+  Source Clock:      SSeg/clk240hz rising
+
+  Data Path: SSeg/hexnum_1 to SEG<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.591   0.883  SSeg/hexnum_1 (SSeg/hexnum_1)
+     LUT4:I0->O            1   0.704   0.420  SSeg/Mrom_segnum21 (SEG_2_OBUF)
+     OBUF:I->O                 3.272          SEG_2_OBUF (SEG<2>)
+    ----------------------------------------
+    Total                      5.870ns (4.567ns logic, 1.303ns route)
+                                       (77.8% logic, 22.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.36 secs
  
 --> 
 
 
-Total memory usage is 515580 kilobytes
+Total memory usage is 519080 kilobytes
 
-Number of errors   :   20 (   0 filtered)
-Number of warnings :   15 (   0 filtered)
-Number of infos    :    6 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 

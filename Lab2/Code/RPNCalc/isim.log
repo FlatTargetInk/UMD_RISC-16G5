@@ -9,6 +9,4 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 at 100 ns: Note: Start ALU Test Bench (/testbench/).
-at 300 ns, Instance /testbench/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 300 ns: Error: Failed LATCH A. VALA=0
 # exit 0

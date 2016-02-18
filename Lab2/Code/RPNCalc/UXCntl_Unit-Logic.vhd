@@ -32,38 +32,38 @@ entity UXCntl_Unit is
 end UXCntl_unit;
 				
 architecture Behavioral of UXCntl_Unit is
-	signal outgoinga : STD_LOGIC_VECTOR(7 downto 0);
-	signal outgoingb : STD_LOGIC_VECTOR(7 downto 0);
-	signal outgoingop : STD_LOGIC_VECTOR(3 downto 0);
+--	signal outgoinga : STD_LOGIC_VECTOR(7 downto 0);
+--	signal outgoingb : STD_LOGIC_VECTOR(7 downto 0);
+--	signal outgoingop : STD_LOGIC_VECTOR(3 downto 0);
 	
 begin
-	VALA		<= outgoinga;
-	VALB		<= outgoingb;
-	OPCODE	<= outgoingop;
+--	VALA		<= outgoinga;
+--	VALB		<= outgoingb;
+--	OPCODE	<= outgoingop;
 	
 	latch_ra: process (CMD) begin
 		if(CMD = "1000") then	-- Latch A
-			outgoinga <= "11110000";
+			VALA <= INPUT;
 		end if;
 	end process;
 	
 	latch_rb: process (CMD) begin
 		if(CMD = "0100") then	-- Latch B
-			outgoingb <= INPUT;
+			VALB <= INPUT;
 		end if;
 	end process;
 	
 	latch_op: process (CMD) begin
 		if(CMD = "0010") then	-- Latch OP
-			outgoingop <= INPUT(3 downto 0);
+			OPCODE <= INPUT(3 downto 0);
 		end if;
 	end process;
 		
-	clear: process (CMD) begin
-		if(CMD = "0001") then	-- Clear
-			outgoinga		<= "00000000";
-			outgoingb		<= "00000000";
-			outgoingop	<= "0000";
-		end if;
-	end process;
+--	clear: process (CMD) begin
+--		if(CMD = "0001") then	-- Clear
+--			outgoinga		<= "00000000";
+--			outgoingb		<= "00000000";
+--			outgoingop	<= "0000";
+--		end if;
+--	end process;
 end Behavioral;
