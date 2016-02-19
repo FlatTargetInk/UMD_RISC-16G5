@@ -1,25 +1,40 @@
-Running: /home/robert/XilinxISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/testbench_isim_beh.exe -prj /home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/testbench_beh.prj work.testbench 
+Running: /home/robert/XilinxISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel_isim_par.exe -prj /home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel_par.prj work.RPN_toplevel 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/UXCntl_Unit-Logic.vhd" into library work
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/UXCtrl_tb_vhd.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/netgen/par/RPN_toplevel_timesim.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 97948 KB
-Fuse CPU Usage: 1510 ms
+Fuse Memory Usage: 155920 KB
+Fuse CPU Usage: 2280 ms
 Compiling package standard
 Compiling package std_logic_1164
-Compiling package numeric_std
-Compiling package std_logic_arith
-Compiling package std_logic_unsigned
-Compiling architecture behavioral of entity UXCntl_Unit [uxcntl_unit_default]
-Compiling architecture behavior of entity testbench
+Compiling package textio
+Compiling package vital_timing
+Compiling package vcomponents
+Compiling package vital_primitives
+Compiling package vpackage
+Compiling architecture x_buf_v of entity X_BUF [\X_BUF(true,true,"UNPLACED",(0,0...]
+Compiling architecture x_lut4_v of entity X_LUT4 [\X_LUT4(true,true,"UNPLACED",(0,...]
+Compiling architecture x_inv_v of entity X_INV [\X_INV(true,true,"SLICE_X65Y39",...]
+Compiling architecture x_zero_v of entity X_ZERO [\X_ZERO("UNPLACED")(1,8)\]
+Compiling architecture x_one_v of entity X_ONE [\X_ONE("UNPLACED")(1,8)\]
+Compiling architecture x_xor2_v of entity X_XOR2 [\X_XOR2(true,true,"UNPLACED",(0,...]
+Compiling architecture x_mux2_v of entity X_MUX2 [\X_MUX2(true,true,"UNPLACED",(0,...]
+Compiling architecture x_and2_v of entity X_AND2 [\X_AND2(true,true,"UNPLACED",(0,...]
+Compiling architecture x_obuf_v of entity X_OBUF [\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_bufgmux_v of entity X_BUFGMUX [\X_BUFGMUX(true,"*",true,false,"...]
+Compiling architecture x_ff_v of entity X_FF [\X_FF(true,true,true,"UNPLACED",...]
+Compiling architecture x_latche_v of entity X_LATCHE [\X_LATCHE(true,true,true,"UNPLAC...]
+Compiling architecture x_sff_v of entity X_SFF [\X_SFF(true,true,true,"UNPLACED"...]
+Compiling architecture x_inv_v of entity X_INV [\X_INV(true,true,"UNPLACED",(0,0...]
+Compiling architecture x_roc_v of entity X_ROC [\X_ROC("UNPLACED",100000,"*")(1,...]
+Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1...]
+Compiling architecture structure of entity rpn_toplevel
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 8 VHDL Units
-Built simulation executable /home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/testbench_isim_beh.exe
-Fuse Memory Usage: 673684 KB
-Fuse CPU Usage: 1660 ms
-GCC CPU Usage: 260 ms
+Compiled 1614 VHDL Units
+Built simulation executable /home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel_isim_par.exe
+Fuse Memory Usage: 735336 KB
+Fuse CPU Usage: 5060 ms
+GCC CPU Usage: 9210 ms

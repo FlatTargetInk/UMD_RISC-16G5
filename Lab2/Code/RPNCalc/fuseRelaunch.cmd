@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/testbench_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/testbench_beh.prj" "work.testbench" 
+-intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel_isim_par.exe" -prj "/home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel_par.prj" "work.RPN_toplevel" 

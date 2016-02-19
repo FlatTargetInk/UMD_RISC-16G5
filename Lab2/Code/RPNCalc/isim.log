@@ -1,12 +1,12 @@
 ISim log file
-Running: /home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/testbench_isim_beh.wdb 
+Running: /home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel_isim_par.exe -intstyle ise -gui -sdfmax /RPN_toplevel/=netgen/par/RPN_toplevel_timesim.sdf -sdfroot / -tclbatch isim.cmd -wdb /home/robert/UMD_RISC-16G5/Lab2/Code/RPNCalc/RPN_toplevel_isim_par.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 This is a Full version of ISim.
+INFO: SDF backannotation was successful with SDF file netgen/par/RPN_toplevel_timesim.sdf, for root module /RPN_toplevel/.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-at 100 ns: Note: Start ALU Test Bench (/testbench/).
 # exit 0
