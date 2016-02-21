@@ -1,0 +1,8 @@
+EN we_ascii NULL /home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/we_ascii.vhd sub00/vhpl04 1455915889
+EN ps2_driver NULL /home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/ps2_driver.vhd sub00/vhpl00 1455915885
+AR we_ascii dataflow /home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/we_ascii.vhd sub00/vhpl05 1455915890
+AR keyboard_controller structural /home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/keyboard_controller.vhd sub00/vhpl07 1455915892
+EN keyboard_controller NULL /home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/keyboard_controller.vhd sub00/vhpl06 1455915891
+EN keycode_to_ascii NULL /home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/keycode_to_ascii.vhd sub00/vhpl02 1455915887
+AR ps2_driver behavioral /home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/ps2_driver.vhd sub00/vhpl01 1455915886
+AR keycode_to_ascii dataflow /home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/keycode_to_ascii.vhd sub00/vhpl03 1455915888

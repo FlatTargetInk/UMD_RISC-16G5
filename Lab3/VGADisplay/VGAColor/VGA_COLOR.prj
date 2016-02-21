@@ -1,0 +1,6 @@
+vhdl work "clk40MHz.vhd"
+vhdl work "clk100MHz.vhd"
+vhdl work "vga_controller.vhd"
+vhdl work "rgb.vhd"
+vhdl work "pixel_clk.vhd"
+vhdl work "vga_color.vhd"

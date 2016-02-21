@@ -1,0 +1,30 @@
+Command line:
+   RPN_toplevel_isim_par.exe
+     -simmode  gui
+     -sdfmax  /RPN_toplevel/=netgen/par/RPN_toplevel_timesim.sdf
+     -sdfroot  /
+     -simrunnum  0
+     -socket  33732
+
+Thu Feb 18 13:57:07 2016
+
+
+ Elaboration Time: 0.28 sec
+
+ Current Memory Usage: 252.301 Meg
+
+ Total Signals          : 12852
+ Total Nets             : 7810
+ Total Signal Drivers   : 7766
+ Total Blocks           : 3361
+ Total Primitive Blocks : 1790
+ Total Processes        : 7766
+ Total Traceable Variables  : 17921
+ Total Scalar Nets and Variables : 62481
+
+ Total Simulation Time: 0.46 sec
+
+ Current Memory Usage: 327.881 Meg
+
+Thu Feb 18 13:57:23 2016
+

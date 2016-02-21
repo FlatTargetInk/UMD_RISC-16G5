@@ -1,0 +1,67 @@
+Welcome to Xilinx CORE Generator.
+Help system initialized.
+The IP Catalog has been reloaded.
+Opening project file
+/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/ipcore_dir/coregen.cgp.
+Recustomize and Generate (Under Original Project Settings)INFO:sim:172 - Generating IP...
+WARNING:sim - A core named 'VGA_BUFFER_RAM' already exists in the project.
+   Output products for this core may be overwritten.
+Resolving generics for 'VGA_BUFFER_RAM'...
+WARNING:sim - A core named 'VGA_BUFFER_RAM' already exists in the project.
+   Output products for this core may be overwritten.
+Applying external generics to 'VGA_BUFFER_RAM'...
+Delivering associated files for 'VGA_BUFFER_RAM'...
+Delivering EJava files for 'VGA_BUFFER_RAM'...
+Generating implementation netlist for 'VGA_BUFFER_RAM'...
+INFO:sim - Pre-processing HDL files for 'VGA_BUFFER_RAM'...
+Running synthesis for 'VGA_BUFFER_RAM'
+Running ngcbuild...
+Writing VHO instantiation template for 'VGA_BUFFER_RAM'...
+Writing VHDL behavioral simulation model for 'VGA_BUFFER_RAM'...
+WARNING:sim - Overwriting existing file
+   /home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/ipcore_dir/tmp/_cg/VGA_BUFFER_RAM
+   /doc/blk_mem_gen_v7_3_vinfo.html with file from view xilinx_documentation
+Delivered 1 file into directory
+/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/ipcore_dir/tmp/_cg/VGA_BUFFER_RAM
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating metadata file...
+Regenerating ISE project file for 'VGA_BUFFER_RAM'...
+Generating ISE project...
+XCO file found: VGA_BUFFER_RAM.xco
+XMDF file found: VGA_BUFFER_RAM_xmdf.tcl
+Adding
+/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/ipcore_dir/tmp/_cg/VGA_BUFFER_RAM.as
+y -view all -origin_type imported
+Adding
+/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/ipcore_dir/tmp/_cg/VGA_BUFFER_RAM.ng
+c -view all -origin_type created
+Checking file
+"/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/ipcore_dir/tmp/_cg/VGA_BUFFER_RAM.n
+gc" for project device match ...
+File
+"/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/ipcore_dir/tmp/_cg/VGA_BUFFER_RAM.n
+gc" device information matches project device.
+Adding
+/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/ipcore_dir/tmp/_cg/VGA_BUFFER_RAM.vh
+d -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/ipcore_dir/tmp/_cg/VGA_BUFFER_RA
+   M.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/ipcore_dir/tmp/_cg/VGA_BUFFER_RAM.vh
+o -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/VGA_BUFFER_RAM"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Saved CGP file for project 'coregen'.
+Closed project file.

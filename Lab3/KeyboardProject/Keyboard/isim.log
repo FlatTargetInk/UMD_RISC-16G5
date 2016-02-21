@@ -1,0 +1,26 @@
+ISim log file
+Running: /home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/KEYBOARD_CONTROLLER_tb_vhd_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/KEYBOARD_CONTROLLER_tb_vhd_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim P.20131013 (signature 0xfbc00daa)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 10 ns(1), Instance /keyboard_controller_tb_vhd/uut/U1/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# run 10ms
+at 100 us: Note: Start VGA_Controller Test Bench (/keyboard_controller_tb_vhd/).
+# run 2ms
+# run 2ms
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim P.20131013 (signature 0xfbc00daa)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 10 ns(1), Instance /keyboard_controller_tb_vhd/uut/U1/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# run 2ms
+at 100 us: Note: Start VGA_Controller Test Bench (/keyboard_controller_tb_vhd/).
+# exit 0

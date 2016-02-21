@@ -1,0 +1,222 @@
+Release 14.7 ngdbuild P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line:
+/home/robert/XilinxISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -nt timestamp -uc keyboard_controller.ucf -p xc3s500e-fg320-4
+KEYBOARD_CONTROLLER.ngc KEYBOARD_CONTROLLER.ngd
+
+Reading NGO file
+"/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/KEYBOARD_CONTROLLER.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "keyboard_controller.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<0>" LOC = G18;>
+   [keyboard_controller.ucf(54)]: NET "SW<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<0>" LOC = G18;> [keyboard_controller.ucf(54)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<1>" LOC = H18;>
+   [keyboard_controller.ucf(55)]: NET "SW<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<1>" LOC = H18;> [keyboard_controller.ucf(55)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<2>" LOC = K18;>
+   [keyboard_controller.ucf(56)]: NET "SW<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<2>" LOC = K18;> [keyboard_controller.ucf(56)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<3>" LOC = K17;>
+   [keyboard_controller.ucf(57)]: NET "SW<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<3>" LOC = K17;> [keyboard_controller.ucf(57)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<4>" LOC = L14;>
+   [keyboard_controller.ucf(58)]: NET "SW<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<4>" LOC = L14;> [keyboard_controller.ucf(58)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<5>" LOC = L13;>
+   [keyboard_controller.ucf(59)]: NET "SW<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<5>" LOC = L13;> [keyboard_controller.ucf(59)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<6>" LOC = N17;>
+   [keyboard_controller.ucf(60)]: NET "SW<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<6>" LOC = N17;> [keyboard_controller.ucf(60)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<7>" LOC = R17;>
+   [keyboard_controller.ucf(61)]: NET "SW<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<7>" LOC = R17;> [keyboard_controller.ucf(61)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <Net "VGARED<0>" LOC = R9;>
+   [keyboard_controller.ucf(65)]: NET "VGARED<0>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net "VGARED<0>" LOC = R9;> [keyboard_controller.ucf(65)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <Net "VGARED<1>" LOC = T8;>
+   [keyboard_controller.ucf(66)]: NET "VGARED<1>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net "VGARED<1>" LOC = T8;> [keyboard_controller.ucf(66)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <Net "VGARED<2>" LOC = R8;>
+   [keyboard_controller.ucf(67)]: NET "VGARED<2>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net "VGARED<2>" LOC = R8;> [keyboard_controller.ucf(67)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <Net "VGAGRN<0>" LOC = N8;>
+   [keyboard_controller.ucf(68)]: NET "VGAGRN<0>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net "VGAGRN<0>" LOC = N8;> [keyboard_controller.ucf(68)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <Net "VGAGRN<1>" LOC = P8;>
+   [keyboard_controller.ucf(69)]: NET "VGAGRN<1>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net "VGAGRN<1>" LOC = P8;> [keyboard_controller.ucf(69)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <Net "VGAGRN<2>" LOC = P6;>
+   [keyboard_controller.ucf(70)]: NET "VGAGRN<2>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net "VGAGRN<2>" LOC = P6;> [keyboard_controller.ucf(70)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <Net "VGABLU<0>" LOC = U5;>
+   [keyboard_controller.ucf(71)]: NET "VGABLU<0>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net "VGABLU<0>" LOC = U5;> [keyboard_controller.ucf(71)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <Net "VGABLU<1>" LOC = U4;>
+   [keyboard_controller.ucf(72)]: NET "VGABLU<1>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net "VGABLU<1>" LOC = U4;> [keyboard_controller.ucf(72)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <Net "HSYNC" LOC = T4;>
+   [keyboard_controller.ucf(73)]: NET "HSYNC" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net "HSYNC" LOC = T4;> [keyboard_controller.ucf(73)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <Net "VSYNC" LOC = U3;>
+   [keyboard_controller.ucf(74)]: NET "VSYNC" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net "VSYNC" LOC = U3;> [keyboard_controller.ucf(74)]' could not be found
+   and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem - The Period constraint <NET "CLK" PERIOD = 20.0ns HIGH
+   50%;> [keyboard_controller.ucf(17)], is specified using the Net Period method
+   which is not recommended. Please use the Timespec PERIOD method.
+
+INFO:ConstraintSystem - The Period constraint <NET "CLK" PERIOD = 20.0ns HIGH
+   50%;> [keyboard_controller.ucf(46)], is specified using the Net Period method
+   which is not recommended. Please use the Timespec PERIOD method.
+
+WARNING:NgdBuild:1345 - The constraint <NET "CLK" PERIOD = 20.0ns HIGH 50%;>
+   [keyboard_controller.ucf(17)] is overridden by the constraint <NET "CLK"
+   PERIOD = 20.0ns HIGH 50%;> [keyboard_controller.ucf(46)]. The overriden
+   constraint usually comes from the input netlist or ncf files. Please set
+   XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to promote this message to an error.
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:    18
+  Number of warnings:  19
+
+Total memory usage is 390044 kilobytes
+
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "KEYBOARD_CONTROLLER.bld"...

@@ -1,0 +1,28 @@
+Command line:
+   KEYBOARD_CONTROLLER_tb_vhd_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  49512
+
+Fri Feb 19 16:24:39 2016
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 197.902 Meg
+
+ Total Signals          : 70
+ Total Nets             : 131
+ Total Signal Drivers   : 44
+ Total Blocks           : 9
+ Total Primitive Blocks : 7
+ Total Processes        : 28
+ Total Traceable Variables  : 26
+ Total Scalar Nets and Variables : 929
+
+ Total Simulation Time: 0.49 sec
+
+ Current Memory Usage: 273.404 Meg
+
+Fri Feb 19 16:26:34 2016
+

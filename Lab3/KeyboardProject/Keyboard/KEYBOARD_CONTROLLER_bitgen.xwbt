@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/KEYBOARD_CONTROLLER.ncd
+OUTFILE=/home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/KEYBOARD_CONTROLLER.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard
+LICENSE=WebPack
+USER_INFO=__0_0_0

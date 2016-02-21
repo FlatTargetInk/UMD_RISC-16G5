@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/KEYBOARD_CONTROLLER_tb_vhd_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/KEYBOARD_CONTROLLER_tb_vhd_beh.prj" "work.KEYBOARD_CONTROLLER_tb_vhd" 

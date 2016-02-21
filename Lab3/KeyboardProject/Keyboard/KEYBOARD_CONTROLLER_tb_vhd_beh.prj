@@ -1,0 +1,5 @@
+vhdl work "we_ascii.vhd"
+vhdl work "ps2_driver.vhd"
+vhdl work "keycode_to_ascii.vhd"
+vhdl work "keyboard_controller.vhd"
+vhdl work "keyboard_controller_tb.vhd"

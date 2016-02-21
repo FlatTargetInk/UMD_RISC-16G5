@@ -1,0 +1,499 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: VGA_COLOR.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "VGA_COLOR.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "VGA_COLOR"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : VGA_COLOR
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd" in Library work.
+Entity <CLK_100MHZ> compiled.
+Entity <CLK_100MHZ> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd" in Library work.
+Entity <CLK_40MHZ> compiled.
+Entity <CLK_40MHZ> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/pixel_clk.vhd" in Library work.
+Entity <PIXEL_CLK> compiled.
+Entity <PIXEL_CLK> (Architecture <Structural>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/rgb.vhd" in Library work.
+Entity <RGB> compiled.
+Entity <RGB> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/vga_controller.vhd" in Library work.
+Entity <vga_controller> compiled.
+Entity <vga_controller> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/vga_color.vhd" in Library work.
+Entity <VGA_COLOR> compiled.
+Entity <VGA_COLOR> (Architecture <Structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <VGA_COLOR> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <PIXEL_CLK> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <RGB> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <vga_controller> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <CLK_100MHZ> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <CLK_40MHZ> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <VGA_COLOR> in library <work> (Architecture <Structural>).
+Entity <VGA_COLOR> analyzed. Unit <VGA_COLOR> generated.
+
+Analyzing Entity <PIXEL_CLK> in library <work> (Architecture <Structural>).
+Entity <PIXEL_CLK> analyzed. Unit <PIXEL_CLK> generated.
+
+Analyzing Entity <CLK_100MHZ> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd" line 54: Unconnected output port 'CLK0' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd" line 54: Unconnected output port 'CLK180' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd" line 54: Unconnected output port 'CLK270' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd" line 54: Unconnected output port 'CLK90' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd" line 54: Unconnected output port 'CLKDV' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd" line 54: Unconnected output port 'LOCKED' of component 'CLKDLL'.
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd" line 54: Instantiating black box module <CLKDLL>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <CLKDLL_inst> in unit <CLK_100MHZ>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <CLKDLL_inst> in unit <CLK_100MHZ>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <CLKDLL_inst> in unit <CLK_100MHZ>.
+Entity <CLK_100MHZ> analyzed. Unit <CLK_100MHZ> generated.
+
+Analyzing Entity <CLK_40MHZ> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd" line 57: Unconnected output port 'CLK0' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd" line 57: Unconnected output port 'CLK180' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd" line 57: Unconnected output port 'CLK270' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd" line 57: Unconnected output port 'CLK90' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd" line 57: Unconnected output port 'LOCKED' of component 'CLKDLL'.
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd" line 57: Instantiating black box module <CLKDLL>.
+    Set user-defined property "CLKDV_DIVIDE =  2.5000000000000000" for instance <CLKDLL_inst> in unit <CLK_40MHZ>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <CLKDLL_inst> in unit <CLK_40MHZ>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <CLKDLL_inst> in unit <CLK_40MHZ>.
+Entity <CLK_40MHZ> analyzed. Unit <CLK_40MHZ> generated.
+
+Analyzing Entity <RGB> in library <work> (Architecture <Behavioral>).
+Entity <RGB> analyzed. Unit <RGB> generated.
+
+Analyzing Entity <vga_controller> in library <work> (Architecture <Behavioral>).
+Entity <vga_controller> analyzed. Unit <vga_controller> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <RGB>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/rgb.vhd".
+WARNING:Xst:1780 - Signal <enb> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <RGB> synthesized.
+
+
+Synthesizing Unit <vga_controller>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/vga_controller.vhd".
+    Found 1-bit register for signal <HS>.
+    Found 1-bit register for signal <VS>.
+    Found 1-bit register for signal <BLANK>.
+    Found 11-bit up counter for signal <hcounter>.
+    Found 11-bit comparator greatequal for signal <HS$cmp_ge0000> created at line 100.
+    Found 11-bit comparator less for signal <HS$cmp_lt0000> created at line 100.
+    Found 11-bit up counter for signal <vcounter>.
+    Found 11-bit comparator less for signal <video_enable$cmp_lt0000> created at line 64.
+    Found 11-bit comparator less for signal <video_enable$cmp_lt0001> created at line 64.
+    Found 11-bit comparator greatequal for signal <VS$cmp_ge0000> created at line 112.
+    Found 11-bit comparator less for signal <VS$cmp_lt0000> created at line 112.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vga_controller> synthesized.
+
+
+Synthesizing Unit <CLK_100MHZ>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd".
+Unit <CLK_100MHZ> synthesized.
+
+
+Synthesizing Unit <CLK_40MHZ>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd".
+Unit <CLK_40MHZ> synthesized.
+
+
+Synthesizing Unit <PIXEL_CLK>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/pixel_clk.vhd".
+Unit <PIXEL_CLK> synthesized.
+
+
+Synthesizing Unit <VGA_COLOR>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/vga_color.vhd".
+WARNING:Xst:646 - Signal <vcount> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <hcount> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <VGA_COLOR> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 11-bit up counter                                     : 2
+# Registers                                            : 3
+ 1-bit register                                        : 3
+# Comparators                                          : 6
+ 11-bit comparator greatequal                          : 2
+ 11-bit comparator less                                : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 11-bit up counter                                     : 2
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+# Comparators                                          : 6
+ 11-bit comparator greatequal                          : 2
+ 11-bit comparator less                                : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <VGA_COLOR> ...
+
+Optimizing unit <vga_controller> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block VGA_COLOR, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : VGA_COLOR.ngr
+Top Level Output File Name         : VGA_COLOR
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 20
+
+Cell Usage :
+# BELS                             : 126
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 26
+#      LUT2                        : 13
+#      LUT2_L                      : 1
+#      LUT3                        : 2
+#      LUT3_D                      : 1
+#      LUT3_L                      : 2
+#      LUT4                        : 11
+#      LUT4_D                      : 2
+#      LUT4_L                      : 1
+#      MUXCY                       : 36
+#      VCC                         : 1
+#      XORCY                       : 22
+# FlipFlops/Latches                : 25
+#      FDR                         : 14
+#      FDRE                        : 11
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 20
+#      IBUF                        : 9
+#      IBUFG                       : 1
+#      OBUF                        : 10
+# DLLs                             : 2
+#      CLKDLL                      : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       38  out of   4656     0%  
+ Number of Slice Flip Flops:             25  out of   9312     0%  
+ Number of 4 input LUTs:                 66  out of   9312     0%  
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    232     8%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                       | Load  |
+-----------------------------------+-----------------------------------------------------------------------------+-------+
+CLK                                | Pixel_clk/CLK_100MHZ/CLKDLL_inst:CLK2X+Pixel_clk/CLK_40MHZ/CLKDLL_inst:CLKDV| 25    |
+-----------------------------------+-----------------------------------------------------------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.986ns (Maximum Frequency: 200.578MHz)
+   Minimum input arrival time before clock: 4.388ns
+   Maximum output required time after clock: 5.823ns
+   Maximum combinational path delay: 6.209ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.986ns (frequency: 200.578MHz)
+  Total number of paths / destination ports: 665 / 58
+-------------------------------------------------------------------------
+Delay:               6.232ns (Levels of Logic = 3)
+  Source:            VGA_controller/vcounter_2 (FF)
+  Destination:       VGA_controller/vcounter_10 (FF)
+  Source Clock:      CLK rising 0.8X
+  Destination Clock: CLK rising 0.8X
+
+  Data Path: VGA_controller/vcounter_2 to VGA_controller/vcounter_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             4   0.591   0.762  VGA_controller/vcounter_2 (VGA_controller/vcounter_2)
+     LUT4:I0->O            1   0.704   0.499  VGA_controller/vcounter_or0000101 (VGA_controller/vcounter_or0000101)
+     LUT4:I1->O            1   0.704   0.424  VGA_controller/vcounter_or000069_SW0 (N2)
+     LUT4:I3->O           11   0.704   0.933  VGA_controller/vcounter_or000069 (VGA_controller/vcounter_or0000)
+     FDRE:R                    0.911          VGA_controller/vcounter_0
+    ----------------------------------------
+    Total                      6.232ns (3.614ns logic, 2.618ns route)
+                                       (58.0% logic, 42.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 22 / 22
+-------------------------------------------------------------------------
+Offset:              4.388ns (Levels of Logic = 2)
+  Source:            RST (PAD)
+  Destination:       VGA_controller/hcounter_10 (FF)
+  Destination Clock: CLK rising 0.8X
+
+  Data Path: RST to VGA_controller/hcounter_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.622  RST_IBUF (RST_IBUF)
+     LUT4:I0->O           11   0.704   0.933  VGA_controller/hcounter_or00001 (VGA_controller/hcounter_or0000)
+     FDR:R                     0.911          VGA_controller/hcounter_0
+    ----------------------------------------
+    Total                      4.388ns (2.833ns logic, 1.555ns route)
+                                       (64.6% logic, 35.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              5.823ns (Levels of Logic = 2)
+  Source:            VGA_controller/BLANK (FF)
+  Destination:       VGAGRN<2> (PAD)
+  Source Clock:      CLK rising 0.8X
+
+  Data Path: VGA_controller/BLANK to VGAGRN<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.591   0.836  VGA_controller/BLANK (VGA_controller/BLANK)
+     LUT2:I1->O            1   0.704   0.420  RGB/RED<2>1 (VGARED_2_OBUF)
+     OBUF:I->O                 3.272          VGARED_2_OBUF (VGARED<2>)
+    ----------------------------------------
+    Total                      5.823ns (4.567ns logic, 1.256ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               6.209ns (Levels of Logic = 3)
+  Source:            SW<4> (PAD)
+  Destination:       VGAGRN<2> (PAD)
+
+  Data Path: SW<4> to VGAGRN<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.595  SW_4_IBUF (SW_4_IBUF)
+     LUT2:I0->O            1   0.704   0.420  RGB/GRN<2>1 (VGAGRN_2_OBUF)
+     OBUF:I->O                 3.272          VGAGRN_2_OBUF (VGAGRN<2>)
+    ----------------------------------------
+    Total                      6.209ns (5.194ns logic, 1.015ns route)
+                                       (83.7% logic, 16.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.09 secs
+ 
+--> 
+
+
+Total memory usage is 530904 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

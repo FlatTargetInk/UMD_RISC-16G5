@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/KEYBOARD_CONTROLLER.xst" -ofn "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/KEYBOARD_CONTROLLER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_color.ucf -uc keyboard_controller.ucf -p xc3s500e-fg320-4 KEYBOARD_CONTROLLER.ngc KEYBOARD_CONTROLLER.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc keyboard_controller.ucf -p xc3s500e-fg320-4 KEYBOARD_CONTROLLER.ngc KEYBOARD_CONTROLLER.ngd  

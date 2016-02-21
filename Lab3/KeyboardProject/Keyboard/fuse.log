@@ -1,0 +1,31 @@
+Running: /home/robert/XilinxISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/KEYBOARD_CONTROLLER_tb_vhd_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/KEYBOARD_CONTROLLER_tb_vhd_beh.prj" "work.KEYBOARD_CONTROLLER_tb_vhd" 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/we_ascii.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/ps2_driver.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/keycode_to_ascii.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/keyboard_controller.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/keyboard_controller_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 98184 KB
+Fuse CPU Usage: 1410 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling architecture behavioral of entity PS2_DRIVER [ps2_driver_default]
+Compiling architecture dataflow of entity KEYCODE_TO_ASCII [keycode_to_ascii_default]
+Compiling architecture dataflow of entity WE_ASCII [we_ascii_default]
+Compiling architecture structural of entity KEYBOARD_CONTROLLER [keyboard_controller_default]
+Compiling architecture behavior of entity keyboard_controller_tb_vhd
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 14 VHDL Units
+Built simulation executable /home/robert/UMD_RISC-16G5/Lab3/KeyboardProject/Keyboard/KEYBOARD_CONTROLLER_tb_vhd_isim_beh.exe
+Fuse Memory Usage: 674396 KB
+Fuse CPU Usage: 1590 ms
+GCC CPU Usage: 120 ms

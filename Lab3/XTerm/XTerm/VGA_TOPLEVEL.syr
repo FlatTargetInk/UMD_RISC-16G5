@@ -1,0 +1,981 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: VGA_TOPLEVEL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "VGA_TOPLEVEL.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "VGA_TOPLEVEL"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : VGA_TOPLEVEL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/ps2_driver.vhd" in Library work.
+Architecture behavioral of Entity ps2_driver is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/keycode_to_ascii.vhd" in Library work.
+Architecture dataflow of Entity keycode_to_ascii is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/we_ascii.vhd" in Library work.
+Architecture dataflow of Entity we_ascii is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/clk25MHz.vhd" in Library work.
+Architecture behavioral of Entity clk_25mhz is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/vga_controller.vhd" in Library work.
+Architecture behavioral of Entity vga_controller is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/rgb.vhd" in Library work.
+Architecture behavioral of Entity rgb is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/mux8to1.vhd" in Library work.
+Architecture behavioral of Entity mux8to1 is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/font_rom_ascii.vhd" in Library work.
+Architecture arch of Entity font_rom is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/blinker.vhd" in Library work.
+Architecture behavioral of Entity blinker is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/ipcore_dir/VGA_BUFFER_RAM.vhd" in Library work.
+Architecture vga_buffer_ram_a of Entity vga_buffer_ram is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/keyboard_controller.vhd" in Library work.
+Architecture structural of Entity keyboard_controller is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/cursor.vhd" in Library work.
+Architecture behavioral of Entity cursor is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/vga_toplevel.vhd" in Library work.
+Architecture structural of Entity vga_toplevel is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <VGA_TOPLEVEL> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <CLK_25MHZ> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <vga_controller> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <RGB> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MUX8to1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <FONT_ROM> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <BLINKER> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <KEYBOARD_CONTROLLER> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <CURSOR> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <PS2_DRIVER> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <KEYCODE_TO_ASCII> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <WE_ASCII> in library <work> (architecture <dataflow>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <VGA_TOPLEVEL> in library <work> (Architecture <structural>).
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/vga_toplevel.vhd" line 101: Instantiating black box module <VGA_BUFFER_RAM>.
+Entity <VGA_TOPLEVEL> analyzed. Unit <VGA_TOPLEVEL> generated.
+
+Analyzing Entity <CLK_25MHZ> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/clk25MHz.vhd" line 56: Unconnected output port 'CLK0' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/clk25MHz.vhd" line 56: Unconnected output port 'CLK180' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/clk25MHz.vhd" line 56: Unconnected output port 'CLK270' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/clk25MHz.vhd" line 56: Unconnected output port 'CLK90' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/clk25MHz.vhd" line 56: Unconnected output port 'LOCKED' of component 'CLKDLL'.
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/clk25MHz.vhd" line 56: Instantiating black box module <CLKDLL>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <CLKDLL_inst> in unit <CLK_25MHZ>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <CLKDLL_inst> in unit <CLK_25MHZ>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <CLKDLL_inst> in unit <CLK_25MHZ>.
+Entity <CLK_25MHZ> analyzed. Unit <CLK_25MHZ> generated.
+
+Analyzing Entity <vga_controller> in library <work> (Architecture <Behavioral>).
+Entity <vga_controller> analyzed. Unit <vga_controller> generated.
+
+Analyzing Entity <RGB> in library <work> (Architecture <Behavioral>).
+Entity <RGB> analyzed. Unit <RGB> generated.
+
+Analyzing Entity <MUX8to1> in library <work> (Architecture <Behavioral>).
+Entity <MUX8to1> analyzed. Unit <MUX8to1> generated.
+
+Analyzing Entity <FONT_ROM> in library <work> (Architecture <arch>).
+Entity <FONT_ROM> analyzed. Unit <FONT_ROM> generated.
+
+Analyzing Entity <BLINKER> in library <work> (Architecture <Behavioral>).
+Entity <BLINKER> analyzed. Unit <BLINKER> generated.
+
+Analyzing Entity <KEYBOARD_CONTROLLER> in library <work> (Architecture <Structural>).
+Entity <KEYBOARD_CONTROLLER> analyzed. Unit <KEYBOARD_CONTROLLER> generated.
+
+Analyzing Entity <PS2_DRIVER> in library <work> (Architecture <Behavioral>).
+INFO:Xst:2679 - Register <PS2_CLK> in unit <PS2_DRIVER> has a constant value of Z during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <PS2_DATA> in unit <PS2_DRIVER> has a constant value of Z during circuit operation. The register is replaced by logic.
+Entity <PS2_DRIVER> analyzed. Unit <PS2_DRIVER> generated.
+
+Analyzing Entity <KEYCODE_TO_ASCII> in library <work> (Architecture <dataflow>).
+Entity <KEYCODE_TO_ASCII> analyzed. Unit <KEYCODE_TO_ASCII> generated.
+
+Analyzing Entity <WE_ASCII> in library <work> (Architecture <dataflow>).
+Entity <WE_ASCII> analyzed. Unit <WE_ASCII> generated.
+
+Analyzing Entity <CURSOR> in library <work> (Architecture <Behavioral>).
+Entity <CURSOR> analyzed. Unit <CURSOR> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2561 - Always blocking tristate driving signal <PS2_CLK> in unit <PS2_DRIVER> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <PS2_DATA> in unit <PS2_DRIVER> is removed.
+
+Synthesizing Unit <vga_controller>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/vga_controller.vhd".
+    Found 1-bit register for signal <HS>.
+    Found 1-bit register for signal <VS>.
+    Found 1-bit register for signal <BLANK>.
+    Found 10-bit up counter for signal <hcounter>.
+    Found 10-bit comparator greatequal for signal <HS$cmp_ge0000> created at line 100.
+    Found 10-bit comparator less for signal <HS$cmp_lt0000> created at line 100.
+    Found 10-bit up counter for signal <vcounter>.
+    Found 10-bit comparator less for signal <video_enable$cmp_lt0000> created at line 64.
+    Found 10-bit comparator less for signal <video_enable$cmp_lt0001> created at line 64.
+    Found 10-bit comparator greatequal for signal <VS$cmp_ge0000> created at line 112.
+    Found 10-bit comparator less for signal <VS$cmp_lt0000> created at line 112.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vga_controller> synthesized.
+
+
+Synthesizing Unit <RGB>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/rgb.vhd".
+WARNING:Xst:1780 - Signal <enb> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <RGB> synthesized.
+
+
+Synthesizing Unit <MUX8to1>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/mux8to1.vhd".
+    Found 1-bit 8-to-1 multiplexer for signal <OUTPUT>.
+    Found 3-bit subtractor for signal <SEL1>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <MUX8to1> synthesized.
+
+
+Synthesizing Unit <FONT_ROM>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/font_rom_ascii.vhd".
+    Found 2048x8-bit ROM for signal <DATA$rom0000> created at line 2230.
+    Found 11-bit register for signal <addr_reg>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  11 D-type flip-flop(s).
+Unit <FONT_ROM> synthesized.
+
+
+Synthesizing Unit <BLINKER>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/blinker.vhd".
+    Found 32-bit up counter for signal <count>.
+    Found 32-bit adder for signal <count$add0000> created at line 44.
+    Found 8-bit register for signal <out1>.
+    Found 12-bit comparator equal for signal <sel$cmp_eq0000> created at line 38.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <BLINKER> synthesized.
+
+
+Synthesizing Unit <CURSOR>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/cursor.vhd".
+    Found 4x32-bit ROM for signal <cursor_adr$mux0005>.
+    Found 32-bit register for signal <cursor_adr>.
+    Found 32-bit subtractor for signal <cursor_adr$addsub0000> created at line 78.
+    Found 32-bit comparator greater for signal <cursor_adr$cmp_gt0000> created at line 61.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0000> created at line 79.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0001> created at line 45.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0002> created at line 84.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0003> created at line 85.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0004> created at line 87.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0005> created at line 89.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0006> created at line 91.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0007> created at line 93.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0008> created at line 95.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0009> created at line 97.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0010> created at line 99.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0011> created at line 101.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0012> created at line 103.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0013> created at line 105.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0014> created at line 107.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0015> created at line 109.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0016> created at line 111.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0017> created at line 113.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0018> created at line 115.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0019> created at line 119.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0020> created at line 121.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0021> created at line 123.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0022> created at line 125.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0023> created at line 127.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0024> created at line 129.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0025> created at line 131.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0026> created at line 133.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0027> created at line 135.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0028> created at line 137.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0029> created at line 139.
+    Found 32-bit comparator less for signal <cursor_adr$cmp_lt0030> created at line 141.
+    Found 32-bit 4-to-1 multiplexer for signal <cursor_adr$mux0004>.
+    Found 32-bit addsub for signal <cursor_adr$share0000>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  32 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <CURSOR> synthesized.
+
+
+Synthesizing Unit <PS2_DRIVER>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/ps2_driver.vhd".
+WARNING:Xst:646 - Signal <ps2_data_h> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ps2_clk_h> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 256x1-bit ROM for signal <tx_parity$rom0000> created at line 183.
+    Found 256x1-bit ROM for signal <rx_parity$rom0000> created at line 182.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 17                                             |
+    | Transitions        | 39                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 18                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <RX_DATA>.
+    Found 1-bit register for signal <ER>.
+    Found 1-bit register for signal <RD>.
+    Found 4-bit up counter for signal <bit_count>.
+    Found 4-bit up counter for signal <clk_count>.
+    Found 1-bit register for signal <clk_inter>.
+    Found 1-bit xor2 for signal <clk_inter$xor0000> created at line 149.
+    Found 4-bit up counter for signal <data_count>.
+    Found 1-bit register for signal <data_inter>.
+    Found 1-bit xor2 for signal <data_inter$xor0000> created at line 163.
+    Found 13-bit up counter for signal <delay_100us_count>.
+    Found 1-bit register for signal <delay_100us_done>.
+    Found 10-bit up counter for signal <delay_20us_count>.
+    Found 1-bit register for signal <delay_20us_done>.
+    Found 5-bit up counter for signal <delay_31CLK_count>.
+    Found 1-bit register for signal <delay_31clk_done>.
+    Found 10-bit register for signal <frame<10:1>>.
+    Found 1-bit register for signal <load_rx_data>.
+    Found 1-bit xor2 for signal <load_rx_data$xor0000> created at line 337.
+    Found 1-bit register for signal <load_tx_data>.
+    Found 1-bit register for signal <ps2_clk_clean>.
+    Found 1-bit register for signal <ps2_clk_sync>.
+    Found 1-bit register for signal <ps2_data_clean>.
+    Found 1-bit register for signal <ps2_data_sync>.
+    Found 1-bit register for signal <rx_parity>.
+    Found 1-bit register for signal <tx_parity>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 ROM(s).
+	inferred   6 Counter(s).
+	inferred  33 D-type flip-flop(s).
+Unit <PS2_DRIVER> synthesized.
+
+
+Synthesizing Unit <KEYCODE_TO_ASCII>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/keycode_to_ascii.vhd".
+WARNING:Xst:646 - Signal <Extended<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1799 - State read_breakcode is never reached in FSM <STATE>.
+    Found finite state machine <FSM_1> for signal <STATE>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (falling_edge)       |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <ASCII>.
+    Found 1-bit register for signal <COMPLETE>.
+    Found 1-bit register for signal <Caps_Lock<0>>.
+    Found 1-bit register for signal <Shift_Key<0>>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  11 D-type flip-flop(s).
+Unit <KEYCODE_TO_ASCII> synthesized.
+
+
+Synthesizing Unit <WE_ASCII>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/we_ascii.vhd".
+    Found 32x1-bit ROM for signal <ASCII_WE$mux0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <WE_ASCII> synthesized.
+
+
+Synthesizing Unit <CLK_25MHZ>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/clk25MHz.vhd".
+Unit <CLK_25MHZ> synthesized.
+
+
+Synthesizing Unit <KEYBOARD_CONTROLLER>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/keyboard_controller.vhd".
+WARNING:Xst:653 - Signal <WR> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <TX_DATA> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:646 - Signal <ER> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <BS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <KEYBOARD_CONTROLLER> synthesized.
+
+
+Synthesizing Unit <VGA_TOPLEVEL>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/vga_toplevel.vhd".
+WARNING:Xst:646 - Signal <vcount<9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <DOUT_B<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ADDR_C<12>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 13-bit adder for signal <ADDR_C>.
+    Found 5x8-bit multiplier for signal <ADDR_C$mult0000> created at line 59.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <VGA_TOPLEVEL> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 5
+ 2048x8-bit ROM                                        : 1
+ 256x1-bit ROM                                         : 2
+ 32x1-bit ROM                                          : 1
+ 4x32-bit ROM                                          : 1
+# Multipliers                                          : 1
+ 5x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 5
+ 13-bit adder                                          : 1
+ 3-bit subtractor                                      : 1
+ 32-bit adder                                          : 1
+ 32-bit addsub                                         : 1
+ 32-bit subtractor                                     : 1
+# Counters                                             : 9
+ 10-bit up counter                                     : 3
+ 13-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 3
+ 5-bit up counter                                      : 1
+# Registers                                            : 36
+ 1-bit register                                        : 31
+ 11-bit register                                       : 1
+ 32-bit register                                       : 1
+ 8-bit register                                        : 3
+# Comparators                                          : 39
+ 10-bit comparator greatequal                          : 2
+ 10-bit comparator less                                : 4
+ 12-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 1
+ 32-bit comparator less                                : 31
+# Multiplexers                                         : 2
+ 1-bit 8-to-1 multiplexer                              : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <U8/U2/STATE/FSM> on signal <STATE[1:3]> with sequential encoding.
+----------------------------
+ State          | Encoding
+----------------------------
+ init           | 000
+ idle           | 011
+ read_breakcode | unreached
+ read_extended  | 001
+ read_keycode   | 010
+ send_complete  | 100
+----------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <U8/U1/state/FSM> on signal <state[1:17]> with one-hot encoding.
+-------------------------------------------------
+ State                      | Encoding
+-------------------------------------------------
+ idle                       | 00000000000000001
+ rx_clk_h                   | 00000000000100000
+ rx_down_edge               | 00000000000000010
+ rx_clk_l                   | 00000000001000000
+ rx_error_parity            | 00000000000001000
+ rx_data_ready              | 00000000000010000
+ tx_force_clk_l             | 00000000000000100
+ tx_bring_data_down         | 00000000010000000
+ tx_release_clk             | 00000000100000000
+ tx_first_wait_down_edge    | 00000001000000000
+ tx_clk_l                   | 00000010000000000
+ tx_wait_up_edge            | 00000100000000000
+ tx_clk_h                   | 00010000000000000
+ tx_wait_up_edge_before_ack | 00001000000000000
+ tx_wait_ack                | 00100000000000000
+ tx_received_ack            | 01000000000000000
+ tx_error_no_ack            | 10000000000000000
+-------------------------------------------------
+Reading core <ipcore_dir/VGA_BUFFER_RAM.ngc>.
+Loading core <VGA_BUFFER_RAM> for timing and area information for instance <U7>.
+WARNING:Xst:1293 - FF/Latch <FFd8> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd9> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd10> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd15> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <load_tx_data> has a constant value of 0 in block <U1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <delay_31clk_done> is unconnected in block <U1>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <delay_20us_done> is unconnected in block <U1>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <delay_100us_done> is unconnected in block <U1>.
+WARNING:Xst:2677 - Node <tx_parity> of sequential type is unconnected in block <U1>.
+
+Synthesizing (advanced) Unit <FONT_ROM>.
+INFO:Xst:3044 - The ROM <Mrom_DATA_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <addr_reg>.
+INFO:Xst:3225 - The RAM <Mrom_DATA_rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <ADDR>          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <DATA>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <FONT_ROM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <PS2_DRIVER>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_rx_parity_rom0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_tx_parity_rom0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <PS2_DRIVER> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# RAMs                                                 : 1
+ 2048x8-bit single-port block RAM                      : 1
+# ROMs                                                 : 4
+ 256x1-bit ROM                                         : 2
+ 32x1-bit ROM                                          : 1
+ 4x32-bit ROM                                          : 1
+# Multipliers                                          : 1
+ 5x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 5
+ 12-bit adder                                          : 1
+ 3-bit subtractor                                      : 1
+ 32-bit adder                                          : 1
+ 32-bit addsub                                         : 1
+ 32-bit subtractor                                     : 1
+# Counters                                             : 9
+ 10-bit up counter                                     : 3
+ 13-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 3
+ 5-bit up counter                                      : 1
+# Registers                                            : 87
+ Flip-Flops                                            : 87
+# Comparators                                          : 39
+ 10-bit comparator greatequal                          : 2
+ 10-bit comparator less                                : 4
+ 12-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 1
+ 32-bit comparator less                                : 31
+# Multiplexers                                         : 2
+ 1-bit 8-to-1 multiplexer                              : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch tx_parity hinder the constant cleaning in the block PS2_DRIVER.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <state_FSM_FFd8> has a constant value of 0 in block <PS2_DRIVER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd9> has a constant value of 0 in block <PS2_DRIVER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd10> has a constant value of 0 in block <PS2_DRIVER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd15> has a constant value of 0 in block <PS2_DRIVER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <load_tx_data> has a constant value of 0 in block <PS2_DRIVER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <delay_31clk_done> is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <delay_20us_done> is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <delay_100us_done> is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <tx_parity> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_31CLK_count_0> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_31CLK_count_1> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_31CLK_count_2> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_31CLK_count_3> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_31CLK_count_4> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_0> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_1> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_2> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_3> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_4> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_5> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_6> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_7> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_8> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_9> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_0> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_1> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_2> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_3> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_4> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_5> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_6> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_7> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_8> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_9> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_10> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_11> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_12> of sequential type is unconnected in block <PS2_DRIVER>.
+
+Optimizing unit <VGA_TOPLEVEL> ...
+
+Optimizing unit <vga_controller> ...
+
+Optimizing unit <BLINKER> ...
+
+Optimizing unit <CURSOR> ...
+
+Optimizing unit <PS2_DRIVER> ...
+
+Optimizing unit <KEYCODE_TO_ASCII> ...
+WARNING:Xst:2677 - Node <U8/U1/ER> of sequential type is unconnected in block <VGA_TOPLEVEL>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block VGA_TOPLEVEL, actual ratio is 13.
+FlipFlop U8/U1/RX_DATA_0 has been replicated 2 time(s)
+FlipFlop U8/U1/RX_DATA_1 has been replicated 1 time(s)
+FlipFlop U8/U1/RX_DATA_2 has been replicated 1 time(s)
+FlipFlop U8/U1/RX_DATA_3 has been replicated 1 time(s)
+FlipFlop U8/U1/RX_DATA_4 has been replicated 1 time(s)
+FlipFlop U8/U1/RX_DATA_5 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 169
+ Flip-Flops                                            : 169
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : VGA_TOPLEVEL.ngr
+Top Level Output File Name         : VGA_TOPLEVEL
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 1791
+#      GND                         : 2
+#      INV                         : 104
+#      LUT1                        : 125
+#      LUT2                        : 94
+#      LUT2_D                      : 13
+#      LUT2_L                      : 7
+#      LUT3                        : 138
+#      LUT3_D                      : 3
+#      LUT3_L                      : 11
+#      LUT4                        : 498
+#      LUT4_D                      : 8
+#      LUT4_L                      : 76
+#      MUXCY                       : 513
+#      MUXF5                       : 36
+#      MUXF6                       : 1
+#      VCC                         : 2
+#      XORCY                       : 160
+# FlipFlops/Latches                : 169
+#      FD                          : 3
+#      FDC                         : 12
+#      FDC_1                       : 3
+#      FDE                         : 71
+#      FDE_1                       : 11
+#      FDP                         : 1
+#      FDR                         : 33
+#      FDRE                        : 22
+#      FDRS                        : 12
+#      FDSE                        : 1
+# RAMS                             : 3
+#      RAMB16_S4_S4                : 2
+#      RAMB16_S9                   : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 22
+#      IBUF                        : 3
+#      IBUFG                       : 1
+#      OBUF                        : 18
+# DLLs                             : 1
+#      CLKDLL                      : 1
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      564  out of   4656    12%  
+ Number of Slice Flip Flops:            169  out of   9312     1%  
+ Number of 4 input LUTs:               1077  out of   9312    11%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    232     9%  
+ Number of BRAMs:                         3  out of     20    15%  
+ Number of MULT18X18SIOs:                 1  out of     20     5%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+U8/U2/COMPLETE1                    | BUFG                   | 34    |
+CLK                                | IBUFG+BUFG             | 117   |
+CLK                                | U1/CLKDLL_inst:CLKDV   | 23    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RST                                | IBUF                   | 16    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 15.264ns (Maximum Frequency: 65.513MHz)
+   Minimum input arrival time before clock: 5.328ns
+   Maximum output required time after clock: 19.599ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U8/U2/COMPLETE1'
+  Clock period: 14.141ns (frequency: 70.714MHz)
+  Total number of paths / destination ports: 37830 / 88
+-------------------------------------------------------------------------
+Delay:               14.141ns (Levels of Logic = 19)
+  Source:            U9/cursor_adr_0 (FF)
+  Destination:       U9/cursor_adr_31 (FF)
+  Source Clock:      U8/U2/COMPLETE1 rising
+  Destination Clock: U8/U2/COMPLETE1 rising
+
+  Data Path: U9/cursor_adr_0 to U9/cursor_adr_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             36   0.591   1.438  U9/cursor_adr_0 (U9/cursor_adr_0)
+     LUT4:I0->O            1   0.704   0.000  U9/Mcompar_cursor_adr_cmp_lt0000_lut<0>1 (U9/Mcompar_cursor_adr_cmp_lt0000_lut<0>1)
+     MUXCY:S->O            1   0.464   0.000  U9/Mcompar_cursor_adr_cmp_lt0000_cy<0>_0 (U9/Mcompar_cursor_adr_cmp_lt0000_cy<0>1)
+     MUXCY:CI->O           1   0.059   0.000  U9/Mcompar_cursor_adr_cmp_lt0000_cy<1>_0 (U9/Mcompar_cursor_adr_cmp_lt0000_cy<1>1)
+     MUXCY:CI->O           1   0.059   0.000  U9/Mcompar_cursor_adr_cmp_lt0000_cy<2>_0 (U9/Mcompar_cursor_adr_cmp_lt0000_cy<2>1)
+     MUXCY:CI->O           1   0.059   0.000  U9/Mcompar_cursor_adr_cmp_lt0000_cy<3>_0 (U9/Mcompar_cursor_adr_cmp_lt0000_cy<3>1)
+     MUXCY:CI->O           1   0.059   0.000  U9/Mcompar_cursor_adr_cmp_lt0000_cy<4>_0 (U9/Mcompar_cursor_adr_cmp_lt0000_cy<4>1)
+     MUXCY:CI->O           1   0.059   0.000  U9/Mcompar_cursor_adr_cmp_lt0000_cy<5>_0 (U9/Mcompar_cursor_adr_cmp_lt0000_cy<5>1)
+     MUXCY:CI->O           1   0.059   0.000  U9/Mcompar_cursor_adr_cmp_lt0000_cy<6>_0 (U9/Mcompar_cursor_adr_cmp_lt0000_cy<6>1)
+     MUXCY:CI->O           1   0.059   0.000  U9/Mcompar_cursor_adr_cmp_lt0000_cy<7>_0 (U9/Mcompar_cursor_adr_cmp_lt0000_cy<7>1)
+     MUXCY:CI->O           1   0.059   0.000  U9/Mcompar_cursor_adr_cmp_lt0000_cy<8>_0 (U9/Mcompar_cursor_adr_cmp_lt0000_cy<8>1)
+     MUXCY:CI->O           9   0.459   0.824  U9/Mcompar_cursor_adr_cmp_lt0000_cy<9>_0 (U9/Mcompar_cursor_adr_cmp_lt0000_cy<9>1)
+     LUT4:I3->O            1   0.704   0.455  U9/cursor_adr_mux0007<26>32 (U9/cursor_adr_mux0007<26>32)
+     LUT4:I2->O            1   0.704   0.424  U9/cursor_adr_mux0007<26>343_SW0 (N284)
+     LUT4:I3->O            2   0.704   0.451  U9/cursor_adr_mux0007<26>343 (U9/N40)
+     LUT4_D:I3->LO         1   0.704   0.104  U9/cursor_adr_mux0007<20>3 (N401)
+     LUT4:I3->O           24   0.704   1.256  U9/Mmux_cursor_adr_mux0004101 (U9/N01)
+     LUT4:I3->O            1   0.704   0.424  U9/Mmux_cursor_adr_mux0004810_SW0 (N290)
+     LUT4_L:I3->LO         1   0.704   0.135  U9/Mmux_cursor_adr_mux0004810 (U9/Mmux_cursor_adr_mux0004810)
+     LUT3:I2->O            1   0.704   0.000  U9/Mmux_cursor_adr_mux0004812 (U9/cursor_adr_mux0004<12>)
+     FDE:D                     0.308          U9/cursor_adr_12
+    ----------------------------------------
+    Total                     14.141ns (8.630ns logic, 5.511ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 15.264ns (frequency: 65.513MHz)
+  Total number of paths / destination ports: 56252 / 307
+-------------------------------------------------------------------------
+Delay:               7.632ns (Levels of Logic = 5)
+  Source:            U8/U1/RX_DATA_6 (FF)
+  Destination:       U8/U2/ASCII_6 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK falling
+
+  Data Path: U8/U1/RX_DATA_6 to U8/U2/ASCII_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             41   0.591   1.269  U8/U1/RX_DATA_6 (U8/U1/RX_DATA_6)
+     LUT4_D:I3->LO         1   0.704   0.104  U8/U2/ASCII_cmp_eq0000_SW1 (N395)
+     LUT4:I3->O           10   0.704   0.961  U8/U2/ASCII_cmp_eq0000 (U8/U2/ASCII_cmp_eq0000)
+     LUT2:I1->O            1   0.704   0.455  U8/U2/ASCII_mux0002<7>31 (U8/U2/N52)
+     LUT4:I2->O            1   0.704   0.424  U8/U2/ASCII_mux0002<1>4_SW0_SW0 (N152)
+     LUT4:I3->O            1   0.704   0.000  U8/U2/ASCII_mux0002<1>335 (U8/U2/ASCII_mux0002<1>)
+     FDE_1:D                   0.308          U8/U2/ASCII_6
+    ----------------------------------------
+    Total                      7.632ns (4.419ns logic, 3.213ns route)
+                                       (57.9% logic, 42.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 57 / 47
+-------------------------------------------------------------------------
+Offset:              5.328ns (Levels of Logic = 3)
+  Source:            RST (PAD)
+  Destination:       U8/U2/Caps_Lock_0 (FF)
+  Destination Clock: CLK falling
+
+  Data Path: RST to U8/U2/Caps_Lock_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   1.218   1.132  RST_IBUF (RST_IBUF)
+     LUT4:I3->O            1   0.704   0.595  U8/U2/Caps_Lock_0_and0000_SW0 (N20)
+     LUT4:I0->O            1   0.704   0.420  U8/U2/Caps_Lock_0_and0000 (U8/U2/Caps_Lock_0_and0000)
+     FDE_1:CE                  0.555          U8/U2/Caps_Lock_0
+    ----------------------------------------
+    Total                      5.328ns (3.181ns logic, 2.147ns route)
+                                       (59.7% logic, 40.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 33682 / 18
+-------------------------------------------------------------------------
+Offset:              19.599ns (Levels of Logic = 12)
+  Source:            U2/vcounter_7 (FF)
+  Destination:       VGAGRN<2> (PAD)
+  Source Clock:      CLK rising 0.5X
+
+  Data Path: U2/vcounter_7 to VGAGRN<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             5   0.591   0.633  U2/vcounter_7 (U2/vcounter_7)
+     MULT18X18SIO:A3->P9    1   4.525   0.595  Mmult_ADDR_C_mult0000 (ADDR_C_mult0000<9>)
+     LUT1:I0->O            1   0.704   0.000  Madd_ADDR_C_Madd_cy<9>_rt (Madd_ADDR_C_Madd_cy<9>_rt)
+     MUXCY:S->O            1   0.464   0.000  Madd_ADDR_C_Madd_cy<9> (Madd_ADDR_C_Madd_cy<9>)
+     XORCY:CI->O           3   0.804   0.706  Madd_ADDR_C_Madd_xor<10> (ADDR_C<10>)
+     LUT4:I0->O            1   0.704   0.000  U6/Mcompar_sel_cmp_eq0000_lut<5> (U6/Mcompar_sel_cmp_eq0000_lut<5>)
+     MUXCY:S->O            8   0.864   0.932  U6/Mcompar_sel_cmp_eq0000_cy<5> (U6/Mcompar_sel_cmp_eq0000_cy<5>)
+     LUT3:I0->O            1   0.704   0.499  U6/OUTPUT<7>1 (BLINKER_OUTPUT<7>)
+     LUT3:I1->O            1   0.704   0.000  U4/Mmux_OUTPUT_6 (U4/Mmux_OUTPUT_6)
+     MUXF5:I0->O           1   0.321   0.000  U4/Mmux_OUTPUT_4_f5 (U4/Mmux_OUTPUT_4_f5)
+     MUXF6:I0->O           1   0.521   0.595  U4/Mmux_OUTPUT_2_f6 (MUX8to1_OUT)
+     LUT2:I0->O            8   0.704   0.757  U3/BLU<1>1 (VGABLU_0_OBUF)
+     OBUF:I->O                 3.272          VGAGRN_2_OBUF (VGAGRN<2>)
+    ----------------------------------------
+    Total                     19.599ns (14.882ns logic, 4.717ns route)
+                                       (75.9% logic, 24.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U8/U2/COMPLETE1'
+  Total number of paths / destination ports: 768 / 8
+-------------------------------------------------------------------------
+Offset:              12.805ns (Levels of Logic = 13)
+  Source:            U9/cursor_adr_0 (FF)
+  Destination:       VGAGRN<2> (PAD)
+  Source Clock:      U8/U2/COMPLETE1 rising
+
+  Data Path: U9/cursor_adr_0 to VGAGRN<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             36   0.591   1.342  U9/cursor_adr_0 (U9/cursor_adr_0)
+     LUT4:I1->O            1   0.704   0.000  U6/Mcompar_sel_cmp_eq0000_lut<0> (U6/Mcompar_sel_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  U6/Mcompar_sel_cmp_eq0000_cy<0> (U6/Mcompar_sel_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  U6/Mcompar_sel_cmp_eq0000_cy<1> (U6/Mcompar_sel_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  U6/Mcompar_sel_cmp_eq0000_cy<2> (U6/Mcompar_sel_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  U6/Mcompar_sel_cmp_eq0000_cy<3> (U6/Mcompar_sel_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  U6/Mcompar_sel_cmp_eq0000_cy<4> (U6/Mcompar_sel_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           8   0.459   0.932  U6/Mcompar_sel_cmp_eq0000_cy<5> (U6/Mcompar_sel_cmp_eq0000_cy<5>)
+     LUT3:I0->O            1   0.704   0.499  U6/OUTPUT<7>1 (BLINKER_OUTPUT<7>)
+     LUT3:I1->O            1   0.704   0.000  U4/Mmux_OUTPUT_6 (U4/Mmux_OUTPUT_6)
+     MUXF5:I0->O           1   0.321   0.000  U4/Mmux_OUTPUT_4_f5 (U4/Mmux_OUTPUT_4_f5)
+     MUXF6:I0->O           1   0.521   0.595  U4/Mmux_OUTPUT_2_f6 (MUX8to1_OUT)
+     LUT2:I0->O            8   0.704   0.757  U3/BLU<1>1 (VGABLU_0_OBUF)
+     OBUF:I->O                 3.272          VGAGRN_2_OBUF (VGAGRN<2>)
+    ----------------------------------------
+    Total                     12.805ns (8.680ns logic, 4.125ns route)
+                                       (67.8% logic, 32.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 16.73 secs
+ 
+--> 
+
+
+Total memory usage is 558848 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   66 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

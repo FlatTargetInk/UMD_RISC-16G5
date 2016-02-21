@@ -1,0 +1,5 @@
+vhdl isim_temp "we_ascii.vhd"
+vhdl isim_temp "ps2_driver.vhd"
+vhdl isim_temp "keycode_to_ascii.vhd"
+vhdl isim_temp "keyboard_controller.vhd"
+vhdl isim_temp "keyboard_controller_tb.vhd"

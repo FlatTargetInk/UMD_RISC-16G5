@@ -1,0 +1,619 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: KEYBOARD_CONTROLLER.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "KEYBOARD_CONTROLLER.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "KEYBOARD_CONTROLLER"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : KEYBOARD_CONTROLLER
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/ps2_driver.vhd" in Library work.
+Entity <PS2_DRIVER> compiled.
+Entity <PS2_DRIVER> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/keycode_to_ascii.vhd" in Library work.
+Entity <KEYCODE_TO_ASCII> compiled.
+Entity <KEYCODE_TO_ASCII> (Architecture <dataflow>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/we_ascii.vhd" in Library work.
+Entity <WE_ASCII> compiled.
+Entity <WE_ASCII> (Architecture <dataflow>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/keyboard_controller.vhd" in Library work.
+Entity <KEYBOARD_CONTROLLER> compiled.
+Entity <KEYBOARD_CONTROLLER> (Architecture <Structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <KEYBOARD_CONTROLLER> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <PS2_DRIVER> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <KEYCODE_TO_ASCII> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <WE_ASCII> in library <work> (architecture <dataflow>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <KEYBOARD_CONTROLLER> in library <work> (Architecture <Structural>).
+Entity <KEYBOARD_CONTROLLER> analyzed. Unit <KEYBOARD_CONTROLLER> generated.
+
+Analyzing Entity <PS2_DRIVER> in library <work> (Architecture <Behavioral>).
+INFO:Xst:2679 - Register <PS2_CLK> in unit <PS2_DRIVER> has a constant value of Z during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <PS2_DATA> in unit <PS2_DRIVER> has a constant value of Z during circuit operation. The register is replaced by logic.
+Entity <PS2_DRIVER> analyzed. Unit <PS2_DRIVER> generated.
+
+Analyzing Entity <KEYCODE_TO_ASCII> in library <work> (Architecture <dataflow>).
+Entity <KEYCODE_TO_ASCII> analyzed. Unit <KEYCODE_TO_ASCII> generated.
+
+Analyzing Entity <WE_ASCII> in library <work> (Architecture <dataflow>).
+Entity <WE_ASCII> analyzed. Unit <WE_ASCII> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2561 - Always blocking tristate driving signal <PS2_CLK> in unit <PS2_DRIVER> is removed.
+INFO:Xst:2561 - Always blocking tristate driving signal <PS2_DATA> in unit <PS2_DRIVER> is removed.
+
+Synthesizing Unit <PS2_DRIVER>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/ps2_driver.vhd".
+WARNING:Xst:646 - Signal <ps2_data_h> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ps2_clk_h> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 256x1-bit ROM for signal <tx_parity$rom0000> created at line 183.
+    Found 256x1-bit ROM for signal <rx_parity$rom0000> created at line 182.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 17                                             |
+    | Transitions        | 39                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 18                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <RX_DATA>.
+    Found 1-bit register for signal <ER>.
+    Found 1-bit register for signal <RD>.
+    Found 4-bit up counter for signal <bit_count>.
+    Found 4-bit up counter for signal <clk_count>.
+    Found 1-bit register for signal <clk_inter>.
+    Found 1-bit xor2 for signal <clk_inter$xor0000> created at line 149.
+    Found 4-bit up counter for signal <data_count>.
+    Found 1-bit register for signal <data_inter>.
+    Found 1-bit xor2 for signal <data_inter$xor0000> created at line 163.
+    Found 13-bit up counter for signal <delay_100us_count>.
+    Found 1-bit register for signal <delay_100us_done>.
+    Found 10-bit up counter for signal <delay_20us_count>.
+    Found 1-bit register for signal <delay_20us_done>.
+    Found 5-bit up counter for signal <delay_31CLK_count>.
+    Found 1-bit register for signal <delay_31clk_done>.
+    Found 10-bit register for signal <frame<10:1>>.
+    Found 1-bit register for signal <load_rx_data>.
+    Found 1-bit xor2 for signal <load_rx_data$xor0000> created at line 337.
+    Found 1-bit register for signal <load_tx_data>.
+    Found 1-bit register for signal <ps2_clk_clean>.
+    Found 1-bit register for signal <ps2_clk_sync>.
+    Found 1-bit register for signal <ps2_data_clean>.
+    Found 1-bit register for signal <ps2_data_sync>.
+    Found 1-bit register for signal <rx_parity>.
+    Found 1-bit register for signal <tx_parity>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 ROM(s).
+	inferred   6 Counter(s).
+	inferred  33 D-type flip-flop(s).
+Unit <PS2_DRIVER> synthesized.
+
+
+Synthesizing Unit <KEYCODE_TO_ASCII>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/keycode_to_ascii.vhd".
+WARNING:Xst:646 - Signal <Extended<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1799 - State read_breakcode is never reached in FSM <STATE>.
+    Found finite state machine <FSM_1> for signal <STATE>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLK                       (falling_edge)       |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <ASCII>.
+    Found 1-bit register for signal <COMPLETE>.
+    Found 1-bit register for signal <Caps_Lock<0>>.
+    Found 1-bit register for signal <Shift_Key<0>>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  11 D-type flip-flop(s).
+Unit <KEYCODE_TO_ASCII> synthesized.
+
+
+Synthesizing Unit <WE_ASCII>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/we_ascii.vhd".
+    Found 32x1-bit ROM for signal <ASCII_WE$mux0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <WE_ASCII> synthesized.
+
+
+Synthesizing Unit <KEYBOARD_CONTROLLER>.
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/keyboard_controller.vhd".
+WARNING:Xst:653 - Signal <WR> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <TX_DATA> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:646 - Signal <ER> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <BS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <KEYBOARD_CONTROLLER> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 256x1-bit ROM                                         : 2
+ 32x1-bit ROM                                          : 1
+# Counters                                             : 6
+ 10-bit up counter                                     : 1
+ 13-bit up counter                                     : 1
+ 4-bit up counter                                      : 3
+ 5-bit up counter                                      : 1
+# Registers                                            : 30
+ 1-bit register                                        : 28
+ 8-bit register                                        : 2
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <U2/STATE/FSM> on signal <STATE[1:3]> with sequential encoding.
+----------------------------
+ State          | Encoding
+----------------------------
+ init           | 000
+ idle           | 011
+ read_breakcode | unreached
+ read_extended  | 001
+ read_keycode   | 010
+ send_complete  | 100
+----------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <U1/state/FSM> on signal <state[1:17]> with one-hot encoding.
+-------------------------------------------------
+ State                      | Encoding
+-------------------------------------------------
+ idle                       | 00000000000000001
+ rx_clk_h                   | 00000000000100000
+ rx_down_edge               | 00000000000000010
+ rx_clk_l                   | 00000000001000000
+ rx_error_parity            | 00000000000001000
+ rx_data_ready              | 00000000000010000
+ tx_force_clk_l             | 00000000000000100
+ tx_bring_data_down         | 00000000010000000
+ tx_release_clk             | 00000000100000000
+ tx_first_wait_down_edge    | 00000001000000000
+ tx_clk_l                   | 00000010000000000
+ tx_wait_up_edge            | 00000100000000000
+ tx_clk_h                   | 00010000000000000
+ tx_wait_up_edge_before_ack | 00001000000000000
+ tx_wait_ack                | 00100000000000000
+ tx_received_ack            | 01000000000000000
+ tx_error_no_ack            | 10000000000000000
+-------------------------------------------------
+WARNING:Xst:1293 - FF/Latch <FFd8> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd9> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd10> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd15> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <load_tx_data> has a constant value of 0 in block <U1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <delay_31clk_done> is unconnected in block <U1>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <delay_20us_done> is unconnected in block <U1>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <delay_100us_done> is unconnected in block <U1>.
+WARNING:Xst:2677 - Node <tx_parity> of sequential type is unconnected in block <U1>.
+
+Synthesizing (advanced) Unit <PS2_DRIVER>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_rx_parity_rom0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_tx_parity_rom0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <PS2_DRIVER> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 3
+ 256x1-bit ROM                                         : 2
+ 32x1-bit ROM                                          : 1
+# Counters                                             : 6
+ 10-bit up counter                                     : 1
+ 13-bit up counter                                     : 1
+ 4-bit up counter                                      : 3
+ 5-bit up counter                                      : 1
+# Registers                                            : 44
+ Flip-Flops                                            : 44
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch tx_parity hinder the constant cleaning in the block PS2_DRIVER.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <state_FSM_FFd8> has a constant value of 0 in block <PS2_DRIVER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd9> has a constant value of 0 in block <PS2_DRIVER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd10> has a constant value of 0 in block <PS2_DRIVER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <state_FSM_FFd15> has a constant value of 0 in block <PS2_DRIVER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <load_tx_data> has a constant value of 0 in block <PS2_DRIVER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <delay_31clk_done> is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <delay_20us_done> is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <delay_100us_done> is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <tx_parity> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_31CLK_count_0> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_31CLK_count_1> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_31CLK_count_2> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_31CLK_count_3> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_31CLK_count_4> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_0> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_1> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_2> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_3> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_4> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_5> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_6> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_7> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_8> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_20us_count_9> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_0> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_1> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_2> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_3> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_4> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_5> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_6> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_7> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_8> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_9> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_10> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_11> of sequential type is unconnected in block <PS2_DRIVER>.
+WARNING:Xst:2677 - Node <delay_100us_count_12> of sequential type is unconnected in block <PS2_DRIVER>.
+
+Optimizing unit <KEYBOARD_CONTROLLER> ...
+
+Optimizing unit <PS2_DRIVER> ...
+
+Optimizing unit <KEYCODE_TO_ASCII> ...
+WARNING:Xst:2677 - Node <U1/ER> of sequential type is unconnected in block <KEYBOARD_CONTROLLER>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block KEYBOARD_CONTROLLER, actual ratio is 3.
+FlipFlop U1/RX_DATA_0 has been replicated 2 time(s)
+FlipFlop U1/RX_DATA_1 has been replicated 2 time(s)
+FlipFlop U1/RX_DATA_2 has been replicated 2 time(s)
+FlipFlop U1/RX_DATA_3 has been replicated 2 time(s)
+FlipFlop U1/RX_DATA_4 has been replicated 2 time(s)
+FlipFlop U1/RX_DATA_5 has been replicated 2 time(s)
+FlipFlop U1/RX_DATA_6 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 80
+ Flip-Flops                                            : 80
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : KEYBOARD_CONTROLLER.ngr
+Top Level Output File Name         : KEYBOARD_CONTROLLER
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 290
+#      GND                         : 1
+#      INV                         : 5
+#      LUT2                        : 18
+#      LUT2_D                      : 9
+#      LUT2_L                      : 2
+#      LUT3                        : 33
+#      LUT3_D                      : 4
+#      LUT3_L                      : 5
+#      LUT4                        : 153
+#      LUT4_D                      : 3
+#      LUT4_L                      : 30
+#      MUXF5                       : 27
+# FlipFlops/Latches                : 80
+#      FD                          : 3
+#      FDC                         : 12
+#      FDC_1                       : 3
+#      FDE                         : 37
+#      FDE_1                       : 11
+#      FDP                         : 1
+#      FDRE                        : 12
+#      FDSE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 3
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      135  out of   4656     2%  
+ Number of Slice Flip Flops:             80  out of   9312     0%  
+ Number of 4 input LUTs:                262  out of   9312     2%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    232     6%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 80    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RST                                | IBUF                   | 16    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 15.190ns (Maximum Frequency: 65.833MHz)
+   Minimum input arrival time before clock: 5.097ns
+   Maximum output required time after clock: 5.749ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 15.190ns (frequency: 65.833MHz)
+  Total number of paths / destination ports: 1395 / 139
+-------------------------------------------------------------------------
+Delay:               7.595ns (Levels of Logic = 6)
+  Source:            U1/RX_DATA_2_1 (FF)
+  Destination:       U2/ASCII_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK falling
+
+  Data Path: U1/RX_DATA_2_1 to U2/ASCII_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.591   0.610  U1/RX_DATA_2_1 (U1/RX_DATA_2_1)
+     LUT4:I1->O            1   0.704   0.455  U2/ASCII_mux0002<7>34_SW0 (N121)
+     LUT4:I2->O            1   0.704   0.424  U2/ASCII_mux0002<7>81_SW0 (N125)
+     LUT4:I3->O            1   0.704   0.424  U2/ASCII_mux0002<7>81 (U2/ASCII_mux0002<7>81)
+     LUT4_L:I3->LO         1   0.704   0.104  U2/ASCII_mux0002<7>92 (U2/ASCII_mux0002<7>92)
+     LUT4:I3->O            1   0.704   0.455  U2/ASCII_mux0002<7>279 (U2/ASCII_mux0002<7>279)
+     LUT4:I2->O            1   0.704   0.000  U2/ASCII_mux0002<7>400 (U2/ASCII_mux0002<7>)
+     FDE_1:D                   0.308          U2/ASCII_0
+    ----------------------------------------
+    Total                      7.595ns (5.123ns logic, 2.472ns route)
+                                       (67.5% logic, 32.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 27 / 27
+-------------------------------------------------------------------------
+Offset:              5.097ns (Levels of Logic = 3)
+  Source:            RST (PAD)
+  Destination:       U2/Caps_Lock_0 (FF)
+  Destination Clock: CLK falling
+
+  Data Path: RST to U2/Caps_Lock_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   1.218   1.072  RST_IBUF (RST_IBUF)
+     LUT4:I3->O            1   0.704   0.424  U2/Caps_Lock_0_and0000_SW0 (N16)
+     LUT4:I3->O            1   0.704   0.420  U2/Caps_Lock_0_and0000 (U2/Caps_Lock_0_and0000)
+     FDE_1:CE                  0.555          U2/Caps_Lock_0
+    ----------------------------------------
+    Total                      5.097ns (3.181ns logic, 1.916ns route)
+                                       (62.4% logic, 37.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 12 / 10
+-------------------------------------------------------------------------
+Offset:              5.749ns (Levels of Logic = 2)
+  Source:            U2/ASCII_5 (FF)
+  Destination:       ASCII_WE (PAD)
+  Source Clock:      CLK falling
+
+  Data Path: U2/ASCII_5 to ASCII_WE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            4   0.591   0.762  U2/ASCII_5 (U2/ASCII_5)
+     LUT3:I0->O            1   0.704   0.420  U3/ASCII_WE1 (ASCII_WE_OBUF)
+     OBUF:I->O                 3.272          ASCII_WE_OBUF (ASCII_WE)
+    ----------------------------------------
+    Total                      5.749ns (4.567ns logic, 1.182ns route)
+                                       (79.4% logic, 20.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.71 secs
+ 
+--> 
+
+
+Total memory usage is 527056 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   55 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+
