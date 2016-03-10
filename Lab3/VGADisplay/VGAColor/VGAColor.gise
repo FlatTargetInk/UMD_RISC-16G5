@@ -45,6 +45,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="VGA_COLOR.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="VGA_COLOR.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="VGA_COLOR.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="VGA_COLOR_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="VGA_COLOR_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="VGA_COLOR_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="VGA_COLOR_map.mrp" xil_pn:subbranch="Map"/>
@@ -102,11 +103,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455917706" xil_pn:in_ck="481079292453037178" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-9109309163495941292" xil_pn:start_ts="1455917697">
+    <transform xil_pn:end_ts="1456493317" xil_pn:in_ck="481079292453037178" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6291032605346648608" xil_pn:start_ts="1456493308">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="VGA_COLOR.lso"/>
@@ -125,20 +125,18 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455917711" xil_pn:in_ck="808995059532076426" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7899855573202949008" xil_pn:start_ts="1455917706">
+    <transform xil_pn:end_ts="1456493322" xil_pn:in_ck="808995059532076426" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7899855573202949008" xil_pn:start_ts="1456493317">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="VGA_COLOR.bld"/>
       <outfile xil_pn:name="VGA_COLOR.ngd"/>
       <outfile xil_pn:name="VGA_COLOR_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1455917716" xil_pn:in_ck="509116831851925291" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1455917711">
+    <transform xil_pn:end_ts="1456493328" xil_pn:in_ck="509116831851925291" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1456493322">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="VGA_COLOR.pcf"/>
@@ -151,10 +149,9 @@
       <outfile xil_pn:name="VGA_COLOR_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1455917729" xil_pn:in_ck="5859755265706645604" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1455917716">
+    <transform xil_pn:end_ts="1456493343" xil_pn:in_ck="5859755265706645604" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1456493328">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="VGA_COLOR.ncd"/>
       <outfile xil_pn:name="VGA_COLOR.pad"/>
       <outfile xil_pn:name="VGA_COLOR.par"/>
@@ -166,11 +163,9 @@
       <outfile xil_pn:name="VGA_COLOR_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1455917738" xil_pn:in_ck="-442905318608026753" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1455917729">
+    <transform xil_pn:end_ts="1456493349" xil_pn:in_ck="-442905318608026753" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1456493343">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="VGA_COLOR.bgn"/>
       <outfile xil_pn:name="VGA_COLOR.bit"/>
       <outfile xil_pn:name="VGA_COLOR.drc"/>
@@ -180,15 +175,13 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1455917807" xil_pn:in_ck="-442905318608039607" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1455917806">
+    <transform xil_pn:end_ts="1456493356" xil_pn:in_ck="-442905318608039607" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1456493354">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1455917729" xil_pn:in_ck="3199554738212771879" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1455917727">
+    <transform xil_pn:end_ts="1456493343" xil_pn:in_ck="3199554738212771879" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1456493340">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="VGA_COLOR.twr"/>
       <outfile xil_pn:name="VGA_COLOR.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

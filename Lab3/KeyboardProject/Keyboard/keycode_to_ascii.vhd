@@ -52,8 +52,8 @@ begin
 			x"63" when x"21",	-- c
 			x"64" when x"23",	-- d
 			x"65" when x"24",	-- e
-			x"66" when x"2B",	-- f
-			x"67" when x"34",	-- g 	-- cganged to 67
+			x"66" when x"2B",	-- f	-- changed from 6C to 66
+			x"67" when x"34",	-- g 
 			x"68" when x"33",	-- h
 			x"69" when x"43",	-- i
 			x"6A" when x"3B",	-- j

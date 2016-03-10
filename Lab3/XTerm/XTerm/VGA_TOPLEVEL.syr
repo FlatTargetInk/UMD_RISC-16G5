@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -908,16 +908,16 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 33682 / 18
 -------------------------------------------------------------------------
 Offset:              19.599ns (Levels of Logic = 12)
-  Source:            U2/vcounter_7 (FF)
+  Source:            U2/vcounter_5 (FF)
   Destination:       VGAGRN<2> (PAD)
   Source Clock:      CLK rising 0.5X
 
-  Data Path: U2/vcounter_7 to VGAGRN<2>
+  Data Path: U2/vcounter_5 to VGAGRN<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             5   0.591   0.633  U2/vcounter_7 (U2/vcounter_7)
-     MULT18X18SIO:A3->P9    1   4.525   0.595  Mmult_ADDR_C_mult0000 (ADDR_C_mult0000<9>)
+     FDRE:C->Q             5   0.591   0.633  U2/vcounter_5 (U2/vcounter_5)
+     MULT18X18SIO:A1->P9    1   4.525   0.595  Mmult_ADDR_C_mult0000 (ADDR_C_mult0000<9>)
      LUT1:I0->O            1   0.704   0.000  Madd_ADDR_C_Madd_cy<9>_rt (Madd_ADDR_C_Madd_cy<9>_rt)
      MUXCY:S->O            1   0.464   0.000  Madd_ADDR_C_Madd_cy<9> (Madd_ADDR_C_Madd_cy<9>)
      XORCY:CI->O           3   0.804   0.706  Madd_ADDR_C_Madd_xor<10> (ADDR_C<10>)
@@ -968,12 +968,12 @@ Offset:              12.805ns (Levels of Logic = 13)
 
 
 Total REAL time to Xst completion: 17.00 secs
-Total CPU time to Xst completion: 16.73 secs
+Total CPU time to Xst completion: 17.41 secs
  
 --> 
 
 
-Total memory usage is 558848 kilobytes
+Total memory usage is 558908 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   66 (   0 filtered)

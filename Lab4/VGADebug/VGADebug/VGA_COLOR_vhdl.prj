@@ -1,0 +1,6 @@
+vhdl work "/home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/clk40MHz.vhd"
+vhdl work "/home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/clk100MHz.vhd"
+vhdl work "/home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/vga_controller.vhd"
+vhdl work "/home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/rgb.vhd"
+vhdl work "/home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/pixel_clk.vhd"
+vhdl work "/home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/vga_color.vhd"

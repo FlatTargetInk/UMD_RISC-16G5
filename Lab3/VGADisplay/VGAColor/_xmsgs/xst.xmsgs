@@ -5,52 +5,52 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK0</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK0</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK180</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK180</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK270</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK270</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK90</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK90</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLKDV</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLKDV</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LOCKED</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LOCKED</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">CLKDLL</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">CLKDLL</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK0</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK0</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK180</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK180</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK270</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK270</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK90</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK90</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LOCKED</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LOCKED</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">CLKDLL</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">CLKDLL</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">enb</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">enb</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">vcount</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">vcount</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">hcount</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">hcount</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 </messages>

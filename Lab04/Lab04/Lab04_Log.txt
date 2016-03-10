@@ -1,0 +1,49 @@
+Lab04 log (3/3/2016):
+
+-Changed width in DEBUG_RAM from 36 to 39
+	-^Errors remained
+-Changed width in DEBUG_RAM from 39 to 8 to match width given in error message
+	-^caused way more errors so reverting back to 39
+	-back to same 3 errors
+-Changed line 61, "signal DEBUG_OUT_DATA : STD_LOGIC_VECTOR(7 downto 0) := (OTHERS => '0');",
+ to, "signal DEBUG_OUT_DATA : STD_LOGIC_VECTOR(38 downto 0) := (OTHERS => '0');",
+	-^Errors still occurring, reverting back to (7 downto 0)
+-Reverted DEBUG_OUT_DATA back to (3 downto 0) and removed last X"20" fro DEBUG_DATA
+	-^no more issues with HEXNUM but still having issues with widths of DEBUG_DATA, DD_ADR, and DEBUG_OUT_DATA
+-Changed width in DEBUG_RAM from 39 to 40
+	-^caused concatenation mismatch, reverting back to 39
+-Line 152: changing "ADDRB => DD_ADR" to "ADDRB => DB_DATA_ADR"
+	-^same problems but different widths. reverting back.
+-Changed the test values back to their original values
+-Uncommented DD_SPACE_MUX (Lines 281-284) and commented out "DD_DATA <= DB_DATA;" (line 280)
+-DEBUG_OUT_DATA is being a dick!!!
+
+Lab04 log (3/4/2016):
+
+-Changed depth of DEBUG_RAM from 16 to 128
+	-Wanted to see if this would resolve width issue with "ADDRB => DD_ADR" on line 152
+	-Resolved "ADDRB => DD_ADR" issue but now width issue with "ADDRA => DEBUG_CNT" on line 149
+-Changed "signal DEBUG_CNT : STD_LOGIC_VECTOR(3 downto 0) := (OTHERS => '0');"
+ to "signal DEBUG_CNT : STD_LOGIC_VECTOR(6 downto 0) := (OTHERS => '0');"
+	-attempting to resolve width issue with "ADDR => DEBUG_CNT" on line 149
+	-Caused errors with size of all the test values. Assuming that the size of the Test values shouldn't be
+	 changed, reverting DEBUG_CNT back to its original values
+-Changed "DEBUG_DATA (39 downto 0)" to "DEBUG_DATA (71 downto 0)" on line 59
+	-No longer any concatenation issues!
+	-Each of the 'X"20"'s concatenated with DEBUG_DATA is 8 bits each so:
+		=>[RA]+[RB]+[OPCODE]+[ALU_OUT]+[CCR] = [8]+[8]+[4]+[8]+[4] = 32 bits
+		=>[RA]+[Space]+[RB]+[Space]+[OPCODE]+[Space]+[ALU_OUT]+[Space]+[CCR]+[Space]=
+			[8]+[8]+[8]+[8]+[4]+[8]+[8]+[8]+[4]+[8] = 72 bits
+	-Reduced to only 2 errors!:
+	Line 149. Width mismatch. Expected width 7, Actual width is 4 for dimension 1 of DEBUG_CNT.
+	Line 153. Width mismatch. Expected width 72, Actual width is 4 for dimension 1 of DEBUG_OUT_DATA.
+-Changed DEBUG_RAM width from 72 to 64
+-Removed 'X"20"'s from DEBUG_DATA
+-Reverted DEBUG_RAM back to original values
+-Commented out Line 111
+	-Characters wouldn't output to screen when BTN(2) was pressed, so reverted
+-Changed 'DD_ADR <= x"F"' to 'DD_ADR <= x"7"' on Line 205
+	-No difference, thus reverted
+
+
+

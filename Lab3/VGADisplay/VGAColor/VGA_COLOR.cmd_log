@@ -4,3 +4,9 @@ map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o VGA_COL
 par -w -intstyle ise -ol high -t 1 VGA_COLOR_map.ncd VGA_COLOR.ncd VGA_COLOR.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml VGA_COLOR.twx VGA_COLOR.ncd -o VGA_COLOR.twr VGA_COLOR.pcf -ucf vga_color.ucf 
 bitgen -intstyle ise -f VGA_COLOR.ut VGA_COLOR.ncd 
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/VGA_COLOR.xst" -ofn "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/VGA_COLOR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_color.ucf -p xc3s500e-fg320-4 VGA_COLOR.ngc VGA_COLOR.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o VGA_COLOR_map.ncd VGA_COLOR.ngd VGA_COLOR.pcf 
+par -w -intstyle ise -ol high -t 1 VGA_COLOR_map.ncd VGA_COLOR.ncd VGA_COLOR.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml VGA_COLOR.twx VGA_COLOR.ncd -o VGA_COLOR.twr VGA_COLOR.pcf -ucf vga_color.ucf 
+bitgen -intstyle ise -f VGA_COLOR.ut VGA_COLOR.ncd 

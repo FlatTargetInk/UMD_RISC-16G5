@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Reading design: VGA_COLOR.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -108,28 +108,22 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk100MHz.vhd" in Library work.
-Entity <CLK_100MHZ> compiled.
-Entity <CLK_100MHZ> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity clk_100mhz is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/clk40MHz.vhd" in Library work.
-Entity <CLK_40MHZ> compiled.
-Entity <CLK_40MHZ> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity clk_40mhz is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/pixel_clk.vhd" in Library work.
-Entity <PIXEL_CLK> compiled.
-Entity <PIXEL_CLK> (Architecture <Structural>) compiled.
+Architecture structural of Entity pixel_clk is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/rgb.vhd" in Library work.
-Entity <RGB> compiled.
-Entity <RGB> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity rgb is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/vga_controller.vhd" in Library work.
-Entity <vga_controller> compiled.
-Entity <vga_controller> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity vga_controller is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab3/VGADisplay/VGAColor/vga_color.vhd" in Library work.
-Entity <VGA_COLOR> compiled.
-Entity <VGA_COLOR> (Architecture <Structural>) compiled.
+Architecture structural of Entity vga_color is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <VGA_COLOR> in library <work> (architecture <Structural>).
+Analyzing hierarchy for entity <VGA_COLOR> in library <work> (architecture <structural>).
 
 Analyzing hierarchy for entity <PIXEL_CLK> in library <work> (architecture <Structural>).
 
@@ -145,7 +139,7 @@ Analyzing hierarchy for entity <CLK_40MHZ> in library <work> (architecture <Beha
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <VGA_COLOR> in library <work> (Architecture <Structural>).
+Analyzing Entity <VGA_COLOR> in library <work> (Architecture <structural>).
 Entity <VGA_COLOR> analyzed. Unit <VGA_COLOR> generated.
 
 Analyzing Entity <PIXEL_CLK> in library <work> (Architecture <Structural>).
@@ -485,13 +479,13 @@ Delay:               6.209ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.09 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 4.99 secs
  
 --> 
 
 
-Total memory usage is 530904 kilobytes
+Total memory usage is 531020 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   16 (   0 filtered)

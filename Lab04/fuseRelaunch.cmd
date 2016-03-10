@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "Z:/ECE 368/Lab04/VGA_TOPLEVEL_tb_vhd_isim_beh.exe" -prj "Z:/ECE 368/Lab04/VGA_TOPLEVEL_tb_vhd_beh.prj" "work.VGA_TOPLEVEL_tb_vhd" 

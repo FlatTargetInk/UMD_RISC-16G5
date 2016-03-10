@@ -1,0 +1,11 @@
+EN pixel_clk NULL /home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/pixel_clk.vhd sub00/vhpl04 1456947297
+AR clk_100mhz behavioral /home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/clk100MHz.vhd sub00/vhpl01 1456947294
+AR clk_40mhz behavioral /home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/clk40MHz.vhd sub00/vhpl03 1456947296
+EN clk_100mhz NULL /home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/clk100MHz.vhd sub00/vhpl00 1456947293
+AR rgb behavioral /home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/rgb.vhd sub00/vhpl07 1456947300
+EN vga_color NULL /home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/vga_color.vhd sub00/vhpl10 1456947303
+AR vga_controller behavioral /home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/vga_controller.vhd sub00/vhpl09 1456947302
+EN clk_40mhz NULL /home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/clk40MHz.vhd sub00/vhpl02 1456947295
+EN vga_controller NULL /home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/vga_controller.vhd sub00/vhpl08 1456947301
+AR pixel_clk structural /home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/pixel_clk.vhd sub00/vhpl05 1456947298
+EN rgb NULL /home/robert/UMD_RISC-16G5/Lab4/VGADebug/VGADebug/rgb.vhd sub00/vhpl06 1456947299

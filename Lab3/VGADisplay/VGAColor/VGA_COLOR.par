@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-mini-FlatTargetInk::  Fri Feb 19 16:35:18 2016
+mini-FlatTargetInk::  Fri Feb 26 08:28:50 2016
 
 par -w -intstyle ise -ol high -t 1 VGA_COLOR_map.ncd VGA_COLOR.ncd
 VGA_COLOR.pcf 
@@ -58,13 +58,13 @@ Total REAL time at the beginning of Placer: 1 secs
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:83577965) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:83577965) REAL time: 2 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:83577965) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:83577965) REAL time: 2 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:83577965) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:83577965) REAL time: 2 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
@@ -79,10 +79,10 @@ Phase 6.36  Local Placement Optimization (Checksum:8defb00) REAL time: 2 secs
 Phase 7.8  Global Placement
 ..
 ..
-Phase 7.8  Global Placement (Checksum:285a840a) REAL time: 3 secs 
+Phase 7.8  Global Placement (Checksum:285a840a) REAL time: 4 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:285a840a) REAL time: 3 secs 
+Phase 8.5  Local Placement Optimization (Checksum:285a840a) REAL time: 4 secs 
 
 Phase 9.18  Placement Optimization
 Phase 9.18  Placement Optimization (Checksum:fe0927e) REAL time: 4 secs 
@@ -111,13 +111,13 @@ Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL 
 
 Updating file: VGA_COLOR.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
-Total REAL time to Router completion: 7 secs 
+Total REAL time to Router completion: 8 secs 
 Total CPU time to Router completion: 7 secs 
 
 Partition Implementation Status
@@ -196,7 +196,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 8 secs 
 Total CPU time to PAR completion: 8 secs 
 
-Peak Memory Usage:  562 MB
+Peak Memory Usage:  563 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

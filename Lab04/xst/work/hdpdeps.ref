@@ -1,0 +1,161 @@
+V3 92
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_arithmetic_unit.vhd 2016/03/04.15:24:33 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_logic_unit.vhd 2016/03/04.15:24:33 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_mux.vhd 2016/03/04.15:24:33 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_shift_unit.vhd 2016/03/04.15:24:34 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_toplevel.vhd 2016/03/04.15:24:34 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/button_controller.vhd 2016/03/04.15:24:34 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/clk25MHz.vhd 2016/03/04.15:24:34 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/data_decoder.vhd 2016/03/04.15:24:34 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/debounce.vhd 2016/03/04.15:24:34 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/font_rom_ascii.vhd 2016/03/04.15:24:34 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/ipcore_dir/DEBUG_RAM.vhd 2016/03/04.16:05:45 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd 2016/03/04.15:24:36 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/load_store_unit.vhd 2016/03/04.15:24:34 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/mux8to1.vhd 2016/03/04.15:24:34 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/rgb.vhd 2016/03/04.15:24:34 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/vga_controller.vhd 2016/03/04.15:24:34 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/vga_debug.vhd 2016/03/04.17:50:23 P.20131013
+FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/vga_driver.vhd 2016/03/04.15:24:35 P.20131013
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_arithmetic_unit.vhd" 2016/03/09.13:28:58 P.20131013
+EN work/Arith_Unit 1457561867 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_arithmetic_unit.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Arith_Unit/Combinational 1457561868 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_arithmetic_unit.vhd" \
+      EN work/Arith_Unit 1457561867
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_logic_unit.vhd" 2016/03/09.13:28:58 P.20131013
+EN work/Logic_Unit 1457561869 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_logic_unit.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Logic_Unit/Combinational 1457561870 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_logic_unit.vhd" \
+      EN work/Logic_Unit 1457561869
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_mux.vhd" 2016/03/09.13:28:58 P.20131013
+EN work/ALU_Mux 1457561875 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_mux.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ALU_Mux/Combinational 1457561876 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_mux.vhd" \
+      EN work/ALU_Mux 1457561875
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_shift_unit.vhd" 2016/03/09.13:28:58 P.20131013
+EN work/ALU_Shift_Unit 1457561871 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_shift_unit.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ALU_Shift_Unit/Combinational 1457561872 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_shift_unit.vhd" \
+      EN work/ALU_Shift_Unit 1457561871
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_toplevel.vhd" 2016/03/09.13:28:58 P.20131013
+EN work/ALU 1457561895 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_toplevel.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
+AR work/ALU/Structural 1457561896 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_toplevel.vhd" \
+      EN work/ALU 1457561895 CP work/Arith_Unit CP work/Logic_Unit \
+      CP work/alu_shift_unit CP work/Load_Store_Unit CP work/ALU_Mux
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/button_controller.vhd" 2016/03/09.13:28:58 P.20131013
+EN work/buttoncontrol 1457561893 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/button_controller.vhd" \
+      PB ieee/std_logic_1164 1381692176 LB work
+AR work/buttoncontrol/Structural 1457561894 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/button_controller.vhd" \
+      EN work/buttoncontrol 1457561893 CP work/debounce
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd" 2016/03/09.13:28:58 P.20131013
+EN work/CLK_25MHZ 1457561879 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/CLK_25MHZ/Behavioral 1457561880 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd" \
+      EN work/CLK_25MHZ 1457561879 CP CLKDLL
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/data_decoder.vhd" 2016/03/09.13:28:58 P.20131013
+EN work/Data_Decode 1457561899 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/data_decoder.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Data_Decode/Structural 1457561900 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/data_decoder.vhd" \
+      EN work/Data_Decode 1457561899
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/debounce.vhd" 2016/03/09.13:28:58 P.20131013
+EN work/debounce 1457561877 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/debounce.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/debounce/Logic 1457561878 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/debounce.vhd" \
+      EN work/debounce 1457561877
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/font_rom_ascii.vhd" 2016/03/09.13:28:58 P.20131013
+EN work/FONT_ROM 1457561887 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/font_rom_ascii.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/FONT_ROM/arch 1457561888 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/font_rom_ascii.vhd" \
+      EN work/FONT_ROM 1457561887
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/DEBUG_RAM.vhd" 2016/03/09.13:29:02 P.20131013
+EN work/DEBUG_RAM 1457561897 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/DEBUG_RAM.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/DEBUG_RAM/DEBUG_RAM_a 1457561898 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/DEBUG_RAM.vhd" \
+      EN work/DEBUG_RAM 1457561897
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd" 2016/03/09.13:29:03 P.20131013
+EN work/VGA_BUFFER_RAM 1457561889 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/VGA_BUFFER_RAM/VGA_BUFFER_RAM_a 1457561890 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd" \
+      EN work/VGA_BUFFER_RAM 1457561889
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/load_store_unit.vhd" 2016/03/09.13:28:59 P.20131013
+EN work/Load_Store_Unit 1457561873 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/load_store_unit.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Load_Store_Unit/Behavioral 1457561874 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/load_store_unit.vhd" \
+      EN work/Load_Store_Unit 1457561873
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/mux8to1.vhd" 2016/03/09.13:28:59 P.20131013
+EN work/MUX8to1 1457561885 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/mux8to1.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/MUX8to1/Behavioral 1457561886 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/mux8to1.vhd" \
+      EN work/MUX8to1 1457561885
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/rgb.vhd" 2016/03/09.13:28:59 P.20131013
+EN work/RGB 1457561883 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/rgb.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/RGB/Behavioral 1457561884 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/rgb.vhd" \
+      EN work/RGB 1457561883
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_controller.vhd" 2016/03/09.13:28:59 P.20131013
+EN work/vga_controller 1457561881 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_controller.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/vga_controller/Behavioral 1457561882 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_controller.vhd" \
+      EN work/vga_controller 1457561881
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd" 2016/03/09.17:17:44 P.20131013
+EN work/VGA_Debug 1457561901 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
+AR work/VGA_Debug/Structural 1457561902 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd" \
+      EN work/VGA_Debug 1457561901 CP work/VGA_DRIVER CP work/buttoncontrol \
+      CP work/ALU CP work/DEBUG_RAM CP work/Data_Decode
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_driver.vhd" 2016/03/09.13:29:01 P.20131013
+EN work/VGA_Driver 1457561891 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_driver.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
+AR work/VGA_Driver/Structural 1457561892 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_driver.vhd" \
+      EN work/VGA_Driver 1457561891 CP work/CLK_25MHZ CP work/vga_controller \
+      CP work/RGB CP work/MUX8to1 CP work/FONT_ROM CP work/VGA_BUFFER_RAM

@@ -118,13 +118,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455920497" xil_pn:in_ck="5790477654391182534" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="663430625395388064" xil_pn:start_ts="1455920477">
+    <transform xil_pn:end_ts="1456356476" xil_pn:in_ck="5790477654391182534" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8443136171088201132" xil_pn:start_ts="1456356455">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="VGA_TOPLEVEL.lso"/>
       <outfile xil_pn:name="VGA_TOPLEVEL.ngc"/>
       <outfile xil_pn:name="VGA_TOPLEVEL.ngr"/>
@@ -144,7 +141,8 @@
     <transform xil_pn:end_ts="1455920503" xil_pn:in_ck="3346725949696370119" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7784209522711447996" xil_pn:start_ts="1455920497">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="VGA_TOPLEVEL.bld"/>
       <outfile xil_pn:name="VGA_TOPLEVEL.ngd"/>
       <outfile xil_pn:name="VGA_TOPLEVEL_ngdbuild.xrpt"/>
@@ -187,6 +185,8 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="VGA_TOPLEVEL.bgn"/>
       <outfile xil_pn:name="VGA_TOPLEVEL.bit"/>
       <outfile xil_pn:name="VGA_TOPLEVEL.drc"/>

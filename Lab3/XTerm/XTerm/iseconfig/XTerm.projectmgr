@@ -15,13 +15,13 @@
          <ClosedNode>PROJECT</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>VGA_TOPLEVEL - Structural (/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/vga_toplevel.vhd)</SelectedItem>
+         <SelectedItem>U4 - MUX8to1 - Behavioral (/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/mux8to1.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ef000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ef0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>VGA_TOPLEVEL - Structural (/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/vga_toplevel.vhd)</CurrentItem>
+      <CurrentItem>U4 - MUX8to1 - Behavioral (/home/robert/UMD_RISC-16G5/Lab3/XTerm/XTerm/mux8to1.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -70,17 +70,16 @@
          <ClosedNode>Configure Target Device</ClosedNode>
          <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
-         <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
