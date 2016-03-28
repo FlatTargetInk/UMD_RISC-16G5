@@ -1,0 +1,24 @@
+Running: /home/robert/XilinxISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/robert/UMD_RISC-16G5/ProjectLab1/Part1/programCounter_tb_isim_beh.exe -prj /home/robert/UMD_RISC-16G5/ProjectLab1/Part1/programCounter_tb_beh.prj work.programCounter_tb 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Part1/programCounter.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Part1/programCounter_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 96172 KB
+Fuse CPU Usage: 1290 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity programCounter [\programCounter(16)\]
+Compiling architecture behavior of entity programcounter_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 7 VHDL Units
+Built simulation executable /home/robert/UMD_RISC-16G5/ProjectLab1/Part1/programCounter_tb_isim_beh.exe
+Fuse Memory Usage: 668504 KB
+Fuse CPU Usage: 1370 ms
+GCC CPU Usage: 210 ms

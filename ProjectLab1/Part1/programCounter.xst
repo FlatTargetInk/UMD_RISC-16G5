@@ -1,0 +1,5 @@
+set -tmpdir "/home/robert/UMD_RISC-16G5/ProjectLab1/Part1/xst/projnav.tmp"
+set -xsthdpdir "/home/robert/UMD_RISC-16G5/ProjectLab1/Part1/xst"
+elaborate
+-ifn programCounter.prj
+-ifmt mixed
