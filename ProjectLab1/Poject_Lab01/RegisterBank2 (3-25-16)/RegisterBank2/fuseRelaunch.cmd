@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "Z:/ECE 368/Poject_Lab01/RegisterBank2 (3-25-16)/RegisterBank2/RegisterBank_tb_isim_beh.exe" -prj "Z:/ECE 368/Poject_Lab01/RegisterBank2 (3-25-16)/RegisterBank2/RegisterBank_tb_beh.prj" "work.RegisterBank_tb" 
