@@ -1,0 +1,5 @@
+set -tmpdir "/home/robert/Github/UMD_RISC-16G5/ALU/ALU/xst/projnav.tmp"
+set -xsthdpdir "/home/robert/Github/UMD_RISC-16G5/ALU/ALU/xst"
+elaborate
+-ifn arith_unit.prj
+-ifmt mixed
