@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-03-28T19:18:03</DateModified>
+  <DateModified>2016-03-29T15:15:40</DateModified>
   <ModuleName>ALU_Toplevel</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/robert/Github/UMD_RISC-16G5/ALU/ALU/iseconfig/ALU_Toplevel.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/robert/Github/UMD_RISC-16G5/ALU/ALU</ImplementationReportsDirectory>
-  <DateInitialized>2016-03-28T19:18:03</DateInitialized>
+  <SummaryTimeStamp>2016-03-29T15:14:42</SummaryTimeStamp>
+  <SavedFilePath>/home/robert/UMD_RISC-16G5/ALU/ALU/iseconfig/ALU_Toplevel.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/robert/UMD_RISC-16G5/ALU/ALU/</ImplementationReportsDirectory>
+  <DateInitialized>2016-03-29T15:15:40</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

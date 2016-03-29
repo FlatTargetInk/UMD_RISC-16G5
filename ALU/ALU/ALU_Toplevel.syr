@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: ALU_Toplevel.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -107,159 +107,23 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ALU/ALU/alu_toplevel.vhd" in Library work.
-Entity <ALU_Toplevel> compiled.
-Entity <ALU_Toplevel> (Architecture <Dataflow>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ALU/ALU/arith_unit.vhd" in Library work.
+Architecture combinational of Entity arith_unit is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ALU/ALU/logical_unit.vhd" in Library work.
+Architecture combinational of Entity logical_unit is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ALU/ALU/shift_unit.vhd" in Library work.
+Architecture combinational of Entity shift_unit is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ALU/ALU/alu_toplevel.vhd" in Library work.
+Architecture structural of Entity alu_toplevel is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
+Analyzing hierarchy for entity <ALU_Toplevel> in library <work> (architecture <dataflow>).
+
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <ALU_Toplevel> in library <work> (Architecture <Dataflow>).
-Entity <ALU_Toplevel> analyzed. Unit <ALU_Toplevel> generated.
-
-
-=========================================================================
-*                           HDL Synthesis                               *
-=========================================================================
-
-Performing bidirectional port resolution...
-
-Synthesizing Unit <ALU_Toplevel>.
-    Related source file is "/home/robert/Github/UMD_RISC-16G5/ALU/ALU/alu_toplevel.vhd".
-WARNING:Xst:647 - Input <RA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <OP> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <RB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:1306 - Output <LDST_ADR> is never assigned.
-WARNING:Xst:1306 - Output <ALU_OUT> is never assigned.
-WARNING:Xst:1306 - Output <SREG> is never assigned.
-WARNING:Xst:1306 - Output <LDST_DAT> is never assigned.
-Unit <ALU_Toplevel> synthesized.
-
-
-=========================================================================
-HDL Synthesis Report
-
-Found no macro
-=========================================================================
-
-=========================================================================
-*                       Advanced HDL Synthesis                          *
-=========================================================================
-
-
-=========================================================================
-Advanced HDL Synthesis Report
-
-Found no macro
-=========================================================================
-
-=========================================================================
-*                         Low Level Synthesis                           *
-=========================================================================
-
-Optimizing unit <ALU_Toplevel> ...
-
-Mapping all equations...
-Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block ALU_Toplevel, actual ratio is 0.
-
-Final Macro Processing ...
-
-=========================================================================
-Final Register Report
-
-Found no macro
-=========================================================================
-
-=========================================================================
-*                           Partition Report                            *
-=========================================================================
-
-Partition Implementation Status
--------------------------------
-
-  No Partitions were found in this design.
-
--------------------------------
-
-=========================================================================
-*                            Final Report                               *
-=========================================================================
-Final Results
-RTL Top Level Output File Name     : ALU_Toplevel.ngr
-Top Level Output File Name         : ALU_Toplevel
-Output Format                      : NGC
-Optimization Goal                  : Speed
-Keep Hierarchy                     : No
-
-Design Statistics
-# IOs                              : 88
-
-Cell Usage :
-=========================================================================
-
-Device utilization summary:
----------------------------
-
-Selected Device : 3s500efg320-4 
-
- Number of Slices:                        0  out of   4656     0%  
- Number of IOs:                          88
- Number of bonded IOBs:                   0  out of    232     0%  
-
----------------------------
-Partition Resource Summary:
----------------------------
-
-  No Partitions were found in this design.
-
----------------------------
-
-
-=========================================================================
-TIMING REPORT
-
-NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
-      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
-      GENERATED AFTER PLACE-and-ROUTE.
-
-Clock Information:
-------------------
-No clock signals found in this design
-
-Asynchronous Control Signals Information:
-----------------------------------------
-No asynchronous control signals found in this design
-
-Timing Summary:
----------------
-Speed Grade: -4
-
-   Minimum period: No path found
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
-   Maximum combinational path delay: No path found
-
-Timing Detail:
---------------
-All values displayed in nanoseconds (ns)
-
-=========================================================================
-
-
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.63 secs
- 
---> 
-
-
-Total memory usage is 510176 kilobytes
-
-Number of errors   :    0 (   0 filtered)
-Number of warnings :    7 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
-
+Analyzing Entity <ALU_Toplevel> in library <work> (Architecture <dataflow>).
+INTERNAL_ERROR:Xst:cmain.c:3464:1.56 -  Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.  

@@ -1,1 +1,4 @@
+vhdl work "shift_unit.vhd"
+vhdl work "logical_unit.vhd"
+vhdl work "arith_unit.vhd"
 vhdl work "alu_toplevel.vhd"

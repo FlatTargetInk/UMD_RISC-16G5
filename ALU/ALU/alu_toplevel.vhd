@@ -42,14 +42,14 @@ entity ALU_Toplevel is
            LDST_ADR : out  STD_LOGIC_VECTOR (15 downto 0));
 end ALU_Toplevel;
 
-architecture Dataflow of ALU_Toplevel is
+architecture Structural of ALU_Toplevel is
 
 signal ARITH	: STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0');
 signal SREG_AR	: STD_LOGIC_VECTOR (3 downto 0)	:= (OTHERS => '0');
 signal LOGIC	: STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0');
 signal SREG_LG	: STD_LOGIC_VECTOR (3 downto 0)	:= (OTHERS => '0');
 signal SHIFT	: STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0');
-signal SREG_SH	: STD_LOGIC_VECTOR (15 downto 0)	:= (OTHERS => '0');
+signal SREG_SH	: STD_LOGIC_VECTOR (3 downto 0)	:= (OTHERS => '0');
 signal LD_MEM	: STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0');
 
 begin
@@ -66,6 +66,27 @@ begin
 					LOG_OUT	=> LOGIC,
 					SREG_OUT	=> SREG_LG);
 					
+	shift_unit: entity work.shift_unit
+	port map(	RA 			=> RA,
+					SHIFT			=> RB(7 downto 0),
+					OP				=> OP(3),
+					SHIFT_OUT	=> SHIFT,
+					SREG_OUT		=> SREG_SH);
+	
+	with OP select 
+		ALU_OUT <=
+			ARITH when "0000", -- ADD (ARITHMETIC)
+			ARITH when "0001", -- SUB (ARITHMETIC)
+			LOGIC when "0010", -- AND (LOGICAL)
+			LOGIC when "0011", -- OR  (LOGICAL)
+			LOGIC when "0100", -- MOV (LOGICAL)
+			ARITH when "0101", -- ADDI (ARITHMETIC)
+			LOGIC when "0110",--, -- ANDI (LOGICAL)
+			SHIFT when "0111", -- SL (SHIFT)
+			SHIFT when "1000",--, -- SR (SHIFT)
+			--"" when "1001", -- LW (WORD)
+			--"" when "1010"; -- SW (WORD)
+			RA		when OTHERS;
 
-end Dataflow;
+end Structural;
 
