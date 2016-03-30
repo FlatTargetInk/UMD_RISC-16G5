@@ -17,16 +17,17 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity PipelineRegisters is
+	generic(dataWidth:integer:=16);
     Port ( Clk : in  STD_LOGIC; -- Clock
            Ena : in  STD_LOGIC; -- Enable
            Rst : in  STD_LOGIC; -- Reset line
-           Din : in  STD_LOGIC_VECTOR (15 downto 0); -- Data in
-           Dout : out  STD_LOGIC_VECTOR (15 downto 0)); -- Data out
+           Din : in  STD_LOGIC_VECTOR (dataWidth-1 downto 0); -- Data in
+           Dout : out  STD_LOGIC_VECTOR (dataWidth-1 downto 0)); -- Data out
 end PipelineRegisters;
 
 architecture Behavioral of PipelineRegisters is
 
-signal DataOutSignal : STD_LOGIC_VECTOR(15 DOWNTO 0) := (others=>'0'); -- Use a signal that always begins at 0 to ensure safe states
+signal DataOutSignal : STD_LOGIC_VECTOR(dataWidth-1 DOWNTO 0) := (others=>'0'); -- Use a signal that always begins at 0 to ensure safe states
 
 begin
 	BehavioralProcess: process(Clk, Rst)

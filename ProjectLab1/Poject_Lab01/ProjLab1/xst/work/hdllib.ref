@@ -1,10 +1,10 @@
-AR dispatch behavioral /home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/ProjLab1/Dispatch.vhd sub00/vhpl04 1459193318
-EN reg_ctl NULL /home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/ProjLab1/REG_CTL.vhd sub00/vhpl07 1459193321
-AR dc_ctl behavioral /home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/ProjLab1/DC_CTL.vhd sub00/vhpl01 1459193324
-EN fetch_ctl NULL /home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/ProjLab1/Fetch_CTL.vhd sub00/vhpl05 1459193319
-AR fetch_ctl behavioral /home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/ProjLab1/Fetch_CTL.vhd sub00/vhpl06 1459193320
-EN dispatch NULL /home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/ProjLab1/Dispatch.vhd sub00/vhpl03 1459193317
-EN dc_ctl NULL /home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/ProjLab1/DC_CTL.vhd sub00/vhpl00 1459193323
-EN projlab01 NULL /home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/ProjLab1/ProjLab01.vhd sub00/vhpl02 1459193325
-AR projlab01 structural /home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/ProjLab1/ProjLab01.vhd sub00/vhpl09 1459193326
-AR reg_ctl behavioral /home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/ProjLab1/REG_CTL.vhd sub00/vhpl08 1459193322
+AR dispatch behavioral "//vnx-cifs/coefs/eng/shared/cparks1/Junior Year (2015-2016)/ECE 368/Poject_Lab01/ProjLab1/Dispatch.vhd" sub00/vhpl04 1459275659
+EN reg_ctl NULL "//vnx-cifs/coefs/eng/shared/cparks1/Junior Year (2015-2016)/ECE 368/Poject_Lab01/ProjLab1/REG_CTL.vhd" sub00/vhpl07 1459275662
+AR dc_ctl behavioral "//vnx-cifs/coefs/eng/shared/cparks1/Junior Year (2015-2016)/ECE 368/Poject_Lab01/ProjLab1/DC_CTL.vhd" sub00/vhpl01 1459275665
+EN fetch_ctl NULL "//vnx-cifs/coefs/eng/shared/cparks1/Junior Year (2015-2016)/ECE 368/Poject_Lab01/ProjLab1/Fetch_CTL.vhd" sub00/vhpl05 1459275660
+AR fetch_ctl behavioral "//vnx-cifs/coefs/eng/shared/cparks1/Junior Year (2015-2016)/ECE 368/Poject_Lab01/ProjLab1/Fetch_CTL.vhd" sub00/vhpl06 1459275661
+EN dispatch NULL "//vnx-cifs/coefs/eng/shared/cparks1/Junior Year (2015-2016)/ECE 368/Poject_Lab01/ProjLab1/Dispatch.vhd" sub00/vhpl03 1459275658
+EN dc_ctl NULL "//vnx-cifs/coefs/eng/shared/cparks1/Junior Year (2015-2016)/ECE 368/Poject_Lab01/ProjLab1/DC_CTL.vhd" sub00/vhpl00 1459275664
+EN projlab01 NULL "//vnx-cifs/coefs/eng/shared/cparks1/Junior Year (2015-2016)/ECE 368/Poject_Lab01/ProjLab1/ProjLab01.vhd" sub00/vhpl02 1459275666
+AR projlab01 structural "//vnx-cifs/coefs/eng/shared/cparks1/Junior Year (2015-2016)/ECE 368/Poject_Lab01/ProjLab1/ProjLab01.vhd" sub00/vhpl09 1459275667
+AR reg_ctl behavioral "//vnx-cifs/coefs/eng/shared/cparks1/Junior Year (2015-2016)/ECE 368/Poject_Lab01/ProjLab1/REG_CTL.vhd" sub00/vhpl08 1459275663

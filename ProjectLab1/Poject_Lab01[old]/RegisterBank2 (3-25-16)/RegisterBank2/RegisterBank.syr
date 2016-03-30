@@ -1,0 +1,379 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: RegisterBank.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RegisterBank.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RegisterBank"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : RegisterBank
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/RegisterBank2/RegisterBank.vhd" in Library work.
+Entity <registerbank> compiled.
+Entity <registerbank> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <RegisterBank> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <RegisterBank> in library <work> (Architecture <behavioral>).
+Entity <RegisterBank> analyzed. Unit <RegisterBank> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <RegisterBank>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/RegisterBank2/RegisterBank.vhd".
+    Found 16-bit register for signal <RAout>.
+    Found 16-bit register for signal <RBout>.
+    Found 16-bit register for signal <R0dat>.
+    Found 16-bit register for signal <R10dat>.
+    Found 16-bit register for signal <R11dat>.
+    Found 16-bit register for signal <R12dat>.
+    Found 16-bit register for signal <R13dat>.
+    Found 16-bit register for signal <R14dat>.
+    Found 16-bit register for signal <R15dat>.
+    Found 16-bit register for signal <R1dat>.
+    Found 16-bit register for signal <R2dat>.
+    Found 16-bit register for signal <R3dat>.
+    Found 16-bit register for signal <R4dat>.
+    Found 16-bit register for signal <R5dat>.
+    Found 16-bit register for signal <R6dat>.
+    Found 16-bit register for signal <R7dat>.
+    Found 16-bit register for signal <R8dat>.
+    Found 16-bit register for signal <R9dat>.
+    Found 16-bit 16-to-1 multiplexer for signal <RAout$mux0001> created at line 46.
+    Found 16-bit 16-to-1 multiplexer for signal <RBout$mux0001> created at line 66.
+    Summary:
+	inferred 288 D-type flip-flop(s).
+	inferred  32 Multiplexer(s).
+Unit <RegisterBank> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 18
+ 16-bit register                                       : 18
+# Multiplexers                                         : 2
+ 16-bit 16-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 288
+ Flip-Flops                                            : 288
+# Multiplexers                                         : 32
+ 1-bit 16-to-1 multiplexer                             : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <RegisterBank> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RegisterBank, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 288
+ Flip-Flops                                            : 288
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : RegisterBank.ngr
+Top Level Output File Name         : RegisterBank
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 63
+
+Cell Usage :
+# BELS                             : 500
+#      LUT2                        : 1
+#      LUT3                        : 271
+#      LUT4                        : 4
+#      MUXF5                       : 128
+#      MUXF6                       : 64
+#      MUXF7                       : 32
+# FlipFlops/Latches                : 288
+#      FDE                         : 32
+#      FDE_1                       : 256
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 62
+#      IBUF                        : 30
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      307  out of   4656     6%  
+ Number of Slice Flip Flops:            288  out of   9312     3%  
+ Number of 4 input LUTs:                276  out of   9312     2%  
+ Number of IOs:                          63
+ Number of bonded IOBs:                  63  out of    232    27%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 288   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.984ns (Maximum Frequency: 143.184MHz)
+   Minimum input arrival time before clock: 5.860ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.984ns (frequency: 143.184MHz)
+  Total number of paths / destination ports: 512 / 32
+-------------------------------------------------------------------------
+Delay:               3.492ns (Levels of Logic = 4)
+  Source:            R0dat_0 (FF)
+  Destination:       RBout_0 (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk rising
+
+  Data Path: R0dat_0 to RBout_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            2   0.591   0.526  R0dat_0 (R0dat_0)
+     LUT3:I1->O            1   0.704   0.000  mux_8 (mux_8)
+     MUXF5:I0->O           1   0.321   0.000  mux_6_f5 (mux_6_f5)
+     MUXF6:I0->O           1   0.521   0.000  mux_4_f6 (mux_4_f6)
+     MUXF7:I0->O           1   0.521   0.000  mux_2_f7 (RBout_mux0001<0>)
+     FDE:D                     0.308          RBout_0
+    ----------------------------------------
+    Total                      3.492ns (2.966ns logic, 0.526ns route)
+                                       (84.9% logic, 15.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2048 / 576
+-------------------------------------------------------------------------
+Offset:              5.860ns (Levels of Logic = 3)
+  Source:            W (PAD)
+  Destination:       R7dat_0 (FF)
+  Destination Clock: clk falling
+
+  Data Path: W to R7dat_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.218   0.883  W_IBUF (W_IBUF)
+     LUT3:I0->O            4   0.704   0.762  R13dat_not000141 (R13dat_not0001_bdd2)
+     LUT3:I0->O           16   0.704   1.034  R9dat_not000111 (R9dat_not0001)
+     FDE_1:CE                  0.555          R9dat_0
+    ----------------------------------------
+    Total                      5.860ns (3.181ns logic, 2.679ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            RBout_15 (FF)
+  Destination:       RBout<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: RBout_15 to RBout<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.420  RBout_15 (RBout_15)
+     OBUF:I->O                 3.272          RBout_15_OBUF (RBout<15>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.70 secs
+ 
+--> 
+
+Total memory usage is 265200 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

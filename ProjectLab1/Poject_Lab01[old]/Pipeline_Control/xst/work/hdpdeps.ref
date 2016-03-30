@@ -1,0 +1,8 @@
+V3 3
+FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Pipeline_Control/pipeline_ctrl.vhd" 2016/03/24.15:11:35 P.20131013
+EN work/pipeline_ctrl 0 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Pipeline_Control/pipeline_ctrl.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/pipeline_ctrl/Structural 0 \
+      FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Pipeline_Control/pipeline_ctrl.vhd" \
+      EN work/pipeline_ctrl 0

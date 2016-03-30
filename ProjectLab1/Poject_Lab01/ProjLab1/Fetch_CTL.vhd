@@ -41,11 +41,15 @@ end Fetch_CTL;
 architecture Behavioral of Fetch_CTL is
 
 begin
-	RST <= '0';
-	INC <= '1';
-	PC_EN <= '1';
-	INST_EN <= '1';
-	
+	process(CLK)
+	begin
+		if(rising_edge(CLK)) then
+			RST <= NOT EN; ---- WARNING ! CURRENTLY DISABLING FETCH_CTL WILL SEND ENTIRE DEVICE INTO RESET STATE
+			INC <= EN;
+			PC_EN <= EN;
+			INST_EN <= EN;
+		end if;
+	end process;
 	
 
 end Behavioral;

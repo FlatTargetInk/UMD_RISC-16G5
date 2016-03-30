@@ -33,6 +33,26 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="DC_CTL_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DC_CTL_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="DC_CTL_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Dispatch.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Dispatch.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Dispatch.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Dispatch.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Dispatch.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Dispatch.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Dispatch.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Dispatch.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Dispatch_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Dispatch_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Fetch_CTL.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Fetch_CTL.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Fetch_CTL.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Fetch_CTL.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Fetch_CTL.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Fetch_CTL.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Fetch_CTL.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Fetch_CTL.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Fetch_CTL_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Fetch_CTL_xst.xrpt"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ProjLab01.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ProjLab01.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ProjLab01.ngc"/>
@@ -45,45 +65,60 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="ProjLab01_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ProjLab01_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ProjLab01_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="REG_CTL.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="REG_CTL.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="REG_CTL.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="REG_CTL.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="REG_CTL.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="REG_CTL.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="REG_CTL.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="REG_CTL.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="REG_CTL_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="REG_CTL_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1459193312" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1459193312">
+    <transform xil_pn:end_ts="1459274911" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1459274911">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1459193312" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="6005694687550753868" xil_pn:start_ts="1459193312">
+    <transform xil_pn:end_ts="1459275657" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="6005694687550753868" xil_pn:start_ts="1459275657">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1459193312" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-6634281375464242574" xil_pn:start_ts="1459193312">
+    <transform xil_pn:end_ts="1459275657" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-6634281375464242574" xil_pn:start_ts="1459275657">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1459193312" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1459193312">
+    <transform xil_pn:end_ts="1459275657" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1459275657">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1459193312" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-7012787883844169398" xil_pn:start_ts="1459193312">
+    <transform xil_pn:end_ts="1459275657" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-7012787883844169398" xil_pn:start_ts="1459275657">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1459193312" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1459193312">
+    <transform xil_pn:end_ts="1459275657" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1459275657">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1459193312" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-2946544059057522116" xil_pn:start_ts="1459193312">
+    <transform xil_pn:end_ts="1459275657" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-2946544059057522116" xil_pn:start_ts="1459275657">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1459193320" xil_pn:in_ck="-5910358017601745922" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7988736648114488369" xil_pn:start_ts="1459193312">
+    <transform xil_pn:end_ts="1459275663" xil_pn:in_ck="-5910358017601745922" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7988736648114488369" xil_pn:start_ts="1459275657">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="DC_CTL.ngr"/>
+      <outfile xil_pn:name="Dispatch.ngr"/>
+      <outfile xil_pn:name="Fetch_CTL.ngr"/>
       <outfile xil_pn:name="ProjLab01.lso"/>
       <outfile xil_pn:name="ProjLab01.ngc"/>
       <outfile xil_pn:name="ProjLab01.ngr"/>
@@ -91,7 +126,9 @@
       <outfile xil_pn:name="ProjLab01.stx"/>
       <outfile xil_pn:name="ProjLab01.syr"/>
       <outfile xil_pn:name="ProjLab01.xst"/>
+      <outfile xil_pn:name="ProjLab01_vhdl.prj"/>
       <outfile xil_pn:name="ProjLab01_xst.xrpt"/>
+      <outfile xil_pn:name="REG_CTL.ngr"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
