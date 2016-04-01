@@ -1,0 +1,5 @@
+set -tmpdir "Z:/ECE 368/Poject_Lab01/Intruction_Memory/xst/projnav.tmp"
+set -xsthdpdir "Z:/ECE 368/Poject_Lab01/Intruction_Memory/xst"
+elaborate
+-ifn Inst_Mem_Dataflow.prj
+-ifmt mixed

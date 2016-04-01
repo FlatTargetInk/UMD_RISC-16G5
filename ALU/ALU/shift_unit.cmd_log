@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/ALU/ALU/shift_unit.xst" -ofn "/home/robert/UMD_RISC-16G5/ALU/ALU/shift_unit.syr" 

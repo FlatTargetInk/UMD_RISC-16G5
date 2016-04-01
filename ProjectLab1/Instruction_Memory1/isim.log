@@ -1,0 +1,49 @@
+ISim log file
+Running: Z:\ECE 368\Poject_Lab01\Instruction_Memory1\Inst_Mem_ts_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb Z:/ECE 368/Poject_Lab01/Instruction_Memory1/Inst_Mem_ts_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 205 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 20 is outside range for A Read
+at 215 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 21 is outside range for A Read
+at 225 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 22 is outside range for A Read
+at 235 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 23 is outside range for A Read
+at 245 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 24 is outside range for A Read
+at 255 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 25 is outside range for A Read
+at 265 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 26 is outside range for A Read
+at 275 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 27 is outside range for A Read
+at 285 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 28 is outside range for A Read
+at 295 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 29 is outside range for A Read
+at 305 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 30 is outside range for A Read
+at 315 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 31 is outside range for A Read
+at 525 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 20 is outside range for A Read
+at 535 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 21 is outside range for A Read
+at 545 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 22 is outside range for A Read
+at 555 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 23 is outside range for A Read
+at 565 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 24 is outside range for A Read
+at 575 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 25 is outside range for A Read
+at 585 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 26 is outside range for A Read
+at 595 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 27 is outside range for A Read
+at 605 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 28 is outside range for A Read
+at 615 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 29 is outside range for A Read
+at 625 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 30 is outside range for A Read
+at 635 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 31 is outside range for A Read
+at 845 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 20 is outside range for A Read
+at 855 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 21 is outside range for A Read
+at 865 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 22 is outside range for A Read
+at 875 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 23 is outside range for A Read
+at 885 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 24 is outside range for A Read
+at 895 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 25 is outside range for A Read
+at 905 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 26 is outside range for A Read
+at 915 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 27 is outside range for A Read
+at 925 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 28 is outside range for A Read
+at 935 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 29 is outside range for A Read
+at 945 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 30 is outside range for A Read
+at 955 ns(1), Instance /inst_mem_ts/uut/U2/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: Address 31 is outside range for A Read

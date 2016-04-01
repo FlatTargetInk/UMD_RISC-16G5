@@ -1,0 +1,2 @@
+vhdl work "RegisterBank.vhd"
+vhdl work "RegisterBank_tb.vhd"

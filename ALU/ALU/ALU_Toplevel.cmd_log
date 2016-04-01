@@ -1,9 +1,1 @@
-xst -intstyle ise -ifn "/home/robert/Github/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.xst" -ofn "/home/robert/Github/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.syr" 
-netgen -intstyle ise -ar Structure -tm ALU_Toplevel -w -dir netgen/synthesis -ofmt vhdl -sim ALU_Toplevel.ngc ALU_Toplevel_synthesis.vhd 
-xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.syr" 
-xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.syr" 
-xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.syr" 
-xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.syr" 
-xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.syr" 
-xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.syr" 
 xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.xst" -ofn "/home/robert/UMD_RISC-16G5/ALU/ALU/ALU_Toplevel.syr" 

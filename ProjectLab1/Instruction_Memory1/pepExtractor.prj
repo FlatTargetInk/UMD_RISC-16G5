@@ -1,0 +1,3 @@
+work	"../Intruction_Memory/Instruction_Memory.vhd"
+work	"../Intruction_Memory/Instruction_Memory_TL.vhd"
+work	"../Intruction_Memory/ProgramCounter.vhd"

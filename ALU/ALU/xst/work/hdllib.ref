@@ -1,9 +1,8 @@
-EN alu_toplevel NULL /home/robert/UMD_RISC-16G5/ALU/ALU/alu_toplevel.vhd sub00/vhpl00 1459278133
-AR arith_unit combinational /home/robert/UMD_RISC-16G5/ALU/ALU/arith_unit.vhd sub00/vhpl07 1459278282
-AR logical_unit combinational /home/robert/UMD_RISC-16G5/ALU/ALU/logical_unit.vhd sub00/vhpl05 1459278728
-EN logical_unit NULL /home/robert/UMD_RISC-16G5/ALU/ALU/logical_unit.vhd sub00/vhpl04 1459278727
-EN shift_unit NULL /home/robert/UMD_RISC-16G5/ALU/ALU/shift_unit.vhd sub00/vhpl02 1459278877
-EN arith_unit NULL /home/robert/UMD_RISC-16G5/ALU/ALU/arith_unit.vhd sub00/vhpl06 1459278281
-AR alu_toplevel structural /home/robert/UMD_RISC-16G5/ALU/ALU/alu_toplevel.vhd sub00/vhpl08 1459278134
-AR alu_toplevel dataflow /home/robert/UMD_RISC-16G5/ALU/ALU/alu_toplevel.vhd sub00/vhpl01 1459276710
-AR shift_unit combinational /home/robert/UMD_RISC-16G5/ALU/ALU/shift_unit.vhd sub00/vhpl03 1459278878
+EN alu_toplevel NULL /home/robert/UMD_RISC-16G5/ALU/ALU/alu_toplevel.vhd sub00/vhpl06 1459535390
+AR arith_unit combinational /home/robert/UMD_RISC-16G5/ALU/ALU/arith_unit.vhd sub00/vhpl01 1459535385
+AR logical_unit combinational /home/robert/UMD_RISC-16G5/ALU/ALU/logical_unit.vhd sub00/vhpl03 1459535387
+EN logical_unit NULL /home/robert/UMD_RISC-16G5/ALU/ALU/logical_unit.vhd sub00/vhpl02 1459535386
+EN shift_unit NULL /home/robert/UMD_RISC-16G5/ALU/ALU/shift_unit.vhd sub00/vhpl04 1459535388
+EN arith_unit NULL /home/robert/UMD_RISC-16G5/ALU/ALU/arith_unit.vhd sub00/vhpl00 1459535384
+AR alu_toplevel structural /home/robert/UMD_RISC-16G5/ALU/ALU/alu_toplevel.vhd sub00/vhpl07 1459535391
+AR shift_unit combinational /home/robert/UMD_RISC-16G5/ALU/ALU/shift_unit.vhd sub00/vhpl05 1459535389

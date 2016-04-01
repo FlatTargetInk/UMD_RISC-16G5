@@ -38,9 +38,7 @@ INSADR <= COUNTER;
 	begin
 		if(RST = '1')then
 			COUNTER <= (OTHERS => '0');
-		end if;
-		
-		if(CLK'event and CLK = '1')then
+		elsif(CLK'event and CLK = '1')then
 			if(EN = '1')then
 				COUNTER <= COUNTER + 1;
 			end if;

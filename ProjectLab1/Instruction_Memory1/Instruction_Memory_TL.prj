@@ -1,0 +1,3 @@
+vhdl work "../Intruction_Memory/ProgramCounter.vhd"
+vhdl work "../Intruction_Memory/Instruction_Memory.vhd"
+vhdl work "../Intruction_Memory/Instruction_Memory_TL.vhd"

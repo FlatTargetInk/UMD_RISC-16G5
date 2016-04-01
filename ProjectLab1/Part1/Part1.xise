@@ -25,10 +25,6 @@
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="8"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="8"/>
     </file>
-    <file xil_pn:name="FetchModule.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="18"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="18"/>
-    </file>
   </files>
 
   <properties>

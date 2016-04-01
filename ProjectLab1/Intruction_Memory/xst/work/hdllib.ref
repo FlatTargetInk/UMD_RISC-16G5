@@ -1,0 +1,5 @@
+EN instruction_memory NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory.vhd" sub00/vhpl00 1459448131
+AR instruction_memory structural "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory.vhd" sub00/vhpl01 1459369923
+AR instruction_memory dataflow "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory.vhd" sub00/vhpl02 1459448132
+EN inst_mem_dataflow NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/Inst_Mem_Dataflow.vhd" sub00/vhpl03 1459450545
+AR inst_mem_dataflow dataflow "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/Inst_Mem_Dataflow.vhd" sub00/vhpl04 1459450546

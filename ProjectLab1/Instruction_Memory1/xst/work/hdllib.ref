@@ -1,0 +1,6 @@
+AR programcounter behavioral "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/ProgramCounter.vhd" sub00/vhpl01 1459526036
+EN instruction_memory_tl NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory_TL.vhd" sub00/vhpl04 1459526039
+EN instruction_memory NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory.vhd" sub00/vhpl02 1459526037
+EN programcounter NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/ProgramCounter.vhd" sub00/vhpl00 1459526035
+AR instruction_memory instruction_memory_a "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory.vhd" sub00/vhpl03 1459526038
+AR instruction_memory_tl structural "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory_TL.vhd" sub00/vhpl05 1459526040

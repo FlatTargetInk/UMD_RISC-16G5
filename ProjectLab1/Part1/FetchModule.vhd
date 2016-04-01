@@ -52,6 +52,7 @@ process(CLK,RST)
 begin
 	if(RST = '1')then
 		ADDR <= (OTHERS => '0');
+	elsif (
 		
 
 end Behavioral;

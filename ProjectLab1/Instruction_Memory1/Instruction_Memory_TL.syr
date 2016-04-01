@@ -1,0 +1,364 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: Instruction_Memory_TL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Instruction_Memory_TL.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Instruction_Memory_TL"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Instruction_Memory_TL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../Intruction_Memory"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/ProgramCounter.vhd" in Library work.
+Architecture behavioral of Entity programcounter is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory.vhd" in Library work.
+Architecture instruction_memory_a of Entity instruction_memory is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory_TL.vhd" in Library work.
+Entity <instruction_memory_tl> compiled.
+Entity <instruction_memory_tl> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Instruction_Memory_TL> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <programCounter> in library <work> (architecture <Behavioral>) with generics.
+	PCWIDTH = 5
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Instruction_Memory_TL> in library <work> (Architecture <structural>).
+WARNING:Xst:2211 - "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory_TL.vhd" line 69: Instantiating black box module <Instruction_Memory>.
+Entity <Instruction_Memory_TL> analyzed. Unit <Instruction_Memory_TL> generated.
+
+Analyzing generic Entity <programCounter> in library <work> (Architecture <Behavioral>).
+	PCWIDTH = 5
+Entity <programCounter> analyzed. Unit <programCounter> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <programCounter>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/ProgramCounter.vhd".
+WARNING:Xst:647 - Input <EN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <RST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 5-bit up counter for signal <COUNTER>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <programCounter> synthesized.
+
+
+Synthesizing Unit <Instruction_Memory_TL>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory_TL.vhd".
+WARNING:Xst:653 - Signal <WEA> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <RST> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <INSADR> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <EN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:653 - Signal <DINA> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+Unit <Instruction_Memory_TL> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 5-bit up counter                                      : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../Intruction_Memory/Instruction_Memory.ngc>.
+Loading core <Instruction_Memory> for timing and area information for instance <U2>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 5-bit up counter                                      : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Instruction_Memory_TL> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Instruction_Memory_TL, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Instruction_Memory_TL.ngr
+Top Level Output File Name         : Instruction_Memory_TL
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 21
+
+Cell Usage :
+# BELS                             : 9
+#      GND                         : 2
+#      LUT2                        : 1
+#      LUT3                        : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 1
+#      VCC                         : 2
+# FlipFlops/Latches                : 5
+#      FD                          : 4
+#      FDR                         : 1
+# RAMS                             : 1
+#      RAMB16_S36_S36              : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 20
+#      OBUF                        : 20
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                        3  out of   4656     0%  
+ Number of Slice Flip Flops:              5  out of   9312     0%  
+ Number of 4 input LUTs:                  5  out of   9312     0%  
+ Number of IOs:                          21
+ Number of bonded IOBs:                  21  out of    232     9%  
+ Number of BRAMs:                         1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 6     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.250ns (Maximum Frequency: 307.692MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 6.519ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.250ns (frequency: 307.692MHz)
+  Total number of paths / destination ports: 25 / 15
+-------------------------------------------------------------------------
+Delay:               3.250ns (Levels of Logic = 2)
+  Source:            U1/COUNTER_2 (FF)
+  Destination:       U1/COUNTER_4 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: U1/COUNTER_2 to U1/COUNTER_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.591   0.808  U1/COUNTER_2 (U1/COUNTER_2)
+     LUT3_L:I0->LO         1   0.704   0.135  U1/Mcount_COUNTER_cy<2>11 (U1/Mcount_COUNTER_cy<2>)
+     LUT3:I2->O            1   0.704   0.000  U1/Mcount_COUNTER_xor<4>11 (Result<4>)
+     FD:D                      0.308          U1/COUNTER_4
+    ----------------------------------------
+    Total                      3.250ns (2.307ns logic, 0.943ns route)
+                                       (71.0% logic, 29.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              6.519ns (Levels of Logic = 2)
+  Source:            U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (RAM)
+  Destination:       RB<3> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram to RB<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S36_S36:CLKA->DOA25    2   2.800   0.447  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (douta<7>)
+     end scope: 'U2'
+     OBUF:I->O                 3.272          RB_3_OBUF (RB<3>)
+    ----------------------------------------
+    Total                      6.519ns (6.072ns logic, 0.447ns route)
+                                       (93.1% logic, 6.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.55 secs
+ 
+--> 
+
+Total memory usage is 274288 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

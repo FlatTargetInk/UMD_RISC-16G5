@@ -1,0 +1,5 @@
+AR registerbank dataflow //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/RegisterBank/RegisterBank.vhd sub00/vhpl03 1458764951
+EN pipelineregisters NULL C:/Users/Christopher/Documents/HDLProjs/RegisterBank/PipelineRegisters.vhd sub00/vhpl00 1458918489
+EN registerbank NULL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/RegisterBank2/RegisterBank.vhd sub00/vhpl02 1458926392
+AR pipelineregisters behavioral C:/Users/Christopher/Documents/HDLProjs/RegisterBank/PipelineRegisters.vhd sub00/vhpl01 1458918490
+AR registerbank behavioral //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/RegisterBank2/RegisterBank.vhd sub00/vhpl04 1458926393

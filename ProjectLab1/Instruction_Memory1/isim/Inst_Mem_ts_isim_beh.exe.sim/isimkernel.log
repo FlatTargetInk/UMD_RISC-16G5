@@ -1,0 +1,10 @@
+Command line:
+   Inst_Mem_ts_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  3214
+
+Fri Apr 01 11:55:38 2016
+
+
+ Elaboration Time: 0.0312 sec

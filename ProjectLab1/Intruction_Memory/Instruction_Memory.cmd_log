@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "Z:/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory.xst" -ofn "Z:/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory.syr" 
+xst -intstyle ise -ifn "Z:/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory.xst" -ofn "Z:/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory.syr" 
+xst -intstyle ise -ifn "Z:/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory.xst" -ofn "Z:/ECE 368/Poject_Lab01/Intruction_Memory/Instruction_Memory.syr" 

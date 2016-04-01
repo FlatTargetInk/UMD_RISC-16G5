@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/ProjectLab1/Part1/programCounter.xst" -ofn "/home/robert/UMD_RISC-16G5/ProjectLab1/Part1/programCounter.syr" 
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/ProjectLab1/Part1/programCounter.xst" -ofn "/home/robert/UMD_RISC-16G5/ProjectLab1/Part1/programCounter.syr" 

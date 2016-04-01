@@ -1,0 +1,4 @@
+work	"alu_toplevel.vhd"
+work	"arith_unit.vhd"
+work	"logical_unit.vhd"
+work	"shift_unit.vhd"

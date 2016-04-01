@@ -12,7 +12,7 @@ Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Reading design: ALU_Toplevel.prj
@@ -108,22 +108,283 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ALU/ALU/arith_unit.vhd" in Library work.
-Architecture combinational of Entity arith_unit is up to date.
+Entity <arith_unit> compiled.
+Entity <arith_unit> (Architecture <Combinational>) compiled.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ALU/ALU/logical_unit.vhd" in Library work.
-Architecture combinational of Entity logical_unit is up to date.
+Entity <logical_unit> compiled.
+Entity <logical_unit> (Architecture <Combinational>) compiled.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ALU/ALU/shift_unit.vhd" in Library work.
-Architecture combinational of Entity shift_unit is up to date.
+Entity <shift_unit> compiled.
+Entity <shift_unit> (Architecture <Combinational>) compiled.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ALU/ALU/alu_toplevel.vhd" in Library work.
-Architecture structural of Entity alu_toplevel is up to date.
+Entity <ALU_Toplevel> compiled.
+Entity <ALU_Toplevel> (Architecture <Structural>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <ALU_Toplevel> in library <work> (architecture <dataflow>).
+Analyzing hierarchy for entity <ALU_Toplevel> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <arith_unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <logical_unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <shift_unit> in library <work> (architecture <Combinational>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <ALU_Toplevel> in library <work> (Architecture <dataflow>).
-INTERNAL_ERROR:Xst:cmain.c:3464:1.56 -  Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.  
+Analyzing Entity <ALU_Toplevel> in library <work> (Architecture <Structural>).
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/ALU/ALU/alu_toplevel.vhd" line 56: Unconnected output port 'SREG_OUT' of component 'arith_unit'.
+Entity <ALU_Toplevel> analyzed. Unit <ALU_Toplevel> generated.
+
+Analyzing Entity <arith_unit> in library <work> (Architecture <Combinational>).
+Entity <arith_unit> analyzed. Unit <arith_unit> generated.
+
+Analyzing Entity <logical_unit> in library <work> (Architecture <Combinational>).
+Entity <logical_unit> analyzed. Unit <logical_unit> generated.
+
+Analyzing Entity <shift_unit> in library <work> (Architecture <Combinational>).
+Entity <shift_unit> analyzed. Unit <shift_unit> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <arith_unit>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ALU/ALU/arith_unit.vhd".
+    Found 17-bit addsub for signal <RESULT$addsub0000>.
+    Found 1-bit xor2 for signal <SREG<1>>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <arith_unit> synthesized.
+
+
+Synthesizing Unit <logical_unit>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ALU/ALU/logical_unit.vhd".
+WARNING:Xst:1305 - Output <SREG_OUT<3>> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <SREG_OUT<1:0>> is never assigned. Tied to value 00.
+Unit <logical_unit> synthesized.
+
+
+Synthesizing Unit <shift_unit>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ALU/ALU/shift_unit.vhd".
+WARNING:Xst:1305 - Output <SREG_OUT> is never assigned. Tied to value 0000.
+WARNING:Xst:1780 - Signal <sreg<23:3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sreg<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sreg<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sreg<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 24-bit shifter logical left for signal <shift_left$shift0001> created at line 51.
+    Found 24-bit shifter logical right for signal <shift_right$shift0001> created at line 52.
+    Summary:
+	inferred   2 Combinational logic shifter(s).
+Unit <shift_unit> synthesized.
+
+
+Synthesizing Unit <ALU_Toplevel>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ALU/ALU/alu_toplevel.vhd".
+WARNING:Xst:1306 - Output <LDST_ADR> is never assigned.
+WARNING:Xst:1306 - Output <SREG> is never assigned.
+WARNING:Xst:1306 - Output <LDST_DAT> is never assigned.
+WARNING:Xst:646 - Signal <SREG_SH> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SREG_LG> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <SREG_AR> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <LD_MEM> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <ALU_Toplevel> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 17-bit addsub                                         : 1
+# Logic shifters                                       : 2
+ 24-bit shifter logical left                           : 1
+ 24-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 17-bit addsub                                         : 1
+# Logic shifters                                       : 2
+ 24-bit shifter logical left                           : 1
+ 24-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU_Toplevel> ...
+
+Optimizing unit <shift_unit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU_Toplevel, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALU_Toplevel.ngr
+Top Level Output File Name         : ALU_Toplevel
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 88
+
+Cell Usage :
+# BELS                             : 255
+#      LUT2                        : 19
+#      LUT3                        : 69
+#      LUT4                        : 114
+#      MUXCY                       : 15
+#      MUXF5                       : 22
+#      XORCY                       : 16
+# IO Buffers                       : 52
+#      IBUF                        : 36
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      114  out of   4656     2%  
+ Number of 4 input LUTs:                202  out of   9312     2%  
+ Number of IOs:                          88
+ Number of bonded IOBs:                  52  out of    232    22%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 12.668ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1904 / 16
+-------------------------------------------------------------------------
+Delay:               12.668ns (Levels of Logic = 22)
+  Source:            OP<2> (PAD)
+  Destination:       ALU_OUT<15> (PAD)
+
+  Data Path: OP<2> to ALU_OUT<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.218   0.808  OP_2_IBUF (OP_2_IBUF)
+     LUT3:I0->O           17   0.704   1.086  arith_unit/RESULT_cmp_eq00012 (arith_unit/RESULT_cmp_eq0001)
+     LUT3:I2->O            1   0.704   0.000  arith_unit/Maddsub_RESULT_addsub0000_lut<0> (arith_unit/Maddsub_RESULT_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  arith_unit/Maddsub_RESULT_addsub0000_cy<0> (arith_unit/Maddsub_RESULT_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  arith_unit/Maddsub_RESULT_addsub0000_cy<1> (arith_unit/Maddsub_RESULT_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  arith_unit/Maddsub_RESULT_addsub0000_cy<2> (arith_unit/Maddsub_RESULT_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  arith_unit/Maddsub_RESULT_addsub0000_cy<3> (arith_unit/Maddsub_RESULT_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  arith_unit/Maddsub_RESULT_addsub0000_cy<4> (arith_unit/Maddsub_RESULT_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  arith_unit/Maddsub_RESULT_addsub0000_cy<5> (arith_unit/Maddsub_RESULT_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  arith_unit/Maddsub_RESULT_addsub0000_cy<6> (arith_unit/Maddsub_RESULT_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  arith_unit/Maddsub_RESULT_addsub0000_cy<7> (arith_unit/Maddsub_RESULT_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  arith_unit/Maddsub_RESULT_addsub0000_cy<8> (arith_unit/Maddsub_RESULT_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  arith_unit/Maddsub_RESULT_addsub0000_cy<9> (arith_unit/Maddsub_RESULT_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  arith_unit/Maddsub_RESULT_addsub0000_cy<10> (arith_unit/Maddsub_RESULT_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  arith_unit/Maddsub_RESULT_addsub0000_cy<11> (arith_unit/Maddsub_RESULT_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  arith_unit/Maddsub_RESULT_addsub0000_cy<12> (arith_unit/Maddsub_RESULT_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  arith_unit/Maddsub_RESULT_addsub0000_cy<13> (arith_unit/Maddsub_RESULT_addsub0000_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  arith_unit/Maddsub_RESULT_addsub0000_cy<14> (arith_unit/Maddsub_RESULT_addsub0000_cy<14>)
+     XORCY:CI->O           1   0.804   0.499  arith_unit/Maddsub_RESULT_addsub0000_xor<15> (arith_unit/RESULT_addsub0000<15>)
+     LUT4:I1->O            1   0.704   0.455  ALU_OUT<15>15 (ALU_OUT<15>15)
+     LUT3:I2->O            1   0.704   0.420  ALU_OUT<15>189 (ALU_OUT_15_OBUF)
+     OBUF:I->O                 3.272          ALU_OUT_15_OBUF (ALU_OUT<15>)
+    ----------------------------------------
+    Total                     12.668ns (9.400ns logic, 3.268ns route)
+                                       (74.2% logic, 25.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.76 secs
+ 
+--> 
+
+
+Total memory usage is 518636 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

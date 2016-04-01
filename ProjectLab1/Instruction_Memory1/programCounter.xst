@@ -1,0 +1,5 @@
+set -tmpdir "Z:/ECE 368/Poject_Lab01/Instruction_Memory1/xst/projnav.tmp"
+set -xsthdpdir "Z:/ECE 368/Poject_Lab01/Instruction_Memory1/xst"
+elaborate
+-ifn programCounter.prj
+-ifmt mixed
