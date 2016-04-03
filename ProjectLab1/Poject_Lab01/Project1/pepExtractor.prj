@@ -1,0 +1,3 @@
+work	"Instruction_Memory_TL.vhd"
+work	"ipcore_dir/instruction_memory.vhd"
+work	"programCounter.vhd"

@@ -1,4 +1,6 @@
 vhdl work "ipcore_dir/instruction_memory.vhd"
+vhdl work "ipcore_dir/DATAMEM.vhd"
+vhdl work "word_unit.vhd"
 vhdl work "shift_unit.vhd"
 vhdl work "programCounter.vhd"
 vhdl work "logical_unit.vhd"

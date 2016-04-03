@@ -1,0 +1,3 @@
+work	"DC_CTL.vhd"
+work	"DC_Toplevel.vhd"
+work	"PipelineRegisters.vhd"

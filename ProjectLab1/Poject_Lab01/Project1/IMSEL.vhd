@@ -38,6 +38,7 @@ architecture Dataflow of IMSEL is
 	signal IM_SELECT : STD_LOGIC := '0';
 	
 begin
+	SEL_IM <= IM_SELECT;
 	with OP select IM_SELECT <=
 		'1' when "0101" | "0110" | "0111" | "1000" | "1001" | "1010",
 		'0' when OTHERS;

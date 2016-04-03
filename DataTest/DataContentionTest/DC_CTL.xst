@@ -1,0 +1,5 @@
+set -tmpdir "/home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/xst/projnav.tmp"
+set -xsthdpdir "/home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/xst"
+elaborate
+-ifn DC_CTL.prj
+-ifmt mixed

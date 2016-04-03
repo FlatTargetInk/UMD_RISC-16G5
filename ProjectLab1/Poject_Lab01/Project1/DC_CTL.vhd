@@ -62,7 +62,7 @@ begin
 	
 	process(CLK)
 	begin
-		if (CLK'Event and CLK = '1') then
+		if (rising_edge(CLK)) then
 			if (RA = RA0) then
 				OP1 <= "01";
 			elsif (RA = RA1) then

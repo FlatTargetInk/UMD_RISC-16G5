@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> 
 Reading design: ProjLab01.prj
@@ -85,7 +85,7 @@ Equivalent register Removal        : YES
 ---- General Options
 Optimization Goal                  : Speed
 Optimization Effort                : 1
-Keep Hierarchy                     : No
+Keep Hierarchy                     : Yes
 Netlist Hierarchy                  : As_Optimized
 RTL Output                         : Yes
 Global Optimization                : AllClockNets
@@ -110,56 +110,45 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ipcore_dir/DATAMEM.vhd" in Library work.
+Architecture datamem_a of Entity datamem is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/programCounter.vhd" in Library work.
-Entity <programCounter> compiled.
-Entity <programCounter> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity programcounter is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ipcore_dir/instruction_memory.vhd" in Library work.
-Entity <instruction_memory> compiled.
-Entity <instruction_memory> (Architecture <instruction_memory_a>) compiled.
+Architecture instruction_memory_a of Entity instruction_memory is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/arith_unit.vhd" in Library work.
-Entity <arith_unit> compiled.
-Entity <arith_unit> (Architecture <Combinational>) compiled.
+Architecture combinational of Entity arith_unit is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/logical_unit.vhd" in Library work.
-Entity <logical_unit> compiled.
-Entity <logical_unit> (Architecture <Combinational>) compiled.
+Architecture combinational of Entity logical_unit is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/shift_unit.vhd" in Library work.
-Entity <shift_unit> compiled.
-Entity <shift_unit> (Architecture <Combinational>) compiled.
+Architecture combinational of Entity shift_unit is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/word_unit.vhd" in Library work.
+Architecture combinational of Entity word_unit is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/alu_toplevel.vhd" in Library work.
-Entity <ALU_Toplevel> compiled.
-Entity <ALU_Toplevel> (Architecture <Structural>) compiled.
+Architecture structural of Entity alu_toplevel is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/Instruction_Memory_TL.vhd" in Library work.
-Entity <Instruction_Memory_TL> compiled.
-Entity <Instruction_Memory_TL> (Architecture <Structural>) compiled.
+Architecture structural of Entity instruction_memory_tl is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/Fetch_CTL.vhd" in Library work.
-Entity <Fetch_CTL> compiled.
-Entity <Fetch_CTL> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity fetch_ctl is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/REG_CTL.vhd" in Library work.
-Entity <REG_CTL> compiled.
-Entity <REG_CTL> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity reg_ctl is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DC_CTL.vhd" in Library work.
-Entity <DC_CTL> compiled.
-Entity <DC_CTL> (Architecture <Mixed>) compiled.
+Architecture mixed of Entity dc_ctl is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DATA_CTL.vhd" in Library work.
-Entity <DATA_CTL> compiled.
-Entity <DATA_CTL> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity data_ctl is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/IMSEL.vhd" in Library work.
-Entity <IMSEL> compiled.
-Entity <IMSEL> (Architecture <Dataflow>) compiled.
+Architecture dataflow of Entity imsel is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/PipelineRegisters.vhd" in Library work.
-Entity <PipelineRegisters> compiled.
-Entity <PipelineRegisters> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity pipelineregisters is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/RegisterBank.vhd" in Library work.
-Entity <RegisterBank> compiled.
-Entity <RegisterBank> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity registerbank is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ProjLab01.vhd" in Library work.
-Entity <ProjLab01> compiled.
-Entity <ProjLab01> (Architecture <Structural>) compiled.
+Architecture structural of Entity projlab01 is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <ProjLab01> in library <work> (architecture <Structural>).
+Analyzing hierarchy for entity <ProjLab01> in library <work> (architecture <structural>).
 
 Analyzing hierarchy for entity <ALU_Toplevel> in library <work> (architecture <Structural>).
 
@@ -198,15 +187,17 @@ Analyzing hierarchy for entity <logical_unit> in library <work> (architecture <C
 
 Analyzing hierarchy for entity <shift_unit> in library <work> (architecture <Combinational>).
 
+Analyzing hierarchy for entity <word_unit> in library <work> (architecture <Combinational>).
+
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <ProjLab01> in library <work> (Architecture <Structural>).
+Analyzing Entity <ProjLab01> in library <work> (Architecture <structural>).
 Entity <ProjLab01> analyzed. Unit <ProjLab01> generated.
 
 Analyzing Entity <ALU_Toplevel> in library <work> (Architecture <Structural>).
-WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/alu_toplevel.vhd" line 56: Unconnected output port 'SREG_OUT' of component 'arith_unit'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/alu_toplevel.vhd" line 58: Unconnected output port 'SREG_OUT' of component 'arith_unit'.
 Entity <ALU_Toplevel> analyzed. Unit <ALU_Toplevel> generated.
 
 Analyzing Entity <arith_unit> in library <work> (Architecture <Combinational>).
@@ -217,6 +208,10 @@ Entity <logical_unit> analyzed. Unit <logical_unit> generated.
 
 Analyzing Entity <shift_unit> in library <work> (Architecture <Combinational>).
 Entity <shift_unit> analyzed. Unit <shift_unit> generated.
+
+Analyzing Entity <word_unit> in library <work> (Architecture <Combinational>).
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/word_unit.vhd" line 47: Instantiating black box module <DATAMEM>.
+Entity <word_unit> analyzed. Unit <word_unit> generated.
 
 Analyzing Entity <Instruction_Memory_TL> in library <work> (Architecture <Structural>).
 WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/Instruction_Memory_TL.vhd" line 71: Instantiating black box module <instruction_memory>.
@@ -326,8 +321,6 @@ Unit <DATA_CTL> synthesized.
 
 Synthesizing Unit <IMSEL>.
     Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/IMSEL.vhd".
-WARNING:Xst:1305 - Output <SEL_IM> is never assigned. Tied to value 0.
-WARNING:Xst:646 - Signal <IM_SELECT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <IMSEL> synthesized.
 
 
@@ -433,15 +426,6 @@ WARNING:Xst:646 - Signal <sreg<0>> is assigned but never used. This unconnected 
 Unit <shift_unit> synthesized.
 
 
-Synthesizing Unit <ALU_Toplevel>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/alu_toplevel.vhd".
-WARNING:Xst:1305 - Output <LDST_ADR> is never assigned. Tied to value 0000000000000000.
-WARNING:Xst:1305 - Output <LDST_DAT> is never assigned. Tied to value 0000000000000000.
-WARNING:Xst:653 - Signal <SREG_AR> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
-WARNING:Xst:1780 - Signal <LD_MEM> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-Unit <ALU_Toplevel> synthesized.
-
-
 Synthesizing Unit <Instruction_Memory_TL>.
     Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/Instruction_Memory_TL.vhd".
 WARNING:Xst:653 - Signal <WEA> is used but never assigned. This sourceless signal will be automatically connected to value 0.
@@ -452,14 +436,34 @@ WARNING:Xst:653 - Signal <DINA> is used but never assigned. This sourceless sign
 Unit <Instruction_Memory_TL> synthesized.
 
 
+Synthesizing Unit <word_unit>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/word_unit.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <WREN_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <word_unit> synthesized.
+
+
+Synthesizing Unit <ALU_Toplevel>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/alu_toplevel.vhd".
+WARNING:Xst:1305 - Output <LDST_ADR> is never assigned. Tied to value 0000000000000000.
+WARNING:Xst:1305 - Output <SREG> is never assigned. Tied to value 0000.
+WARNING:Xst:1305 - Output <LDST_DAT> is never assigned. Tied to value 0000000000000000.
+WARNING:Xst:646 - Signal <SREG_SH> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SREG_LG> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <SREG_AR> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <LD_MEM> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <ALU_Toplevel> synthesized.
+
+
 Synthesizing Unit <ProjLab01>.
     Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ProjLab01.vhd".
 WARNING:Xst:1306 - Output <CCR> is never assigned.
+WARNING:Xst:646 - Signal <RB_OUT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <RB_DC2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <RA_OUT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <PC_RST> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <PC_INC> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <PC4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <OP4> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 WARNING:Xst:646 - Signal <INST_EN> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <IMM_SEL> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <IMM3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -467,10 +471,6 @@ WARNING:Xst:653 - Signal <GLOBAL_EN> is used but never assigned. This sourceless
 WARNING:Xst:646 - Signal <DATAWR_EN> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <DATARD_EN> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <ALU_FLAGS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found 16-bit 4-to-1 multiplexer for signal <RA_OUT>.
-    Found 16-bit 4-to-1 multiplexer for signal <RB_OUT>.
-    Summary:
-	inferred  32 Multiplexer(s).
 Unit <ProjLab01> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -488,7 +488,11 @@ WARNING:Xst:524 - All outputs of the instance <PC4_Reg> of the block <PipelineRe
    This instance will be removed from the design along with all underlying logic
 WARNING:Xst:524 - All outputs of the instance <ALU_FLAGS_Reg> of the block <PipelineRegisters_1> are unconnected in block <ProjLab01>.
    This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <ALU_OUT1_Reg> of the block <PipelineRegisters_4> are unconnected in block <ProjLab01>.
+   This instance will be removed from the design along with all underlying logic
 WARNING:Xst:524 - All outputs of the instance <RB_DC1_Reg> of the block <PipelineRegisters_1> are unconnected in block <ProjLab01>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <ALU_OUT2_Reg> of the block <PipelineRegisters_4> are unconnected in block <ProjLab01>.
    This instance will be removed from the design along with all underlying logic
 WARNING:Xst:524 - All outputs of the instance <RB_DC2_Reg> of the block <PipelineRegisters_1> are unconnected in block <ProjLab01>.
    This instance will be removed from the design along with all underlying logic
@@ -505,17 +509,18 @@ Macro Statistics
  17-bit addsub                                         : 1
 # Counters                                             : 1
  5-bit up counter                                      : 1
-# Registers                                            : 62
+# Registers                                            : 60
  1-bit register                                        : 4
- 16-bit register                                       : 28
+ 16-bit register                                       : 24
  2-bit register                                        : 2
- 4-bit register                                        : 24
+ 4-bit register                                        : 26
  8-bit register                                        : 4
+# Latches                                              : 1
+ 1-bit latch                                           : 1
 # Comparators                                          : 6
  4-bit comparator equal                                : 6
-# Multiplexers                                         : 4
+# Multiplexers                                         : 2
  16-bit 16-to-1 multiplexer                            : 2
- 16-bit 4-to-1 multiplexer                             : 2
 # Logic shifters                                       : 2
  24-bit shifter logical left                           : 1
  24-bit shifter logical right                          : 1
@@ -528,15 +533,21 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+Reading core <ipcore_dir/DATAMEM.ngc>.
 Reading core <ipcore_dir/instruction_memory.ngc>.
+Loading core <DATAMEM> for timing and area information for instance <DATAMEMORY>.
 Loading core <instruction_memory> for timing and area information for instance <U2>.
+WARNING:Xst:1290 - Hierarchical block <DCCTL> is unconnected in block <ProjLab01>.
+   It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <DATA_CTL> is unconnected in block <ProjLab01>.
    It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <IMSELECT> is unconnected in block <ProjLab01>.
+WARNING:Xst:1290 - Hierarchical block <RB2ADR_Reg> is unconnected in block <ProjLab01>.
    It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <IMM1_Reg> is unconnected in block <ProjLab01>.
+WARNING:Xst:1290 - Hierarchical block <RB3ADR_Reg> is unconnected in block <ProjLab01>.
    It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <OPR0_Reg> is unconnected in block <ProjLab01>.
+WARNING:Xst:1290 - Hierarchical block <RA_DC1_Reg> is unconnected in block <ProjLab01>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <RA_DC2_Reg> is unconnected in block <ProjLab01>.
    It will be removed from the design.
 
 Synthesizing (advanced) Unit <REG_CTL>.
@@ -554,13 +565,14 @@ Macro Statistics
  17-bit addsub                                         : 1
 # Counters                                             : 1
  5-bit up counter                                      : 1
-# Registers                                            : 584
- Flip-Flops                                            : 584
+# Registers                                            : 528
+ Flip-Flops                                            : 528
+# Latches                                              : 1
+ 1-bit latch                                           : 1
 # Comparators                                          : 6
  4-bit comparator equal                                : 6
-# Multiplexers                                         : 34
+# Multiplexers                                         : 32
  1-bit 16-to-1 multiplexer                             : 32
- 16-bit 4-to-1 multiplexer                             : 2
 # Logic shifters                                       : 2
  24-bit shifter logical left                           : 1
  24-bit shifter logical right                          : 1
@@ -572,17 +584,20 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2677 - Node <DATA_CTL/WR> of sequential type is unconnected in block <ProjLab01>.
-WARNING:Xst:2677 - Node <DATA_CTL/RD> of sequential type is unconnected in block <ProjLab01>.
-WARNING:Xst:524 - All outputs of the instance <IMM1_Reg> of the block <PipelineRegisters_2> are unconnected in block <ProjLab01>.
-   This instance will be removed from the design along with all underlying logic
-WARNING:Xst:524 - All outputs of the instance <OPR0_Reg> of the block <PipelineRegisters_2> are unconnected in block <ProjLab01>.
-   This instance will be removed from the design along with all underlying logic
-WARNING:Xst:1710 - FF/Latch <REGCTL/WR_EN> (without init value) has a constant value of 1 in block <ProjLab01>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <ProjLab01> ...
 
+Optimizing unit <IMSEL> ...
+
+Optimizing unit <logical_unit> ...
+
+Optimizing unit <Fetch_CTL> ...
+
+Optimizing unit <REG_CTL> ...
+
 Optimizing unit <DC_CTL> ...
+
+Optimizing unit <DATA_CTL> ...
 
 Optimizing unit <PipelineRegisters_1> ...
 
@@ -592,16 +607,37 @@ Optimizing unit <PipelineRegisters_3> ...
 
 Optimizing unit <PipelineRegisters_4> ...
 
+Optimizing unit <programCounter> ...
+
 Optimizing unit <RegisterBank> ...
+
+Optimizing unit <arith_unit> ...
 
 Optimizing unit <shift_unit> ...
 
+Optimizing unit <word_unit> ...
+
+Optimizing unit <Instruction_Memory_TL> ...
+
 Optimizing unit <ALU_Toplevel> ...
+WARNING:Xst:1290 - Hierarchical block <DCCTL> is unconnected in block <ProjLab01>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <DATA_CTL> is unconnected in block <ProjLab01>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <RA_DC2_Reg> is unconnected in block <ProjLab01>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <RA_DC1_Reg> is unconnected in block <ProjLab01>.
+   It will be removed from the design.
+WARNING:Xst:2677 - Node <DataOutSignal_1> of sequential type is unconnected in block <OP4_Reg>.
+WARNING:Xst:2677 - Node <Dout_1> of sequential type is unconnected in block <OP4_Reg>.
+WARNING:Xst:1290 - Hierarchical block <RB3ADR_Reg> is unconnected in block <ProjLab01>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <RB2ADR_Reg> is unconnected in block <ProjLab01>.
+   It will be removed from the design.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block ProjLab01, actual ratio is 12.
-FlipFlop OP3_Reg/Dout_3 has been replicated 2 time(s)
+Found area constraint ratio of 100 (+ 5) on block ProjLab01, actual ratio is 13.
 
 Final Macro Processing ...
 
@@ -609,8 +645,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 556
- Flip-Flops                                            : 556
+# Registers                                            : 493
+ Flip-Flops                                            : 493
 
 =========================================================================
 
@@ -633,39 +669,38 @@ RTL Top Level Output File Name     : ProjLab01.ngr
 Top Level Output File Name         : ProjLab01
 Output Format                      : NGC
 Optimization Goal                  : Speed
-Keep Hierarchy                     : No
+Keep Hierarchy                     : Yes
 
 Design Statistics
 # IOs                              : 54
 
 Cell Usage :
-# BELS                             : 909
-#      GND                         : 2
+# BELS                             : 857
+#      GND                         : 5
 #      INV                         : 1
-#      LUT2                        : 23
-#      LUT2_L                      : 2
-#      LUT3                        : 354
-#      LUT3_D                      : 11
-#      LUT3_L                      : 1
-#      LUT4                        : 165
-#      LUT4_D                      : 10
-#      LUT4_L                      : 24
+#      LUT2                        : 13
+#      LUT3                        : 360
+#      LUT3_D                      : 4
+#      LUT3_L                      : 2
+#      LUT4                        : 137
+#      LUT4_D                      : 5
+#      LUT4_L                      : 31
 #      MUXCY                       : 15
-#      MUXF5                       : 187
+#      MUXF5                       : 168
 #      MUXF6                       : 64
 #      MUXF7                       : 32
-#      VCC                         : 2
+#      VCC                         : 4
 #      XORCY                       : 16
-# FlipFlops/Latches                : 556
+# FlipFlops/Latches                : 494
 #      FD                          : 1
+#      FD_1                        : 1
 #      FDCE                        : 5
-#      FDCE_1                      : 130
-#      FDE                         : 160
+#      FDCE_1                      : 99
+#      FDE                         : 131
 #      FDE_1                       : 256
-#      FDRS                        : 2
-#      FDS                         : 2
-# RAMS                             : 1
-#      RAMB16_S36_S36              : 1
+#      LD                          : 1
+# RAMS                             : 2
+#      RAMB16_S36_S36              : 2
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 49
@@ -678,12 +713,12 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      582  out of   4656    12%  
- Number of Slice Flip Flops:            556  out of   9312     5%  
- Number of 4 input LUTs:                591  out of   9312     6%  
+ Number of Slices:                      570  out of   4656    12%  
+ Number of Slice Flip Flops:            494  out of   9312     5%  
+ Number of 4 input LUTs:                553  out of   9312     5%  
  Number of IOs:                          54
  Number of bonded IOBs:                  50  out of    232    21%  
- Number of BRAMs:                         1  out of     20     5%  
+ Number of BRAMs:                         2  out of     20    10%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -704,28 +739,33 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 557   |
------------------------------------+------------------------+-------+
+-----------------------------------------------------------------------+-----------------------------------+-------+
+Clock Signal                                                           | Clock buffer(FF name)             | Load  |
+-----------------------------------------------------------------------+-----------------------------------+-------+
+CLK                                                                    | BUFGP                             | 495   |
+ALU_UNIT/word_unit/WREN_0_not0001(ALU_UNIT/word_unit/WREN_0_not00011:O)| NONE(*)(ALU_UNIT/word_unit/WREN_0)| 1     |
+-----------------------------------------------------------------------+-----------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
------------------------------------+------------------------------+-------+
-Control Signal                     | Buffer(FF name)              | Load  |
------------------------------------+------------------------------+-------+
-RST                                | IBUF                         | 130   |
-N0(XST_GND:G)                      | NONE(Fetch_UNIT/U1/COUNTER_0)| 5     |
------------------------------------+------------------------------+-------+
+----------------------------------------+------------------------------+-------+
+Control Signal                          | Buffer(FF name)              | Load  |
+----------------------------------------+------------------------------+-------+
+RST                                     | IBUF                         | 99    |
+Fetch_UNIT/DINA<0>(Fetch_UNIT/XST_GND:G)| NONE(Fetch_UNIT/U1/COUNTER_0)| 5     |
+----------------------------------------+------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 22.240ns (Maximum Frequency: 44.964MHz)
+   Minimum period: 18.506ns (Maximum Frequency: 54.037MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 4.965ns
+   Maximum output required time after clock: 4.914ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -734,37 +774,56 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 22.240ns (frequency: 44.964MHz)
-  Total number of paths / destination ports: 17758 / 860
+  Clock period: 18.506ns (frequency: 54.037MHz)
+  Total number of paths / destination ports: 5233 / 823
 -------------------------------------------------------------------------
-Delay:               11.120ns (Levels of Logic = 7)
-  Source:            OP3_Reg/Dout_0 (FF)
-  Destination:       ALU_OUT_Reg/DataOutSignal_13 (FF)
+Delay:               9.253ns (Levels of Logic = 23)
+  Source:            OP3_Reg/Dout_2 (FF)
+  Destination:       ALU_OUT_Reg/DataOutSignal_15 (FF)
   Source Clock:      CLK falling
   Destination Clock: CLK rising
 
-  Data Path: OP3_Reg/Dout_0 to ALU_OUT_Reg/DataOutSignal_13
+  Data Path: OP3_Reg/Dout_2 to ALU_OUT_Reg/DataOutSignal_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE_1:C->Q           9   0.591   0.855  OP3_Reg/Dout_0 (OP3_Reg/Dout_0)
-     LUT4_D:I2->O         29   0.704   1.265  DCCTL/OP2_SEL_or00001 (DCCTL/OP2_SEL_or0000)
-     LUT4_D:I3->O          1   0.704   0.424  Mmux_RB_OUT_47 (Mmux_RB_OUT_47)
-     LUT4:I3->O           53   0.704   1.269  Mmux_RB_OUT_2_f5_6 (RB_OUT<1>)
-     MUXF5:S->O            3   0.739   0.535  ALU_UNIT/shift_unit/Sh77 (ALU_UNIT/shift_unit/Sh77)
-     LUT4:I3->O            1   0.704   0.455  ALU_UNIT/ALU_OUT<13>106 (ALU_UNIT/ALU_OUT<13>106)
-     LUT4:I2->O            1   0.704   0.455  ALU_UNIT/ALU_OUT<13>152 (ALU_UNIT/ALU_OUT<13>152)
-     LUT4:I2->O            1   0.704   0.000  ALU_UNIT/ALU_OUT<13>201 (ALU_VAL<13>)
-     FDE:D                     0.308          ALU_OUT_Reg/DataOutSignal_13
+     FDCE_1:C->Q          25   0.591   1.435  Dout_2 (Dout_2)
+     end scope: 'OP3_Reg'
+     begin scope: 'ALU_UNIT'
+     begin scope: 'arith_unit'
+     LUT3:I0->O           17   0.704   1.086  RESULT_cmp_eq00012 (RESULT_cmp_eq0001)
+     LUT3:I2->O            1   0.704   0.000  Maddsub_RESULT_addsub0000_lut<0> (Maddsub_RESULT_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Maddsub_RESULT_addsub0000_cy<0> (Maddsub_RESULT_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<1> (Maddsub_RESULT_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<2> (Maddsub_RESULT_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<3> (Maddsub_RESULT_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<4> (Maddsub_RESULT_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<5> (Maddsub_RESULT_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<6> (Maddsub_RESULT_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<7> (Maddsub_RESULT_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<8> (Maddsub_RESULT_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<9> (Maddsub_RESULT_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<10> (Maddsub_RESULT_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<11> (Maddsub_RESULT_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<12> (Maddsub_RESULT_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<13> (Maddsub_RESULT_addsub0000_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  Maddsub_RESULT_addsub0000_cy<14> (Maddsub_RESULT_addsub0000_cy<14>)
+     XORCY:CI->O           1   0.804   0.499  Maddsub_RESULT_addsub0000_xor<15> (RESULT_addsub0000<15>)
+     LUT4:I1->O            1   0.704   0.424  RESULT<15>1 (SREG_OUT<3>)
+     end scope: 'arith_unit'
+     LUT4:I3->O            1   0.704   0.000  ALU_OUT<15>27 (ALU_OUT<15>)
+     end scope: 'ALU_UNIT'
+     begin scope: 'ALU_OUT_Reg'
+     FDE:D                     0.308          DataOutSignal_15
     ----------------------------------------
-    Total                     11.120ns (5.862ns logic, 5.258ns route)
-                                       (52.7% logic, 47.3% route)
+    Total                      9.253ns (5.809ns logic, 3.444ns route)
+                                       (62.8% logic, 37.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
-Offset:              4.965ns (Levels of Logic = 1)
+Offset:              4.914ns (Levels of Logic = 2)
   Source:            ALU_OUT_Reg/Dout_15 (FF)
   Destination:       ALU_OUT<15> (PAD)
   Source Clock:      CLK falling
@@ -773,24 +832,25 @@ Offset:              4.965ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE_1:C->Q          20   0.591   1.102  ALU_OUT_Reg/Dout_15 (ALU_OUT_Reg/Dout_15)
+     FDCE_1:C->Q          17   0.591   1.051  Dout_15 (Dout_15)
+     end scope: 'ALU_OUT_Reg'
      OBUF:I->O                 3.272          ALU_OUT_15_OBUF (ALU_OUT<15>)
     ----------------------------------------
-    Total                      4.965ns (3.863ns logic, 1.102ns route)
-                                       (77.8% logic, 22.2% route)
+    Total                      4.914ns (3.863ns logic, 1.051ns route)
+                                       (78.6% logic, 21.4% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.32 secs
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.08 secs
  
 --> 
 
 
-Total memory usage is 535620 kilobytes
+Total memory usage is 536968 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   57 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :   68 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 

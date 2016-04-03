@@ -48,7 +48,8 @@ architecture Structural of ProjLab01 is
 	signal IMM1, IMM2, IMM3		  : STD_LOGIC_VECTOR (7 downto 0) := (OTHERS => '0');
 	signal GLOBAL_EN 				  : STD_LOGIC := '1'; -- Determines whether things are enabled (allowed to operate)
 	signal IMM_SEL 				  : STD_LOGIC := '0'; -- Determines selection between immediate data and RB
-	signal PC_EN, PC_RST, PC_INC : STD_LOGIC := '0'; -- Program counter enable
+	signal PC_EN, PC_INC 			: STD_LOGIC := '1'; -- Program counter enable
+	signal PC_RST 						: STD_LOGIC := '0';
 	signal INST_EN 				  : STD_LOGIC := '1'; -- Enables instruction memory
 	signal RD_EN, WR_EN 			  : STD_LOGIC := '0'; -- Enables the register bank to read, write
 	signal OPR1, OPR2, OPRB		  :STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0'); -- From reg bank to RA and RB data registers
@@ -89,9 +90,10 @@ begin
 	--------  ALU  --------
 	-----------------------
 	ALU_UNIT	: entity work.ALU_Toplevel
-	port map(RA 		=> RA_OUT,
-				RB 		=> RB_OUT,
+	port map(RA 		=> RA_IN, --OUT,
+				RB 		=> RB_in, --OUT,
 				OP 		=> OP3,
+				CLK		=> CLK,
 				ALU_OUT 	=> ALU_VAL,
 				SREG 		=> ALU_OUT_FLAGS,
 				LDST_DAT => STORE_DATA,
@@ -344,6 +346,14 @@ begin
 					Din	=> ALU_OUT_FLAGS,
 					Dout	=> ALU_FLAGS);
 	
+	OP4_Reg: entity work.PipelineRegisters
+	generic map( dataWidth => 4)
+	port map(	Clk	=> CLK,
+					Ena	=> GLOBAL_EN,
+					Rst	=> RST,
+					Din	=> OP3,
+					Dout	=> OP4);
+	
 	----> DC Stage 1 <----
 	ALU_OUT1_Reg: entity work.PipelineRegisters
 	generic map( dataWidth => 16)
@@ -410,7 +420,7 @@ begin
 					RST		=> RST,
 					INSADR	=> PC0);
 	
-	InstructionMem: entity work.RegisterBank
+	RegisterBank_Unit: entity work.RegisterBank
 	port map(	RAddr		=> RA1,
 					RBddr 	=> RB1,
 					RWddr 	=> RA4,

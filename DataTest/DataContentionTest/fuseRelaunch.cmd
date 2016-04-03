@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_tb_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_tb_beh.prj" "work.DC_tb" 

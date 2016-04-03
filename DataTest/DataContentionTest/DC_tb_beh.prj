@@ -1,0 +1,4 @@
+vhdl work "PipelineRegisters.vhd"
+vhdl work "DC_CTL.vhd"
+vhdl work "DC_Toplevel.vhd"
+vhdl work "DC_tb.vhd"

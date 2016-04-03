@@ -34,10 +34,16 @@ int main(int argc, char **argv)
     work_a_2797637665_3852387523_init();
     work_a_3252683731_3852387523_init();
     work_a_0141124097_3852387523_init();
-    work_a_1946587752_1181938964_init();
-    work_a_3319326315_3212880686_init();
     std_textio_init();
     ieee_p_3564397177_init();
+    xilinxcorelib_a_1975148188_2959432447_init();
+    xilinxcorelib_a_2945921513_1709443946_init();
+    xilinxcorelib_a_2786250493_0543512595_init();
+    xilinxcorelib_a_0626408557_3212880686_init();
+    work_a_3073701636_1075909370_init();
+    work_a_3135851394_3852387523_init();
+    work_a_1946587752_1181938964_init();
+    work_a_3319326315_3212880686_init();
     xilinxcorelib_a_1203745346_2959432447_init();
     xilinxcorelib_a_1677950190_1709443946_init();
     xilinxcorelib_a_2485494527_0543512595_init();
