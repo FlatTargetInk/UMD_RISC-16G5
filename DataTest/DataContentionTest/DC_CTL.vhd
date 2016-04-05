@@ -62,14 +62,17 @@ begin
 	
 	
 --		OP1 <= "00";
+	process(RA, RA0, RA1, RA2)
+	begin
+--		if(CLK'event) then
 			if (RA = RA0) then
 				OP1 <= "01";
---			elsif (RA = RA1) then
---				OP1 <= "10";
---			elsif (RA = RA2) then
---				OP1 <= "11";
---			else
---				OP1 <= "00";
+			elsif (RA = RA1) then
+				OP1 <= "10";
+			elsif (RA = RA2) then
+				OP1 <= "11";
+			else
+				OP1 <= "00";
 			end if;
 			
 --			if (RB = RA0) then
@@ -82,7 +85,10 @@ begin
 --				OP2 <= "00";
 --			end if;
 			
-		--end if;
+--		end if;
+--		OP1_SEL <= OP1;
+	end process;
+
 		
 	
 end Combinational;

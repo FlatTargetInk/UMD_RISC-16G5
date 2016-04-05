@@ -49,18 +49,8 @@ architecture Mixed of DC_CTL is
 signal OP1, OP2 : STD_LOGIC_VECTOR (1 downto 0) := (OTHERS => '0');
 
 begin
-
-	OP1_SEL <= OP1;
---	with OPC select OP1_SEL <=
---		"00" 	when "0101" | "0110" | "0111" | "1000" | "1001" | "1010",
---		OP1	when OTHERS;
 	
-	with OPC select OP2_SEL <=
-		"00" 	when "0101" | "0110" | "0111" | "1000" | "1001" | "1010",
-		OP2	when OTHERS;
-	
-	
-	process(CLK)
+	process(RA, RB, RA0, RA1, RA2)
 	begin
 		if (rising_edge(CLK)) then
 			if (RA = RA0) then
@@ -86,6 +76,12 @@ begin
 		end if;
 		
 	end process;
+
+	OP1_SEL <= OP1;
 	
+	with OPC select OP2_SEL <=
+		"00" 	when "0101" | "0110" | "0111" | "1000" | "1001" | "1010",
+		OP2	when OTHERS;
+
 end Mixed;
 

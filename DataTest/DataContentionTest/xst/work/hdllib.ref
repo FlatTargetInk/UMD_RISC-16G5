@@ -1,6 +1,7 @@
+AR dc_ctl combinational /home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_CTL.vhd sub00/vhpl06 1459795232
 AR dc_ctl mixed /home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_CTL.vhd sub00/vhpl01 1459722713
-EN dc_toplevel NULL /home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_Toplevel.vhd sub00/vhpl04 1459722716
-EN pipelineregisters NULL /home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/PipelineRegisters.vhd sub00/vhpl02 1459722714
-AR pipelineregisters behavioral /home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/PipelineRegisters.vhd sub00/vhpl03 1459722715
-AR dc_toplevel structural /home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_Toplevel.vhd sub00/vhpl05 1459722717
-EN dc_ctl NULL /home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_CTL.vhd sub00/vhpl00 1459723084
+EN dc_toplevel NULL /home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_Toplevel.vhd sub00/vhpl04 1459793923
+EN pipelineregisters NULL /home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/PipelineRegisters.vhd sub00/vhpl02 1459793921
+AR pipelineregisters behavioral /home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/PipelineRegisters.vhd sub00/vhpl03 1459793922
+AR dc_toplevel structural /home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_Toplevel.vhd sub00/vhpl05 1459793924
+EN dc_ctl NULL /home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_CTL.vhd sub00/vhpl00 1459795231

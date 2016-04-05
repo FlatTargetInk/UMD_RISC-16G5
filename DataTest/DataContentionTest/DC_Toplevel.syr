@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Reading design: DC_Toplevel.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -112,7 +112,7 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_CTL.vhd" in Library work.
 Entity <dc_ctl> compiled.
-Entity <dc_ctl> (Architecture <mixed>) compiled.
+Entity <dc_ctl> (Architecture <combinational>) compiled.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/PipelineRegisters.vhd" in Library work.
 Architecture behavioral of Entity pipelineregisters is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_Toplevel.vhd" in Library work.
@@ -123,7 +123,7 @@ Architecture structural of Entity dc_toplevel is up to date.
 =========================================================================
 Analyzing hierarchy for entity <DC_Toplevel> in library <work> (architecture <structural>).
 
-Analyzing hierarchy for entity <DC_CTL> in library <work> (architecture <Mixed>).
+Analyzing hierarchy for entity <DC_CTL> in library <work> (architecture <Combinational>).
 
 Analyzing hierarchy for entity <PipelineRegisters> in library <work> (architecture <Behavioral>) with generics.
 	dataWidth = 4
@@ -135,7 +135,9 @@ Analyzing hierarchy for entity <PipelineRegisters> in library <work> (architectu
 Analyzing Entity <DC_Toplevel> in library <work> (Architecture <structural>).
 Entity <DC_Toplevel> analyzed. Unit <DC_Toplevel> generated.
 
-Analyzing Entity <DC_CTL> in library <work> (Architecture <Mixed>).
+Analyzing Entity <DC_CTL> in library <work> (Architecture <Combinational>).
+WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_CTL.vhd" line 65: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <OP1>
 Entity <DC_CTL> analyzed. Unit <DC_CTL> generated.
 
 Analyzing generic Entity <PipelineRegisters> in library <work> (Architecture <Behavioral>).
@@ -154,9 +156,9 @@ Performing bidirectional port resolution...
 Synthesizing Unit <DC_CTL>.
     Related source file is "/home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_CTL.vhd".
     Found 2-bit register for signal <OP1>.
-    Found 4-bit comparator equal for signal <OP1$cmp_eq0000> created at line 67.
-    Found 4-bit comparator equal for signal <OP1$cmp_eq0001> created at line 68.
-    Found 4-bit comparator equal for signal <OP1$cmp_eq0002> created at line 70.
+    Found 4-bit comparator equal for signal <OP1$cmp_eq0000> created at line 68.
+    Found 4-bit comparator equal for signal <OP1$cmp_eq0001> created at line 69.
+    Found 4-bit comparator equal for signal <OP1$cmp_eq0002> created at line 71.
     Summary:
 	inferred   2 D-type flip-flop(s).
 	inferred   3 Comparator(s).
@@ -408,15 +410,15 @@ Offset:              4.394ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.46 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.59 secs
  
 --> 
 
 
-Total memory usage is 511244 kilobytes
+Total memory usage is 511272 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

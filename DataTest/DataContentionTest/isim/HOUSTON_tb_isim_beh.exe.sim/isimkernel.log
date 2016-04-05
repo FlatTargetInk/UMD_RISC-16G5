@@ -1,0 +1,28 @@
+Command line:
+   HOUSTON_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  35680
+
+Mon Apr  4 14:41:35 2016
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 197.759 Meg
+
+ Total Signals          : 13
+ Total Nets             : 21
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 4
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 382
+
+ Total Simulation Time: 0.05 sec
+
+ Current Memory Usage: 273.261 Meg
+
+Mon Apr  4 14:41:46 2016
+
