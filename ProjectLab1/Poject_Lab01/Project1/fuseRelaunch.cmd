@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/TopLevel_tb_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/TopLevel_tb_beh.prj" "work.TopLevel_tb" 
+-intstyle "ise" -incremental -o "Z:/ECE 368/Poject_Lab01/Project1/TopLevel_tb_isim_beh.exe" -prj "Z:/ECE 368/Poject_Lab01/Project1/TopLevel_tb_beh.prj" "work.TopLevel_tb" 

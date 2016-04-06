@@ -95,7 +95,7 @@ begin
 			SHIFT 	when "1000",--, -- SR (SHIFT)
 			WORD_OUT when "1001", -- LW (WORD)
 			WORD_OUT when "1010", -- SW (WORD)
-			RA			when OTHERS;
+			X"0000"	when OTHERS;
 
 end Structural;
 

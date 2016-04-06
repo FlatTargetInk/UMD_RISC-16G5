@@ -29,14 +29,14 @@ entity RegisterBank is
            clk 	: in  STD_LOGIC;
            R 		: in  STD_LOGIC;
            W 		: in  STD_LOGIC;
-           RAout 	: out  STD_LOGIC_VECTOR (15 downto 0); --
+			  RAout 	: out  STD_LOGIC_VECTOR (15 downto 0); --
            RBout 	: out  STD_LOGIC_VECTOR (15 downto 0)); --
 end RegisterBank;
 
 architecture Behavioral of RegisterBank is
 
 signal R0dat, R1dat, R2dat, R3dat, R4dat, R5dat, R6dat, R7dat, R8dat, R9dat,
-		 R10dat, R11dat, R12dat, R13dat, R14dat, R15dat : STD_LOGIC_VECTOR(15 downto 0) := x"0000";
+		 R10dat, R11dat, R12dat, R13dat, R14dat, R15dat : STD_LOGIC_VECTOR(15 downto 0) := (OTHERS => '0');
 		 
 begin
 

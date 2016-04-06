@@ -27,7 +27,7 @@ end PipelineRegisters;
 
 architecture Behavioral of PipelineRegisters is
 
-signal DataOutSignal : STD_LOGIC_VECTOR(dataWidth-1 DOWNTO 0) := (others=>'0'); -- Use a signal that always begins at 0 to ensure safe states
+signal DataOutSignal : STD_LOGIC_VECTOR(dataWidth-1 DOWNTO 0) := (others=>'1'); -- Use a signal that always begins at 0 to ensure safe states
 
 begin
 	BehavioralProcess: process(Clk, Rst)
@@ -40,7 +40,7 @@ begin
 			Dout <= DataOutSignal; -- Write data out
 		end if;
 		if(Rst = '1' and Ena = '1') then -- If the reset line has been driven high, reset the data out.
-			Dout <= (others=>'0'); -- Set data out to all zeroes
+			DataOutSignal <= (others=>'1'); -- Set data out to all zeroes
 		end if;
 	end process;
 end Behavioral;

@@ -51,9 +51,10 @@ begin
 			RA or RB 	when "011",	-- OR
 			RA and RB 	when "010",	-- AND
 			RA and RB	when "110",	-- ANDI
+			RB				when "100",	-- MOV
 			RA or RB		when OTHERS;	-- SAFE (I guess)
 	
-	zro <= '1' when result(15 downto 0) = x"00000000" else '1';	-- Zero
+	zro <= '1' when result(15 downto 0) = x"00000000" else '0';	-- Zero
 	
 	LOG_OUT <= result;
 	SREG_OUT(2) <= zro;

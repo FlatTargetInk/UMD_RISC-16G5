@@ -33,6 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Instruction_Memory_TL is
     Port ( CLK : in STD_LOGIC;
+			  RST	: in STD_LOGIC;
 			  RA : out  STD_LOGIC_VECTOR (3 downto 0);
            RB : out  STD_LOGIC_VECTOR (3 downto 0);
            OP : out  STD_LOGIC_VECTOR (3 downto 0);
@@ -43,7 +44,7 @@ architecture Structural of Instruction_Memory_TL is
 
 --Program counter
 signal EN :   STD_LOGIC := '1';
-signal RST :  STD_LOGIC := '0';
+--signal RST :  STD_LOGIC := '0';
 signal INSADR :STD_LOGIC_VECTOR (4 downto 0) := (OTHERS => '0');
 
 --INSTRUCTION MEMORY--
@@ -68,7 +69,7 @@ begin
 					RST => RST,
 					INSADR => ADDRA);
 		
-	U2: entity work.instruction_memory
+	U2: entity work.Instr_Mem
 		port map(CLKA => CLK,
 					ADDRA => ADDRA ,
 					DINA => DINA,

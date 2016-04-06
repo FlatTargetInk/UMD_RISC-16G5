@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Fri Apr  1 19:37:56 2016
+# Date: Wed Apr 06 18:50:08 2016
 #
 ##############################################################
 #
@@ -46,7 +46,7 @@ CSET axi_id_width=4
 CSET axi_slave_type=Memory_Slave
 CSET axi_type=AXI4_Full
 CSET byte_size=9
-CSET coe_file="/home/robert/ECE368-Lab/Project Lab 2/instruction_memory.coe"
+CSET coe_file="Z:\ECE 368\Poject_Lab01\Project1\instruction_memory.coe"
 CSET collision_warnings=ALL
 CSET component_name=blk_mem_gen_v7_3
 CSET disable_collision_warnings=false
@@ -97,7 +97,7 @@ CSET use_regcea_pin=false
 CSET use_regceb_pin=false
 CSET use_rsta_pin=false
 CSET use_rstb_pin=false
-CSET write_depth_a=20
+CSET write_depth_a=32
 CSET write_width_a=16
 CSET write_width_b=16
 # END Parameters
@@ -105,4 +105,4 @@ CSET write_width_b=16
 MISC pkg_timestamp=2012-11-19T16:22:25Z
 # END Extra information
 GENERATE
-# CRC: 1173e465
+# CRC: 9f888da7

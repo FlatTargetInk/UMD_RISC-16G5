@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Thu Mar 31 18:21:37 2016
+# Date: Fri Apr  1 19:40:38 2016
 #
 ##############################################################
 #
@@ -46,9 +46,9 @@ CSET axi_id_width=4
 CSET axi_slave_type=Memory_Slave
 CSET axi_type=AXI4_Full
 CSET byte_size=9
-CSET coe_file=.\instruction_memory.coe
+CSET coe_file="/home/robert/ECE368-Lab/Project Lab 2/instruction_memory.coe"
 CSET collision_warnings=ALL
-CSET component_name=Instruction_Memory
+CSET component_name=instruction_memory
 CSET disable_collision_warnings=false
 CSET disable_out_of_range_warnings=false
 CSET ecc=false
@@ -57,7 +57,7 @@ CSET enable_32bit_address=false
 CSET enable_a=Always_Enabled
 CSET enable_b=Always_Enabled
 CSET error_injection_type=Single_Bit_Error_Injection
-CSET fill_remaining_memory_locations=false
+CSET fill_remaining_memory_locations=true
 CSET interface_type=Native
 CSET load_init_file=true
 CSET mem_file=no_Mem_file_loaded
@@ -70,9 +70,9 @@ CSET pipeline_stages=0
 CSET port_a_clock=100
 CSET port_a_enable_rate=100
 CSET port_a_write_rate=50
-CSET port_b_clock=0
-CSET port_b_enable_rate=0
-CSET port_b_write_rate=0
+CSET port_b_clock=100
+CSET port_b_enable_rate=100
+CSET port_b_write_rate=50
 CSET primitive=8kx2
 CSET read_width_a=16
 CSET read_width_b=16
@@ -105,4 +105,4 @@ CSET write_width_b=16
 MISC pkg_timestamp=2012-11-19T16:22:25Z
 # END Extra information
 GENERATE
-# CRC: dbd125c5
+# CRC: a9d74a05

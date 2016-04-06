@@ -52,16 +52,21 @@ begin
 	
 	process(RA, RB, RA0, RA1, RA2)
 	begin
-		if (rising_edge(CLK)) then
+	--	if (rising_edge(CLK)) then
 			if (RA = RA0) then
 				OP1 <= "01";
+--				OP1_SEL <= OP1;
 			elsif (RA = RA1) then
 				OP1 <= "10";
+--				OP1_SEL <= OP1;
 			elsif (RA = RA2) then
 				OP1 <= "11";
+--				OP1_SEL <= OP1;
 			else
 				OP1 <= "00";
+--				OP1_SEL <= OP1;
 			end if;
+			OP1_SEL <= OP1;
 			
 			if (RB = RA0) then
 				OP2 <= "01";
@@ -73,15 +78,16 @@ begin
 				OP2 <= "00";
 			end if;
 			
-		end if;
+	--	end if;
 		
 	end process;
 
-	OP1_SEL <= OP1;
+--	OP1_SEL <= OP1;
 	
 	with OPC select OP2_SEL <=
+		OP2	when "0000" | "0001" | "0010" | "0011" | "0100",
 		"00" 	when "0101" | "0110" | "0111" | "1000" | "1001" | "1010",
-		OP2	when OTHERS;
+		"00"	when OTHERS;
 
 end Mixed;
 

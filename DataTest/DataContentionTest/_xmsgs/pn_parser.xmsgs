@@ -11,5 +11,20 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_CTL.vhd&quot; into library work</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/DC_Toplevel.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/Instruction_Memory.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/Instruction_Memory_TL.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/PipelineRegisters.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/DataTest/DataContentionTest/programCounter.vhd&quot; into library work</arg>
+</msg>
+
 </messages>
 

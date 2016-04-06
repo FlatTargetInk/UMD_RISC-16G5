@@ -26,8 +26,8 @@
 --    All rights reserved.                                                    --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
--- You must compile the wrapper file Instruction_Memory.vhd when simulating
--- the core, Instruction_Memory. When compiling the wrapper file, be sure to
+-- You must compile the wrapper file instruction_memory.vhd when simulating
+-- the core, instruction_memory. When compiling the wrapper file, be sure to
 -- reference the XilinxCoreLib VHDL simulation library. For detailed
 -- instructions, please refer to the "CORE Generator Help".
 
@@ -40,7 +40,7 @@ USE ieee.std_logic_1164.ALL;
 -- synthesis translate_off
 LIBRARY XilinxCoreLib;
 -- synthesis translate_on
-ENTITY Instruction_Memory IS
+ENTITY instruction_memory IS
   PORT (
     clka : IN STD_LOGIC;
     wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -48,11 +48,11 @@ ENTITY Instruction_Memory IS
     dina : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     douta : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
-END Instruction_Memory;
+END instruction_memory;
 
-ARCHITECTURE Instruction_Memory_a OF Instruction_Memory IS
+ARCHITECTURE instruction_memory_a OF instruction_memory IS
 -- synthesis translate_off
-COMPONENT wrapped_Instruction_Memory
+COMPONENT wrapped_instruction_memory
   PORT (
     clka : IN STD_LOGIC;
     wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -63,7 +63,7 @@ COMPONENT wrapped_Instruction_Memory
 END COMPONENT;
 
 -- Configuration specification
-  FOR ALL : wrapped_Instruction_Memory USE ENTITY XilinxCoreLib.blk_mem_gen_v7_3(behavioral)
+  FOR ALL : wrapped_instruction_memory USE ENTITY XilinxCoreLib.blk_mem_gen_v7_3(behavioral)
     GENERIC MAP (
       c_addra_width => 5,
       c_addrb_width => 5,
@@ -93,7 +93,7 @@ END COMPONENT;
       c_has_softecc_input_regs_a => 0,
       c_has_softecc_output_regs_b => 0,
       c_init_file => "BlankString",
-      c_init_file_name => "Instruction_Memory.mif",
+      c_init_file_name => "instruction_memory.mif",
       c_inita_val => "0",
       c_initb_val => "0",
       c_interface_type => 0,
@@ -114,7 +114,7 @@ END COMPONENT;
       c_use_bram_block => 0,
       c_use_byte_wea => 0,
       c_use_byte_web => 0,
-      c_use_default_data => 0,
+      c_use_default_data => 1,
       c_use_ecc => 0,
       c_use_softecc => 0,
       c_wea_width => 1,
@@ -130,7 +130,7 @@ END COMPONENT;
 -- synthesis translate_on
 BEGIN
 -- synthesis translate_off
-U0 : wrapped_Instruction_Memory
+U0 : wrapped_instruction_memory
   PORT MAP (
     clka => clka,
     wea => wea,
@@ -140,4 +140,4 @@ U0 : wrapped_Instruction_Memory
   );
 -- synthesis translate_on
 
-END Instruction_Memory_a;
+END instruction_memory_a;

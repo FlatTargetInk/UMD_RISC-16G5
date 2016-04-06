@@ -42,7 +42,8 @@ end ProjLab01;
 
 architecture Structural of ProjLab01 is
 	signal OP1, OP2, OP3, OP4	  : STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');
-	signal RA1, RA2, RA3, RA4	  : STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');
+	signal RA1, RA2, RA3    	  : STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');
+	signal RA4						  : STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '1');
 	signal RB1, RB2, RB3, RB4	  : STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');
 	signal PC0, PC1, PC2, PC3, PC4	: STD_LOGIC_VECTOR (4 downto 0) := (OTHERS => '0');
 	signal IMM1, IMM2, IMM3		  : STD_LOGIC_VECTOR (7 downto 0) := (OTHERS => '0');
@@ -69,8 +70,8 @@ architecture Structural of ProjLab01 is
 	signal RA_OUT, RB_OUT	: STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0');	-- Values from DC muxes to ALU
 	
 	signal ALU_DC1, ALU_DC2:	STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0');	-- Data contention ALU values
-	signal RA_DC1, RA_DC2:		STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0'); -- Data contention RA values
-	signal RB_DC1, RB_DC2:		STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');	-- Data contention RB values
+	signal RA_DC1, RA_DC2:		STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '1'); -- Data contention RA values
+	signal RB_DC1, RB_DC2:		STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '1');	-- Data contention RB values
 	
 	signal DATARD_EN, DATAWR_EN:	STD_LOGIC := '0';	-- Enable reading or writing to/from Data Memory
 
@@ -90,8 +91,8 @@ begin
 	--------  ALU  --------
 	-----------------------
 	ALU_UNIT	: entity work.ALU_Toplevel
-	port map(RA 		=> RA_OUT,
-				RB 		=> RB_OUT,
+	port map(RA 		=> RA_IN,
+				RB 		=> RB_IN,
 				OP 		=> OP3,
 				CLK		=> CLK,
 				ALU_OUT 	=> ALU_VAL,
@@ -103,6 +104,7 @@ begin
 	-------------------------
 	Fetch_UNIT : entity work.Instruction_Memory_TL
 	port map(	CLK	=> CLK,
+					RST	=> RST,
 					RA 	=> RAIN,
 					RB 	=> RBIN,
 					OP 	=> OPIN,
@@ -119,12 +121,12 @@ begin
 --														  DC1 => DC2_1, -- (out)
 --														  DC2 => DC2_2); -- Dispatch control unit (out)
 	
-	FETCH 	: entity work.Fetch_CTL port map(CLK => CLK, -- (in)
-															 EN => GLOBAL_EN, -- (in)
-															RST => PC_RST, -- (out)
-															INC => PC_INC, -- (out)
-														 PC_EN => PC_EN, -- (out)
-													  INST_EN => INST_EN); -- Fetch control unit (out)
+--	FETCH 	: entity work.Fetch_CTL port map(CLK => CLK, -- (in)
+--															 EN => GLOBAL_EN, -- (in)
+--															RST => PC_RST, -- (out)
+--															INC => PC_INC, -- (out)
+--														 PC_EN => PC_EN, -- (out)
+--													  INST_EN => INST_EN); -- Fetch control unit (out)
 												  
 	REGCTL	: entity work.REG_CTL port map(CLK => CLK, -- (in)
 														 OPC => OP1, -- (in)
@@ -143,7 +145,7 @@ begin
 --														RB2 => RB_DC2,
 														OPC => OP3, -- (in)
 														OP1_SEL => OP1_SEL, -- (out)
-												  OP2_SEL => OP2_SEL); -- Data contention (out)
+														OP2_SEL => OP2_SEL); -- Data contention (out)
 	DATA_CTL	: entity work.DATA_CTL
 	port map(CLK 	=> CLK,
 				EN		=> GLOBAL_EN,

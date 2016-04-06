@@ -8,5 +8,35 @@
 <msg type="info" file="sim" num="172" delta="old" >Generating IP...
 </msg>
 
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find /home/robert/ECE368-Lab/Project Lab</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   2/instruction_memory.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for Z:\home\robert\ECE368-Lab\Project Lab</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   2\instruction_memory.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find /home/robert/ECE368-Lab/Project Lab</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   2/instruction_memory.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for Z:\home\robert\ECE368-Lab\Project Lab</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   2\instruction_memory.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">An invalid core configuration has been detected during</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Customization. Core parameters will be reset to their default values.</arg>
+</msg>
+
 </messages>
 

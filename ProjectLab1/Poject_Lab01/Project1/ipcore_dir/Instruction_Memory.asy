@@ -1,6 +1,6 @@
 Version 4
 SymbolType BLOCK
-TEXT 32 32 LEFT 4 Instruction_Memory
+TEXT 32 32 LEFT 4 instruction_memory
 RECTANGLE Normal 32 32 544 1376
 LINE Wide 0 80 32 80
 PIN 0 80 LEFT 36
