@@ -66,7 +66,7 @@ begin
 				OP1 <= "00";
 --				OP1_SEL <= OP1;
 			end if;
-			OP1_SEL <= OP1;
+--			OP1_SEL <= OP1;
 			
 			if (RB = RA0) then
 				OP2 <= "01";
@@ -82,7 +82,7 @@ begin
 		
 	end process;
 
---	OP1_SEL <= OP1;
+	OP1_SEL <= OP1;
 	
 	with OPC select OP2_SEL <=
 		OP2	when "0000" | "0001" | "0010" | "0011" | "0100",

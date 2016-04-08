@@ -98,6 +98,7 @@ BEGIN
 		RST <= '1';
 		
 		wait for CLK_period*2;
+		wait for CLK_period/2;
 		
 		RST <= '0';
 

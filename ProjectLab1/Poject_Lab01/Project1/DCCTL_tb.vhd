@@ -110,7 +110,9 @@ BEGIN
       -- hold reset state for 100 ns.
       wait for CLK_period*10;
 		
-		RA0 <= "0000";
+		wait for CLK_period/2;
+		
+		RA2 <= "0000";
 		
 		wait for CLK_period;
 		
@@ -118,7 +120,7 @@ BEGIN
 		
 		wait for CLK_period;
 		
-		RA2 <= "0000";
+		RA0 <= "0000";
 
       wait for CLK_period*10;
 

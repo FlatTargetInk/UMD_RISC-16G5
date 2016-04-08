@@ -20,7 +20,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.STD_LOGIC_SIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -52,9 +52,9 @@ begin
 	
 	with OP select
 		RESULT <=
-			a + b when "000",	-- ADD
-			a - b when "001",	-- SUB
-			a + b when "101",	-- ADDI
+			signed(a) + signed(b) when "000" | "101",	-- ADD
+			signed(a) - signed(b) when "001",	-- SUB
+			--a + b when "101",	-- ADDI
 			'0' & X"0000" when OTHERS;
 	SREG(3) <= RESULT(15); -- Negative with signed logic
 	SREG(2) <= '1' when RESULT(15 downto 0) = x"00000000" else '1';	-- Zero

@@ -91,8 +91,8 @@ begin
 	--------  ALU  --------
 	-----------------------
 	ALU_UNIT	: entity work.ALU_Toplevel
-	port map(RA 		=> RA_IN,
-				RB 		=> RB_IN,
+	port map(RA 		=> RA_OUT,
+				RB 		=> RB_OUT,
 				OP 		=> OP3,
 				CLK		=> CLK,
 				ALU_OUT 	=> ALU_VAL,
