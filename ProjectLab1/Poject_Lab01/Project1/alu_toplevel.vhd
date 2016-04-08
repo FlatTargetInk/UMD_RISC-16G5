@@ -93,7 +93,7 @@ begin
 			LOGIC 	when "0110",--, -- ANDI (LOGICAL)
 			SHIFT 	when "0111", -- SL (SHIFT)
 			SHIFT 	when "1000",--, -- SR (SHIFT)
-			X"0001" 	when "1001", -- LW (WORD)
+			WORD_OUT	when "1001", -- LW (WORD)
 			RA	 		when "1010", -- SW (WORD)
 			X"0000"	when OTHERS;
 
