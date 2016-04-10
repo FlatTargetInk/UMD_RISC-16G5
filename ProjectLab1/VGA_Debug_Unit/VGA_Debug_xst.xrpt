@@ -5,26 +5,26 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Fri Apr  8 16:12:11 2016">
+  <application stringID="Xst" timeStamp="Sun Apr 10 15:56:54 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="XILINX_DSP"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE"/>
+          <item stringID="value" value="/home/robert/XilinxISE/14.7/ISE_DS/ISE"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="LD_LIBRARY_PATH"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//lib/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/lib/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/smartmodel/lin64/installed_lin64/lib:/opt/Xilinx/14.7/ISE_DS/ISE/sysgen/lib:/opt/Xilinx/14.7/ISE_DS/EDK/lib/lin64:/opt/Xilinx/14.7/ISE_DS/common/lib/lin64"/>
+          <item stringID="value" value="/home/robert/XilinxISE/14.7/ISE_DS/ISE//lib/lin64:/home/robert/XilinxISE/14.7/ISE_DS/ISE/lib/lin64:/home/robert/XilinxISE/14.7/ISE_DS/ISE/smartmodel/lin64/installed_lin64/lib:/home/robert/XilinxISE/14.7/ISE_DS/ISE/sysgen/lib:/home/robert/XilinxISE/14.7/ISE_DS/EDK/lib/lin64:/home/robert/XilinxISE/14.7/ISE_DS/common/lib/lin64"/>
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/EDK"/>
+          <item stringID="value" value="/home/robert/XilinxISE/14.7/ISE_DS/EDK"/>
         </row>
         <row stringID="row" value="3">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/sysgen/util:/opt/Xilinx/14.7/ISE_DS/ISE/sysgen/bin:/opt/Xilinx/14.7/ISE_DS/ISE/../../../DocNav:/opt/Xilinx/14.7/ISE_DS/PlanAhead/bin:/opt/Xilinx/14.7/ISE_DS/EDK/bin/lin64:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/opt/Xilinx/14.7/ISE_DS/common/bin/lin64:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/tj/.local/bin:/home/tj/bin"/>
+          <item stringID="value" value="/home/robert/XilinxISE/14.7/ISE_DS/ISE//bin/lin64:/home/robert/XilinxISE/14.7/ISE_DS/ISE/bin/lin64:/home/robert/XilinxISE/14.7/ISE_DS/ISE/sysgen/util:/home/robert/XilinxISE/14.7/ISE_DS/ISE/sysgen/bin:/home/robert/XilinxISE/14.7/ISE_DS/ISE/../../../DocNav:/home/robert/XilinxISE/14.7/ISE_DS/PlanAhead/bin:/home/robert/XilinxISE/14.7/ISE_DS/EDK/bin/lin64:/home/robert/XilinxISE/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/home/robert/XilinxISE/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/home/robert/XilinxISE/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/home/robert/XilinxISE/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/home/robert/XilinxISE/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/robert/XilinxISE/14.7/ISE_DS/common/bin/lin64:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"/>
         </row>
         <row stringID="row" value="4">
           <item stringID="variable" value="XIL_IMPACT_USE_LIBUSB"/>
@@ -32,28 +32,28 @@
         </row>
         <row stringID="row" value="5">
           <item stringID="variable" value="LMC_HOME"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE/smartmodel/lin64/installed_lin64"/>
+          <item stringID="value" value="/home/robert/XilinxISE/14.7/ISE_DS/ISE/smartmodel/lin64/installed_lin64"/>
         </row>
         <row stringID="row" value="6">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/PlanAhead"/>
+          <item stringID="value" value="/home/robert/XilinxISE/14.7/ISE_DS/PlanAhead"/>
         </row>
         <row stringID="row" value="7">
           <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE/"/>
+          <item stringID="value" value="/home/robert/XilinxISE/14.7/ISE_DS/ISE/"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
-        <item stringID="User_EnvOsname" value="Fedora"/>
-        <item stringID="User_EnvOsrelease" value="Fedora release 23 (Twenty Three)"/>
+        <item stringID="User_EnvOsname" value="unknown"/>
+        <item stringID="User_EnvOsrelease" value="unknown"/>
       </item>
-      <item stringID="User_EnvHost" value="TJ"/>
+      <item stringID="User_EnvHost" value="mini-FlatTargetInk"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="AMD Turion(tm) II P540 Dual-Core Processor"/>
-          <item stringID="speed" value="1900.000 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i5-3337U CPU @ 1.80GHz"/>
+          <item stringID="speed" value="1140.117 MHz"/>
         </row>
       </table>
     </section>
@@ -115,8 +115,8 @@
       <item DEFAULT="0%" label="-slice_utilization_ratio_maxmargin" stringID="XST_SLICEUTILIZATIONRATIOMAXMARGIN" value="5"/>
     </section>
     <section stringID="XST_ERRORS_STATISTICS">
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="1"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="2"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="2"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="56"/>
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="0"/>
     </section>
   </application>

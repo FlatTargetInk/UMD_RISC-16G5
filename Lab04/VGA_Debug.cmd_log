@@ -225,3 +225,4 @@ map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o VGA_Deb
 par -w -intstyle ise -ol high -t 1 VGA_Debug_map.ncd VGA_Debug.ncd VGA_Debug.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml VGA_Debug.twx VGA_Debug.ncd -o VGA_Debug.twr VGA_Debug.pcf -ucf vga_debug.ucf 
 bitgen -intstyle ise -f VGA_Debug.ut VGA_Debug.ncd 
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/Lab04/VGA_Debug.xst" -ofn "/home/robert/UMD_RISC-16G5/Lab04/VGA_Debug.syr" 

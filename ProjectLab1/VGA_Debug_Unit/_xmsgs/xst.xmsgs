@@ -5,13 +5,178 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/arith_unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_arithmetic_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd</arg>&quot;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/VGA_Debug</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/arith_unit/Combinational</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_arithmetic_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd</arg>&quot;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/VGA_Debug/Structural</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd</arg>&quot;.
 </msg>
 
-<msg type="error" file="HDLParsers" num="850" delta="new" >&quot;<arg fmt="%s" index="1">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd</arg>&quot; Line <arg fmt="%d" index="2">62</arg>. Formal port <arg fmt="%s" index="3">RESULT</arg> does not exist in <arg fmt="%s" index="4">Entity &apos;arith_unit&apos;</arg>.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/buttoncontrol</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/buttoncontrol/Structural</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Data_Decode</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Data_Decode/Structural</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ProjLab01</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ProjLab01/Structural</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/VGA_Driver</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/VGA_Driver/Structural</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALU_Toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALU_Toplevel/Structural</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/CLK_25MHZ</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/CLK_25MHZ/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DATA_CTL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DATA_CTL/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DC_CTL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DC_CTL/Mixed</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/debounce</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/debounce/Logic</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/FONT_ROM</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/FONT_ROM/arch</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/IMSEL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/IMSEL/Dataflow</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Instruction_Memory_TL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Instruction_Memory_TL/Structural</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MUX8to1</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MUX8to1/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/PipelineRegisters</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/PipelineRegisters/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/RegisterBank</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/RegisterBank/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/REG_CTL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/REG_CTL/Dataflow</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/RGB</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/RGB/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vga_controller</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vga_controller/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/arith_unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/arith_unit/Combinational</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Instr_Mem</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Instr_Mem/Instr_Mem_a</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/logical_unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/logical_unit/Combinational</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/programCounter</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/programCounter/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/shift_unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/shift_unit/Combinational</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/word_unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/word_unit/Combinational</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DATAMEM</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DATAMEM/DATAMEM_a</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DEBUG_RAM</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DEBUG_RAM/DEBUG_RAM_a</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/VGA_BUFFER_RAM</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/VGA_BUFFER_RAM/VGA_BUFFER_RAM_a</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="837" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd</arg>&quot; Line <arg fmt="%d" index="2">159</arg>. Width mismatch. Expected width <arg fmt="%u" index="3">4</arg>, Actual width is <arg fmt="%u" index="4">7</arg> for dimension <arg fmt="%d" index="5">1</arg> of <arg fmt="%s" index="6">NEW_SIG_ADR</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="837" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd</arg>&quot; Line <arg fmt="%d" index="2">160</arg>. Width mismatch. Expected width <arg fmt="%u" index="3">52</arg>, Actual width is <arg fmt="%u" index="4">4</arg> for dimension <arg fmt="%d" index="5">1</arg> of <arg fmt="%s" index="6">DEBUG_OUT_DATA</arg>.
 </msg>
 
 </messages>

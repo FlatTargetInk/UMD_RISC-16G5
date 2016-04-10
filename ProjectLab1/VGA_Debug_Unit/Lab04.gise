@@ -173,13 +173,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460146035" xil_pn:in_ck="791044553915408319" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8865805981392977269" xil_pn:start_ts="1460146035">
+    <transform xil_pn:end_ts="1460318211" xil_pn:in_ck="791044553915408319" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8865805981392977269" xil_pn:start_ts="1460318210">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ipcore_dir/DATAMEM.ngc"/>
       <outfile xil_pn:name="ipcore_dir/DATAMEM.vhd"/>
       <outfile xil_pn:name="ipcore_dir/DEBUG_RAM.ngc"/>
@@ -200,22 +196,15 @@
     <transform xil_pn:end_ts="1456947363" xil_pn:in_ck="-8574181701869054360" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1456947363">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1456947363" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5178068664986256811" xil_pn:start_ts="1456947363">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1460146334" xil_pn:in_ck="-7410243469556360620" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-4533644146157366456" xil_pn:start_ts="1460146325">
+    <transform xil_pn:end_ts="1460318216" xil_pn:in_ck="-7410243469556360620" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-4533644146157366456" xil_pn:start_ts="1460318211">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="VGA_Debug.lso"/>
       <outfile xil_pn:name="VGA_Debug.ngc"/>
@@ -232,7 +221,6 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1457561881" xil_pn:in_ck="-194103582818565664" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3847495075193070856" xil_pn:start_ts="1457561876">

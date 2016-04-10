@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.05 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.05 secs
  
---> Reading design: VGA_Debug.prj
+--> 
+Reading design: VGA_Debug.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -107,43 +110,78 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_arithmetic_unit.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/VGA_Debug is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd".
+WARNING:HDLParsers:3607 - Unit work/VGA_Debug/Structural is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_toplevel.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/alu_toplevel.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU/Structural is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_toplevel.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/alu_toplevel.vhd".
+WARNING:HDLParsers:3607 - Unit work/buttoncontrol is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/button_controller.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/button_controller.vhd".
+WARNING:HDLParsers:3607 - Unit work/buttoncontrol/Structural is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/button_controller.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/button_controller.vhd".
+WARNING:HDLParsers:3607 - Unit work/Data_Decode is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/data_decoder.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/data_decoder.vhd".
+WARNING:HDLParsers:3607 - Unit work/Data_Decode/Structural is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/data_decoder.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/data_decoder.vhd".
+WARNING:HDLParsers:3607 - Unit work/VGA_Driver is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_driver.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/vga_driver.vhd".
+WARNING:HDLParsers:3607 - Unit work/VGA_Driver/Structural is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_driver.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/vga_driver.vhd".
+WARNING:HDLParsers:3607 - Unit work/Arith_Unit is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_arithmetic_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/alu_arithmetic_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/Arith_Unit/Combinational is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_arithmetic_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/alu_arithmetic_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/Logic_Unit is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_logic_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/alu_logic_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/Logic_Unit/Combinational is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_logic_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/alu_logic_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU_Mux is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_mux.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/alu_mux.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU_Mux/Combinational is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_mux.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/alu_mux.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU_Shift_Unit is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_shift_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/alu_shift_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU_Shift_Unit/Combinational is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_shift_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/alu_shift_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/CLK_25MHZ is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd".
+WARNING:HDLParsers:3607 - Unit work/CLK_25MHZ/Behavioral is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd".
+WARNING:HDLParsers:3607 - Unit work/debounce is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/debounce.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/debounce.vhd".
+WARNING:HDLParsers:3607 - Unit work/debounce/Logic is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/debounce.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/debounce.vhd".
+WARNING:HDLParsers:3607 - Unit work/FONT_ROM is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/font_rom_ascii.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/font_rom_ascii.vhd".
+WARNING:HDLParsers:3607 - Unit work/FONT_ROM/arch is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/font_rom_ascii.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/font_rom_ascii.vhd".
+WARNING:HDLParsers:3607 - Unit work/Load_Store_Unit is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/load_store_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/load_store_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/Load_Store_Unit/Behavioral is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/load_store_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/load_store_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/MUX8to1 is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/mux8to1.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/mux8to1.vhd".
+WARNING:HDLParsers:3607 - Unit work/MUX8to1/Behavioral is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/mux8to1.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/mux8to1.vhd".
+WARNING:HDLParsers:3607 - Unit work/RGB is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/rgb.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/rgb.vhd".
+WARNING:HDLParsers:3607 - Unit work/RGB/Behavioral is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/rgb.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/rgb.vhd".
+WARNING:HDLParsers:3607 - Unit work/vga_controller is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_controller.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/vga_controller.vhd".
+WARNING:HDLParsers:3607 - Unit work/vga_controller/Behavioral is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_controller.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/vga_controller.vhd".
+WARNING:HDLParsers:3607 - Unit work/DEBUG_RAM is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/DEBUG_RAM.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/ipcore_dir/DEBUG_RAM.vhd".
+WARNING:HDLParsers:3607 - Unit work/DEBUG_RAM/DEBUG_RAM_a is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/DEBUG_RAM.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/ipcore_dir/DEBUG_RAM.vhd".
+WARNING:HDLParsers:3607 - Unit work/VGA_BUFFER_RAM is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd".
+WARNING:HDLParsers:3607 - Unit work/VGA_BUFFER_RAM/VGA_BUFFER_RAM_a is now defined in a different file.  It was defined in "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd".
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/alu_arithmetic_unit.vhd" in Library work.
 Architecture combinational of Entity arith_unit is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_logic_unit.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/alu_logic_unit.vhd" in Library work.
 Architecture combinational of Entity logic_unit is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_shift_unit.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/alu_shift_unit.vhd" in Library work.
 Architecture combinational of Entity alu_shift_unit is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/load_store_unit.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/load_store_unit.vhd" in Library work.
 Architecture behavioral of Entity load_store_unit is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_mux.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/alu_mux.vhd" in Library work.
 Architecture combinational of Entity alu_mux is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/debounce.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/debounce.vhd" in Library work.
 Architecture logic of Entity debounce is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd" in Library work.
 Architecture behavioral of Entity clk_25mhz is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_controller.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/vga_controller.vhd" in Library work.
 Architecture behavioral of Entity vga_controller is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/rgb.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/rgb.vhd" in Library work.
 Architecture behavioral of Entity rgb is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/mux8to1.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/mux8to1.vhd" in Library work.
 Architecture behavioral of Entity mux8to1 is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/font_rom_ascii.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/font_rom_ascii.vhd" in Library work.
 Architecture arch of Entity font_rom is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd" in Library work.
 Architecture vga_buffer_ram_a of Entity vga_buffer_ram is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_driver.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/vga_driver.vhd" in Library work.
 Architecture structural of Entity vga_driver is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/button_controller.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/button_controller.vhd" in Library work.
 Architecture structural of Entity buttoncontrol is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_toplevel.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/alu_toplevel.vhd" in Library work.
 Architecture structural of Entity alu is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/DEBUG_RAM.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/ipcore_dir/DEBUG_RAM.vhd" in Library work.
 Architecture debug_ram_a of Entity debug_ram is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/data_decoder.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/data_decoder.vhd" in Library work.
 Architecture structural of Entity data_decode is up to date.
-Compiling vhdl file "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd" in Library work.
-Entity <vga_debug> compiled.
-Entity <vga_debug> (Architecture <structural>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd" in Library work.
+Architecture structural of Entity vga_debug is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -186,26 +224,26 @@ Analyzing hierarchy for entity <ALU_Mux> in library <work> (architecture <Combin
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <VGA_Debug> in library <work> (Architecture <structural>).
-WARNING:Xst:2211 - "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd" line 147: Instantiating black box module <DEBUG_RAM>.
-WARNING:Xst:819 - "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd" line 188: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd" line 148: Instantiating black box module <DEBUG_RAM>.
+WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd" line 189: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <RST>
-WARNING:Xst:819 - "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd" line 227: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd" line 228: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <RST>
-WARNING:Xst:819 - "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd" line 291: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd" line 292: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <RST>
 Entity <VGA_Debug> analyzed. Unit <VGA_Debug> generated.
 
 Analyzing Entity <VGA_Driver> in library <work> (Architecture <Structural>).
-WARNING:Xst:2211 - "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_driver.vhd" line 90: Instantiating black box module <VGA_BUFFER_RAM>.
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/Lab04/vga_driver.vhd" line 90: Instantiating black box module <VGA_BUFFER_RAM>.
 Entity <VGA_Driver> analyzed. Unit <VGA_Driver> generated.
 
 Analyzing Entity <CLK_25MHZ> in library <work> (Architecture <Behavioral>).
-WARNING:Xst:753 - "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd" line 56: Unconnected output port 'CLK0' of component 'CLKDLL'.
-WARNING:Xst:753 - "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd" line 56: Unconnected output port 'CLK180' of component 'CLKDLL'.
-WARNING:Xst:753 - "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd" line 56: Unconnected output port 'CLK270' of component 'CLKDLL'.
-WARNING:Xst:753 - "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd" line 56: Unconnected output port 'CLK90' of component 'CLKDLL'.
-WARNING:Xst:753 - "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd" line 56: Unconnected output port 'LOCKED' of component 'CLKDLL'.
-WARNING:Xst:2211 - "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd" line 56: Instantiating black box module <CLKDLL>.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd" line 56: Unconnected output port 'CLK0' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd" line 56: Unconnected output port 'CLK180' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd" line 56: Unconnected output port 'CLK270' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd" line 56: Unconnected output port 'CLK90' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd" line 56: Unconnected output port 'LOCKED' of component 'CLKDLL'.
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd" line 56: Instantiating black box module <CLKDLL>.
     Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <CLKDLL_inst> in unit <CLK_25MHZ>.
     Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <CLKDLL_inst> in unit <CLK_25MHZ>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <CLKDLL_inst> in unit <CLK_25MHZ>.
@@ -259,7 +297,7 @@ Entity <Data_Decode> analyzed. Unit <Data_Decode> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <Data_Decode>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/data_decoder.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/data_decoder.vhd".
     Found 16x8-bit ROM for signal <ASCIINUM>.
     Summary:
 	inferred   1 ROM(s).
@@ -267,7 +305,7 @@ Unit <Data_Decode> synthesized.
 
 
 Synthesizing Unit <vga_controller>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_controller.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/vga_controller.vhd".
     Found 1-bit register for signal <HS>.
     Found 1-bit register for signal <VS>.
     Found 1-bit register for signal <BLANK>.
@@ -287,13 +325,13 @@ Unit <vga_controller> synthesized.
 
 
 Synthesizing Unit <RGB>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/rgb.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/rgb.vhd".
 WARNING:Xst:1780 - Signal <enb> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <RGB> synthesized.
 
 
 Synthesizing Unit <MUX8to1>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/mux8to1.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/mux8to1.vhd".
     Found 1-bit 8-to-1 multiplexer for signal <OUTPUT>.
     Found 3-bit subtractor for signal <SEL1>.
     Summary:
@@ -303,7 +341,7 @@ Unit <MUX8to1> synthesized.
 
 
 Synthesizing Unit <FONT_ROM>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/font_rom_ascii.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/font_rom_ascii.vhd".
     Found 2048x8-bit ROM for signal <DATA$rom0000> created at line 2230.
     Found 11-bit register for signal <addr_reg>.
     Summary:
@@ -313,7 +351,7 @@ Unit <FONT_ROM> synthesized.
 
 
 Synthesizing Unit <debounce>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/debounce.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/debounce.vhd".
     Found 1-bit register for signal <OUTPUT>.
     Found 21-bit up counter for signal <Count>.
     Found 1-bit xor2 for signal <D_SET>.
@@ -325,7 +363,7 @@ Unit <debounce> synthesized.
 
 
 Synthesizing Unit <Arith_Unit>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_arithmetic_unit.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/alu_arithmetic_unit.vhd".
     Found 1-bit xor2 for signal <CCR<1>>.
     Found 9-bit addsub for signal <arith>.
     Summary:
@@ -334,7 +372,7 @@ Unit <Arith_Unit> synthesized.
 
 
 Synthesizing Unit <Logic_Unit>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_logic_unit.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/alu_logic_unit.vhd".
 WARNING:Xst:653 - Signal <cmp<1:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
     Found 8-bit comparator equal for signal <cmp_2$cmp_eq0000> created at line 42.
     Found 8-bit comparator less for signal <cmp_3$cmp_lt0000> created at line 41.
@@ -344,7 +382,7 @@ Unit <Logic_Unit> synthesized.
 
 
 Synthesizing Unit <ALU_Shift_Unit>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_shift_unit.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/alu_shift_unit.vhd".
     Found 8-bit shifter logical left for signal <shift_left>.
     Found 8-bit shifter logical right for signal <shift_right>.
     Summary:
@@ -353,7 +391,7 @@ Unit <ALU_Shift_Unit> synthesized.
 
 
 Synthesizing Unit <Load_Store_Unit>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/load_store_unit.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/load_store_unit.vhd".
 WARNING:Xst:647 - Input <IMMED> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 8-bit register for signal <reg>.
     Summary:
@@ -362,28 +400,28 @@ Unit <Load_Store_Unit> synthesized.
 
 
 Synthesizing Unit <ALU_Mux>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_mux.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/alu_mux.vhd".
 Unit <ALU_Mux> synthesized.
 
 
 Synthesizing Unit <buttoncontrol>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/button_controller.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/button_controller.vhd".
 WARNING:Xst:653 - Signal <EN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
 Unit <buttoncontrol> synthesized.
 
 
 Synthesizing Unit <ALU>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_toplevel.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/alu_toplevel.vhd".
 Unit <ALU> synthesized.
 
 
 Synthesizing Unit <CLK_25MHZ>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd".
 Unit <CLK_25MHZ> synthesized.
 
 
 Synthesizing Unit <VGA_Driver>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_driver.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/vga_driver.vhd".
 WARNING:Xst:646 - Signal <vcount<9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <VGA_ADR<12>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <BUF_OUT<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -396,7 +434,7 @@ Unit <VGA_Driver> synthesized.
 
 
 Synthesizing Unit <VGA_Debug>.
-    Related source file is "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd".
+    Related source file is "/home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd".
 WARNING:Xst:646 - Signal <VGACLR_COMPLETE> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <TEST_PIN> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <RUN_COMPLETE> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -448,17 +486,17 @@ WARNING:Xst:646 - Signal <DD_COMPLETE> is assigned but never used. This unconnec
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 7-bit register for signal <DD_ADR>.
-    Found 7-bit adder for signal <DD_ADR$share0000> created at line 246.
+    Found 7-bit adder for signal <DD_ADR$share0000> created at line 247.
     Found 1-bit register for signal <DD_SPACE_COMPLETE>.
     Found 1-bit register for signal <DD_SPACE_MUX>.
     Found 1-bit register for signal <DD_WE>.
     Found 4-bit register for signal <DEBUG_CNT>.
-    Found 4-bit adder for signal <DEBUG_CNT$addsub0000> created at line 210.
+    Found 4-bit adder for signal <DEBUG_CNT$addsub0000> created at line 211.
     Found 1-bit register for signal <DEBUG_RAM_EN>.
     Found 7-bit up counter for signal <NEW_SIG_ADR>.
-    Found 7-bit adder for signal <NEW_SIG_ADR$add0000> created at line 248.
+    Found 7-bit adder for signal <NEW_SIG_ADR$add0000> created at line 249.
     Found 12-bit register for signal <VGACLR_ADR>.
-    Found 12-bit adder for signal <VGACLR_ADR$addsub0000> created at line 312.
+    Found 12-bit adder for signal <VGACLR_ADR$addsub0000> created at line 313.
     Found 1-bit register for signal <VGACLR_MUX>.
     Found 1-bit register for signal <VGACLR_WE>.
     Summary:
@@ -782,17 +820,17 @@ Timing constraint: Default period analysis for Clock 'CLK'
   Total number of paths / destination ports: 3871 / 506
 -------------------------------------------------------------------------
 Delay:               9.217ns (Levels of Logic = 5)
-  Source:            U1/U2/vcounter_5 (FF)
+  Source:            U1/U2/vcounter_6 (FF)
   Destination:       U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram (RAM)
   Source Clock:      CLK rising 0.5X
   Destination Clock: CLK rising
 
-  Data Path: U1/U2/vcounter_5 to U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram
+  Data Path: U1/U2/vcounter_6 to U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             5   0.591   0.633  U1/U2/vcounter_5 (U1/U2/vcounter_5)
-     MULT18X18SIO:A1->P10    1   4.602   0.595  U1/Mmult_VGA_ADR_mult0000 (U1/VGA_ADR_mult0000<10>)
+     FDRE:C->Q             5   0.591   0.633  U1/U2/vcounter_6 (U1/U2/vcounter_6)
+     MULT18X18SIO:A2->P10    1   4.602   0.595  U1/Mmult_VGA_ADR_mult0000 (U1/VGA_ADR_mult0000<10>)
      LUT1:I0->O            1   0.704   0.000  U1/Madd_VGA_ADR_Madd_cy<10>_rt (U1/Madd_VGA_ADR_Madd_cy<10>_rt)
      MUXCY:S->O            0   0.464   0.000  U1/Madd_VGA_ADR_Madd_cy<10> (U1/Madd_VGA_ADR_Madd_cy<10>)
      XORCY:CI->O           2   0.804   0.447  U1/Madd_VGA_ADR_Madd_xor<11> (U1/VGA_ADR<11>)
@@ -849,14 +887,15 @@ Offset:              10.173ns (Levels of Logic = 5)
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.36 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.79 secs
  
 --> 
 
-Total memory usage is 288300 kilobytes
+
+Total memory usage is 545480 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   41 (   0 filtered)
+Number of warnings :   77 (   0 filtered)
 Number of infos    :    4 (   0 filtered)
 

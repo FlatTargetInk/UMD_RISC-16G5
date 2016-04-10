@@ -1,4 +1,4 @@
-V3 165
+V3 193
 FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_arithmetic_unit.vhd 2016/03/04.15:24:33 P.20131013
 FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_logic_unit.vhd 2016/03/04.15:24:33 P.20131013
 FL //vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_mux.vhd 2016/03/04.15:24:33 P.20131013
@@ -71,220 +71,247 @@ FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/rgb.vhd" 2016/03/09.13:2
 FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_controller.vhd" 2016/03/09.13:28:59 P.20131013
 FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd" 2016/03/09.17:17:44 P.20131013
 FL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_driver.vhd" 2016/03/09.13:29:01 P.20131013
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_arithmetic_unit.vhd 2016/04/08.16:08:21 P.20131013
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd 2016/04/08.16:12:31 P.20131013
-EN work/ALU_Toplevel 1460147346 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd \
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd 2016/04/10.15:53:25 P.20131013
+EN work/ALU_Toplevel 1460318229 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
-AR work/ALU_Toplevel/Structural 1460147347 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd \
-      EN work/ALU_Toplevel 1460147346 CP work/Arith_Unit CP work/logical_unit \
+AR work/ALU_Toplevel/Structural 1460318230 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd \
+      EN work/ALU_Toplevel 1460318229 CP work/Arith_Unit CP work/logical_unit \
       CP work/shift_unit CP work/word_unit
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd 2016/04/08.15:08:48 P.20131013
-EN work/Arith_Unit 1460147338 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd \
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd 2016/04/10.15:53:25 P.20131013
+EN work/Arith_Unit 1460318221 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_SIGNED 1381692178
-AR work/Arith_Unit/Combinational 1460147339 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd \
-      EN work/Arith_Unit 1460147338
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd 2016/04/08.15:08:47 P.20131013
-EN work/buttoncontrol 1460147378 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd \
+AR work/Arith_Unit/Combinational 1460318222 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd \
+      EN work/Arith_Unit 1460318221
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd 2016/04/10.15:53:25 P.20131013
+EN work/buttoncontrol 1460318261 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd \
       PB ieee/std_logic_1164 1381692176 LB work
-AR work/buttoncontrol/Structural 1460147379 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd \
-      EN work/buttoncontrol 1460147378 CP work/debounce
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd 2016/04/08.15:08:47 P.20131013
-EN work/CLK_25MHZ 1460147364 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd \
+AR work/buttoncontrol/Structural 1460318262 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd \
+      EN work/buttoncontrol 1460318261 CP work/debounce
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd 2016/04/10.15:53:25 P.20131013
+EN work/CLK_25MHZ 1460318247 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
-AR work/CLK_25MHZ/Behavioral 1460147365 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd \
-      EN work/CLK_25MHZ 1460147364 CP CLKDLL
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd 2016/04/08.15:08:48 P.20131013
-EN work/DATA_CTL 1460147354 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd \
+AR work/CLK_25MHZ/Behavioral 1460318248 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd \
+      EN work/CLK_25MHZ 1460318247 CP CLKDLL
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd 2016/04/10.15:53:25 P.20131013
+EN work/DATA_CTL 1460318237 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/DATA_CTL/Behavioral 1460147355 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd \
-      EN work/DATA_CTL 1460147354
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd 2016/04/08.15:08:47 P.20131013
-EN work/Data_Decode 1460147384 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd \
+AR work/DATA_CTL/Behavioral 1460318238 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd \
+      EN work/DATA_CTL 1460318237
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd 2016/04/10.15:53:25 P.20131013
+EN work/Data_Decode 1460318267 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Data_Decode/Structural 1460147385 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd \
-      EN work/Data_Decode 1460147384
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd 2016/04/08.15:08:48 P.20131013
-EN work/DC_CTL 1460147352 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd \
+AR work/Data_Decode/Structural 1460318268 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd \
+      EN work/Data_Decode 1460318267
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd 2016/04/10.15:53:25 P.20131013
+EN work/DC_CTL 1460318235 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/DC_CTL/Mixed 1460147353 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd \
-      EN work/DC_CTL 1460147352
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd 2016/04/08.15:08:47 P.20131013
-EN work/debounce 1460147362 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd \
+AR work/DC_CTL/Mixed 1460318236 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd \
+      EN work/DC_CTL 1460318235
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd 2016/04/10.15:53:25 P.20131013
+EN work/debounce 1460318245 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/debounce/Logic 1460147363 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd \
-      EN work/debounce 1460147362
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd 2016/04/08.15:08:47 P.20131013
-EN work/FONT_ROM 1460147372 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd \
+AR work/debounce/Logic 1460318246 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd \
+      EN work/debounce 1460318245
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd 2016/04/10.15:53:25 P.20131013
+EN work/FONT_ROM 1460318255 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/FONT_ROM/arch 1460147373 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd \
-      EN work/FONT_ROM 1460147372
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd 2016/04/08.15:08:48 P.20131013
-EN work/IMSEL 1460147356 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd \
+AR work/FONT_ROM/arch 1460318256 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd \
+      EN work/FONT_ROM 1460318255
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd 2016/04/10.15:53:25 P.20131013
+EN work/IMSEL 1460318239 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/IMSEL/Dataflow 1460147357 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd \
-      EN work/IMSEL 1460147356
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd 2016/04/08.15:08:48 P.20131013
-EN work/Instruction_Memory_TL 1460147348 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd \
+AR work/IMSEL/Dataflow 1460318240 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd \
+      EN work/IMSEL 1460318239
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd 2016/04/10.15:53:25 P.20131013
+EN work/Instruction_Memory_TL 1460318231 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Instruction_Memory_TL/Structural 1460147349 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd \
-      EN work/Instruction_Memory_TL 1460147348 CP work/programCounter \
+AR work/Instruction_Memory_TL/Structural 1460318232 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd \
+      EN work/Instruction_Memory_TL 1460318231 CP work/programCounter \
       CP work/Instr_Mem
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd 2016/04/08.15:08:48 P.20131013
-EN work/DATAMEM 1460147332 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd \
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd 2016/04/10.15:53:25 P.20131013
+EN work/DATAMEM 1460318215 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/DATAMEM/DATAMEM_a 1460147333 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd \
-      EN work/DATAMEM 1460147332
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd 2016/04/08.16:19:30 P.20131013
-EN work/DEBUG_RAM 1460147382 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd \
+AR work/DATAMEM/DATAMEM_a 1460318216 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd \
+      EN work/DATAMEM 1460318215
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd 2016/04/10.15:53:25 P.20131013
+EN work/DEBUG_RAM 1460318265 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/DEBUG_RAM/DEBUG_RAM_a 1460147383 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd \
-      EN work/DEBUG_RAM 1460147382
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd 2016/04/08.15:08:48 P.20131013
-EN work/Instr_Mem 1460147336 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd \
+AR work/DEBUG_RAM/DEBUG_RAM_a 1460318266 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd \
+      EN work/DEBUG_RAM 1460318265
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd 2016/04/10.15:53:25 P.20131013
+EN work/Instr_Mem 1460318219 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Instr_Mem/Instr_Mem_a 1460147337 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd \
-      EN work/Instr_Mem 1460147336
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd 2016/04/08.15:08:47 P.20131013
-EN work/VGA_BUFFER_RAM 1460147374 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd \
+AR work/Instr_Mem/Instr_Mem_a 1460318220 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd \
+      EN work/Instr_Mem 1460318219
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd 2016/04/10.15:53:25 P.20131013
+EN work/VGA_BUFFER_RAM 1460318257 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/VGA_BUFFER_RAM/VGA_BUFFER_RAM_a 1460147375 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd \
-      EN work/VGA_BUFFER_RAM 1460147374
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd 2016/04/08.15:08:48 P.20131013
-EN work/logical_unit 1460147340 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd \
+AR work/VGA_BUFFER_RAM/VGA_BUFFER_RAM_a 1460318258 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd \
+      EN work/VGA_BUFFER_RAM 1460318257
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd 2016/04/10.15:53:25 P.20131013
+EN work/logical_unit 1460318223 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/logical_unit/Combinational 1460147341 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd \
-      EN work/logical_unit 1460147340
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd 2016/04/08.15:08:47 P.20131013
-EN work/MUX8to1 1460147370 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd \
+AR work/logical_unit/Combinational 1460318224 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd \
+      EN work/logical_unit 1460318223
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd 2016/04/10.15:53:25 P.20131013
+EN work/MUX8to1 1460318253 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/MUX8to1/Behavioral 1460147371 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd \
-      EN work/MUX8to1 1460147370
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd 2016/04/08.15:08:48 P.20131013
-EN work/PipelineRegisters 1460147358 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd \
+AR work/MUX8to1/Behavioral 1460318254 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd \
+      EN work/MUX8to1 1460318253
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd 2016/04/10.15:53:25 P.20131013
+EN work/PipelineRegisters 1460318241 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/PipelineRegisters/Behavioral 1460147359 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd \
-      EN work/PipelineRegisters 1460147358
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd 2016/04/08.15:08:48 P.20131013
-EN work/programCounter 1460147334 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd \
+AR work/PipelineRegisters/Behavioral 1460318242 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd \
+      EN work/PipelineRegisters 1460318241
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd 2016/04/10.15:53:25 P.20131013
+EN work/programCounter 1460318217 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/programCounter/Behavioral 1460147335 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd \
-      EN work/programCounter 1460147334
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd 2016/04/08.15:08:48 P.20131013
-EN work/ProjLab01 1460147380 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd \
+AR work/programCounter/Behavioral 1460318218 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd \
+      EN work/programCounter 1460318217
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd 2016/04/10.15:53:25 P.20131013
+EN work/ProjLab01 1460318263 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
-AR work/ProjLab01/Structural 1460147381 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd \
-      EN work/ProjLab01 1460147380 CP work/ALU_Toplevel \
+AR work/ProjLab01/Structural 1460318264 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd \
+      EN work/ProjLab01 1460318263 CP work/ALU_Toplevel \
       CP work/Instruction_Memory_TL CP work/REG_CTL CP work/DC_CTL CP work/DATA_CTL \
       CP work/IMSEL CP work/PipelineRegisters CP work/programCounter \
       CP work/RegisterBank
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd 2016/04/08.15:08:48 P.20131013
-EN work/RegisterBank 1460147360 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd \
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd 2016/04/10.15:53:25 P.20131013
+EN work/RegisterBank 1460318243 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/RegisterBank/Behavioral 1460147361 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd \
-      EN work/RegisterBank 1460147360
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd 2016/04/08.15:08:48 P.20131013
-EN work/REG_CTL 1460147350 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd \
+AR work/RegisterBank/Behavioral 1460318244 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd \
+      EN work/RegisterBank 1460318243
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd 2016/04/10.15:53:25 P.20131013
+EN work/REG_CTL 1460318233 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/REG_CTL/Dataflow 1460147351 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd \
-      EN work/REG_CTL 1460147350
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd 2016/04/08.15:08:47 P.20131013
-EN work/RGB 1460147368 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd \
+AR work/REG_CTL/Dataflow 1460318234 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd \
+      EN work/REG_CTL 1460318233
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd 2016/04/10.15:53:25 P.20131013
+EN work/RGB 1460318251 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/RGB/Behavioral 1460147369 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd \
-      EN work/RGB 1460147368
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd 2016/04/08.15:08:48 P.20131013
-EN work/shift_unit 1460147342 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd \
+AR work/RGB/Behavioral 1460318252 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd \
+      EN work/RGB 1460318251
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd 2016/04/10.15:53:25 P.20131013
+EN work/shift_unit 1460318225 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/shift_unit/Combinational 1460147343 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd \
-      EN work/shift_unit 1460147342
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd 2016/04/08.15:08:47 P.20131013
-EN work/vga_controller 1460147366 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd \
+AR work/shift_unit/Combinational 1460318226 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd \
+      EN work/shift_unit 1460318225
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd 2016/04/10.15:53:25 P.20131013
+EN work/vga_controller 1460318249 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/vga_controller/Behavioral 1460147367 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd \
-      EN work/vga_controller 1460147366
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd 2016/04/08.16:02:38 P.20131013
+AR work/vga_controller/Behavioral 1460318250 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd \
+      EN work/vga_controller 1460318249
 EN work/VGA_Debug 1457561901 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
 AR work/VGA_Debug/Structural 1457561902 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd \
       EN work/VGA_Debug 1457561901 CP work/VGA_DRIVER CP work/buttoncontrol \
       CP work/ProjLab01 CP work/DEBUG_RAM CP work/Data_Decode
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd 2016/04/08.15:08:47 P.20131013
-EN work/VGA_Driver 1460147376 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd \
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd 2016/04/10.15:53:25 P.20131013
+EN work/VGA_Driver 1460318259 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
-AR work/VGA_Driver/Structural 1460147377 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd \
-      EN work/VGA_Driver 1460147376 CP work/CLK_25MHZ CP work/vga_controller \
+AR work/VGA_Driver/Structural 1460318260 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd \
+      EN work/VGA_Driver 1460318259 CP work/CLK_25MHZ CP work/vga_controller \
       CP work/RGB CP work/MUX8to1 CP work/FONT_ROM CP work/VGA_BUFFER_RAM
-FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd 2016/04/08.15:08:48 P.20131013
-EN work/word_unit 1460147344 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd \
+FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd 2016/04/10.15:53:25 P.20131013
+EN work/word_unit 1460318227 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd \
       PB ieee/std_logic_1164 1381692176 LB work
-AR work/word_unit/Combinational 1460147345 \
-      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd \
-      EN work/word_unit 1460147344 CP work/DATAMEM
+AR work/word_unit/Combinational 1460318228 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd \
+      EN work/word_unit 1460318227 CP work/DATAMEM
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_arithmetic_unit.vhd 2016/04/08.16:08:21 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd 2016/04/08.16:12:31 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd 2016/04/08.15:08:48 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd 2016/04/08.15:08:47 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd 2016/04/08.15:08:47 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd 2016/04/08.15:08:48 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd 2016/04/08.15:08:47 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd 2016/04/08.15:08:48 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd 2016/04/08.15:08:47 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd 2016/04/08.15:08:47 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd 2016/04/08.15:08:48 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd 2016/04/08.15:08:48 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd 2016/04/08.15:08:48 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd 2016/04/08.16:19:30 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd 2016/04/08.15:08:48 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd 2016/04/08.15:08:47 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd 2016/04/08.15:08:48 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd 2016/04/08.15:08:47 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd 2016/04/08.15:08:48 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd 2016/04/08.15:08:48 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd 2016/04/08.15:08:48 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd 2016/04/08.15:08:48 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd 2016/04/08.15:08:48 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd 2016/04/08.15:08:47 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd 2016/04/08.15:08:48 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd 2016/04/08.15:08:47 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd 2016/04/08.16:02:38 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd 2016/04/08.15:08:47 P.20131013
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd 2016/04/08.15:08:48 P.20131013

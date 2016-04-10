@@ -5,40 +5,148 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd</arg>&quot; line <arg fmt="%d" index="2">147</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">DEBUG_RAM</arg>&gt;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/VGA_Debug</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd</arg>&quot; line <arg fmt="%d" index="2">188</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/VGA_Debug/Structural</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALU</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_toplevel.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/alu_toplevel.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALU/Structural</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_toplevel.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/alu_toplevel.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/buttoncontrol</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/button_controller.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/button_controller.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/buttoncontrol/Structural</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/button_controller.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/button_controller.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Data_Decode</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/data_decoder.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/data_decoder.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Data_Decode/Structural</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/data_decoder.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/data_decoder.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/VGA_Driver</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_driver.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/vga_driver.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/VGA_Driver/Structural</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_driver.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/vga_driver.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Arith_Unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_arithmetic_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/alu_arithmetic_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Arith_Unit/Combinational</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_arithmetic_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/alu_arithmetic_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Logic_Unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_logic_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/alu_logic_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Logic_Unit/Combinational</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_logic_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/alu_logic_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALU_Mux</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_mux.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/alu_mux.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALU_Mux/Combinational</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_mux.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/alu_mux.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALU_Shift_Unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_shift_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/alu_shift_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALU_Shift_Unit/Combinational</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_shift_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/alu_shift_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/CLK_25MHZ</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/CLK_25MHZ/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/debounce</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/debounce.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/debounce.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/debounce/Logic</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/debounce.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/debounce.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/FONT_ROM</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/font_rom_ascii.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/font_rom_ascii.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/FONT_ROM/arch</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/font_rom_ascii.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/font_rom_ascii.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Load_Store_Unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/load_store_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/load_store_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Load_Store_Unit/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/load_store_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/load_store_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MUX8to1</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/mux8to1.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/mux8to1.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MUX8to1/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/mux8to1.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/mux8to1.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/RGB</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/rgb.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/rgb.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/RGB/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/rgb.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/rgb.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vga_controller</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_controller.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/vga_controller.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vga_controller/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_controller.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/vga_controller.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DEBUG_RAM</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/DEBUG_RAM.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/ipcore_dir/DEBUG_RAM.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DEBUG_RAM/DEBUG_RAM_a</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/DEBUG_RAM.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/ipcore_dir/DEBUG_RAM.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/VGA_BUFFER_RAM</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/VGA_BUFFER_RAM/VGA_BUFFER_RAM_a</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/robert/UMD_RISC-16G5/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd</arg>&quot; line <arg fmt="%d" index="2">148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">DEBUG_RAM</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd</arg>&quot; line <arg fmt="%d" index="2">189</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;RST&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd</arg>&quot; line <arg fmt="%d" index="2">227</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd</arg>&quot; line <arg fmt="%d" index="2">228</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;RST&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd</arg>&quot; line <arg fmt="%d" index="2">291</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd</arg>&quot; line <arg fmt="%d" index="2">292</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;RST&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_driver.vhd</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">VGA_BUFFER_RAM</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab04/vga_driver.vhd</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">VGA_BUFFER_RAM</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK0</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK0</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK180</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK180</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK270</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK270</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK90</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK90</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LOCKED</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LOCKED</arg>&apos; of component &apos;<arg fmt="%s" index="4">CLKDLL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">CLKDLL</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">CLKDLL</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">enb</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.

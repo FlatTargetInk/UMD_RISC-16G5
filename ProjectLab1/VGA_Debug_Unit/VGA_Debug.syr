@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: VGA_Debug.prj
@@ -110,30 +110,125 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-WARNING:HDLParsers:3607 - Unit work/arith_unit is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_arithmetic_unit.vhd", and is now defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd".
-WARNING:HDLParsers:3607 - Unit work/arith_unit/Combinational is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_arithmetic_unit.vhd", and is now defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd".
-Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/VGA_Debug is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd".
+WARNING:HDLParsers:3607 - Unit work/VGA_Debug/Structural is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd".
+WARNING:HDLParsers:3607 - Unit work/buttoncontrol is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd".
+WARNING:HDLParsers:3607 - Unit work/buttoncontrol/Structural is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd".
+WARNING:HDLParsers:3607 - Unit work/Data_Decode is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd".
+WARNING:HDLParsers:3607 - Unit work/Data_Decode/Structural is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd".
+WARNING:HDLParsers:3607 - Unit work/ProjLab01 is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd".
+WARNING:HDLParsers:3607 - Unit work/ProjLab01/Structural is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd".
+WARNING:HDLParsers:3607 - Unit work/VGA_Driver is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd".
+WARNING:HDLParsers:3607 - Unit work/VGA_Driver/Structural is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU_Toplevel is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU_Toplevel/Structural is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd".
+WARNING:HDLParsers:3607 - Unit work/CLK_25MHZ is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd".
+WARNING:HDLParsers:3607 - Unit work/CLK_25MHZ/Behavioral is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd".
+WARNING:HDLParsers:3607 - Unit work/DATA_CTL is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd".
+WARNING:HDLParsers:3607 - Unit work/DATA_CTL/Behavioral is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd".
+WARNING:HDLParsers:3607 - Unit work/DC_CTL is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd".
+WARNING:HDLParsers:3607 - Unit work/DC_CTL/Mixed is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd".
+WARNING:HDLParsers:3607 - Unit work/debounce is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd".
+WARNING:HDLParsers:3607 - Unit work/debounce/Logic is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd".
+WARNING:HDLParsers:3607 - Unit work/FONT_ROM is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd".
+WARNING:HDLParsers:3607 - Unit work/FONT_ROM/arch is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd".
+WARNING:HDLParsers:3607 - Unit work/IMSEL is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd".
+WARNING:HDLParsers:3607 - Unit work/IMSEL/Dataflow is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd".
+WARNING:HDLParsers:3607 - Unit work/Instruction_Memory_TL is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd".
+WARNING:HDLParsers:3607 - Unit work/Instruction_Memory_TL/Structural is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd".
+WARNING:HDLParsers:3607 - Unit work/MUX8to1 is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd".
+WARNING:HDLParsers:3607 - Unit work/MUX8to1/Behavioral is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd".
+WARNING:HDLParsers:3607 - Unit work/PipelineRegisters is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd".
+WARNING:HDLParsers:3607 - Unit work/PipelineRegisters/Behavioral is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd".
+WARNING:HDLParsers:3607 - Unit work/RegisterBank is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd".
+WARNING:HDLParsers:3607 - Unit work/RegisterBank/Behavioral is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd".
+WARNING:HDLParsers:3607 - Unit work/REG_CTL is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd".
+WARNING:HDLParsers:3607 - Unit work/REG_CTL/Dataflow is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd".
+WARNING:HDLParsers:3607 - Unit work/RGB is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd".
+WARNING:HDLParsers:3607 - Unit work/RGB/Behavioral is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd".
+WARNING:HDLParsers:3607 - Unit work/vga_controller is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd".
+WARNING:HDLParsers:3607 - Unit work/vga_controller/Behavioral is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd".
+WARNING:HDLParsers:3607 - Unit work/arith_unit is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/arith_unit/Combinational is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/Instr_Mem is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd".
+WARNING:HDLParsers:3607 - Unit work/Instr_Mem/Instr_Mem_a is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd".
+WARNING:HDLParsers:3607 - Unit work/logical_unit is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/logical_unit/Combinational is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/programCounter is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd".
+WARNING:HDLParsers:3607 - Unit work/programCounter/Behavioral is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd".
+WARNING:HDLParsers:3607 - Unit work/shift_unit is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/shift_unit/Combinational is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/word_unit is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/word_unit/Combinational is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/DATAMEM is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd".
+WARNING:HDLParsers:3607 - Unit work/DATAMEM/DATAMEM_a is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd".
+WARNING:HDLParsers:3607 - Unit work/DEBUG_RAM is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd".
+WARNING:HDLParsers:3607 - Unit work/DEBUG_RAM/DEBUG_RAM_a is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd".
+WARNING:HDLParsers:3607 - Unit work/VGA_BUFFER_RAM is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd".
+WARNING:HDLParsers:3607 - Unit work/VGA_BUFFER_RAM/VGA_BUFFER_RAM_a is now defined in a different file.  It was defined in "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd", and is now defined in "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd".
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DATAMEM.vhd" in Library work.
 Architecture datamem_a of Entity datamem is up to date.
-Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/programCounter.vhd" in Library work.
 Architecture behavioral of Entity programcounter is up to date.
-Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/Instr_Mem.vhd" in Library work.
 Architecture instr_mem_a of Entity instr_mem is up to date.
-Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd" in Library work.
 Architecture combinational of Entity arith_unit is up to date.
-Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/logical_unit.vhd" in Library work.
 Architecture combinational of Entity logical_unit is up to date.
-Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/shift_unit.vhd" in Library work.
 Architecture combinational of Entity shift_unit is up to date.
-Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd" in Library work.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/word_unit.vhd" in Library work.
 Architecture combinational of Entity word_unit is up to date.
-Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd" in Library work.
-ERROR:HDLParsers:850 - "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd" Line 62. Formal port RESULT does not exist in Entity 'arith_unit'.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd" in Library work.
+Architecture structural of Entity alu_toplevel is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/Instruction_Memory_TL.vhd" in Library work.
+Architecture structural of Entity instruction_memory_tl is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/REG_CTL.vhd" in Library work.
+Architecture dataflow of Entity reg_ctl is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DC_CTL.vhd" in Library work.
+Architecture mixed of Entity dc_ctl is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/DATA_CTL.vhd" in Library work.
+Architecture behavioral of Entity data_ctl is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/IMSEL.vhd" in Library work.
+Architecture dataflow of Entity imsel is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/PipelineRegisters.vhd" in Library work.
+Architecture behavioral of Entity pipelineregisters is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/RegisterBank.vhd" in Library work.
+Architecture behavioral of Entity registerbank is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/debounce.vhd" in Library work.
+Architecture logic of Entity debounce is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/clk25MHz.vhd" in Library work.
+Architecture behavioral of Entity clk_25mhz is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_controller.vhd" in Library work.
+Architecture behavioral of Entity vga_controller is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/rgb.vhd" in Library work.
+Architecture behavioral of Entity rgb is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/mux8to1.vhd" in Library work.
+Architecture behavioral of Entity mux8to1 is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/font_rom_ascii.vhd" in Library work.
+Architecture arch of Entity font_rom is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/VGA_BUFFER_RAM.vhd" in Library work.
+Architecture vga_buffer_ram_a of Entity vga_buffer_ram is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_driver.vhd" in Library work.
+Architecture structural of Entity vga_driver is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/button_controller.vhd" in Library work.
+Architecture structural of Entity buttoncontrol is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ProjLab01.vhd" in Library work.
+Architecture structural of Entity projlab01 is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/ipcore_dir/DEBUG_RAM.vhd" in Library work.
+Architecture debug_ram_a of Entity debug_ram is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/data_decoder.vhd" in Library work.
+Architecture structural of Entity data_decode is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd" in Library work.
+ERROR:HDLParsers:837 - "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd" Line 159. Width mismatch. Expected width 4, Actual width is 7 for dimension 1 of NEW_SIG_ADR.
+ERROR:HDLParsers:837 - "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/vga_debug.vhd" Line 160. Width mismatch. Expected width 52, Actual width is 4 for dimension 1 of DEBUG_OUT_DATA.
 --> 
 
 
-Total memory usage is 596984 kilobytes
+Total memory usage is 506604 kilobytes
 
-Number of errors   :    1 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of errors   :    2 (   0 filtered)
+Number of warnings :   56 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

@@ -1,36 +1,36 @@
-AR debug_ram debug_ram_a "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/DEBUG_RAM.vhd" sub00/vhpl31 1457561898
-EN vga_debug NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd" sub00/vhpl34 1457561901
-AR vga_buffer_ram vga_buffer_ram_a "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd" sub00/vhpl23 1457561890
-AR alu structural "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_toplevel.vhd" sub00/vhpl29 1457561896
-AR arith_unit combinational "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_arithmetic_unit.vhd" sub00/vhpl01 1457561868
-AR load_store_unit behavioral "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/load_store_unit.vhd" sub00/vhpl07 1457561874
-EN data_decode NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/data_decoder.vhd" sub00/vhpl32 1457561899
-EN vga_buffer_ram NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd" sub00/vhpl22 1457561889
-AR vga_debug structural "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_debug.vhd" sub00/vhpl35 1457561902
-EN debounce NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/debounce.vhd" sub00/vhpl10 1457561877
-AR rgb behavioral "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/rgb.vhd" sub00/vhpl17 1457561884
-AR alu_mux combinational "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_mux.vhd" sub00/vhpl09 1457561876
-EN clk_25mhz NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd" sub00/vhpl12 1457561879
-AR debounce logic "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/debounce.vhd" sub00/vhpl11 1457561878
-AR logic_unit combinational "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_logic_unit.vhd" sub00/vhpl03 1457561870
-AR vga_controller behavioral "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_controller.vhd" sub00/vhpl15 1457561882
-EN load_store_unit NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/load_store_unit.vhd" sub00/vhpl06 1457561873
-AR buttoncontrol structural "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/button_controller.vhd" sub00/vhpl27 1457561894
-AR vga_driver structural "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_driver.vhd" sub00/vhpl25 1457561892
-EN arith_unit NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_arithmetic_unit.vhd" sub00/vhpl00 1457561867
-EN logic_unit NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_logic_unit.vhd" sub00/vhpl02 1457561869
-EN vga_driver NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_driver.vhd" sub00/vhpl24 1457561891
-EN alu_shift_unit NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_shift_unit.vhd" sub00/vhpl04 1457561871
-AR data_decode structural "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/data_decoder.vhd" sub00/vhpl33 1457561900
-AR alu_shift_unit combinational "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_shift_unit.vhd" sub00/vhpl05 1457561872
-AR font_rom arch "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/font_rom_ascii.vhd" sub00/vhpl21 1457561888
-EN font_rom NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/font_rom_ascii.vhd" sub00/vhpl20 1457561887
-EN debug_ram NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/ipcore_dir/DEBUG_RAM.vhd" sub00/vhpl30 1457561897
-EN buttoncontrol NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/button_controller.vhd" sub00/vhpl26 1457561893
-EN vga_controller NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/vga_controller.vhd" sub00/vhpl14 1457561881
-EN alu_mux NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_mux.vhd" sub00/vhpl08 1457561875
-AR clk_25mhz behavioral "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/clk25MHz.vhd" sub00/vhpl13 1457561880
-EN mux8to1 NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/mux8to1.vhd" sub00/vhpl18 1457561885
-EN rgb NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/rgb.vhd" sub00/vhpl16 1457561883
-EN alu NULL "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/alu_toplevel.vhd" sub00/vhpl28 1457561895
-AR mux8to1 behavioral "//vnx-cifs/coefs/eng/shared/tdoucette/ECE 368/Lab04/mux8to1.vhd" sub00/vhpl19 1457561886
+AR debug_ram debug_ram_a /home/robert/UMD_RISC-16G5/Lab04/ipcore_dir/DEBUG_RAM.vhd sub00/vhpl31 1460318428
+EN vga_debug NULL /home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd sub00/vhpl34 1460318431
+AR vga_buffer_ram vga_buffer_ram_a /home/robert/UMD_RISC-16G5/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd sub00/vhpl23 1460318420
+AR alu structural /home/robert/UMD_RISC-16G5/Lab04/alu_toplevel.vhd sub00/vhpl29 1460318426
+AR arith_unit combinational /home/robert/UMD_RISC-16G5/Lab04/alu_arithmetic_unit.vhd sub00/vhpl01 1460318398
+AR load_store_unit behavioral /home/robert/UMD_RISC-16G5/Lab04/load_store_unit.vhd sub00/vhpl07 1460318404
+EN data_decode NULL /home/robert/UMD_RISC-16G5/Lab04/data_decoder.vhd sub00/vhpl32 1460318429
+EN vga_buffer_ram NULL /home/robert/UMD_RISC-16G5/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd sub00/vhpl22 1460318419
+AR vga_debug structural /home/robert/UMD_RISC-16G5/Lab04/vga_debug.vhd sub00/vhpl35 1460318432
+EN debounce NULL /home/robert/UMD_RISC-16G5/Lab04/debounce.vhd sub00/vhpl10 1460318407
+AR rgb behavioral /home/robert/UMD_RISC-16G5/Lab04/rgb.vhd sub00/vhpl17 1460318414
+AR alu_mux combinational /home/robert/UMD_RISC-16G5/Lab04/alu_mux.vhd sub00/vhpl09 1460318406
+EN clk_25mhz NULL /home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd sub00/vhpl12 1460318409
+AR debounce logic /home/robert/UMD_RISC-16G5/Lab04/debounce.vhd sub00/vhpl11 1460318408
+AR logic_unit combinational /home/robert/UMD_RISC-16G5/Lab04/alu_logic_unit.vhd sub00/vhpl03 1460318400
+AR vga_controller behavioral /home/robert/UMD_RISC-16G5/Lab04/vga_controller.vhd sub00/vhpl15 1460318412
+EN load_store_unit NULL /home/robert/UMD_RISC-16G5/Lab04/load_store_unit.vhd sub00/vhpl06 1460318403
+AR buttoncontrol structural /home/robert/UMD_RISC-16G5/Lab04/button_controller.vhd sub00/vhpl27 1460318424
+AR vga_driver structural /home/robert/UMD_RISC-16G5/Lab04/vga_driver.vhd sub00/vhpl25 1460318422
+EN arith_unit NULL /home/robert/UMD_RISC-16G5/Lab04/alu_arithmetic_unit.vhd sub00/vhpl00 1460318397
+EN logic_unit NULL /home/robert/UMD_RISC-16G5/Lab04/alu_logic_unit.vhd sub00/vhpl02 1460318399
+EN vga_driver NULL /home/robert/UMD_RISC-16G5/Lab04/vga_driver.vhd sub00/vhpl24 1460318421
+EN alu_shift_unit NULL /home/robert/UMD_RISC-16G5/Lab04/alu_shift_unit.vhd sub00/vhpl04 1460318401
+AR data_decode structural /home/robert/UMD_RISC-16G5/Lab04/data_decoder.vhd sub00/vhpl33 1460318430
+AR alu_shift_unit combinational /home/robert/UMD_RISC-16G5/Lab04/alu_shift_unit.vhd sub00/vhpl05 1460318402
+AR font_rom arch /home/robert/UMD_RISC-16G5/Lab04/font_rom_ascii.vhd sub00/vhpl21 1460318418
+EN font_rom NULL /home/robert/UMD_RISC-16G5/Lab04/font_rom_ascii.vhd sub00/vhpl20 1460318417
+EN debug_ram NULL /home/robert/UMD_RISC-16G5/Lab04/ipcore_dir/DEBUG_RAM.vhd sub00/vhpl30 1460318427
+EN buttoncontrol NULL /home/robert/UMD_RISC-16G5/Lab04/button_controller.vhd sub00/vhpl26 1460318423
+EN vga_controller NULL /home/robert/UMD_RISC-16G5/Lab04/vga_controller.vhd sub00/vhpl14 1460318411
+EN alu_mux NULL /home/robert/UMD_RISC-16G5/Lab04/alu_mux.vhd sub00/vhpl08 1460318405
+AR clk_25mhz behavioral /home/robert/UMD_RISC-16G5/Lab04/clk25MHz.vhd sub00/vhpl13 1460318410
+EN mux8to1 NULL /home/robert/UMD_RISC-16G5/Lab04/mux8to1.vhd sub00/vhpl18 1460318415
+EN rgb NULL /home/robert/UMD_RISC-16G5/Lab04/rgb.vhd sub00/vhpl16 1460318413
+EN alu NULL /home/robert/UMD_RISC-16G5/Lab04/alu_toplevel.vhd sub00/vhpl28 1460318425
+AR mux8to1 behavioral /home/robert/UMD_RISC-16G5/Lab04/mux8to1.vhd sub00/vhpl19 1460318416

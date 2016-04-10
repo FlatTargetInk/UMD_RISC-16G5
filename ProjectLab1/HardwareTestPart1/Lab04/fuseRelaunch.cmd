@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/ProjectLab1/HardwareTestPart1/Lab04/Debug_tb_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/ProjectLab1/HardwareTestPart1/Lab04/Debug_tb_beh.prj" "work.Debug_tb" 

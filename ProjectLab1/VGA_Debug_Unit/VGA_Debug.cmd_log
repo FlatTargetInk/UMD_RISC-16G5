@@ -229,3 +229,4 @@ xst -intstyle ise -ifn "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Uni
 xst -intstyle ise -ifn "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/VGA_Debug.xst" -ofn "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/VGA_Debug.syr" 
 xst -intstyle ise -ifn "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/VGA_Debug.xst" -ofn "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/VGA_Debug.syr" 
 xst -intstyle ise -ifn "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/VGA_Debug.xst" -ofn "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/VGA_Debug.syr" 
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/VGA_Debug.xst" -ofn "/home/robert/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/VGA_Debug.syr" 

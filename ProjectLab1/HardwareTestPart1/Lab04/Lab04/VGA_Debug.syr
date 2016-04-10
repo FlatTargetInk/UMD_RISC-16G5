@@ -1,0 +1,857 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: VGA_Debug.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "VGA_Debug.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "VGA_Debug"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : VGA_Debug
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_arithmetic_unit.vhd" in Library work.
+Architecture combinational of Entity arith_unit is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_logic_unit.vhd" in Library work.
+Architecture combinational of Entity logic_unit is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_shift_unit.vhd" in Library work.
+Architecture combinational of Entity alu_shift_unit is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/load_store_unit.vhd" in Library work.
+Architecture behavioral of Entity load_store_unit is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_mux.vhd" in Library work.
+Architecture combinational of Entity alu_mux is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/debounce.vhd" in Library work.
+Architecture logic of Entity debounce is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/clk25MHz.vhd" in Library work.
+Architecture behavioral of Entity clk_25mhz is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/vga_controller.vhd" in Library work.
+Architecture behavioral of Entity vga_controller is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/rgb.vhd" in Library work.
+Architecture behavioral of Entity rgb is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/mux8to1.vhd" in Library work.
+Architecture behavioral of Entity mux8to1 is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/font_rom_ascii.vhd" in Library work.
+Architecture arch of Entity font_rom is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/ipcore_dir/VGA_BUFFER_RAM.vhd" in Library work.
+Architecture vga_buffer_ram_a of Entity vga_buffer_ram is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/vga_driver.vhd" in Library work.
+Architecture structural of Entity vga_driver is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/button_controller.vhd" in Library work.
+Architecture structural of Entity buttoncontrol is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_toplevel.vhd" in Library work.
+Architecture structural of Entity alu is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/ipcore_dir/DEBUG_RAM.vhd" in Library work.
+Architecture debug_ram_a of Entity debug_ram is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/data_decoder.vhd" in Library work.
+Architecture structural of Entity data_decode is up to date.
+Compiling vhdl file "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/vga_debug.vhd" in Library work.
+Entity <vga_debug> compiled.
+Entity <vga_debug> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <VGA_Debug> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <VGA_Driver> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <buttoncontrol> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <Data_Decode> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <CLK_25MHZ> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <vga_controller> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <RGB> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MUX8to1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <FONT_ROM> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <debounce> in library <work> (architecture <Logic>) with generics.
+	wait_time = 20
+
+Analyzing hierarchy for entity <Arith_Unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <Logic_Unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <ALU_Shift_Unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <Load_Store_Unit> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ALU_Mux> in library <work> (architecture <Combinational>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <VGA_Debug> in library <work> (Architecture <structural>).
+WARNING:Xst:2211 - "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/vga_debug.vhd" line 146: Instantiating black box module <DEBUG_RAM>.
+WARNING:Xst:819 - "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/vga_debug.vhd" line 187: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <RST>
+WARNING:Xst:819 - "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/vga_debug.vhd" line 226: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <RST>
+WARNING:Xst:819 - "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/vga_debug.vhd" line 287: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <RST>
+Entity <VGA_Debug> analyzed. Unit <VGA_Debug> generated.
+
+Analyzing Entity <VGA_Driver> in library <work> (Architecture <Structural>).
+WARNING:Xst:2211 - "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/vga_driver.vhd" line 90: Instantiating black box module <VGA_BUFFER_RAM>.
+Entity <VGA_Driver> analyzed. Unit <VGA_Driver> generated.
+
+Analyzing Entity <CLK_25MHZ> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:753 - "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/clk25MHz.vhd" line 56: Unconnected output port 'CLK0' of component 'CLKDLL'.
+WARNING:Xst:753 - "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/clk25MHz.vhd" line 56: Unconnected output port 'CLK180' of component 'CLKDLL'.
+WARNING:Xst:753 - "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/clk25MHz.vhd" line 56: Unconnected output port 'CLK270' of component 'CLKDLL'.
+WARNING:Xst:753 - "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/clk25MHz.vhd" line 56: Unconnected output port 'CLK90' of component 'CLKDLL'.
+WARNING:Xst:753 - "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/clk25MHz.vhd" line 56: Unconnected output port 'LOCKED' of component 'CLKDLL'.
+WARNING:Xst:2211 - "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/clk25MHz.vhd" line 56: Instantiating black box module <CLKDLL>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <CLKDLL_inst> in unit <CLK_25MHZ>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <CLKDLL_inst> in unit <CLK_25MHZ>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <CLKDLL_inst> in unit <CLK_25MHZ>.
+Entity <CLK_25MHZ> analyzed. Unit <CLK_25MHZ> generated.
+
+Analyzing Entity <vga_controller> in library <work> (Architecture <Behavioral>).
+Entity <vga_controller> analyzed. Unit <vga_controller> generated.
+
+Analyzing Entity <RGB> in library <work> (Architecture <Behavioral>).
+Entity <RGB> analyzed. Unit <RGB> generated.
+
+Analyzing Entity <MUX8to1> in library <work> (Architecture <Behavioral>).
+Entity <MUX8to1> analyzed. Unit <MUX8to1> generated.
+
+Analyzing Entity <FONT_ROM> in library <work> (Architecture <arch>).
+Entity <FONT_ROM> analyzed. Unit <FONT_ROM> generated.
+
+Analyzing Entity <buttoncontrol> in library <work> (Architecture <Structural>).
+Entity <buttoncontrol> analyzed. Unit <buttoncontrol> generated.
+
+Analyzing generic Entity <debounce> in library <work> (Architecture <Logic>).
+	wait_time = 20
+Entity <debounce> analyzed. Unit <debounce> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <Structural>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <Arith_Unit> in library <work> (Architecture <Combinational>).
+Entity <Arith_Unit> analyzed. Unit <Arith_Unit> generated.
+
+Analyzing Entity <Logic_Unit> in library <work> (Architecture <Combinational>).
+Entity <Logic_Unit> analyzed. Unit <Logic_Unit> generated.
+
+Analyzing Entity <ALU_Shift_Unit> in library <work> (Architecture <Combinational>).
+Entity <ALU_Shift_Unit> analyzed. Unit <ALU_Shift_Unit> generated.
+
+Analyzing Entity <Load_Store_Unit> in library <work> (Architecture <Behavioral>).
+Entity <Load_Store_Unit> analyzed. Unit <Load_Store_Unit> generated.
+
+Analyzing Entity <ALU_Mux> in library <work> (Architecture <Combinational>).
+Entity <ALU_Mux> analyzed. Unit <ALU_Mux> generated.
+
+Analyzing Entity <Data_Decode> in library <work> (Architecture <Structural>).
+Entity <Data_Decode> analyzed. Unit <Data_Decode> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Data_Decode>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/data_decoder.vhd".
+    Found 16x8-bit ROM for signal <ASCIINUM>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Data_Decode> synthesized.
+
+
+Synthesizing Unit <vga_controller>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/vga_controller.vhd".
+    Found 1-bit register for signal <HS>.
+    Found 1-bit register for signal <VS>.
+    Found 1-bit register for signal <BLANK>.
+    Found 10-bit up counter for signal <hcounter>.
+    Found 10-bit comparator greatequal for signal <HS$cmp_ge0000> created at line 100.
+    Found 10-bit comparator less for signal <HS$cmp_lt0000> created at line 100.
+    Found 10-bit up counter for signal <vcounter>.
+    Found 10-bit comparator less for signal <video_enable$cmp_lt0000> created at line 64.
+    Found 10-bit comparator less for signal <video_enable$cmp_lt0001> created at line 64.
+    Found 10-bit comparator greatequal for signal <VS$cmp_ge0000> created at line 112.
+    Found 10-bit comparator less for signal <VS$cmp_lt0000> created at line 112.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vga_controller> synthesized.
+
+
+Synthesizing Unit <RGB>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/rgb.vhd".
+WARNING:Xst:1780 - Signal <enb> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <RGB> synthesized.
+
+
+Synthesizing Unit <MUX8to1>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/mux8to1.vhd".
+    Found 1-bit 8-to-1 multiplexer for signal <OUTPUT>.
+    Found 3-bit subtractor for signal <SEL1>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <MUX8to1> synthesized.
+
+
+Synthesizing Unit <FONT_ROM>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/font_rom_ascii.vhd".
+    Found 2048x8-bit ROM for signal <DATA$rom0000> created at line 2230.
+    Found 11-bit register for signal <addr_reg>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  11 D-type flip-flop(s).
+Unit <FONT_ROM> synthesized.
+
+
+Synthesizing Unit <debounce>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/debounce.vhd".
+    Found 1-bit register for signal <OUTPUT>.
+    Found 21-bit up counter for signal <Count>.
+    Found 1-bit xor2 for signal <D_SET>.
+    Found 2-bit register for signal <D_STATE>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <debounce> synthesized.
+
+
+Synthesizing Unit <Arith_Unit>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_arithmetic_unit.vhd".
+    Found 1-bit xor2 for signal <CCR<1>>.
+    Found 9-bit addsub for signal <arith>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Arith_Unit> synthesized.
+
+
+Synthesizing Unit <Logic_Unit>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_logic_unit.vhd".
+WARNING:Xst:653 - Signal <cmp<1:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+    Found 8-bit comparator equal for signal <cmp_2$cmp_eq0000> created at line 42.
+    Found 8-bit comparator less for signal <cmp_3$cmp_lt0000> created at line 41.
+    Summary:
+	inferred   2 Comparator(s).
+Unit <Logic_Unit> synthesized.
+
+
+Synthesizing Unit <ALU_Shift_Unit>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_shift_unit.vhd".
+    Found 8-bit shifter logical left for signal <shift_left>.
+    Found 8-bit shifter logical right for signal <shift_right>.
+    Summary:
+	inferred   2 Combinational logic shifter(s).
+Unit <ALU_Shift_Unit> synthesized.
+
+
+Synthesizing Unit <Load_Store_Unit>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/load_store_unit.vhd".
+WARNING:Xst:647 - Input <IMMED> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <reg>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <Load_Store_Unit> synthesized.
+
+
+Synthesizing Unit <ALU_Mux>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_mux.vhd".
+Unit <ALU_Mux> synthesized.
+
+
+Synthesizing Unit <buttoncontrol>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/button_controller.vhd".
+WARNING:Xst:653 - Signal <EN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+Unit <buttoncontrol> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/alu_toplevel.vhd".
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <CLK_25MHZ>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/clk25MHz.vhd".
+Unit <CLK_25MHZ> synthesized.
+
+
+Synthesizing Unit <VGA_Driver>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/vga_driver.vhd".
+WARNING:Xst:646 - Signal <vcount<9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <VGA_ADR<12>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <BUF_OUT<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 13-bit adder for signal <VGA_ADR>.
+    Found 5x8-bit multiplier for signal <VGA_ADR$mult0000> created at line 56.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <VGA_Driver> synthesized.
+
+
+Synthesizing Unit <VGA_Debug>.
+    Related source file is "//vnx-cifs/coefs/eng/shared/cparks1/Xilinx/Lab04/vga_debug.vhd".
+WARNING:Xst:646 - Signal <VGACLR_COMPLETE> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <TEST_PIN> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <RUN_COMPLETE> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <LDST_OUT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <DEBUG_STATE> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <DEBUG_RUN_FLAG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <DEBUG_CLR_FLAG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <DD_COMPLETE> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <VGACLR_STATE>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <DD_STATE>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <RUN_STATE>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 7-bit register for signal <DD_ADR>.
+    Found 7-bit adder for signal <DD_ADR$share0000> created at line 245.
+    Found 1-bit register for signal <DD_SPACE_COMPLETE>.
+    Found 1-bit register for signal <DD_SPACE_MUX>.
+    Found 1-bit register for signal <DD_WE>.
+    Found 4-bit register for signal <DEBUG_CNT>.
+    Found 4-bit adder for signal <DEBUG_CNT$addsub0000> created at line 209.
+    Found 1-bit register for signal <DEBUG_RAM_EN>.
+    Found 12-bit register for signal <VGACLR_ADR>.
+    Found 12-bit adder for signal <VGACLR_ADR$addsub0000> created at line 308.
+    Found 1-bit register for signal <VGACLR_MUX>.
+    Found 1-bit register for signal <VGACLR_WE>.
+    Summary:
+	inferred   3 Finite State Machine(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <VGA_Debug> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 1
+ 2048x8-bit ROM                                        : 1
+# Multipliers                                          : 1
+ 5x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 6
+ 12-bit adder                                          : 1
+ 13-bit adder                                          : 1
+ 3-bit subtractor                                      : 1
+ 4-bit adder                                           : 1
+ 7-bit adder                                           : 1
+ 9-bit addsub                                          : 1
+# Counters                                             : 6
+ 10-bit up counter                                     : 2
+ 21-bit up counter                                     : 4
+# Registers                                            : 26
+ 1-bit register                                        : 21
+ 11-bit register                                       : 1
+ 12-bit register                                       : 1
+ 4-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 8
+ 10-bit comparator greatequal                          : 2
+ 10-bit comparator less                                : 4
+ 8-bit comparator equal                                : 1
+ 8-bit comparator less                                 : 1
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 8-bit shifter logical left                            : 1
+ 8-bit shifter logical right                           : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <RUN_STATE/FSM> on signal <RUN_STATE[1:2]> with gray encoding.
+----------------------
+ State    | Encoding
+----------------------
+ init     | 00
+ ready    | 01
+ run      | 11
+ complete | 10
+----------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <DD_STATE/FSM> on signal <DD_STATE[1:3]> with gray encoding.
+----------------------
+ State    | Encoding
+----------------------
+ init     | 000
+ ready    | 001
+ run      | 011
+ space    | 110
+ complete | 010
+----------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <VGACLR_STATE/FSM> on signal <VGACLR_STATE[1:2]> with gray encoding.
+----------------------
+ State    | Encoding
+----------------------
+ init     | 00
+ ready    | 01
+ run      | 11
+ complete | 10
+----------------------
+Reading core <ipcore_dir/DEBUG_RAM.ngc>.
+Reading core <ipcore_dir/VGA_BUFFER_RAM.ngc>.
+Loading core <DEBUG_RAM> for timing and area information for instance <U4>.
+Loading core <VGA_BUFFER_RAM> for timing and area information for instance <U6>.
+WARNING:Xst:1293 - FF/Latch <reg_0> has a constant value of 0 in block <Load_Store_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_1> has a constant value of 0 in block <Load_Store_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_2> has a constant value of 0 in block <Load_Store_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_3> has a constant value of 0 in block <Load_Store_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_4> has a constant value of 0 in block <Load_Store_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_5> has a constant value of 0 in block <Load_Store_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_6> has a constant value of 0 in block <Load_Store_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_7> has a constant value of 0 in block <Load_Store_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <Load_Store_Unit> is unconnected in block <U3>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <FONT_ROM>.
+INFO:Xst:3044 - The ROM <Mrom_DATA_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <addr_reg>.
+INFO:Xst:3225 - The RAM <Mrom_DATA_rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <ADDR>          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <DATA>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <FONT_ROM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 3
+# RAMs                                                 : 1
+ 2048x8-bit single-port block RAM                      : 1
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Multipliers                                          : 1
+ 5x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 6
+ 12-bit adder                                          : 2
+ 3-bit subtractor                                      : 1
+ 4-bit adder                                           : 1
+ 7-bit adder                                           : 1
+ 9-bit addsub                                          : 1
+# Counters                                             : 6
+ 10-bit up counter                                     : 2
+ 21-bit up counter                                     : 4
+# Registers                                            : 52
+ Flip-Flops                                            : 52
+# Comparators                                          : 8
+ 10-bit comparator greatequal                          : 2
+ 10-bit comparator less                                : 4
+ 8-bit comparator equal                                : 1
+ 8-bit comparator less                                 : 1
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 8-bit shifter logical left                            : 1
+ 8-bit shifter logical right                           : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <reg_4> in Unit <Load_Store_Unit> is equivalent to the following 2 FFs/Latches, which will be removed : <reg_5> <reg_7> 
+WARNING:Xst:1293 - FF/Latch <reg_0> has a constant value of 0 in block <Load_Store_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_1> has a constant value of 0 in block <Load_Store_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_2> has a constant value of 0 in block <Load_Store_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_3> has a constant value of 0 in block <Load_Store_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_4> has a constant value of 0 in block <Load_Store_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_6> has a constant value of 0 in block <Load_Store_Unit>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <VGA_Debug> ...
+
+Optimizing unit <vga_controller> ...
+
+Optimizing unit <debounce> ...
+
+Optimizing unit <VGA_Driver> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block VGA_Debug, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 155
+ Flip-Flops                                            : 155
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : VGA_Debug.ngr
+Top Level Output File Name         : VGA_Debug
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 536
+#      GND                         : 3
+#      INV                         : 13
+#      LUT1                        : 113
+#      LUT2                        : 26
+#      LUT2_D                      : 1
+#      LUT3                        : 29
+#      LUT3_D                      : 1
+#      LUT3_L                      : 2
+#      LUT4                        : 80
+#      LUT4_D                      : 1
+#      LUT4_L                      : 5
+#      MUXCY                       : 120
+#      MUXF5                       : 10
+#      MUXF6                       : 1
+#      VCC                         : 3
+#      XORCY                       : 128
+# FlipFlops/Latches                : 155
+#      FDC                         : 7
+#      FDE                         : 41
+#      FDR                         : 13
+#      FDRE                        : 94
+# RAMS                             : 4
+#      RAMB16_S4_S36               : 1
+#      RAMB16_S4_S4                : 2
+#      RAMB16_S9                   : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 23
+#      IBUF                        : 12
+#      IBUFG                       : 1
+#      OBUF                        : 10
+# DLLs                             : 1
+#      CLKDLL                      : 1
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      144  out of   4656     3%  
+ Number of Slice Flip Flops:            155  out of   9312     1%  
+ Number of 4 input LUTs:                271  out of   9312     2%  
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    232     9%  
+ Number of BRAMs:                         4  out of     20    20%  
+ Number of MULT18X18SIOs:                 1  out of     20     5%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | IBUFG+BUFG             | 136   |
+CLK                                | U1/U1/CLKDLL_inst:CLKDV| 23    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+U2/BTN_3/OUTPUT(U2/BTN_3/OUTPUT:Q) | NONE(DD_STATE_FSM_FFd1)| 7     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.217ns (Maximum Frequency: 108.495MHz)
+   Minimum input arrival time before clock: 3.164ns
+   Maximum output required time after clock: 10.077ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 9.217ns (frequency: 108.495MHz)
+  Total number of paths / destination ports: 3438 / 492
+-------------------------------------------------------------------------
+Delay:               9.217ns (Levels of Logic = 5)
+  Source:            U1/U2/vcounter_4 (FF)
+  Destination:       U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram (RAM)
+  Source Clock:      CLK rising 0.5X
+  Destination Clock: CLK rising
+
+  Data Path: U1/U2/vcounter_4 to U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             5   0.591   0.633  U1/U2/vcounter_4 (U1/U2/vcounter_4)
+     MULT18X18SIO:A0->P10    1   4.602   0.595  U1/Mmult_VGA_ADR_mult0000 (U1/VGA_ADR_mult0000<10>)
+     LUT1:I0->O            1   0.704   0.000  U1/Madd_VGA_ADR_Madd_cy<10>_rt (U1/Madd_VGA_ADR_Madd_cy<10>_rt)
+     MUXCY:S->O            0   0.464   0.000  U1/Madd_VGA_ADR_Madd_cy<10> (U1/Madd_VGA_ADR_Madd_cy<10>)
+     XORCY:CI->O           2   0.804   0.447  U1/Madd_VGA_ADR_Madd_xor<11> (U1/VGA_ADR<11>)
+     begin scope: 'U1/U6'
+     RAMB16_S4_S4:ADDRB11        0.377          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram
+    ----------------------------------------
+    Total                      9.217ns (7.542ns logic, 1.675ns route)
+                                       (81.8% logic, 18.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              3.164ns (Levels of Logic = 3)
+  Source:            SW<7> (PAD)
+  Destination:       U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp4x4.ram (RAM)
+  Destination Clock: CLK rising
+
+  Data Path: SW<7> to U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp4x4.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.595  SW_7_IBUF (SW_7_IBUF)
+     LUT3:I0->O            1   0.704   0.420  DATA<7>1 (DATA<7>)
+     begin scope: 'U1/U6'
+     RAMB16_S4_S4:DIA3         0.227          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp4x4.ram
+    ----------------------------------------
+    Total                      3.164ns (2.149ns logic, 1.015ns route)
+                                       (67.9% logic, 32.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 138 / 10
+-------------------------------------------------------------------------
+Offset:              10.077ns (Levels of Logic = 5)
+  Source:            U1/U5/Mrom_DATA_rom0000 (RAM)
+  Destination:       VGAGRN<2> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: U1/U5/Mrom_DATA_rom0000 to VGAGRN<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S9:CLK->DO7    1   2.800   0.499  U1/U5/Mrom_DATA_rom0000 (U1/FR_DATA<7>)
+     LUT3:I1->O            1   0.704   0.000  U1/U4/Mmux_OUTPUT_6 (U1/U4/Mmux_OUTPUT_6)
+     MUXF5:I0->O           1   0.321   0.000  U1/U4/Mmux_OUTPUT_4_f5 (U1/U4/Mmux_OUTPUT_4_f5)
+     MUXF6:I0->O           1   0.521   0.499  U1/U4/Mmux_OUTPUT_2_f6 (U1/MUX8to1_OUT)
+     LUT2:I1->O            8   0.704   0.757  U1/U3/BLU<1>1 (VGABLU_0_OBUF)
+     OBUF:I->O                 3.272          VGAGRN_2_OBUF (VGAGRN<2>)
+    ----------------------------------------
+    Total                     10.077ns (8.322ns logic, 1.755ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.44 secs
+ 
+--> 
+
+Total memory usage is 296428 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   41 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+
