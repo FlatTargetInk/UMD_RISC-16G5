@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Z:/ECE 368/Poject_Lab01/Project1/TopLevel_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="toplevel_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/toplevel_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/alu_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/dst_adr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dst_adr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dst_adr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/store_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">store_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">store_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/ccr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ccr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ccr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/ra3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ra3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ra3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/ra4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ra4[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ra4[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/rb3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rb3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rb3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/rb4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rb4[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rb4[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/ra_dc1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ra_dc1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ra_dc1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/ra_dc2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ra_dc2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ra_dc2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/rb_dc1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rb_dc1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rb_dc1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/rb_dc2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rb_dc2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rb_dc2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/op1_sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op1_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">op1_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/op2_sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op2_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">op2_sel[1:0]</obj_property>
+   </wvobject>
+</wave_config>
