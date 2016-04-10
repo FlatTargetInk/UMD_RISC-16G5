@@ -77,6 +77,7 @@ architecture Structural of ProjLab01 is
 
 begin
 	ALU_OUT <= ALU_RESULT;
+	CCR <= ALU_FLAGS;
 	
 	--------  Debugging I/O  --------
 	---------------------------------

@@ -57,7 +57,7 @@ begin
 	zro <= '1' when result(15 downto 0) = x"00000000" else '0';	-- Zero
 	
 	LOG_OUT <= result;
-	SREG_OUT(2) <= zro;
+	SREG_OUT <= '0' & zro & "00";
 
 end Combinational;
 

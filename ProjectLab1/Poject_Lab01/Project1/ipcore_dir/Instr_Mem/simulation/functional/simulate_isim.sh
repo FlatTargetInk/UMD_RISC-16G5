@@ -1,3 +1,4 @@
+#!/bin/sh
 # (c) Copyright 2009 - 2010 Xilinx, Inc. All rights reserved.
 # 
 # This file contains confidential and proprietary information
@@ -44,27 +45,26 @@
 # THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 # PART OF THIS FILE AT ALL TIMES.
 #--------------------------------------------------------------------------------
-#!/bin/sh
+
 cp ../../../Instr_Mem.mif .
-rm -rf simv* csrc DVEfiles AN.DB
+
 
 echo "Compiling Core VHDL UNISIM/Behavioral model"
-vhdlan  ../../../Instr_Mem.vhd
-vhdlan  ../../example_design/Instr_Mem_exdes.vhd
+vhpcomp  -work work ../../../Instr_Mem.vhd 
+vhpcomp  -work work ../../example_design/Instr_Mem_exdes.vhd
 
 echo "Compiling Test Bench Files"
-vhdlan    ../bmg_tb_pkg.vhd
-vhdlan    ../random.vhd
-vhdlan    ../data_gen.vhd
-vhdlan    ../addr_gen.vhd
-vhdlan    ../checker.vhd
-vhdlan    ../bmg_stim_gen.vhd
-vhdlan    ../Instr_Mem_synth.vhd 
-vhdlan    ../Instr_Mem_tb.vhd
 
-echo "Elaborating Design"
-vcs +vcs+lic+wait -debug Instr_Mem_tb
+vhpcomp -work work    ../bmg_tb_pkg.vhd
+vhpcomp -work work    ../random.vhd
+vhpcomp -work work    ../data_gen.vhd
+vhpcomp -work work    ../addr_gen.vhd
+vhpcomp -work work    ../checker.vhd
+vhpcomp -work work    ../bmg_stim_gen.vhd
+vhpcomp -work work    ../Instr_Mem_synth.vhd 
+vhpcomp -work work    ../Instr_Mem_tb.vhd
 
-echo "Simulating Design"
-./simv -ucli -i ucli_commands.key
-dve -session vcs_session.tcl
+fuse work.Instr_Mem_tb -L unisims -L xilinxcorelib -o Instr_Mem_tb.exe
+
+
+./Instr_Mem_tb.exe -gui -tclbatch simcmds.tcl

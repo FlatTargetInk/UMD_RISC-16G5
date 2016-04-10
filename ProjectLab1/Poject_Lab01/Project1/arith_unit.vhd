@@ -57,7 +57,7 @@ begin
 			--a + b when "101",	-- ADDI
 			'0' & X"0000" when OTHERS;
 	SREG(3) <= RESULT(15); -- Negative with signed logic
-	SREG(2) <= '1' when RESULT(15 downto 0) = x"00000000" else '1';	-- Zero
+	SREG(2) <= '1' when RESULT(15 downto 0) = x"00000000" else '0';	-- Zero
 	SREG(1) <= RESULT(16) xor RESULT(15);	-- Overflow with signed logic
 	SREG(0) <= RESULT(16); -- Carry
 	

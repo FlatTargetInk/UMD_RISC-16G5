@@ -59,7 +59,8 @@ begin
 	port map(	RA 		=> RA,
 					RB 		=> RB,
 					OP 		=> OP(2 downto 0),
-					AR_OUT	=> ARITH);
+					AR_OUT	=> ARITH,
+					SREG_OUT	=> SREG_AR);
 	
 	logical_unit: entity work.logical_unit
 	port map(	RA			=> RA,
@@ -96,6 +97,19 @@ begin
 			WORD_OUT	when "1001", -- LW (WORD)
 			RA	 		when "1010", -- SW (WORD)
 			X"0000"	when OTHERS;
+	
+	with OP select 
+		SREG <=
+			SREG_AR 	when "0000", -- ADD (ARITHMETIC)
+			SREG_AR 	when "0001", -- SUB (ARITHMETIC)
+			SREG_LG 	when "0010", -- AND (LOGICAL)
+			SREG_LG 	when "0011", -- OR  (LOGICAL)
+			SREG_LG 	when "0100", -- MOV (LOGICAL)
+			SREG_AR 	when "0101", -- ADDI (ARITHMETIC)
+			SREG_LG	when "0110",--, -- ANDI (LOGICAL)
+			SREG_SH 	when "0111", -- SL (SHIFT)
+			SREG_SH 	when "1000",--, -- SR (SHIFT)
+			X"0"		when OTHERS;
 
 end Structural;
 
