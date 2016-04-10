@@ -1,6 +1,0 @@
-work	"alu_toplevel.vhd"
-work	"arith_unit.vhd"
-work	"ipcore_dir/DATAMEM.vhd"
-work	"logical_unit.vhd"
-work	"shift_unit.vhd"
-work	"word_unit.vhd"

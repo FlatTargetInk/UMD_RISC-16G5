@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/TopLevel_tb_isim_beh.exe" -prj "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/TopLevel_tb_beh.prj" "work.TopLevel_tb" 
