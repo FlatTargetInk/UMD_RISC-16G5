@@ -35,12 +35,17 @@ entity word_unit is
            IMMAddr : in  STD_LOGIC_VECTOR (7 downto 0);
 			  CLK : in STD_LOGIC;
            OP : in  STD_LOGIC_VECTOR(3 downto 0); -- Pass OP(2) to this (OP=0=Load, OP=1=Write)
-           RESULT : out  STD_LOGIC_VECTOR (15 downto 0));
+           RESULT : out  STD_LOGIC_VECTOR (15 downto 0);
+			  DST_ADR : out STD_LOGIC_VECTOR (7 downto 0);
+			  STORE_DATA : out STD_LOGIC_VECTOR (15 downto 0));
 end word_unit;
 
 architecture Combinational of word_unit is
 signal WREN : STD_LOGIC_VECTOR(0 downto 0) := "0";
 begin
+DST_ADR <= IMMAddr;
+STORE_DATA <= DATAIN;
+
 WREN <= "0" when OP = x"9" else -- x"9" is load word
 		  "1" when OP = x"A"; -- x"A" is store word
 		  

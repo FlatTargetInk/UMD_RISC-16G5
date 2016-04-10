@@ -53,8 +53,12 @@ signal SHIFT		: STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0');
 signal SREG_SH		: STD_LOGIC_VECTOR (3 downto 0)	:= (OTHERS => '0');
 signal LD_MEM		: STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0');
 signal WORD_OUT	: STD_LOGIC_VECTOR (15 downto 0)	:= (OTHERS => '0');
+signal LDST_ADR_8	: STD_LOGIC_VECTOR (7 downto 0) 	:= (OTHERS => '0');
 
 begin
+
+LDST_ADR <= X"00" & LDST_ADR_8;
+
 	arith_unit: entity work.arith_unit
 	port map(	RA 		=> RA,
 					RB 		=> RB,
@@ -81,7 +85,9 @@ begin
 					IMMAddr	=> RB(7 downto 0),
 					CLK		=> CLK,
 					OP			=> OP,
-					RESULT	=> WORD_OUT);
+					RESULT	=> WORD_OUT,
+					DST_ADR	=> LDST_ADR_8,
+					STORE_DATA	=> LDST_DAT);
 	
 	with OP select 
 		ALU_OUT <=
