@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-03-09T17:13:07</DateModified>
+  <DateModified>2016-04-08T15:22:17</DateModified>
   <ModuleName>VGA_Debug</ModuleName>
   <SummaryTimeStamp>2016-03-09T15:42:14</SummaryTimeStamp>
-  <SavedFilePath>Z:/ECE 368/Lab04/iseconfig/VGA_Debug.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>Z:/ECE 368/Lab04\</ImplementationReportsDirectory>
+  <SavedFilePath>/home/tj/Desktop/UMD_RISC-16G5/Lab04/iseconfig/VGA_Debug.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/tj/Desktop/UMD_RISC-16G5/Lab04/</ImplementationReportsDirectory>
   <DateInitialized>2016-03-02T14:05:08</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

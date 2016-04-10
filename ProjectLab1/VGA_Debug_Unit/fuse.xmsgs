@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"Z:/ECE 368/Lab04/vga_controller_tb.vhd" Line 56: &lt;<arg fmt="%s" index="1">vga_toplevel</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">Z:/ECE 368/Lab04/vga_controller_tb.vhd</arg>&quot; Line <arg fmt="%d" index="2">56</arg>. Instance <arg fmt="%s" index="3">vga_toplevel</arg> is unbound
+</msg>
+
+</messages>
+

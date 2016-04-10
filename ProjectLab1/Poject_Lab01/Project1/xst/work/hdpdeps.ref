@@ -1,0 +1,124 @@
+V3 64
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/alu_toplevel.vhd 2016/04/10.15:16:58 P.20131013
+EN work/ALU_Toplevel 1460316222 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/alu_toplevel.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
+AR work/ALU_Toplevel/Structural 1460316223 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/alu_toplevel.vhd \
+      EN work/ALU_Toplevel 1460316222 CP work/arith_unit CP work/logical_unit \
+      CP work/shift_unit CP work/word_unit
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/arith_unit.vhd 2016/04/10.15:16:58 P.20131013
+EN work/arith_unit 1460316214 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/arith_unit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_SIGNED 1381692178
+AR work/arith_unit/Combinational 1460316215 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/arith_unit.vhd \
+      EN work/arith_unit 1460316214
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DATA_CTL.vhd 2016/04/08.15:08:48 P.20131013
+EN work/DATA_CTL 1460316230 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DATA_CTL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DATA_CTL/Behavioral 1460316231 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DATA_CTL.vhd \
+      EN work/DATA_CTL 1460316230
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DC_CTL.vhd 2016/04/08.15:08:48 P.20131013
+EN work/DC_CTL 1460316228 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DC_CTL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DC_CTL/Mixed 1460316229 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DC_CTL.vhd \
+      EN work/DC_CTL 1460316228
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/IMSEL.vhd 2016/04/08.15:08:48 P.20131013
+EN work/IMSEL 1460316232 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/IMSEL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/IMSEL/Dataflow 1460316233 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/IMSEL.vhd \
+      EN work/IMSEL 1460316232
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/Instruction_Memory_TL.vhd 2016/04/08.15:08:48 P.20131013
+EN work/Instruction_Memory_TL 1460316224 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/Instruction_Memory_TL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Instruction_Memory_TL/Structural 1460316225 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/Instruction_Memory_TL.vhd \
+      EN work/Instruction_Memory_TL 1460316224 CP work/programCounter \
+      CP work/Instr_Mem
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ipcore_dir/DATAMEM.vhd 2016/04/08.15:08:48 P.20131013
+EN work/DATAMEM 1460316208 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ipcore_dir/DATAMEM.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DATAMEM/DATAMEM_a 1460316209 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ipcore_dir/DATAMEM.vhd \
+      EN work/DATAMEM 1460316208
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ipcore_dir/Instr_Mem.vhd 2016/04/10.15:16:58 P.20131013
+EN work/Instr_Mem 1460316212 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ipcore_dir/Instr_Mem.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Instr_Mem/Instr_Mem_a 1460316213 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ipcore_dir/Instr_Mem.vhd \
+      EN work/Instr_Mem 1460316212
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/logical_unit.vhd 2016/04/10.15:16:58 P.20131013
+EN work/logical_unit 1460316216 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/logical_unit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/logical_unit/Combinational 1460316217 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/logical_unit.vhd \
+      EN work/logical_unit 1460316216
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/PipelineRegisters.vhd 2016/04/08.15:08:48 P.20131013
+EN work/PipelineRegisters 1460316234 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/PipelineRegisters.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/PipelineRegisters/Behavioral 1460316235 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/PipelineRegisters.vhd \
+      EN work/PipelineRegisters 1460316234
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/programCounter.vhd 2016/04/08.15:08:48 P.20131013
+EN work/programCounter 1460316210 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/programCounter.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/programCounter/Behavioral 1460316211 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/programCounter.vhd \
+      EN work/programCounter 1460316210
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ProjLab01.vhd 2016/04/10.15:16:58 P.20131013
+EN work/ProjLab01 1460316238 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ProjLab01.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
+AR work/ProjLab01/Structural 1460316239 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ProjLab01.vhd \
+      EN work/ProjLab01 1460316238 CP work/ALU_Toplevel \
+      CP work/Instruction_Memory_TL CP work/REG_CTL CP work/DC_CTL CP work/DATA_CTL \
+      CP work/IMSEL CP work/PipelineRegisters CP work/programCounter \
+      CP work/RegisterBank
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/RegisterBank.vhd 2016/04/08.15:08:48 P.20131013
+EN work/RegisterBank 1460316236 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/RegisterBank.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/RegisterBank/Behavioral 1460316237 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/RegisterBank.vhd \
+      EN work/RegisterBank 1460316236
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/REG_CTL.vhd 2016/04/08.15:08:48 P.20131013
+EN work/REG_CTL 1460316226 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/REG_CTL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/REG_CTL/Dataflow 1460316227 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/REG_CTL.vhd \
+      EN work/REG_CTL 1460316226
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/shift_unit.vhd 2016/04/10.15:16:58 P.20131013
+EN work/shift_unit 1460316218 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/shift_unit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/shift_unit/Combinational 1460316219 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/shift_unit.vhd \
+      EN work/shift_unit 1460316218
+FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/word_unit.vhd 2016/04/08.15:08:48 P.20131013
+EN work/word_unit 1460316220 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/word_unit.vhd \
+      PB ieee/std_logic_1164 1381692176 LB work
+AR work/word_unit/Combinational 1460316221 \
+      FL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/word_unit.vhd \
+      EN work/word_unit 1460316220 CP work/DATAMEM

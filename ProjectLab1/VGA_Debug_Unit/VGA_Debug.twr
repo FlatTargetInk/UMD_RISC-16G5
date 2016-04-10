@@ -1,0 +1,1001 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml VGA_Debug.twx VGA_Debug.ncd -o VGA_Debug.twr VGA_Debug.pcf
+-ucf vga_debug.ucf
+
+Design file:              VGA_Debug.ncd
+Physical constraint file: VGA_Debug.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "CLK_IBUFG1" PERIOD = 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 3310 paths analyzed, 708 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  12.235ns.
+--------------------------------------------------------------------------------
+
+Paths for end point U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B (RAMB16_X1Y6.ADDRB7), 41 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     7.765ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U1/U2/vcounter_4 (FF)
+  Destination:          U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      12.235ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    CLK_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U1/U2/vcounter_4 to U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y52.XQ      Tcko                  0.591   U1/U2/vcounter<4>
+                                                       U1/U2/vcounter_4
+    MULT18X18_X1Y6.A0    net (fanout=5)        2.104   U1/U2/vcounter<4>
+    MULT18X18_X1Y6.P0    Tmult                 3.657   U1/Mmult_VGA_ADR_mult0000
+                                                       U1/Mmult_VGA_ADR_mult0000
+    SLICE_X55Y45.F2      net (fanout=1)        1.483   U1/VGA_ADR_mult0000<0>
+    SLICE_X55Y45.COUT    Topcyf                1.162   U1/VGA_ADR<0>
+                                                       U1/Madd_VGA_ADR_Madd_lut<0>
+                                                       U1/Madd_VGA_ADR_Madd_cy<0>
+                                                       U1/Madd_VGA_ADR_Madd_cy<1>
+    SLICE_X55Y46.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<1>
+    SLICE_X55Y46.COUT    Tbyp                  0.118   U1/VGA_ADR<2>
+                                                       U1/Madd_VGA_ADR_Madd_cy<2>
+                                                       U1/Madd_VGA_ADR_Madd_cy<3>
+    SLICE_X55Y47.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<3>
+    SLICE_X55Y47.Y       Tciny                 0.869   U1/VGA_ADR<4>
+                                                       U1/Madd_VGA_ADR_Madd_cy<4>
+                                                       U1/Madd_VGA_ADR_Madd_xor<5>
+    RAMB16_X1Y6.ADDRB7   net (fanout=2)        1.874   U1/VGA_ADR<5>
+    RAMB16_X1Y6.CLKB     Tback                 0.377   U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram
+                                                       U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    -------------------------------------------------  ---------------------------
+    Total                                     12.235ns (6.774ns logic, 5.461ns route)
+                                                       (55.4% logic, 44.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.821ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U1/U2/vcounter_5 (FF)
+  Destination:          U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      12.179ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    CLK_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U1/U2/vcounter_5 to U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y52.YQ      Tcko                  0.587   U1/U2/vcounter<4>
+                                                       U1/U2/vcounter_5
+    MULT18X18_X1Y6.A1    net (fanout=5)        2.313   U1/U2/vcounter<5>
+    MULT18X18_X1Y6.P1    Tmult                 3.657   U1/Mmult_VGA_ADR_mult0000
+                                                       U1/Mmult_VGA_ADR_mult0000
+    SLICE_X55Y45.G1      net (fanout=1)        1.383   U1/VGA_ADR_mult0000<1>
+    SLICE_X55Y45.COUT    Topcyg                1.001   U1/VGA_ADR<0>
+                                                       U1/Madd_VGA_ADR_Madd_lut<1>
+                                                       U1/Madd_VGA_ADR_Madd_cy<1>
+    SLICE_X55Y46.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<1>
+    SLICE_X55Y46.COUT    Tbyp                  0.118   U1/VGA_ADR<2>
+                                                       U1/Madd_VGA_ADR_Madd_cy<2>
+                                                       U1/Madd_VGA_ADR_Madd_cy<3>
+    SLICE_X55Y47.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<3>
+    SLICE_X55Y47.Y       Tciny                 0.869   U1/VGA_ADR<4>
+                                                       U1/Madd_VGA_ADR_Madd_cy<4>
+                                                       U1/Madd_VGA_ADR_Madd_xor<5>
+    RAMB16_X1Y6.ADDRB7   net (fanout=2)        1.874   U1/VGA_ADR<5>
+    RAMB16_X1Y6.CLKB     Tback                 0.377   U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram
+                                                       U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    -------------------------------------------------  ---------------------------
+    Total                                     12.179ns (6.609ns logic, 5.570ns route)
+                                                       (54.3% logic, 45.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.934ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U1/U2/vcounter_5 (FF)
+  Destination:          U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      12.066ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    CLK_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U1/U2/vcounter_5 to U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y52.YQ      Tcko                  0.587   U1/U2/vcounter<4>
+                                                       U1/U2/vcounter_5
+    MULT18X18_X1Y6.A1    net (fanout=5)        2.313   U1/U2/vcounter<5>
+    MULT18X18_X1Y6.P1    Tmult                 3.657   U1/Mmult_VGA_ADR_mult0000
+                                                       U1/Mmult_VGA_ADR_mult0000
+    SLICE_X55Y45.G1      net (fanout=1)        1.383   U1/VGA_ADR_mult0000<1>
+    SLICE_X55Y45.COUT    Topcyg                0.888   U1/VGA_ADR<0>
+                                                       U1/Madd_VGA_ADR_Madd_cy<1>
+    SLICE_X55Y46.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<1>
+    SLICE_X55Y46.COUT    Tbyp                  0.118   U1/VGA_ADR<2>
+                                                       U1/Madd_VGA_ADR_Madd_cy<2>
+                                                       U1/Madd_VGA_ADR_Madd_cy<3>
+    SLICE_X55Y47.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<3>
+    SLICE_X55Y47.Y       Tciny                 0.869   U1/VGA_ADR<4>
+                                                       U1/Madd_VGA_ADR_Madd_cy<4>
+                                                       U1/Madd_VGA_ADR_Madd_xor<5>
+    RAMB16_X1Y6.ADDRB7   net (fanout=2)        1.874   U1/VGA_ADR<5>
+    RAMB16_X1Y6.CLKB     Tback                 0.377   U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram
+                                                       U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    -------------------------------------------------  ---------------------------
+    Total                                     12.066ns (6.496ns logic, 5.570ns route)
+                                                       (53.8% logic, 46.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B (RAMB16_X1Y6.ADDRB11), 72 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     7.784ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U1/U2/vcounter_5 (FF)
+  Destination:          U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      12.216ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    CLK_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U1/U2/vcounter_5 to U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y52.YQ      Tcko                  0.587   U1/U2/vcounter<4>
+                                                       U1/U2/vcounter_5
+    MULT18X18_X1Y6.A1    net (fanout=5)        2.313   U1/U2/vcounter<5>
+    MULT18X18_X1Y6.P6    Tmult                 4.086   U1/Mmult_VGA_ADR_mult0000
+                                                       U1/Mmult_VGA_ADR_mult0000
+    SLICE_X55Y48.F1      net (fanout=1)        1.221   U1/VGA_ADR_mult0000<6>
+    SLICE_X55Y48.COUT    Topcyf                1.162   U1/VGA_ADR<6>
+                                                       U1/Madd_VGA_ADR_Madd_lut<6>
+                                                       U1/Madd_VGA_ADR_Madd_cy<6>
+                                                       U1/Madd_VGA_ADR_Madd_cy<7>
+    SLICE_X55Y49.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<7>
+    SLICE_X55Y49.Y       Tciny                 0.869   U1/VGA_ADR<8>
+                                                       U1/Madd_VGA_ADR_Madd_cy<8>
+                                                       U1/Madd_VGA_ADR_Madd_xor<9>
+    RAMB16_X1Y6.ADDRB11  net (fanout=2)        1.601   U1/VGA_ADR<9>
+    RAMB16_X1Y6.CLKB     Tback                 0.377   U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram
+                                                       U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    -------------------------------------------------  ---------------------------
+    Total                                     12.216ns (7.081ns logic, 5.135ns route)
+                                                       (58.0% logic, 42.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.802ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U1/U2/vcounter_4 (FF)
+  Destination:          U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      12.198ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    CLK_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U1/U2/vcounter_4 to U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y52.XQ      Tcko                  0.591   U1/U2/vcounter<4>
+                                                       U1/U2/vcounter_4
+    MULT18X18_X1Y6.A0    net (fanout=5)        2.104   U1/U2/vcounter<4>
+    MULT18X18_X1Y6.P0    Tmult                 3.657   U1/Mmult_VGA_ADR_mult0000
+                                                       U1/Mmult_VGA_ADR_mult0000
+    SLICE_X55Y45.F2      net (fanout=1)        1.483   U1/VGA_ADR_mult0000<0>
+    SLICE_X55Y45.COUT    Topcyf                1.162   U1/VGA_ADR<0>
+                                                       U1/Madd_VGA_ADR_Madd_lut<0>
+                                                       U1/Madd_VGA_ADR_Madd_cy<0>
+                                                       U1/Madd_VGA_ADR_Madd_cy<1>
+    SLICE_X55Y46.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<1>
+    SLICE_X55Y46.COUT    Tbyp                  0.118   U1/VGA_ADR<2>
+                                                       U1/Madd_VGA_ADR_Madd_cy<2>
+                                                       U1/Madd_VGA_ADR_Madd_cy<3>
+    SLICE_X55Y47.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<3>
+    SLICE_X55Y47.COUT    Tbyp                  0.118   U1/VGA_ADR<4>
+                                                       U1/Madd_VGA_ADR_Madd_cy<4>
+                                                       U1/Madd_VGA_ADR_Madd_cy<5>
+    SLICE_X55Y48.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<5>
+    SLICE_X55Y48.COUT    Tbyp                  0.118   U1/VGA_ADR<6>
+                                                       U1/Madd_VGA_ADR_Madd_cy<6>
+                                                       U1/Madd_VGA_ADR_Madd_cy<7>
+    SLICE_X55Y49.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<7>
+    SLICE_X55Y49.Y       Tciny                 0.869   U1/VGA_ADR<8>
+                                                       U1/Madd_VGA_ADR_Madd_cy<8>
+                                                       U1/Madd_VGA_ADR_Madd_xor<9>
+    RAMB16_X1Y6.ADDRB11  net (fanout=2)        1.601   U1/VGA_ADR<9>
+    RAMB16_X1Y6.CLKB     Tback                 0.377   U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram
+                                                       U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    -------------------------------------------------  ---------------------------
+    Total                                     12.198ns (7.010ns logic, 5.188ns route)
+                                                       (57.5% logic, 42.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.857ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U1/U2/vcounter_5 (FF)
+  Destination:          U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      12.143ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    CLK_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U1/U2/vcounter_5 to U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y52.YQ      Tcko                  0.587   U1/U2/vcounter<4>
+                                                       U1/U2/vcounter_5
+    MULT18X18_X1Y6.A1    net (fanout=5)        2.313   U1/U2/vcounter<5>
+    MULT18X18_X1Y6.P7    Tmult                 4.344   U1/Mmult_VGA_ADR_mult0000
+                                                       U1/Mmult_VGA_ADR_mult0000
+    SLICE_X55Y48.G3      net (fanout=1)        1.051   U1/VGA_ADR_mult0000<7>
+    SLICE_X55Y48.COUT    Topcyg                1.001   U1/VGA_ADR<6>
+                                                       U1/VGA_ADR_mult0000<7>_rt
+                                                       U1/Madd_VGA_ADR_Madd_cy<7>
+    SLICE_X55Y49.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<7>
+    SLICE_X55Y49.Y       Tciny                 0.869   U1/VGA_ADR<8>
+                                                       U1/Madd_VGA_ADR_Madd_cy<8>
+                                                       U1/Madd_VGA_ADR_Madd_xor<9>
+    RAMB16_X1Y6.ADDRB11  net (fanout=2)        1.601   U1/VGA_ADR<9>
+    RAMB16_X1Y6.CLKB     Tback                 0.377   U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram
+                                                       U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    -------------------------------------------------  ---------------------------
+    Total                                     12.143ns (7.178ns logic, 4.965ns route)
+                                                       (59.1% logic, 40.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B (RAMB16_X1Y6.ADDRB10), 67 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     7.918ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U1/U2/vcounter_5 (FF)
+  Destination:          U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      12.082ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    CLK_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U1/U2/vcounter_5 to U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y52.YQ      Tcko                  0.587   U1/U2/vcounter<4>
+                                                       U1/U2/vcounter_5
+    MULT18X18_X1Y6.A1    net (fanout=5)        2.313   U1/U2/vcounter<5>
+    MULT18X18_X1Y6.P6    Tmult                 4.086   U1/Mmult_VGA_ADR_mult0000
+                                                       U1/Mmult_VGA_ADR_mult0000
+    SLICE_X55Y48.F1      net (fanout=1)        1.221   U1/VGA_ADR_mult0000<6>
+    SLICE_X55Y48.COUT    Topcyf                1.162   U1/VGA_ADR<6>
+                                                       U1/Madd_VGA_ADR_Madd_lut<6>
+                                                       U1/Madd_VGA_ADR_Madd_cy<6>
+                                                       U1/Madd_VGA_ADR_Madd_cy<7>
+    SLICE_X55Y49.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<7>
+    SLICE_X55Y49.X       Tcinx                 0.462   U1/VGA_ADR<8>
+                                                       U1/Madd_VGA_ADR_Madd_xor<8>
+    RAMB16_X1Y6.ADDRB10  net (fanout=2)        1.874   U1/VGA_ADR<8>
+    RAMB16_X1Y6.CLKB     Tback                 0.377   U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram
+                                                       U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    -------------------------------------------------  ---------------------------
+    Total                                     12.082ns (6.674ns logic, 5.408ns route)
+                                                       (55.2% logic, 44.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.936ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U1/U2/vcounter_4 (FF)
+  Destination:          U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      12.064ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    CLK_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U1/U2/vcounter_4 to U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y52.XQ      Tcko                  0.591   U1/U2/vcounter<4>
+                                                       U1/U2/vcounter_4
+    MULT18X18_X1Y6.A0    net (fanout=5)        2.104   U1/U2/vcounter<4>
+    MULT18X18_X1Y6.P0    Tmult                 3.657   U1/Mmult_VGA_ADR_mult0000
+                                                       U1/Mmult_VGA_ADR_mult0000
+    SLICE_X55Y45.F2      net (fanout=1)        1.483   U1/VGA_ADR_mult0000<0>
+    SLICE_X55Y45.COUT    Topcyf                1.162   U1/VGA_ADR<0>
+                                                       U1/Madd_VGA_ADR_Madd_lut<0>
+                                                       U1/Madd_VGA_ADR_Madd_cy<0>
+                                                       U1/Madd_VGA_ADR_Madd_cy<1>
+    SLICE_X55Y46.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<1>
+    SLICE_X55Y46.COUT    Tbyp                  0.118   U1/VGA_ADR<2>
+                                                       U1/Madd_VGA_ADR_Madd_cy<2>
+                                                       U1/Madd_VGA_ADR_Madd_cy<3>
+    SLICE_X55Y47.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<3>
+    SLICE_X55Y47.COUT    Tbyp                  0.118   U1/VGA_ADR<4>
+                                                       U1/Madd_VGA_ADR_Madd_cy<4>
+                                                       U1/Madd_VGA_ADR_Madd_cy<5>
+    SLICE_X55Y48.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<5>
+    SLICE_X55Y48.COUT    Tbyp                  0.118   U1/VGA_ADR<6>
+                                                       U1/Madd_VGA_ADR_Madd_cy<6>
+                                                       U1/Madd_VGA_ADR_Madd_cy<7>
+    SLICE_X55Y49.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<7>
+    SLICE_X55Y49.X       Tcinx                 0.462   U1/VGA_ADR<8>
+                                                       U1/Madd_VGA_ADR_Madd_xor<8>
+    RAMB16_X1Y6.ADDRB10  net (fanout=2)        1.874   U1/VGA_ADR<8>
+    RAMB16_X1Y6.CLKB     Tback                 0.377   U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram
+                                                       U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    -------------------------------------------------  ---------------------------
+    Total                                     12.064ns (6.603ns logic, 5.461ns route)
+                                                       (54.7% logic, 45.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.991ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U1/U2/vcounter_5 (FF)
+  Destination:          U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      12.009ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    CLK_IBUFG rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U1/U2/vcounter_5 to U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y52.YQ      Tcko                  0.587   U1/U2/vcounter<4>
+                                                       U1/U2/vcounter_5
+    MULT18X18_X1Y6.A1    net (fanout=5)        2.313   U1/U2/vcounter<5>
+    MULT18X18_X1Y6.P7    Tmult                 4.344   U1/Mmult_VGA_ADR_mult0000
+                                                       U1/Mmult_VGA_ADR_mult0000
+    SLICE_X55Y48.G3      net (fanout=1)        1.051   U1/VGA_ADR_mult0000<7>
+    SLICE_X55Y48.COUT    Topcyg                1.001   U1/VGA_ADR<6>
+                                                       U1/VGA_ADR_mult0000<7>_rt
+                                                       U1/Madd_VGA_ADR_Madd_cy<7>
+    SLICE_X55Y49.CIN     net (fanout=1)        0.000   U1/Madd_VGA_ADR_Madd_cy<7>
+    SLICE_X55Y49.X       Tcinx                 0.462   U1/VGA_ADR<8>
+                                                       U1/Madd_VGA_ADR_Madd_xor<8>
+    RAMB16_X1Y6.ADDRB10  net (fanout=2)        1.874   U1/VGA_ADR<8>
+    RAMB16_X1Y6.CLKB     Tback                 0.377   U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram
+                                                       U1/U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp4x4.ram.B
+    -------------------------------------------------  ---------------------------
+    Total                                     12.009ns (6.771ns logic, 5.238ns route)
+                                                       (56.4% logic, 43.6% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "CLK_IBUFG1" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point U1/U5/Mrom_DATA_rom0000.A (RAMB16_X0Y6.ADDRA6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.189ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U1/U2/vcounter_3 (FF)
+  Destination:          U1/U5/Mrom_DATA_rom0000.A (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      1.750ns (Levels of Logic = 0)
+  Clock Path Skew:      1.561ns (1.673 - 0.112)
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    CLK_IBUFG rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: U1/U2/vcounter_3 to U1/U5/Mrom_DATA_rom0000.A
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y51.YQ      Tcko                  0.470   U1/U2/vcounter<2>
+                                                       U1/U2/vcounter_3
+    RAMB16_X0Y6.ADDRA6   net (fanout=5)        1.411   U1/U2/vcounter<3>
+    RAMB16_X0Y6.CLKA     Tbcka       (-Th)     0.131   U1/U5/Mrom_DATA_rom0000
+                                                       U1/U5/Mrom_DATA_rom0000.A
+    -------------------------------------------------  ---------------------------
+    Total                                      1.750ns (0.339ns logic, 1.411ns route)
+                                                       (19.4% logic, 80.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U1/U5/Mrom_DATA_rom0000.A (RAMB16_X0Y6.ADDRA5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.254ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U1/U2/vcounter_2 (FF)
+  Destination:          U1/U5/Mrom_DATA_rom0000.A (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      1.815ns (Levels of Logic = 0)
+  Clock Path Skew:      1.561ns (1.673 - 0.112)
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    CLK_IBUFG rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: U1/U2/vcounter_2 to U1/U5/Mrom_DATA_rom0000.A
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y51.XQ      Tcko                  0.473   U1/U2/vcounter<2>
+                                                       U1/U2/vcounter_2
+    RAMB16_X0Y6.ADDRA5   net (fanout=5)        1.473   U1/U2/vcounter<2>
+    RAMB16_X0Y6.CLKA     Tbcka       (-Th)     0.131   U1/U5/Mrom_DATA_rom0000
+                                                       U1/U5/Mrom_DATA_rom0000.A
+    -------------------------------------------------  ---------------------------
+    Total                                      1.815ns (0.342ns logic, 1.473ns route)
+                                                       (18.8% logic, 81.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U1/U5/Mrom_DATA_rom0000.A (RAMB16_X0Y6.ADDRA4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.533ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U1/U2/vcounter_1 (FF)
+  Destination:          U1/U5/Mrom_DATA_rom0000.A (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      2.094ns (Levels of Logic = 0)
+  Clock Path Skew:      1.561ns (1.673 - 0.112)
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    CLK_IBUFG rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: U1/U2/vcounter_1 to U1/U5/Mrom_DATA_rom0000.A
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y50.YQ      Tcko                  0.470   U1/U2/vcounter<0>
+                                                       U1/U2/vcounter_1
+    RAMB16_X0Y6.ADDRA4   net (fanout=4)        1.755   U1/U2/vcounter<1>
+    RAMB16_X0Y6.CLKA     Tbcka       (-Th)     0.131   U1/U5/Mrom_DATA_rom0000
+                                                       U1/U5/Mrom_DATA_rom0000.A
+    -------------------------------------------------  ---------------------------
+    Total                                      2.094ns (0.339ns logic, 1.755ns route)
+                                                       (16.2% logic, 83.8% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "CLK_IBUFG1" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 6.786ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 3.214ns (311.139MHz) (Tdcmpco)
+  Physical resource: U1/U1/CLKDLL_inst/DCM_SP/CLK2X
+  Logical resource: U1/U1/CLKDLL_inst/DCM_SP/CLK2X
+  Location pin: DCM_X0Y1.CLK2X
+  Clock network: U1/U1/CLK_D
+--------------------------------------------------------------------------------
+Slack: 14.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 3.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: U1/U1/CLKDLL_inst/DCM_SP/CLKIN
+  Logical resource: U1/U1/CLKDLL_inst/DCM_SP/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: CLK_IBUFG1
+--------------------------------------------------------------------------------
+Slack: 14.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 3.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: U1/U1/CLKDLL_inst/DCM_SP/CLKIN
+  Logical resource: U1/U1/CLKDLL_inst/DCM_SP/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: CLK_IBUFG1
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net "U1/PCLK1" derived from  NET 
+"CLK_IBUFG1" PERIOD = 20 ns HIGH 50%;  multiplied by 2.00 to 40 nS and duty 
+cycle corrected to HIGH 20 nS  
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 561 paths analyzed, 79 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  16.298ns.
+--------------------------------------------------------------------------------
+
+Paths for end point U1/U2/vcounter_4 (SLICE_X25Y52.SR), 21 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     11.851ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U2/BTN_3/OUTPUT (FF)
+  Destination:          U1/U2/vcounter_4 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      6.623ns (Levels of Logic = 1)
+  Clock Path Skew:      -1.526ns (0.110 - 1.636)
+  Source Clock:         CLK_IBUFG rising at 20.000ns
+  Destination Clock:    U1/PCLK rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U2/BTN_3/OUTPUT to U1/U2/vcounter_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y61.YQ      Tcko                  0.652   U2/BTN_3/OUTPUT
+                                                       U2/BTN_3/OUTPUT
+    SLICE_X24Y52.BX      net (fanout=28)       3.129   U2/BTN_3/OUTPUT
+    SLICE_X24Y52.X       Tbxx                  0.806   U1/U2/vcounter_or0000
+                                                       U1/U2/vcounter_or000058_f5
+    SLICE_X25Y52.SR      net (fanout=5)        1.126   U1/U2/vcounter_or0000
+    SLICE_X25Y52.CLK     Tsrck                 0.910   U1/U2/vcounter<4>
+                                                       U1/U2/vcounter_4
+    -------------------------------------------------  ---------------------------
+    Total                                      6.623ns (2.368ns logic, 4.255ns route)
+                                                       (35.8% logic, 64.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     32.749ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U1/U2/hcounter_2 (FF)
+  Destination:          U1/U2/vcounter_4 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      7.240ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.011ns (0.039 - 0.050)
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    U1/PCLK rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U1/U2/hcounter_2 to U1/U2/vcounter_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y51.XQ      Tcko                  0.591   U1/U2/hcounter<2>
+                                                       U1/U2/hcounter_2
+    SLICE_X26Y53.G4      net (fanout=3)        1.040   U1/U2/hcounter<2>
+    SLICE_X26Y53.Y       Tilo                  0.759   U1/U4/SEL1<2>
+                                                       U1/U2/vcounter_cmp_eq000013
+    SLICE_X28Y53.G2      net (fanout=1)        0.434   U1/U2/vcounter_cmp_eq000013
+    SLICE_X28Y53.Y       Tilo                  0.759   U1/U2/hcounter_or0000
+                                                       U1/U2/vcounter_cmp_eq000034
+    SLICE_X24Y52.G1      net (fanout=7)        0.469   U1/U2/vcounter_cmp_eq0000
+    SLICE_X24Y52.X       Tif5x                 1.152   U1/U2/vcounter_or0000
+                                                       U1/U2/vcounter_or0000581
+                                                       U1/U2/vcounter_or000058_f5
+    SLICE_X25Y52.SR      net (fanout=5)        1.126   U1/U2/vcounter_or0000
+    SLICE_X25Y52.CLK     Tsrck                 0.910   U1/U2/vcounter<4>
+                                                       U1/U2/vcounter_4
+    -------------------------------------------------  ---------------------------
+    Total                                      7.240ns (4.171ns logic, 3.069ns route)
+                                                       (57.6% logic, 42.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     32.950ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U1/U2/hcounter_3 (FF)
+  Destination:          U1/U2/vcounter_4 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      7.039ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.011ns (0.039 - 0.050)
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    U1/PCLK rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U1/U2/hcounter_3 to U1/U2/vcounter_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y51.YQ      Tcko                  0.587   U1/U2/hcounter<2>
+                                                       U1/U2/hcounter_3
+    SLICE_X26Y53.G1      net (fanout=4)        0.843   U1/U2/hcounter<3>
+    SLICE_X26Y53.Y       Tilo                  0.759   U1/U4/SEL1<2>
+                                                       U1/U2/vcounter_cmp_eq000013
+    SLICE_X28Y53.G2      net (fanout=1)        0.434   U1/U2/vcounter_cmp_eq000013
+    SLICE_X28Y53.Y       Tilo                  0.759   U1/U2/hcounter_or0000
+                                                       U1/U2/vcounter_cmp_eq000034
+    SLICE_X24Y52.G1      net (fanout=7)        0.469   U1/U2/vcounter_cmp_eq0000
+    SLICE_X24Y52.X       Tif5x                 1.152   U1/U2/vcounter_or0000
+                                                       U1/U2/vcounter_or0000581
+                                                       U1/U2/vcounter_or000058_f5
+    SLICE_X25Y52.SR      net (fanout=5)        1.126   U1/U2/vcounter_or0000
+    SLICE_X25Y52.CLK     Tsrck                 0.910   U1/U2/vcounter<4>
+                                                       U1/U2/vcounter_4
+    -------------------------------------------------  ---------------------------
+    Total                                      7.039ns (4.167ns logic, 2.872ns route)
+                                                       (59.2% logic, 40.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U1/U2/vcounter_5 (SLICE_X25Y52.SR), 21 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     11.851ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U2/BTN_3/OUTPUT (FF)
+  Destination:          U1/U2/vcounter_5 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      6.623ns (Levels of Logic = 1)
+  Clock Path Skew:      -1.526ns (0.110 - 1.636)
+  Source Clock:         CLK_IBUFG rising at 20.000ns
+  Destination Clock:    U1/PCLK rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U2/BTN_3/OUTPUT to U1/U2/vcounter_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y61.YQ      Tcko                  0.652   U2/BTN_3/OUTPUT
+                                                       U2/BTN_3/OUTPUT
+    SLICE_X24Y52.BX      net (fanout=28)       3.129   U2/BTN_3/OUTPUT
+    SLICE_X24Y52.X       Tbxx                  0.806   U1/U2/vcounter_or0000
+                                                       U1/U2/vcounter_or000058_f5
+    SLICE_X25Y52.SR      net (fanout=5)        1.126   U1/U2/vcounter_or0000
+    SLICE_X25Y52.CLK     Tsrck                 0.910   U1/U2/vcounter<4>
+                                                       U1/U2/vcounter_5
+    -------------------------------------------------  ---------------------------
+    Total                                      6.623ns (2.368ns logic, 4.255ns route)
+                                                       (35.8% logic, 64.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     32.749ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U1/U2/hcounter_2 (FF)
+  Destination:          U1/U2/vcounter_5 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      7.240ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.011ns (0.039 - 0.050)
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    U1/PCLK rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U1/U2/hcounter_2 to U1/U2/vcounter_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y51.XQ      Tcko                  0.591   U1/U2/hcounter<2>
+                                                       U1/U2/hcounter_2
+    SLICE_X26Y53.G4      net (fanout=3)        1.040   U1/U2/hcounter<2>
+    SLICE_X26Y53.Y       Tilo                  0.759   U1/U4/SEL1<2>
+                                                       U1/U2/vcounter_cmp_eq000013
+    SLICE_X28Y53.G2      net (fanout=1)        0.434   U1/U2/vcounter_cmp_eq000013
+    SLICE_X28Y53.Y       Tilo                  0.759   U1/U2/hcounter_or0000
+                                                       U1/U2/vcounter_cmp_eq000034
+    SLICE_X24Y52.G1      net (fanout=7)        0.469   U1/U2/vcounter_cmp_eq0000
+    SLICE_X24Y52.X       Tif5x                 1.152   U1/U2/vcounter_or0000
+                                                       U1/U2/vcounter_or0000581
+                                                       U1/U2/vcounter_or000058_f5
+    SLICE_X25Y52.SR      net (fanout=5)        1.126   U1/U2/vcounter_or0000
+    SLICE_X25Y52.CLK     Tsrck                 0.910   U1/U2/vcounter<4>
+                                                       U1/U2/vcounter_5
+    -------------------------------------------------  ---------------------------
+    Total                                      7.240ns (4.171ns logic, 3.069ns route)
+                                                       (57.6% logic, 42.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     32.950ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U1/U2/hcounter_3 (FF)
+  Destination:          U1/U2/vcounter_5 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      7.039ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.011ns (0.039 - 0.050)
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    U1/PCLK rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U1/U2/hcounter_3 to U1/U2/vcounter_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y51.YQ      Tcko                  0.587   U1/U2/hcounter<2>
+                                                       U1/U2/hcounter_3
+    SLICE_X26Y53.G1      net (fanout=4)        0.843   U1/U2/hcounter<3>
+    SLICE_X26Y53.Y       Tilo                  0.759   U1/U4/SEL1<2>
+                                                       U1/U2/vcounter_cmp_eq000013
+    SLICE_X28Y53.G2      net (fanout=1)        0.434   U1/U2/vcounter_cmp_eq000013
+    SLICE_X28Y53.Y       Tilo                  0.759   U1/U2/hcounter_or0000
+                                                       U1/U2/vcounter_cmp_eq000034
+    SLICE_X24Y52.G1      net (fanout=7)        0.469   U1/U2/vcounter_cmp_eq0000
+    SLICE_X24Y52.X       Tif5x                 1.152   U1/U2/vcounter_or0000
+                                                       U1/U2/vcounter_or0000581
+                                                       U1/U2/vcounter_or000058_f5
+    SLICE_X25Y52.SR      net (fanout=5)        1.126   U1/U2/vcounter_or0000
+    SLICE_X25Y52.CLK     Tsrck                 0.910   U1/U2/vcounter<4>
+                                                       U1/U2/vcounter_5
+    -------------------------------------------------  ---------------------------
+    Total                                      7.039ns (4.167ns logic, 2.872ns route)
+                                                       (59.2% logic, 40.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U1/U2/vcounter_6 (SLICE_X25Y53.SR), 21 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     11.851ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U2/BTN_3/OUTPUT (FF)
+  Destination:          U1/U2/vcounter_6 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      6.623ns (Levels of Logic = 1)
+  Clock Path Skew:      -1.526ns (0.110 - 1.636)
+  Source Clock:         CLK_IBUFG rising at 20.000ns
+  Destination Clock:    U1/PCLK rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U2/BTN_3/OUTPUT to U1/U2/vcounter_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y61.YQ      Tcko                  0.652   U2/BTN_3/OUTPUT
+                                                       U2/BTN_3/OUTPUT
+    SLICE_X24Y52.BX      net (fanout=28)       3.129   U2/BTN_3/OUTPUT
+    SLICE_X24Y52.X       Tbxx                  0.806   U1/U2/vcounter_or0000
+                                                       U1/U2/vcounter_or000058_f5
+    SLICE_X25Y53.SR      net (fanout=5)        1.126   U1/U2/vcounter_or0000
+    SLICE_X25Y53.CLK     Tsrck                 0.910   U1/U2/vcounter<6>
+                                                       U1/U2/vcounter_6
+    -------------------------------------------------  ---------------------------
+    Total                                      6.623ns (2.368ns logic, 4.255ns route)
+                                                       (35.8% logic, 64.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     32.749ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U1/U2/hcounter_2 (FF)
+  Destination:          U1/U2/vcounter_6 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      7.240ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.011ns (0.039 - 0.050)
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    U1/PCLK rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U1/U2/hcounter_2 to U1/U2/vcounter_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y51.XQ      Tcko                  0.591   U1/U2/hcounter<2>
+                                                       U1/U2/hcounter_2
+    SLICE_X26Y53.G4      net (fanout=3)        1.040   U1/U2/hcounter<2>
+    SLICE_X26Y53.Y       Tilo                  0.759   U1/U4/SEL1<2>
+                                                       U1/U2/vcounter_cmp_eq000013
+    SLICE_X28Y53.G2      net (fanout=1)        0.434   U1/U2/vcounter_cmp_eq000013
+    SLICE_X28Y53.Y       Tilo                  0.759   U1/U2/hcounter_or0000
+                                                       U1/U2/vcounter_cmp_eq000034
+    SLICE_X24Y52.G1      net (fanout=7)        0.469   U1/U2/vcounter_cmp_eq0000
+    SLICE_X24Y52.X       Tif5x                 1.152   U1/U2/vcounter_or0000
+                                                       U1/U2/vcounter_or0000581
+                                                       U1/U2/vcounter_or000058_f5
+    SLICE_X25Y53.SR      net (fanout=5)        1.126   U1/U2/vcounter_or0000
+    SLICE_X25Y53.CLK     Tsrck                 0.910   U1/U2/vcounter<6>
+                                                       U1/U2/vcounter_6
+    -------------------------------------------------  ---------------------------
+    Total                                      7.240ns (4.171ns logic, 3.069ns route)
+                                                       (57.6% logic, 42.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     32.950ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U1/U2/hcounter_3 (FF)
+  Destination:          U1/U2/vcounter_6 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      7.039ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.011ns (0.039 - 0.050)
+  Source Clock:         U1/PCLK rising at 0.000ns
+  Destination Clock:    U1/PCLK rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U1/U2/hcounter_3 to U1/U2/vcounter_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y51.YQ      Tcko                  0.587   U1/U2/hcounter<2>
+                                                       U1/U2/hcounter_3
+    SLICE_X26Y53.G1      net (fanout=4)        0.843   U1/U2/hcounter<3>
+    SLICE_X26Y53.Y       Tilo                  0.759   U1/U4/SEL1<2>
+                                                       U1/U2/vcounter_cmp_eq000013
+    SLICE_X28Y53.G2      net (fanout=1)        0.434   U1/U2/vcounter_cmp_eq000013
+    SLICE_X28Y53.Y       Tilo                  0.759   U1/U2/hcounter_or0000
+                                                       U1/U2/vcounter_cmp_eq000034
+    SLICE_X24Y52.G1      net (fanout=7)        0.469   U1/U2/vcounter_cmp_eq0000
+    SLICE_X24Y52.X       Tif5x                 1.152   U1/U2/vcounter_or0000
+                                                       U1/U2/vcounter_or0000581
+                                                       U1/U2/vcounter_or000058_f5
+    SLICE_X25Y53.SR      net (fanout=5)        1.126   U1/U2/vcounter_or0000
+    SLICE_X25Y53.CLK     Tsrck                 0.910   U1/U2/vcounter<6>
+                                                       U1/U2/vcounter_6
+    -------------------------------------------------  ---------------------------
+    Total                                      7.039ns (4.167ns logic, 2.872ns route)
+                                                       (59.2% logic, 40.8% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PERIOD analysis for net "U1/PCLK1" derived from
+ NET "CLK_IBUFG1" PERIOD = 20 ns HIGH 50%;
+ multiplied by 2.00 to 40 nS and duty cycle corrected to HIGH 20 nS 
+
+--------------------------------------------------------------------------------
+
+Paths for end point U1/U2/hcounter_2 (SLICE_X29Y51.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.607ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U1/U2/hcounter_2 (FF)
+  Destination:          U1/U2/hcounter_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.607ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         U1/PCLK rising at 40.000ns
+  Destination Clock:    U1/PCLK rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: U1/U2/hcounter_2 to U1/U2/hcounter_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y51.XQ      Tcko                  0.473   U1/U2/hcounter<2>
+                                                       U1/U2/hcounter_2
+    SLICE_X29Y51.F4      net (fanout=3)        0.333   U1/U2/hcounter<2>
+    SLICE_X29Y51.CLK     Tckf        (-Th)    -0.801   U1/U2/hcounter<2>
+                                                       U1/U2/hcounter<2>_rt
+                                                       U1/U2/Mcount_hcounter_xor<2>
+                                                       U1/U2/hcounter_2
+    -------------------------------------------------  ---------------------------
+    Total                                      1.607ns (1.274ns logic, 0.333ns route)
+                                                       (79.3% logic, 20.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U1/U2/hcounter_0 (SLICE_X29Y50.F3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.625ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U1/U2/hcounter_0 (FF)
+  Destination:          U1/U2/hcounter_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.625ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         U1/PCLK rising at 40.000ns
+  Destination Clock:    U1/PCLK rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: U1/U2/hcounter_0 to U1/U2/hcounter_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y50.XQ      Tcko                  0.473   U1/U2/hcounter<0>
+                                                       U1/U2/hcounter_0
+    SLICE_X29Y50.F3      net (fanout=6)        0.351   U1/U2/hcounter<0>
+    SLICE_X29Y50.CLK     Tckf        (-Th)    -0.801   U1/U2/hcounter<0>
+                                                       U1/U2/Mcount_hcounter_lut<0>_INV_0
+                                                       U1/U2/Mcount_hcounter_xor<0>
+                                                       U1/U2/hcounter_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.625ns (1.274ns logic, 0.351ns route)
+                                                       (78.4% logic, 21.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U1/U2/hcounter_8 (SLICE_X29Y54.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.697ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U1/U2/hcounter_8 (FF)
+  Destination:          U1/U2/hcounter_8 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.697ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         U1/PCLK rising at 40.000ns
+  Destination Clock:    U1/PCLK rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: U1/U2/hcounter_8 to U1/U2/hcounter_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y54.XQ      Tcko                  0.473   U1/U2/hcounter<8>
+                                                       U1/U2/hcounter_8
+    SLICE_X29Y54.F4      net (fanout=5)        0.423   U1/U2/hcounter<8>
+    SLICE_X29Y54.CLK     Tckf        (-Th)    -0.801   U1/U2/hcounter<8>
+                                                       U1/U2/hcounter<8>_rt
+                                                       U1/U2/Mcount_hcounter_xor<8>
+                                                       U1/U2/hcounter_8
+    -------------------------------------------------  ---------------------------
+    Total                                      1.697ns (1.274ns logic, 0.423ns route)
+                                                       (75.1% logic, 24.9% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "U1/PCLK1" derived from
+ NET "CLK_IBUFG1" PERIOD = 20 ns HIGH 50%;
+ multiplied by 2.00 to 40 nS and duty cycle corrected to HIGH 20 nS 
+
+--------------------------------------------------------------------------------
+Slack: 33.751ns (period - min period limit)
+  Period: 40.000ns
+  Min period limit: 6.249ns (160.026MHz) (Tdcmpdv)
+  Physical resource: U1/U1/CLKDLL_inst/DCM_SP/CLKDV
+  Logical resource: U1/U1/CLKDLL_inst/DCM_SP/CLKDV
+  Location pin: DCM_X0Y1.CLKDV
+  Clock network: U1/PCLK1
+--------------------------------------------------------------------------------
+Slack: 38.348ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 40.000ns
+  Low pulse: 20.000ns
+  Low pulse limit: 0.826ns (Tcl)
+  Physical resource: U1/U2/BLANK/CLK
+  Logical resource: U1/U2/BLANK/CK
+  Location pin: SLICE_X22Y39.CLK
+  Clock network: U1/PCLK
+--------------------------------------------------------------------------------
+Slack: 38.348ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 40.000ns
+  High pulse: 20.000ns
+  High pulse limit: 0.826ns (Tch)
+  Physical resource: U1/U2/BLANK/CLK
+  Logical resource: U1/U2/BLANK/CK
+  Location pin: SLICE_X22Y39.CLK
+  Clock network: U1/PCLK
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for CLK_IBUFG1
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|CLK_IBUFG1                     |     20.000ns|     12.235ns|      8.149ns|            0|            0|         3310|          561|
+| U1/PCLK1                      |     40.000ns|     16.298ns|          N/A|            0|            0|          561|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |   12.235|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 3871 paths, 0 nets, and 1024 connections
+
+Design statistics:
+   Minimum period:  16.298ns{1}   (Maximum frequency:  61.357MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Mar 09 17:18:25 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 171 MB
+
+
+

@@ -1,0 +1,5 @@
+set -tmpdir "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/xst/projnav.tmp"
+set -xsthdpdir "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/xst"
+elaborate
+-ifn VGA_Debug.prj
+-ifmt mixed

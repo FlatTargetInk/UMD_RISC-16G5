@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/arith_unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_arithmetic_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/arith_unit/Combinational</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_arithmetic_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/arith_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="850" delta="new" >&quot;<arg fmt="%s" index="1">/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/VGA_Debug_Unit/alu_toplevel.vhd</arg>&quot; Line <arg fmt="%d" index="2">62</arg>. Formal port <arg fmt="%s" index="3">RESULT</arg> does not exist in <arg fmt="%s" index="4">Entity &apos;arith_unit&apos;</arg>.
+</msg>
+
+</messages>
+
