@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Z:\Xilinx\Lab04\VGA_Debug.ncd
+OUTFILE=Z:\Xilinx\Lab04\VGA_Debug.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=Z:\Xilinx\Lab04
+LICENSE=WebPack
+USER_INFO=210780912_0_0_925

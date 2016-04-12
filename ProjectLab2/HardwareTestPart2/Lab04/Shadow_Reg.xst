@@ -1,0 +1,5 @@
+set -tmpdir "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareTestPart2/Lab04/xst/projnav.tmp"
+set -xsthdpdir "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareTestPart2/Lab04/xst"
+elaborate
+-ifn Shadow_Reg.prj
+-ifmt mixed

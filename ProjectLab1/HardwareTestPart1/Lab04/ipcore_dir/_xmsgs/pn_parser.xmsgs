@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/robert/UMD_RISC-16G5/ProjectLab1/HardwareTestPart1/Lab04/ipcore_dir/DEBUG_RAM.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/HardwareTestPart1/Lab04/ipcore_dir/Instr_Mem.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

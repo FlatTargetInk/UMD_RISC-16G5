@@ -1,0 +1,6 @@
+/home/robert/UMD_RISC-16G5/ProjectLab1/HardwareTestPart1/Lab04/VGA_Debug.ngc 1460325773
+ipcore_dir/DEBUG_RAM.ngc 1460320372
+ipcore_dir/VGA_BUFFER_RAM.ngc 1460318648
+ipcore_dir/DATAMEM.ngc 1460318072
+ipcore_dir/Instr_Mem.ngc 1460318072
+OK
