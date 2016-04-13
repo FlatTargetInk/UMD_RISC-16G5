@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/Shadow_Register/Lab04/Shadow_Register_tb_isim_beh.exe" -prj "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/Shadow_Register/Lab04/Shadow_Register_tb_beh.prj" "work.Shadow_Register_tb" 

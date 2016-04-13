@@ -14,7 +14,7 @@
          <SelectedItem>Fetch_CTL - Behavioral (/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/HardwareTestPart1/Lab04/Fetch_CTL.vhd)</SelectedItem>
          <SelectedItem>Instruction_Memory - Instruction_Memory_a (/home/tj/Desktop/UMD_RISC-16G5/ProjectLab1/HardwareTestPart1/Lab04/Instruction_Memory.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >6</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >63</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000025c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000025c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
