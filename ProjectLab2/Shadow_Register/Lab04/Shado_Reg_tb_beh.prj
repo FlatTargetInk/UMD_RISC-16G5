@@ -1,0 +1,2 @@
+vhdl work "Shadow_Register_Bank.vhd"
+vhdl work "Shado_Reg_tb.vhd"
