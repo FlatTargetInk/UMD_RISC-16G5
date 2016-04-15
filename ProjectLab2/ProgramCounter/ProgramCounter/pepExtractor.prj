@@ -1,0 +1,3 @@
+work	"Instr_Mem.vhd"
+work	"Instruction_Memory_TL.vhd"
+work	"ProgramCounter.vhd"

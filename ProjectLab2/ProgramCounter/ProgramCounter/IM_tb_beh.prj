@@ -1,0 +1,4 @@
+vhdl work "ProgramCounter.vhd"
+vhdl work "Instr_Mem.vhd"
+vhdl work "Instruction_Memory_TL.vhd"
+vhdl work "IM_tb.vhd"
