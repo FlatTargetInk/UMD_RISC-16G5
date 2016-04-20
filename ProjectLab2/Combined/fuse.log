@@ -1,0 +1,68 @@
+Running: /home/robert/XilinxISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/TopLevel_tb_isim_beh.exe -prj /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/TopLevel_tb_beh.prj work.TopLevel_tb 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ipcore_dir/DATAMEM.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ipcore_dir/Instr_Mem.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/word_unit.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/shift_unit.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/programCounter.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/logical_unit.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/arith_unit.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/REG_CTL.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/RegisterBank.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/IMSEL.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DC_CTL.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DATA_CTL.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/alu_toplevel.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/TopLevel_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 101732 KB
+Fuse CPU Usage: 1360 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package std_logic_signed
+Compiling architecture combinational of entity arith_unit [arith_unit_default]
+Compiling architecture combinational of entity logical_unit [logical_unit_default]
+Compiling architecture combinational of entity shift_unit [shift_unit_default]
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V7_3_softecc_output_reg_stage [\BLK_MEM_GEN_V7_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_module [\BLK_MEM_GEN_V7_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
+Compiling architecture datamem_a of entity DATAMEM [datamem_default]
+Compiling architecture combinational of entity word_unit [word_unit_default]
+Compiling architecture structural of entity ALU_Toplevel [alu_toplevel_default]
+Compiling architecture behavioral of entity programCounter [\programCounter(5)\]
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V7_3_softecc_output_reg_stage [\BLK_MEM_GEN_V7_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_module [\BLK_MEM_GEN_V7_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
+Compiling architecture instr_mem_a of entity Instr_Mem [instr_mem_default]
+Compiling architecture structural of entity Instruction_Memory_TL [instruction_memory_tl_default]
+Compiling architecture dataflow of entity REG_CTL [reg_ctl_default]
+Compiling architecture mixed of entity DC_CTL [dc_ctl_default]
+Compiling architecture behavioral of entity DATA_CTL [data_ctl_default]
+Compiling architecture dataflow of entity IMSEL [imsel_default]
+Compiling architecture behavioral of entity PipelineRegisters [\PipelineRegisters(4)\]
+Compiling architecture behavioral of entity PipelineRegisters [\PipelineRegisters(8)\]
+Compiling architecture behavioral of entity PipelineRegisters [\PipelineRegisters(5)\]
+Compiling architecture behavioral of entity PipelineRegisters [\PipelineRegisters(16)\]
+Compiling architecture behavioral of entity RegisterBank [registerbank_default]
+Compiling architecture structural of entity ProjLab01 [projlab01_default]
+Compiling architecture behavior of entity toplevel_tb
+Time Resolution for simulation is 1ps.
+Waiting for 23 sub-compilation(s) to finish...
+Compiled 62 VHDL Units
+Built simulation executable /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/TopLevel_tb_isim_beh.exe
+Fuse Memory Usage: 680688 KB
+Fuse CPU Usage: 1710 ms
+GCC CPU Usage: 6960 ms

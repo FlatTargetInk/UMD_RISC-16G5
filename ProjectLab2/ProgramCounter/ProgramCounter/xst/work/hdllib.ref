@@ -1,0 +1,6 @@
+AR programcounter behavioral /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ProgramCounter.vhd sub00/vhpl01 1461086371
+AR instr_mem instr_mem_a /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instr_Mem.vhd sub00/vhpl03 1461086373
+EN instruction_memory_tl NULL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd sub00/vhpl04 1461086374
+EN programcounter NULL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ProgramCounter.vhd sub00/vhpl00 1461086370
+AR instruction_memory_tl structural /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd sub00/vhpl05 1461086375
+EN instr_mem NULL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instr_Mem.vhd sub00/vhpl02 1461086372

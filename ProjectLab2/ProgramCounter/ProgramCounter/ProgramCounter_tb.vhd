@@ -34,7 +34,7 @@ ARCHITECTURE behavior OF ProgramCounter_tb IS
          CLK : IN  std_logic;
          EN : IN  std_logic;
          OPMODE : IN  std_logic_vector(1 downto 0);
-         OFFSET : IN  std_logic_vector(15 downto 0);
+         OFFSET : IN  std_logic_vector(11 downto 0);
          INSADR : OUT  std_logic_vector(15 downto 0)
         );
     END COMPONENT;
@@ -44,7 +44,7 @@ ARCHITECTURE behavior OF ProgramCounter_tb IS
    signal CLK : std_logic := '0';
    signal EN : std_logic := '0';
    signal OPMODE : std_logic_vector(1 downto 0) := (others => '0');
-   signal OFFSET : std_logic_vector(15 downto 0) := (others => '0');
+   signal OFFSET : std_logic_vector(11 downto 0) := (others => '0');
 
  	--Outputs
    signal INSADR : std_logic_vector(15 downto 0);
@@ -80,7 +80,7 @@ BEGIN
 		wait for CLK_period;
 		EN <= '1';
 		OPMODE <= "00";
-		OFFSET <= x"0000";
+		OFFSET <= x"000";
       wait for CLK_period; -- Device enabled, in reset mode
 		assert(INSADR = x"0000") report "Reset failure." severity ERROR;
 		
@@ -90,12 +90,12 @@ BEGIN
 			assert(INSADR = std_logic_vector(to_unsigned(i, INSADR'length))) report "PC+1 failure." severity ERROR;
 		end loop; -- Now: INSADR = 15
 		
-		OFFSET <= x"000F"; -- Jump PC to 1E
+		OFFSET <= x"00F"; -- Jump PC to 1E
 		OPMODE <= "10"; -- Set mode PC+OFFSET, hold for 1 CLK period
 		wait for CLK_period; -- Device enabled, in offset (jump) mode (PC+OFFSET) INSADR = 1E
 		assert(INSADR = x"001E") report "PC+OFFSET failure." severity ERROR;
 		
-		OFFSET <= x"0000";
+		OFFSET <= x"000";
 		OPMODE <= "11"; -- Jump PC back to F.
 		wait for CLK_period; -- Device enabled, in return mode (RTL) INSADR = F+1 (10)
 		assert(INSADR = x"0010") report "RTL failure." severity ERROR;
@@ -108,7 +108,7 @@ BEGIN
 		wait for CLK_period*15; -- Wait until PC counts back to F
 		assert(INSADR = x"000F") report "PC+1 failure." severity ERROR;
 		
-		OFFSET <= x"0002";
+		OFFSET <= x"002";
 		OPMODE <=  "10"; -- Begin JMP mode (PC+OFFSET)
 		wait for CLK_period; -- INSADR = 11
 		assert(INSADR = x"0011") report "PC+OFFSET failure." severity ERROR;

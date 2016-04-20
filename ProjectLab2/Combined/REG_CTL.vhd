@@ -41,10 +41,10 @@ architecture Dataflow of REG_CTL is
 begin
 	with OPC select RD_EN <=
 		'1' when "0000" | "0001" | "0010" | "0011" | "0100" | "0101" | "0110" | "0111" | "1000" | "1001" | "1010",
-		'0' when OTHERS;
+		'1' when OTHERS;	-- always enable reading
 	
 	with OPC4 select WR_EN <= 
-		'1' when "0000" | "0001" | "0010" | "0011" | "0100" | "0101" | "0110" | "0111" | "1000" | "1001",
+		'1' when "0000" | "0001" | "0010" | "0011" | "0100" | "0101" | "0110" | "0111" | "1000" | "1001" | "1011",
 		'0' when OTHERS;
 
 end Dataflow;

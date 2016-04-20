@@ -42,7 +42,7 @@ entity Instruction_Memory_TL is
            RB : out  STD_LOGIC_VECTOR (3 downto 0);
            OP : out  STD_LOGIC_VECTOR (3 downto 0);
            IMM : out  STD_LOGIC_VECTOR (7 downto 0);
-			  INS_OFFSET	: out STD_LOGIC_VECTOR (12 downto 0));
+			  INS_OFFSET	: out STD_LOGIC_VECTOR (11 downto 0));
 end Instruction_Memory_TL;
 
 architecture Structural of Instruction_Memory_TL is

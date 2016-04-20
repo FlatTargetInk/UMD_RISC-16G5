@@ -86,7 +86,6 @@ begin
 	
 	with OPC select OP2_SEL <=
 		OP2	when "0000" | "0001" | "0010" | "0011" | "0100",
-		"00" 	when "0101" | "0110" | "0111" | "1000" | "1001" | "1010",
 		"00"	when OTHERS;
 
 end Mixed;

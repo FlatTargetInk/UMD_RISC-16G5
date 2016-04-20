@@ -1,4 +1,4 @@
-Running: /home/robert/XilinxISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/IM_tb_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/IM_tb_beh.prj" "work.IM_tb" 
+Running: /home/robert/XilinxISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/IM_tb_isim_beh.exe -prj /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/IM_tb_beh.prj work.IM_tb 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -9,8 +9,8 @@ Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/Program
 Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/IM_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 99840 KB
-Fuse CPU Usage: 1330 ms
+Fuse Memory Usage: 99852 KB
+Fuse CPU Usage: 1530 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
@@ -27,9 +27,9 @@ Compiling architecture instr_mem_a of entity Instr_Mem [instr_mem_default]
 Compiling architecture structural of entity Instruction_Memory_TL [instruction_memory_tl_default]
 Compiling architecture behavior of entity im_tb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
+Waiting for 7 sub-compilation(s) to finish...
 Compiled 22 VHDL Units
 Built simulation executable /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/IM_tb_isim_beh.exe
-Fuse Memory Usage: 678632 KB
-Fuse CPU Usage: 1480 ms
-GCC CPU Usage: 170 ms
+Fuse Memory Usage: 678360 KB
+Fuse CPU Usage: 1750 ms
+GCC CPU Usage: 4450 ms

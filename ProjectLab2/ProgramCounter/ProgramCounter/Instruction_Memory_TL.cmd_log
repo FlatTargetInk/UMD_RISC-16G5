@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.xst" -ofn "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.syr" 

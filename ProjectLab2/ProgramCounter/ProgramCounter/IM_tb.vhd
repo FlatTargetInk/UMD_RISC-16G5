@@ -50,7 +50,7 @@ ARCHITECTURE behavior OF IM_tb IS
          RB : OUT  std_logic_vector(3 downto 0);
          OP : OUT  std_logic_vector(3 downto 0);
          IMM : OUT  std_logic_vector(7 downto 0);
-         INS_OFFSET : OUT  std_logic_vector(12 downto 0)
+         INS_OFFSET : OUT  std_logic_vector(11 downto 0)
         );
     END COMPONENT;
     
@@ -67,7 +67,7 @@ ARCHITECTURE behavior OF IM_tb IS
    signal RB : std_logic_vector(3 downto 0);
    signal OP : std_logic_vector(3 downto 0);
    signal IMM : std_logic_vector(7 downto 0);
-   signal INS_OFFSET : std_logic_vector(12 downto 0);
+   signal INS_OFFSET : std_logic_vector(11 downto 0);
 
    -- Clock period definitions
    constant CLK_period : time := 10 ns;

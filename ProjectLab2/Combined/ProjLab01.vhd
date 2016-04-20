@@ -74,6 +74,8 @@ architecture Structural of ProjLab01 is
 	signal RB_DC1, RB_DC2:		STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '1');	-- Data contention RB values
 	
 	signal DATARD_EN, DATAWR_EN:	STD_LOGIC := '0';	-- Enable reading or writing to/from Data Memory
+	
+	signal SH_DAT, EX_ADR2, EX_ADR	: STD_LOGIC_VECTOR (15 downto 0)	:= (OTHERS => '0');	-- Shadow Register data lines
 
 begin
 	ALU_OUT <= ALU_RESULT;
@@ -110,6 +112,27 @@ begin
 					RB 	=> RBIN,
 					OP 	=> OPIN,
 					IMM 	=> IMMIN);
+	
+	--------  External Memory  --------
+	-----------------------------------
+	EX_Mem_ADDER	:	entity work.Shadow_IMM_Add
+	port map(SHADOW	=> SH_DAT,
+				IMM		=> IMM2(3 downto 0),
+				EX_ADDR 	=> EX_ADR2);
+	
+	Shadow_Registers_UNIT : entity work.Shadow_Reg
+	port map(RAddr	=> RB1(3 downto 2),
+				CLK 	=> CLK,
+				RST	=> RST,
+--				R		: in  STD_LOGIC;
+--				W		: in  STD_LOGIC;
+				RAout => SH_DAT);
+	EX_MEMORY	: entity work.EX_MEM
+	port map(clka => CLK,
+				wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    addra : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
+    dina : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    douta : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
 
 	--------  Control Units  --------
 	---------------------------------
@@ -307,6 +330,14 @@ begin
 					Rst	=> RST,
 					Din	=> OPRB,
 					Dout	=> RB_IN);
+					
+	EX_MEM_Adr: entity work.PipelineRegisters
+	generic map( datawidth => 16)
+	port map(	Clk	=> CLK,
+					Ena	=> GLOBAL_EN,
+					Rst	=> RST,
+					Din	=> EX_ADR2,
+					Dout	=> EX_ADR);
 	
 	----> Stage Four <----
 	RA4ADR_Reg: entity work.PipelineRegisters

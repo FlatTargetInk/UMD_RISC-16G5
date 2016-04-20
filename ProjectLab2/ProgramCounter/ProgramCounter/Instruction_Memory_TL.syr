@@ -1,0 +1,424 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: Instruction_Memory_TL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Instruction_Memory_TL.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Instruction_Memory_TL"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Instruction_Memory_TL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ProgramCounter.vhd" in Library work.
+Entity <ProgramCounter> compiled.
+Entity <ProgramCounter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instr_Mem.vhd" in Library work.
+Entity <Instr_Mem> compiled.
+Entity <Instr_Mem> (Architecture <Instr_Mem_a>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd" in Library work.
+Entity <Instruction_Memory_TL> compiled.
+Entity <Instruction_Memory_TL> (Architecture <Structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Instruction_Memory_TL> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <ProgramCounter> in library <work> (architecture <Behavioral>) with generics.
+	PCWIDTH = 5
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Instruction_Memory_TL> in library <work> (Architecture <Structural>).
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd" line 79: Instantiating black box module <Instr_Mem>.
+Entity <Instruction_Memory_TL> analyzed. Unit <Instruction_Memory_TL> generated.
+
+Analyzing generic Entity <ProgramCounter> in library <work> (Architecture <Behavioral>).
+	PCWIDTH = 5
+INFO:Xst:1561 - "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ProgramCounter.vhd" line 50: Mux is complete : default of case is discarded
+Entity <ProgramCounter> analyzed. Unit <ProgramCounter> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ProgramCounter>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ProgramCounter.vhd".
+WARNING:Xst:647 - Input <OFFSET<11:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 5-bit register for signal <COUNTER>.
+    Found 5-bit adder for signal <COUNTER$addsub0000> created at line 44.
+    Found 5-bit 4-to-1 multiplexer for signal <COUNTER$mux0001> created at line 36.
+    Found 5-bit register for signal <STR0>.
+    Found 5-bit adder for signal <STR0$add0000> created at line 43.
+    Found 5-bit 4-to-1 multiplexer for signal <STR0$mux0000> created at line 36.
+    Found 5-bit register for signal <STR1>.
+    Found 5-bit 4-to-1 multiplexer for signal <STR1$mux0000> created at line 36.
+    Found 5-bit register for signal <STR2>.
+    Found 5-bit 4-to-1 multiplexer for signal <STR2$mux0000> created at line 36.
+    Found 5-bit register for signal <STR3>.
+    Found 5-bit 4-to-1 multiplexer for signal <STR3$mux0000> created at line 36.
+    Summary:
+	inferred  25 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  25 Multiplexer(s).
+Unit <ProgramCounter> synthesized.
+
+
+Synthesizing Unit <Instruction_Memory_TL>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd".
+WARNING:Xst:647 - Input <OFFSET> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <RTN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1306 - Output <INS_OFFSET> is never assigned.
+WARNING:Xst:647 - Input <JMP> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <WEA> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <INSADR> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <EN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:653 - Signal <DINA> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+Unit <Instruction_Memory_TL> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 5-bit adder                                           : 2
+# Registers                                            : 5
+ 5-bit register                                        : 5
+# Multiplexers                                         : 5
+ 5-bit 4-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/Instr_Mem.ngc>.
+Loading core <Instr_Mem> for timing and area information for instance <U2>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 5-bit adder                                           : 2
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+# Multiplexers                                         : 5
+ 5-bit 4-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Instruction_Memory_TL> ...
+
+Optimizing unit <ProgramCounter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Instruction_Memory_TL, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Instruction_Memory_TL.ngr
+Top Level Output File Name         : Instruction_Memory_TL
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 49
+
+Cell Usage :
+# BELS                             : 111
+#      GND                         : 2
+#      LUT2                        : 9
+#      LUT2_D                      : 1
+#      LUT3                        : 31
+#      LUT4                        : 34
+#      LUT4_L                      : 19
+#      MUXCY                       : 4
+#      MUXF5                       : 4
+#      VCC                         : 2
+#      XORCY                       : 5
+# FlipFlops/Latches                : 25
+#      FDE_1                       : 25
+# RAMS                             : 1
+#      RAMB16_S36_S36              : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 1
+#      OBUF                        : 20
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       50  out of   4656     1%  
+ Number of Slice Flip Flops:             25  out of   9312     0%  
+ Number of 4 input LUTs:                 94  out of   9312     1%  
+ Number of IOs:                          49
+ Number of bonded IOBs:                  22  out of    232     9%  
+ Number of BRAMs:                         1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 26    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 15.456ns (Maximum Frequency: 64.700MHz)
+   Minimum input arrival time before clock: 6.074ns
+   Maximum output required time after clock: 7.274ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 15.456ns (frequency: 64.700MHz)
+  Total number of paths / destination ports: 413 / 35
+-------------------------------------------------------------------------
+Delay:               7.728ns (Levels of Logic = 4)
+  Source:            U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (RAM)
+  Destination:       U1/STR0_4 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK falling
+
+  Data Path: U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram to U1/STR0_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S36_S36:CLKB->DOB17    4   2.800   0.762  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (douta<13>)
+     end scope: 'U2'
+     LUT2:I0->O            2   0.704   0.451  MODE<1>_SW0 (N17)
+     LUT4:I3->O           25   0.704   1.295  MODE<1> (MODE<1>)
+     LUT4:I2->O            1   0.704   0.000  U1/Mmux_COUNTER_mux00018 (U1/COUNTER_mux0001<3>)
+     FDE_1:D                   0.308          U1/COUNTER_1
+    ----------------------------------------
+    Total                      7.728ns (5.220ns logic, 2.508ns route)
+                                       (67.5% logic, 32.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 70 / 25
+-------------------------------------------------------------------------
+Offset:              6.074ns (Levels of Logic = 4)
+  Source:            RST (PAD)
+  Destination:       U1/STR0_4 (FF)
+  Destination Clock: CLK falling
+
+  Data Path: RST to U1/STR0_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            35   1.218   1.342  RST_IBUF (RST_IBUF)
+     LUT3:I1->O            1   0.704   0.595  MODE<0>_SW1 (N67)
+     LUT4:I0->O            1   0.704   0.499  U1/STR0_mux0000<4>_SW0 (N5)
+     LUT3:I1->O            1   0.704   0.000  U1/STR0_mux0000<4> (U1/STR0_mux0000<4>)
+     FDE_1:D                   0.308          U1/STR0_4
+    ----------------------------------------
+    Total                      6.074ns (3.638ns logic, 2.436ns route)
+                                       (59.9% logic, 40.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              7.274ns (Levels of Logic = 2)
+  Source:            U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (RAM)
+  Destination:       OP<3> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram to OP<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S36_S36:CLKB->DOB25   23   2.800   1.202  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (douta<15>)
+     end scope: 'U2'
+     OBUF:I->O                 3.272          OP_3_OBUF (OP<3>)
+    ----------------------------------------
+    Total                      7.274ns (6.072ns logic, 1.202ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.01 secs
+ 
+--> 
+
+
+Total memory usage is 520724 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
