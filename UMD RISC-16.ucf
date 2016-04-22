@@ -1,0 +1,84 @@
+###################################################
+## School: University of Massachusetts Dartmouth
+## Department: Computer and Electrical Engineering
+## Engineer: Christopher Parks
+## 
+## Create Date:    4-15-16
+## Module Name:    UMD RISC-16.ucf
+## Target Devices: Spartan-3E
+## Tool versions:  Xilinx ISE 14.7
+## Description:
+##    Nexys 2 Pin Assignments
+##    
+###################################################
+
+NET "HW_CLK" LOC = "B8";
+
+##LED Assignment
+#NET "LED<0>" LOC = "J14";
+#NET "LED<1>" LOC = "J15";
+#NET "LED<2>" LOC = "K15";
+#NET "LED<3>" LOC = "K14";
+#NET "LED<4>" LOC = "E17";
+#NET "LED<5>" LOC = "P15";
+#NET "LED<6>" LOC = "F4";
+#NET "LED<7>" LOC = "R4";
+#
+##Switch Assignment
+#NET "SW<0>" LOC = "G18";
+#NET "SW<1>" LOC = "H18";
+#NET "SW<2>" LOC = "K18";
+#NET "SW<3>" LOC = "K17";
+#NET "SW<4>" LOC = "L14";
+#NET "SW<5>" LOC = "L13";
+#NET "SW<6>" LOC = "N17";
+#NET "SW<7>" LOC = "R17";
+
+#Button Assignment
+NET "BTN<0>" LOC = "B18";
+NET "BTN<1>" LOC = "D18";
+NET "BTN<2>" LOC = "E18";
+NET "BTN<3>" LOC = "H13";
+
+#Reset Button Assignment
+#NET "RESET_BTN" LOC = BTNR;
+
+#JA PMOD Connectors
+NET "JA<0>" LOC = "L15";
+NET "JA<1>" LOC = "K12";
+NET "JA<2>" LOC = "L17";
+NET "JA<3>" LOC = "M15";
+NET "JA<4>" LOC = "K13";
+NET "JA<5>" LOC = "L16";
+NET "JA<6>" LOC = "M14";
+NET "JA<7>" LOC = "M16";
+
+#JB PMOD Connectors
+NET "JB<0>" LOC = "M13";
+NET "JB<1>" LOC = "R18";
+NET "JB<2>" LOC = "R15";
+NET "JB<3>" LOC = "T17";
+NET "JB<4>" LOC = "P17";
+NET "JB<5>" LOC = "R16";
+NET "JB<6>" LOC = "T18";
+NET "JB<7>" LOC = "U18";
+
+##JC PMOD Connectors
+NET "JC<0>" LOC = "G15";
+NET "JC<1>" LOC = "J16";
+NET "JC<2>" LOC = "G13";
+NET "JC<3>" LOC = "H16";
+NET "JC<4>" LOC = "H15";
+NET "JC<5>" LOC = "F14";
+NET "JC<6>" LOC = "G16";
+NET "JC<7>" LOC = "J12";
+#
+##JD PMOD Connectors
+#NET "JD<0>" LOC = "J13";
+#NET "JD<1>" LOC = "M18";
+#NET "JD<2>" LOC = "N18";
+#NET "JD<3>" LOC = "P18";
+#NET "JD<4>" LOC = "K14"; # These last 4 connections are shared with LEDs.
+#NET "JD<5>" LOC = "K15";
+#NET "JD<6>" LOC = "J15";
+#NET "JD<7>" LOC = "J14";
