@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/robert/UMD_RISC-16G5/HardwareDebug/impact.xsl
+OUTFILE=/home/robert/UMD_RISC-16G5/HardwareDebug/impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=/home/robert/UMD_RISC-16G5/HardwareDebug
+LICENSE=iMPACT
+USER_INFO=iMPACT

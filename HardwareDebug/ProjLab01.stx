@@ -1,0 +1,68 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/robert/UMD_RISC-16G5/HardwareDebug/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/robert/UMD_RISC-16G5/HardwareDebug/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ipcore_dir/DATAMEM.vhd" in Library work.
+Architecture datamem_a of Entity datamem is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/programCounter.vhd" in Library work.
+Architecture behavioral of Entity programcounter is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/arith_unit.vhd" in Library work.
+Architecture combinational of Entity arith_unit is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/logical_unit.vhd" in Library work.
+Architecture combinational of Entity logical_unit is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/shift_unit.vhd" in Library work.
+Architecture combinational of Entity shift_unit is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/word_unit.vhd" in Library work.
+Architecture combinational of Entity word_unit is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/alu_toplevel.vhd" in Library work.
+Architecture structural of Entity alu_toplevel is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/Instruction_Memory_TL.vhd" in Library work.
+Architecture structural of Entity instruction_memory_tl is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/REG_CTL.vhd" in Library work.
+Architecture dataflow of Entity reg_ctl is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DC_CTL.vhd" in Library work.
+Architecture mixed of Entity dc_ctl is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DATA_CTL.vhd" in Library work.
+Architecture behavioral of Entity data_ctl is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/IMSEL.vhd" in Library work.
+Architecture dataflow of Entity imsel is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/PipelineRegisters.vhd" in Library work.
+Architecture behavioral of Entity pipelineregisters is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/RegisterBank.vhd" in Library work.
+Entity <registerbank> compiled.
+Entity <registerbank> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ProjLab01.vhd" in Library work.
+Entity <projlab01> compiled.
+Entity <projlab01> (Architecture <structural>) compiled.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> 
+
+
+Total memory usage is 472972 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

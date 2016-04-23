@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=Z:\Xilinx\UCF_Test_Proj\impact.xsl
+OUTFILE=Z:\Xilinx\UCF_Test_Proj\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=Z:\Xilinx\UCF_Test_Proj
+LICENSE=iMPACT
+USER_INFO=iMPACT

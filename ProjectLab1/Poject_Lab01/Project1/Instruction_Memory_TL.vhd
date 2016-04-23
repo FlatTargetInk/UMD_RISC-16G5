@@ -70,7 +70,7 @@ begin
 					INSADR => ADDRA);
 		
 	U2: entity work.Instr_Mem
-		port map(CLKA => CLK,
+		port map(CLKA => not CLK,
 					ADDRA => ADDRA ,
 					DINA => DINA,
 					WEA(0) => WEA,

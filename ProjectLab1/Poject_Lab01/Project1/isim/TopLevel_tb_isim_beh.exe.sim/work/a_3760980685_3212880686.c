@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DATA_CTL.vhd";
+static const char *ng0 = "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DATA_CTL.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_2763492388968962707_503743352(char *, char *, unsigned int , unsigned int );
@@ -121,12 +121,12 @@ LAB1:    return;
 LAB2:    xsi_set_current_line(49, ng0);
     t3 = (t0 + 1352U);
     t4 = *((char **)t3);
-    t3 = (t0 + 6560);
+    t3 = (t0 + 6480);
     t6 = xsi_mem_cmp(t3, t4, 4U);
     if (t6 == 1)
         goto LAB6;
 
-LAB9:    t7 = (t0 + 6564);
+LAB9:    t7 = (t0 + 6484);
     t9 = xsi_mem_cmp(t7, t4, 4U);
     if (t9 == 1)
         goto LAB7;

@@ -1,0 +1,66 @@
+xst -intstyle ise -ifn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.xst" -ofn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.syr" 
+xst -intstyle ise -ifn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.xst" -ofn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+xst -intstyle ise -ifn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.xst" -ofn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.syr" 
+xst -intstyle ise -ifn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.xst" -ofn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.syr" 
+xst -intstyle ise -ifn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.xst" -ofn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.syr" 
+xst -intstyle ise -ifn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.xst" -ofn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+xst -intstyle ise -ifn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.xst" -ofn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o UCF_Test_Module_map.ncd UCF_Test_Module.ngd UCF_Test_Module.pcf 
+par -w -intstyle ise -ol high -t 1 UCF_Test_Module_map.ncd UCF_Test_Module.ncd UCF_Test_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UCF_Test_Module.twx UCF_Test_Module.ncd -o UCF_Test_Module.twr UCF_Test_Module.pcf 
+bitgen -intstyle ise -f UCF_Test_Module.ut UCF_Test_Module.ncd 
+xst -intstyle ise -ifn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.xst" -ofn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o UCF_Test_Module_map.ncd UCF_Test_Module.ngd UCF_Test_Module.pcf 
+par -w -intstyle ise -ol high -t 1 UCF_Test_Module_map.ncd UCF_Test_Module.ncd UCF_Test_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UCF_Test_Module.twx UCF_Test_Module.ncd -o UCF_Test_Module.twr UCF_Test_Module.pcf 
+bitgen -intstyle ise -f UCF_Test_Module.ut UCF_Test_Module.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+xst -intstyle ise -ifn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.xst" -ofn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o UCF_Test_Module_map.ncd UCF_Test_Module.ngd UCF_Test_Module.pcf 
+par -w -intstyle ise -ol high -t 1 UCF_Test_Module_map.ncd UCF_Test_Module.ncd UCF_Test_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UCF_Test_Module.twx UCF_Test_Module.ncd -o UCF_Test_Module.twr UCF_Test_Module.pcf 
+xst -intstyle ise -ifn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.xst" -ofn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o UCF_Test_Module_map.ncd UCF_Test_Module.ngd UCF_Test_Module.pcf 
+par -w -intstyle ise -ol high -t 1 UCF_Test_Module_map.ncd UCF_Test_Module.ncd UCF_Test_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UCF_Test_Module.twx UCF_Test_Module.ncd -o UCF_Test_Module.twr UCF_Test_Module.pcf 
+bitgen -intstyle ise -f UCF_Test_Module.ut UCF_Test_Module.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o UCF_Test_Module_map.ncd UCF_Test_Module.ngd UCF_Test_Module.pcf 
+par -w -intstyle ise -ol high -t 1 UCF_Test_Module_map.ncd UCF_Test_Module.ncd UCF_Test_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UCF_Test_Module.twx UCF_Test_Module.ncd -o UCF_Test_Module.twr UCF_Test_Module.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o UCF_Test_Module_map.ncd UCF_Test_Module.ngd UCF_Test_Module.pcf 
+par -w -intstyle ise -ol high -t 1 UCF_Test_Module_map.ncd UCF_Test_Module.ncd UCF_Test_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UCF_Test_Module.twx UCF_Test_Module.ncd -o UCF_Test_Module.twr UCF_Test_Module.pcf 
+bitgen -intstyle ise -f UCF_Test_Module.ut UCF_Test_Module.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o UCF_Test_Module_map.ncd UCF_Test_Module.ngd UCF_Test_Module.pcf 
+par -w -intstyle ise -ol high -t 1 UCF_Test_Module_map.ncd UCF_Test_Module.ncd UCF_Test_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UCF_Test_Module.twx UCF_Test_Module.ncd -o UCF_Test_Module.twr UCF_Test_Module.pcf 
+bitgen -intstyle ise -f UCF_Test_Module.ut UCF_Test_Module.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o UCF_Test_Module_map.ncd UCF_Test_Module.ngd UCF_Test_Module.pcf 
+xst -intstyle ise -ifn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.xst" -ofn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o UCF_Test_Module_map.ncd UCF_Test_Module.ngd UCF_Test_Module.pcf 
+par -w -intstyle ise -ol high -t 1 UCF_Test_Module_map.ncd UCF_Test_Module.ncd UCF_Test_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UCF_Test_Module.twx UCF_Test_Module.ncd -o UCF_Test_Module.twr UCF_Test_Module.pcf 
+bitgen -intstyle ise -f UCF_Test_Module.ut UCF_Test_Module.ncd 
+xst -intstyle ise -ifn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.xst" -ofn "Z:/Xilinx/UCF_Test_Proj/UCF_Test_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "Z:/Junior Year (2015-2016)/ECE 368/UMD RISC-16.ucf" -p xc3s500e-fg320-4 UCF_Test_Module.ngc UCF_Test_Module.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o UCF_Test_Module_map.ncd UCF_Test_Module.ngd UCF_Test_Module.pcf 
+par -w -intstyle ise -ol high -t 1 UCF_Test_Module_map.ncd UCF_Test_Module.ncd UCF_Test_Module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UCF_Test_Module.twx UCF_Test_Module.ncd -o UCF_Test_Module.twr UCF_Test_Module.pcf 
+bitgen -intstyle ise -f UCF_Test_Module.ut UCF_Test_Module.ncd 

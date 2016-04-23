@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> 
 Reading design: Instruction_Memory_TL.prj
@@ -110,36 +110,67 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ProgramCounter.vhd" in Library work.
-Entity <ProgramCounter> compiled.
-Entity <ProgramCounter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/PC_INC.vhd" in Library work.
+Architecture combinational of Entity pc_inc is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/PC_OFFSET.vhd" in Library work.
+Architecture combinational of Entity pc_offset is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/SH_PCREG.vhd" in Library work.
+Architecture behavioral of Entity sh_pcreg is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ADR_LATCH.vhd" in Library work.
+Architecture behavioral of Entity adr_latch is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instr_Mem.vhd" in Library work.
-Entity <Instr_Mem> compiled.
-Entity <Instr_Mem> (Architecture <Instr_Mem_a>) compiled.
+Architecture instr_mem_a of Entity instr_mem is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd" in Library work.
-Entity <Instruction_Memory_TL> compiled.
-Entity <Instruction_Memory_TL> (Architecture <Structural>) compiled.
+Entity <instruction_memory_tl> compiled.
+Entity <instruction_memory_tl> (Architecture <structural>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <Instruction_Memory_TL> in library <work> (architecture <Structural>).
+Analyzing hierarchy for entity <Instruction_Memory_TL> in library <work> (architecture <structural>) with generics.
+	PCWIDTH = 5
 
-Analyzing hierarchy for entity <ProgramCounter> in library <work> (architecture <Behavioral>) with generics.
+Analyzing hierarchy for entity <PC_INC> in library <work> (architecture <Combinational>) with generics.
+	PCWIDTH = 5
+
+Analyzing hierarchy for entity <PC_OFFSET> in library <work> (architecture <Combinational>) with generics.
+	PCWIDTH = 5
+
+Analyzing hierarchy for entity <SH_PCREG> in library <work> (architecture <Behavioral>) with generics.
+	PCWIDTH = 5
+	STACKDEPTH = 4
+
+Analyzing hierarchy for entity <ADR_LATCH> in library <work> (architecture <Behavioral>) with generics.
 	PCWIDTH = 5
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <Instruction_Memory_TL> in library <work> (Architecture <Structural>).
-WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd" line 79: Instantiating black box module <Instr_Mem>.
+Analyzing generic Entity <Instruction_Memory_TL> in library <work> (Architecture <structural>).
+	PCWIDTH = 5
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd" line 100: Unconnected output port 'OVFLW' of component 'SH_PCREG'.
+INFO:Xst:1739 - HDL ADVISOR - "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd" line 42: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd" line 119: Instantiating black box module <Instr_Mem>.
 Entity <Instruction_Memory_TL> analyzed. Unit <Instruction_Memory_TL> generated.
 
-Analyzing generic Entity <ProgramCounter> in library <work> (Architecture <Behavioral>).
+Analyzing generic Entity <PC_INC> in library <work> (Architecture <Combinational>).
 	PCWIDTH = 5
-INFO:Xst:1561 - "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ProgramCounter.vhd" line 50: Mux is complete : default of case is discarded
-Entity <ProgramCounter> analyzed. Unit <ProgramCounter> generated.
+Entity <PC_INC> analyzed. Unit <PC_INC> generated.
+
+Analyzing generic Entity <PC_OFFSET> in library <work> (Architecture <Combinational>).
+	PCWIDTH = 5
+Entity <PC_OFFSET> analyzed. Unit <PC_OFFSET> generated.
+
+Analyzing generic Entity <SH_PCREG> in library <work> (Architecture <Behavioral>).
+	PCWIDTH = 5
+	STACKDEPTH = 4
+INFO:Xst:1561 - "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/SH_PCREG.vhd" line 77: Mux is complete : default of case is discarded
+Entity <SH_PCREG> analyzed. Unit <SH_PCREG> generated.
+
+Analyzing generic Entity <ADR_LATCH> in library <work> (Architecture <Behavioral>).
+	PCWIDTH = 5
+Entity <ADR_LATCH> analyzed. Unit <ADR_LATCH> generated.
 
 
 =========================================================================
@@ -148,26 +179,38 @@ Entity <ProgramCounter> analyzed. Unit <ProgramCounter> generated.
 
 Performing bidirectional port resolution...
 
-Synthesizing Unit <ProgramCounter>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ProgramCounter.vhd".
-WARNING:Xst:647 - Input <OFFSET<11:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 5-bit register for signal <COUNTER>.
-    Found 5-bit adder for signal <COUNTER$addsub0000> created at line 44.
-    Found 5-bit 4-to-1 multiplexer for signal <COUNTER$mux0001> created at line 36.
-    Found 5-bit register for signal <STR0>.
-    Found 5-bit adder for signal <STR0$add0000> created at line 43.
-    Found 5-bit 4-to-1 multiplexer for signal <STR0$mux0000> created at line 36.
-    Found 5-bit register for signal <STR1>.
-    Found 5-bit 4-to-1 multiplexer for signal <STR1$mux0000> created at line 36.
-    Found 5-bit register for signal <STR2>.
-    Found 5-bit 4-to-1 multiplexer for signal <STR2$mux0000> created at line 36.
-    Found 5-bit register for signal <STR3>.
-    Found 5-bit 4-to-1 multiplexer for signal <STR3$mux0000> created at line 36.
+Synthesizing Unit <PC_INC>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/PC_INC.vhd".
+    Found 5-bit adder for signal <NEXT_ADR>.
     Summary:
-	inferred  25 D-type flip-flop(s).
-	inferred   2 Adder/Subtractor(s).
-	inferred  25 Multiplexer(s).
-Unit <ProgramCounter> synthesized.
+	inferred   1 Adder/Subtractor(s).
+Unit <PC_INC> synthesized.
+
+
+Synthesizing Unit <PC_OFFSET>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/PC_OFFSET.vhd".
+    Found 5-bit adder for signal <NEW_ADR>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <PC_OFFSET> synthesized.
+
+
+Synthesizing Unit <SH_PCREG>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/SH_PCREG.vhd".
+WARNING:Xst:1305 - Output <OVFLW> is never assigned. Tied to value 0.
+    Found 5-bit register for signal <ADROUT>.
+    Found 15-bit register for signal <PC_STACK>.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+Unit <SH_PCREG> synthesized.
+
+
+Synthesizing Unit <ADR_LATCH>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ADR_LATCH.vhd".
+    Found 5-bit register for signal <ADOUT>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <ADR_LATCH> synthesized.
 
 
 Synthesizing Unit <Instruction_Memory_TL>.
@@ -176,10 +219,12 @@ WARNING:Xst:647 - Input <OFFSET> is never used. This port will be preserved and 
 WARNING:Xst:647 - Input <RTN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1306 - Output <INS_OFFSET> is never assigned.
 WARNING:Xst:647 - Input <JMP> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <ZERO_ADR> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
 WARNING:Xst:653 - Signal <WEA> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:1780 - Signal <INSADR> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <EN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:1780 - Signal <EN> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <DINA> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+    Using one-hot encoding for signal <MODE>.
 Unit <Instruction_Memory_TL> synthesized.
 
 
@@ -191,8 +236,6 @@ Macro Statistics
  5-bit adder                                           : 2
 # Registers                                            : 5
  5-bit register                                        : 5
-# Multiplexers                                         : 5
- 5-bit 4-to-1 multiplexer                              : 5
 
 =========================================================================
 
@@ -211,8 +254,6 @@ Macro Statistics
  5-bit adder                                           : 2
 # Registers                                            : 25
  Flip-Flops                                            : 25
-# Multiplexers                                         : 5
- 5-bit 4-to-1 multiplexer                              : 5
 
 =========================================================================
 
@@ -222,7 +263,7 @@ Macro Statistics
 
 Optimizing unit <Instruction_Memory_TL> ...
 
-Optimizing unit <ProgramCounter> ...
+Optimizing unit <SH_PCREG> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -261,22 +302,23 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 49
+# IOs                              : 48
 
 Cell Usage :
-# BELS                             : 111
+# BELS                             : 65
 #      GND                         : 2
-#      LUT2                        : 9
-#      LUT2_D                      : 1
-#      LUT3                        : 31
-#      LUT4                        : 34
-#      LUT4_L                      : 19
+#      LUT2                        : 11
+#      LUT3                        : 18
+#      LUT3_D                      : 2
+#      LUT3_L                      : 2
+#      LUT4                        : 15
+#      LUT4_L                      : 5
 #      MUXCY                       : 4
-#      MUXF5                       : 4
-#      VCC                         : 2
+#      VCC                         : 1
 #      XORCY                       : 5
 # FlipFlops/Latches                : 25
-#      FDE_1                       : 25
+#      FDC                         : 5
+#      FDCE                        : 20
 # RAMS                             : 1
 #      RAMB16_S36_S36              : 1
 # Clock Buffers                    : 1
@@ -291,10 +333,10 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                       50  out of   4656     1%  
+ Number of Slices:                       29  out of   4656     0%  
  Number of Slice Flip Flops:             25  out of   9312     0%  
- Number of 4 input LUTs:                 94  out of   9312     1%  
- Number of IOs:                          49
+ Number of 4 input LUTs:                 53  out of   9312     0%  
+ Number of IOs:                          48
  Number of bonded IOBs:                  22  out of    232     9%  
  Number of BRAMs:                         1  out of     20     5%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -325,15 +367,19 @@ CLK                                | BUFGP                  | 26    |
 
 Asynchronous Control Signals Information:
 ----------------------------------------
-No asynchronous control signals found in this design
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RST                                | IBUF                   | 25    |
+-----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 15.456ns (Maximum Frequency: 64.700MHz)
-   Minimum input arrival time before clock: 6.074ns
-   Maximum output required time after clock: 7.274ns
+   Minimum period: 7.413ns (Maximum Frequency: 134.898MHz)
+   Minimum input arrival time before clock: 6.308ns
+   Maximum output required time after clock: 7.334ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -342,83 +388,83 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 15.456ns (frequency: 64.700MHz)
-  Total number of paths / destination ports: 413 / 35
+  Clock period: 7.413ns (frequency: 134.898MHz)
+  Total number of paths / destination ports: 263 / 55
 -------------------------------------------------------------------------
-Delay:               7.728ns (Levels of Logic = 4)
+Delay:               7.413ns (Levels of Logic = 4)
   Source:            U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (RAM)
-  Destination:       U1/STR0_4 (FF)
+  Destination:       ADR_LTCH/ADOUT_1 (FF)
   Source Clock:      CLK rising
-  Destination Clock: CLK falling
+  Destination Clock: CLK rising
 
-  Data Path: U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram to U1/STR0_4
+  Data Path: U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram to ADR_LTCH/ADOUT_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16_S36_S36:CLKB->DOB17    4   2.800   0.762  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (douta<13>)
+     RAMB16_S36_S36:CLKB->DOB24   10   2.800   0.961  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (douta<14>)
      end scope: 'U2'
-     LUT2:I0->O            2   0.704   0.451  MODE<1>_SW0 (N17)
-     LUT4:I3->O           25   0.704   1.295  MODE<1> (MODE<1>)
-     LUT4:I2->O            1   0.704   0.000  U1/Mmux_COUNTER_mux00018 (U1/COUNTER_mux0001<3>)
-     FDE_1:D                   0.308          U1/COUNTER_1
+     LUT3_D:I1->O          5   0.704   0.637  NEXT_ADDR<2>211 (N9)
+     LUT4:I3->O            1   0.704   0.595  NEXT_ADDR<1>0 (NEXT_ADDR<1>0)
+     LUT4:I0->O            1   0.704   0.000  NEXT_ADDR<1>29 (NEXT_ADDR<1>)
+     FDC:D                     0.308          ADR_LTCH/ADOUT_1
     ----------------------------------------
-    Total                      7.728ns (5.220ns logic, 2.508ns route)
-                                       (67.5% logic, 32.5% route)
+    Total                      7.413ns (5.220ns logic, 2.193ns route)
+                                       (70.4% logic, 29.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 70 / 25
+  Total number of paths / destination ports: 14 / 5
 -------------------------------------------------------------------------
-Offset:              6.074ns (Levels of Logic = 4)
+Offset:              6.308ns (Levels of Logic = 4)
   Source:            RST (PAD)
-  Destination:       U1/STR0_4 (FF)
-  Destination Clock: CLK falling
+  Destination:       ADR_LTCH/ADOUT_1 (FF)
+  Destination Clock: CLK rising
 
-  Data Path: RST to U1/STR0_4
+  Data Path: RST to ADR_LTCH/ADOUT_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            35   1.218   1.342  RST_IBUF (RST_IBUF)
-     LUT3:I1->O            1   0.704   0.595  MODE<0>_SW1 (N67)
-     LUT4:I0->O            1   0.704   0.499  U1/STR0_mux0000<4>_SW0 (N5)
-     LUT3:I1->O            1   0.704   0.000  U1/STR0_mux0000<4> (U1/STR0_mux0000<4>)
-     FDE_1:D                   0.308          U1/STR0_4
+     IBUF:I->O            33   1.218   1.438  RST_IBUF (RST_IBUF)
+     LUT3_D:I0->O          5   0.704   0.637  NEXT_ADDR<2>211 (N9)
+     LUT4:I3->O            1   0.704   0.595  NEXT_ADDR<1>0 (NEXT_ADDR<1>0)
+     LUT4:I0->O            1   0.704   0.000  NEXT_ADDR<1>29 (NEXT_ADDR<1>)
+     FDC:D                     0.308          ADR_LTCH/ADOUT_1
     ----------------------------------------
-    Total                      6.074ns (3.638ns logic, 2.436ns route)
-                                       (59.9% logic, 40.1% route)
+    Total                      6.308ns (3.638ns logic, 2.670ns route)
+                                       (57.7% logic, 42.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 20 / 20
 -------------------------------------------------------------------------
-Offset:              7.274ns (Levels of Logic = 2)
+Offset:              7.334ns (Levels of Logic = 2)
   Source:            U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (RAM)
-  Destination:       OP<3> (PAD)
+  Destination:       OP<0> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram to OP<3>
+  Data Path: U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram to OP<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16_S36_S36:CLKB->DOB25   23   2.800   1.202  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (douta<15>)
+     RAMB16_S36_S36:CLKB->DOB16   31   2.800   1.262  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (douta<12>)
      end scope: 'U2'
-     OBUF:I->O                 3.272          OP_3_OBUF (OP<3>)
+     OBUF:I->O                 3.272          OP_0_OBUF (OP<0>)
     ----------------------------------------
-    Total                      7.274ns (6.072ns logic, 1.202ns route)
-                                       (83.5% logic, 16.5% route)
+    Total                      7.334ns (6.072ns logic, 1.262ns route)
+                                       (82.8% logic, 17.2% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.01 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.15 secs
  
 --> 
 
 
-Total memory usage is 520724 kilobytes
+Total memory usage is 521640 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   10 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

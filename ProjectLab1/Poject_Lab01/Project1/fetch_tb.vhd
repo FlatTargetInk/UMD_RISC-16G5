@@ -41,7 +41,8 @@ ARCHITECTURE behavior OF fetch_tb IS
  
     COMPONENT Instruction_Memory_TL
     PORT(
-         CLK : IN  std_logic;
+         RST : IN std_logic;
+			CLK : IN  std_logic;
          RA : OUT  std_logic_vector(3 downto 0);
          RB : OUT  std_logic_vector(3 downto 0);
          OP : OUT  std_logic_vector(3 downto 0);
@@ -52,6 +53,7 @@ ARCHITECTURE behavior OF fetch_tb IS
 
    --Inputs
    signal CLK : std_logic := '0';
+	signal RST : std_logic := '0';
 
  	--Outputs
    signal RA : std_logic_vector(3 downto 0);
@@ -66,7 +68,8 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: Instruction_Memory_TL PORT MAP (
-          CLK => CLK,
+          RST => RST,
+			 CLK => CLK,
           RA => RA,
           RB => RB,
           OP => OP,

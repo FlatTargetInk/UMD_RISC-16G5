@@ -1,3 +1,6 @@
-vhdl work "ProgramCounter.vhd"
+vhdl work "SH_PCREG.vhd"
+vhdl work "PC_OFFSET.vhd"
+vhdl work "PC_INC.vhd"
 vhdl work "Instr_Mem.vhd"
+vhdl work "ADR_LATCH.vhd"
 vhdl work "Instruction_Memory_TL.vhd"

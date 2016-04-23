@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/TopLevel_tb_isim_beh3.wdb" id="1" type="auto">
+      <db_ref path="/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/TopLevel_tb_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="std_logic_1164" />
             <top_module name="std_logic_arith" />
@@ -15,7 +15,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="21" />
+   <WVObjectSize size="23" />
    <wvobject fp_name="/toplevel_tb/rst" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
@@ -149,6 +149,14 @@
    <wvobject fp_name="/toplevel_tb/uut/alu_val" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">alu_val[15:0]</obj_property>
       <obj_property name="ObjectShortName">alu_val[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/ALU_UNIT/word_unit/datain" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datain[15:0]</obj_property>
+      <obj_property name="ObjectShortName">datain[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/ALU_UNIT/word_unit/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[15:0]</obj_property>
+      <obj_property name="ObjectShortName">result[15:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/toplevel_tb/alu_out" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">alu_out[15:0]</obj_property>

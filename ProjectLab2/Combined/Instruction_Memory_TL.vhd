@@ -21,6 +21,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use work.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -34,10 +35,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity Instruction_Memory_TL is
     Port ( CLK : in STD_LOGIC;
 			  RST	: in STD_LOGIC;
+--			  JMP	: in STD_LOGIC;
+--			  OFFSET	: in STD_LOGIC_VECTOR(11 downto 0);
+--			  RTN	: in STD_LOGIC;
 			  RA : out  STD_LOGIC_VECTOR (3 downto 0);
            RB : out  STD_LOGIC_VECTOR (3 downto 0);
            OP : out  STD_LOGIC_VECTOR (3 downto 0);
            IMM : out  STD_LOGIC_VECTOR (7 downto 0));
+			  --INS_OFFSET	: out STD_LOGIC_VECTOR (11 downto 0));
 end Instruction_Memory_TL;
 
 architecture Structural of Instruction_Memory_TL is
@@ -45,7 +50,8 @@ architecture Structural of Instruction_Memory_TL is
 --Program counter
 signal EN :   STD_LOGIC := '1';
 --signal RST :  STD_LOGIC := '0';
-signal INSADR :STD_LOGIC_VECTOR (4 downto 0) := (OTHERS => '0');
+signal INSADR 	: STD_LOGIC_VECTOR (4 downto 0) := (OTHERS => '0');
+signal MODE		: STD_LOGIC_VECTOR (1 downto 0) := (OTHERS => '0');
 
 --INSTRUCTION MEMORY--
 signal ADDRA : STD_LOGIC_VECTOR (4 downto 0) := (OTHERS => '0');
@@ -62,18 +68,26 @@ begin
 	RB <= DOUTA(7 downto 4);
 	IMM <= DOUTA(7 downto 0);
 
-	U1: entity work.programCounter
+	U1: entity work.ProgramCounter
 		generic map(PCWIDTH => 5)
-		port map(CLK => CLK,
-					EN => EN,
-					RST => RST,
-					INSADR => ADDRA);
-		
-	U2: entity work.Instr_Mem
+		port map(CLK 		=> CLK,
+					EN 		=> EN,
+					OPMODE	=> MODE,
+					OFFSET	=> DOUTA(11 downto 0), -- OFFSET,
+					INSADR 	=> ADDRA);
+							
+	U2: entity work.Instr_Mem1
 		port map(CLKA => CLK,
 					ADDRA => ADDRA ,
 					DINA => DINA,
 					WEA(0) => WEA,
 					DOUTA => DOUTA);
-
+	
+	MODE <= 	"00" when RST = '1' else
+				"10" when DOUTA(15 downto 12) = "1101" else -- JMP = '1' else
+				"11" when DOUTA(15 downto 12) = "1110" else -- RTN = '1' else
+				"01" when OTHERS;
+	
+		
+			
 end Structural;

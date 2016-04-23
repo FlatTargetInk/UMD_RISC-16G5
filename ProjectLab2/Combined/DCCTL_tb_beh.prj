@@ -1,0 +1,2 @@
+vhdl work "DC_CTL.vhd"
+vhdl work "DCCTL_tb.vhd"

@@ -36,7 +36,8 @@ entity ProjLab01 is
            ALU_OUT : out  STD_LOGIC_VECTOR (15 downto 0);
            DST_ADR : out  STD_LOGIC_VECTOR (15 downto 0);
            STORE_DATA : out  STD_LOGIC_VECTOR (15 downto 0);
-           CCR : out  STD_LOGIC_VECTOR (3 downto 0));
+           CCR : out  STD_LOGIC_VECTOR (3 downto 0);
+			  DEBUG_OUT	: out STD_LOGIC_VECTOR (15 downto 0));
 end ProjLab01;
 
 
@@ -78,6 +79,8 @@ architecture Structural of ProjLab01 is
 begin
 	ALU_OUT <= ALU_RESULT;
 	CCR <= ALU_FLAGS;
+	DST_ADR <= "00000000000" & PC4;
+	DEBUG_OUT <= OPIN & RAIN & IMMIN;
 	
 	--------  Debugging I/O  --------
 	---------------------------------
@@ -98,8 +101,8 @@ begin
 				CLK		=> CLK,
 				ALU_OUT 	=> ALU_VAL,
 				SREG 		=> ALU_OUT_FLAGS,
-				LDST_DAT => STORE_DATA,
-				LDST_ADR => DST_ADR);
+				LDST_DAT => STORE_DATA);
+				--LDST_ADR => DST_ADR);
 				
 	--------  Fetch  --------
 	-------------------------
@@ -424,7 +427,8 @@ begin
 					INSADR	=> PC0);
 	
 	RegisterBank_Unit: entity work.RegisterBank
-	port map(	RAddr		=> RA1,
+	port map(	RST		=> RST,
+					RAddr		=> RA1,
 					RBddr 	=> RB1,
 					RWddr 	=> RA4,
 					DATAIN	=> ALU_RESULT,

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Z:\Xilinx\UCF_Test_Proj\UCF_Test_Module.ncd
+OUTFILE=Z:\Xilinx\UCF_Test_Proj\UCF_Test_Module.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=Z:\Xilinx\UCF_Test_Proj
+LICENSE=WebPack
+USER_INFO=210780912_0_0_925

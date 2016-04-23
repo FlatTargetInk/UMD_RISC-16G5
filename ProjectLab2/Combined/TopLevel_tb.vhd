@@ -141,6 +141,14 @@ BEGIN
 --		wait for CLK_period;
 --		
 --		instruction <= X"7A03";
+--	
+--		wait for CLK_period;
+--		
+--		instruction <= X"B201";
+--		
+--		wait for CLK_period;
+--		
+--		instruction <= X"C212";
 		
 		wait for CLK_period;
 

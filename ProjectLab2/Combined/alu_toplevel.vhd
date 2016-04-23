@@ -101,7 +101,7 @@ LDST_ADR <= X"00" & LDST_ADR_8;
 			SHIFT 	when "0111", -- SL (SHIFT)
 			SHIFT 	when "1000",--, -- SR (SHIFT)
 			WORD_OUT	when "1001", -- LW (WORD)
-			RA	 		when "1010", -- SW (WORD)
+			RA	 		when "1010", -- SW (WORD)			
 			X"0000"	when OTHERS;
 	
 	with OP select 

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="16">
+<DesignStatistics TimeStamp="Fri Apr 15 16:42:29 2016"><group name="NetStatistics">
+<item name="NumNets_Active" rev="16">
+<attrib name="value" value="60"/></item>
+<item name="NumNodesOfType_Active_DOUBLE" rev="16">
+<attrib name="value" value="87"/></item>
+<item name="NumNodesOfType_Active_DUMMYESC" rev="16">
+<attrib name="value" value="12"/></item>
+<item name="NumNodesOfType_Active_HUNIHEX" rev="16">
+<attrib name="value" value="10"/></item>
+<item name="NumNodesOfType_Active_INPUT" rev="16">
+<attrib name="value" value="36"/></item>
+<item name="NumNodesOfType_Active_IOBOUTPUT" rev="16">
+<attrib name="value" value="12"/></item>
+<item name="NumNodesOfType_Active_OMUX" rev="16">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_VFULLHEX" rev="16">
+<attrib name="value" value="12"/></item>
+<item name="NumNodesOfType_Active_VLONG" rev="16">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_VUNIHEX" rev="16">
+<attrib name="value" value="25"/></item>
+</group>
+<group name="SiteStatistics">
+<item name="IOB-DIFFM" rev="16">
+<attrib name="value" value="14"/></item>
+<item name="IOB-DIFFS" rev="16">
+<attrib name="value" value="18"/></item>
+</group>
+<group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="15">
+<attrib name="value" value="48"/></item>
+<item name="AGG_IO" rev="15">
+<attrib name="value" value="48"/></item>
+<item name="NUM_BONDED_IBUF" rev="15">
+<attrib name="value" value="12"/></item>
+<item name="NUM_BONDED_IOB" rev="15">
+<attrib name="value" value="36"/></item>
+</group>
+</DesignStatistics>
+<DeviceUsage TimeStamp="Fri Apr 15 16:42:29 2016"><group name="SiteSummary">
+<item name="IBUF" rev="16">
+<attrib name="total" value="1000000"/><attrib name="used" value="12"/></item>
+<item name="IBUF_INBUF" rev="16">
+<attrib name="total" value="1000000"/><attrib name="used" value="12"/></item>
+<item name="IBUF_PAD" rev="16">
+<attrib name="total" value="1000000"/><attrib name="used" value="12"/></item>
+<item name="IOB" rev="16">
+<attrib name="total" value="1000000"/><attrib name="used" value="36"/></item>
+<item name="IOB_OUTBUF" rev="16">
+<attrib name="total" value="1000000"/><attrib name="used" value="36"/></item>
+<item name="IOB_PAD" rev="16">
+<attrib name="total" value="1000000"/><attrib name="used" value="36"/></item>
+</group>
+</DeviceUsage>
+<ReportConfigData TimeStamp="Fri Apr 15 16:42:29 2016"><group name="IBUF_PAD">
+<item name="IOATTRBOX" rev="16">
+<attrib name="LVCMOS25" value="12"/></item>
+</group>
+<group name="IOB_OUTBUF">
+<item name="IN" rev="16">
+<attrib name="IN_INV" value="0"/><attrib name="IN" value="36"/></item>
+</group>
+<group name="IOB_PAD">
+<item name="DRIVEATTRBOX" rev="16">
+<attrib name="12" value="36"/></item>
+<item name="IOATTRBOX" rev="16">
+<attrib name="LVCMOS25" value="36"/></item>
+<item name="SLEW" rev="16">
+<attrib name="SLOW" value="36"/></item>
+</group>
+<group name="IOB">
+<item name="O1" rev="16">
+<attrib name="O1_INV" value="0"/><attrib name="O1" value="36"/></item>
+</group>
+</ReportConfigData>
+<ReportPinData TimeStamp="Fri Apr 15 16:42:29 2016"><group name="IBUF_PAD">
+<item name="PAD" rev="16">
+<attrib name="value" value="12"/></item>
+</group>
+<group name="IBUF_INBUF">
+<item name="IN" rev="16">
+<attrib name="value" value="12"/></item>
+<item name="OUT" rev="16">
+<attrib name="value" value="12"/></item>
+</group>
+<group name="SLICEL">
+<item name="G1" rev="12">
+<attrib name="value" value="4"/></item>
+<item name="G2" rev="12">
+<attrib name="value" value="4"/></item>
+<item name="Y" rev="12">
+<attrib name="value" value="4"/></item>
+</group>
+<group name="IOB_OUTBUF">
+<item name="IN" rev="16">
+<attrib name="value" value="36"/></item>
+<item name="OUT" rev="16">
+<attrib name="value" value="36"/></item>
+</group>
+<group name="IBUF">
+<item name="I" rev="16">
+<attrib name="value" value="12"/></item>
+<item name="PAD" rev="16">
+<attrib name="value" value="12"/></item>
+</group>
+<group name="IOB_PAD">
+<item name="PAD" rev="16">
+<attrib name="value" value="36"/></item>
+</group>
+<group name="IOB">
+<item name="O1" rev="16">
+<attrib name="value" value="36"/></item>
+<item name="PAD" rev="16">
+<attrib name="value" value="36"/></item>
+</group>
+<group name="SLICEL_G">
+<item name="A1" rev="12">
+<attrib name="value" value="4"/></item>
+<item name="A2" rev="12">
+<attrib name="value" value="4"/></item>
+<item name="D" rev="12">
+<attrib name="value" value="4"/></item>
+</group>
+</ReportPinData>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

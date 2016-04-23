@@ -22,7 +22,8 @@ library IEEE;
 --use IEEE.NUMERIC_STD.ALL;
 
 entity RegisterBank is
-    Port ( RAddr 	: in  STD_LOGIC_VECTOR (3 downto 0); --
+    Port ( RST		: in 	STD_LOGIC;
+			  RAddr 	: in  STD_LOGIC_VECTOR (3 downto 0); --
            RBddr 	: in  STD_LOGIC_VECTOR (3 downto 0); --
            RWddr 	: in  STD_LOGIC_VECTOR (3 downto 0);
            DATAIN : in  STD_LOGIC_VECTOR (15 downto 0);
@@ -40,8 +41,25 @@ signal R0dat, R1dat, R2dat, R3dat, R4dat, R5dat, R6dat, R7dat, R8dat, R9dat,
 		 
 begin
 
-	process(clk) -- Synchronous register bank
+	process(clk,RST) -- Synchronous register bank
 	begin
+--		if(RST = '1') then
+--			R0dat <= (OTHERS => '0');
+--			R1dat <= (OTHERS => '0');
+--			R2dat <= (OTHERS => '0');
+--			R3dat <= (OTHERS => '0');
+--			R4dat <= (OTHERS => '0');
+--			R5dat <= (OTHERS => '0');
+----			R6dat <= (OTHERS => '0');
+----			R7dat <= (OTHERS => '0');
+----			R8dat <= (OTHERS => '0');
+----			R9dat <= (OTHERS => '0');
+----			R10dat <= (OTHERS => '0');
+----			R11dat <= (OTHERS => '0');
+----			R12dat <= (OTHERS => '0');
+----			R13dat <= (OTHERS => '0');
+----			R14dat <= (OTHERS => '0');
+----			R15dat <= (OTHERS => '0');
 		if(rising_edge(clk) and R = '1') then -- Synchronous data read when read line enabled on rising edge (before write back)	
 				case RAddr is
 					when x"0" => RAout <= R0dat;
@@ -104,6 +122,23 @@ begin
 					when x"F" => R15dat <= DATAIN;
 				   when others => -- BY DEFAULT DO NOTHING FOR FAULTY ADDRESS
 				end case;
+--			else
+--				R0dat <= (OTHERS => '0');
+--				R1dat <= (OTHERS => '0');
+--				R2dat <= (OTHERS => '0');
+--				R3dat <= (OTHERS => '0');
+--				R4dat <= (OTHERS => '0');
+--				R5dat <= (OTHERS => '0');
+--				R6dat <= (OTHERS => '0');
+--				R7dat <= (OTHERS => '0');
+--				R8dat <= (OTHERS => '0');
+--				R9dat <= (OTHERS => '0');
+--				R10dat <= (OTHERS => '0');
+--				R11dat <= (OTHERS => '0');
+--				R12dat <= (OTHERS => '0');
+--				R13dat <= (OTHERS => '0');
+--				R14dat <= (OTHERS => '0');
+--				R15dat <= (OTHERS => '0');
 		end if;
 	end process;
 end Behavioral;

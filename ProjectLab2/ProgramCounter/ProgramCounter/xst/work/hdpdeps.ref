@@ -1,19 +1,43 @@
-V3 12
-FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd 2016/04/14.14:42:18 P.20131013
-EN work/Instruction_Memory_TL 1461086374 \
+V3 27
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ADR_LATCH.vhd 2016/04/23.13:17:11 P.20131013
+EN work/ADR_LATCH 1461434256 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ADR_LATCH.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ADR_LATCH/Behavioral 1461434257 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ADR_LATCH.vhd \
+      EN work/ADR_LATCH 1461434256
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd 2016/04/23.13:57:24 P.20131013
+EN work/Instruction_Memory_TL 1461434260 \
       FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd \
-      PB ieee/std_logic_1164 1381692176 LB work
-AR work/Instruction_Memory_TL/Structural 1461086375 \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
+AR work/Instruction_Memory_TL/Structural 1461434261 \
       FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd \
-      EN work/Instruction_Memory_TL 1461086374 CP work/programCounter \
-      CP work/Instr_Mem
+      EN work/Instruction_Memory_TL 1461434260 CP work/PC_INC CP work/PC_OFFSET \
+      CP work/SH_PCREG CP work/ADR_LATCH CP work/Instr_Mem
 FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instr_Mem.vhd 2016/04/10.15:54:32 P.20131013
-EN work/Instr_Mem 1461086372 \
+EN work/Instr_Mem 1461434258 \
       FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instr_Mem.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Instr_Mem/Instr_Mem_a 1461086373 \
+AR work/Instr_Mem/Instr_Mem_a 1461434259 \
       FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instr_Mem.vhd \
-      EN work/Instr_Mem 1461086372
+      EN work/Instr_Mem 1461434258
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/PC_INC.vhd 2016/04/22.18:02:15 P.20131013
+EN work/PC_INC 1461434250 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/PC_INC.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/PC_INC/Combinational 1461434251 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/PC_INC.vhd \
+      EN work/PC_INC 1461434250
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/PC_OFFSET.vhd 2016/04/22.18:22:48 P.20131013
+EN work/PC_OFFSET 1461434252 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/PC_OFFSET.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/PC_OFFSET/Combinational 1461434253 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/PC_OFFSET.vhd \
+      EN work/PC_OFFSET 1461434252
 FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ProgramCounter.vhd 2016/04/15.14:24:21 P.20131013
 EN work/ProgramCounter 1461086370 \
       FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ProgramCounter.vhd \
@@ -22,3 +46,11 @@ EN work/ProgramCounter 1461086370 \
 AR work/ProgramCounter/Behavioral 1461086371 \
       FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ProgramCounter.vhd \
       EN work/ProgramCounter 1461086370
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/SH_PCREG.vhd 2016/04/23.12:35:49 P.20131013
+EN work/SH_PCREG 1461434254 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/SH_PCREG.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SH_PCREG/Behavioral 1461434255 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/SH_PCREG.vhd \
+      EN work/SH_PCREG 1461434254

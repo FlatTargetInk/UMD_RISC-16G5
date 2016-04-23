@@ -37,7 +37,7 @@ INSADR <= COUNTER;
 	begin
 		if(RST = '1')then
 			COUNTER <= (OTHERS => '0');
-		elsif(CLK'event and CLK = '0')then
+		elsif(CLK'event and CLK = '1')then
 			if(EN = '1')then
 				COUNTER <= unsigned(COUNTER) + 1;
 			end if;

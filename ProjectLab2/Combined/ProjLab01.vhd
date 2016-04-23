@@ -75,10 +75,21 @@ architecture Structural of ProjLab01 is
 	
 	signal DATARD_EN, DATAWR_EN:	STD_LOGIC := '0';	-- Enable reading or writing to/from Data Memory
 	
-	signal SH_DAT, EX_ADR2, EX_ADR	: STD_LOGIC_VECTOR (15 downto 0)	:= (OTHERS => '0');	-- Shadow Register data lines
+	----------------------------------------
+--				Project lab 2				  --
+----------------------------------------
+	
+	signal SHADOW_DAT 					: STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0'); --Shadow Register output signal
+	signal EX_ADDR0						: STD_LOGIC_VECTOR (13 downto 0) := (OTHERS => '0'); --Shadow_Reg + IMM output
+	signal EX_ADDR_OUT					: STD_LOGIC_VECTOR (13 downto 0) := (OTHERS => '0'); --Shadow_Reg + IMM output
+	signal EX_DATA							: STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0');
+	signal ALU_EX_MUX						: STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0');
+	signal EX_WR							: STD_LOGIC								:=  '0';
+	signal EX_RD							: STD_LOGIC								:=  '0';	signal ALU_DATA						: STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0');
+	signal OP1_SELECT, OP2_SELECT		: STD_LOGIC_VECTOR ( 1 downto 0) := (OTHERS => '0');
 
 begin
-	ALU_OUT <= ALU_RESULT;
+	ALU_OUT <= ALU_DATA;
 	CCR <= ALU_FLAGS;
 	
 	--------  Debugging I/O  --------
@@ -98,7 +109,7 @@ begin
 				RB 		=> RB_OUT,
 				OP 		=> OP3,
 				CLK		=> CLK,
-				ALU_OUT 	=> ALU_VAL,
+				ALU_OUT 	=> ALU_RESULT,
 				SREG 		=> ALU_OUT_FLAGS,
 				LDST_DAT => STORE_DATA,
 				LDST_ADR => DST_ADR);
@@ -106,33 +117,16 @@ begin
 	--------  Fetch  --------
 	-------------------------
 	Fetch_UNIT : entity work.Instruction_Memory_TL
-	port map(	CLK	=> CLK,
-					RST	=> RST,
-					RA 	=> RAIN,
-					RB 	=> RBIN,
-					OP 	=> OPIN,
-					IMM 	=> IMMIN);
-	
-	--------  External Memory  --------
-	-----------------------------------
-	EX_Mem_ADDER	:	entity work.Shadow_IMM_Add
-	port map(SHADOW	=> SH_DAT,
-				IMM		=> IMM2(3 downto 0),
-				EX_ADDR 	=> EX_ADR2);
-	
-	Shadow_Registers_UNIT : entity work.Shadow_Reg
-	port map(RAddr	=> RB1(3 downto 2),
-				CLK 	=> CLK,
-				RST	=> RST,
---				R		: in  STD_LOGIC;
---				W		: in  STD_LOGIC;
-				RAout => SH_DAT);
-	EX_MEMORY	: entity work.EX_MEM
-	port map(clka => CLK,
-				wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    addra : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
-    dina : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-    douta : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+	port map(	CLK	     => CLK,
+					RST	     => RST,
+					--JMP	     =>,
+					--OFFSET     =>,	
+					--RTN	     =>,
+					RA 	     => RAIN,
+					RB 	     => RBIN,
+					OP 	     => OPIN,
+					IMM 	     => IMMIN);
+					--INS_OFFSET =>);
 
 	--------  Control Units  --------
 	---------------------------------
@@ -168,8 +162,8 @@ begin
 --														RB1 => RB_DC1,
 --														RB2 => RB_DC2,
 														OPC => OP3, -- (in)
-														OP1_SEL => OP1_SEL, -- (out)
-														OP2_SEL => OP2_SEL); -- Data contention (out)
+														OP1_SEL => OP1_SELECT, -- (out)
+														OP2_SEL => OP2_SELECT); -- Data contention (out)
 	DATA_CTL	: entity work.DATA_CTL
 	port map(CLK 	=> CLK,
 				EN		=> GLOBAL_EN,
@@ -330,14 +324,6 @@ begin
 					Rst	=> RST,
 					Din	=> OPRB,
 					Dout	=> RB_IN);
-					
-	EX_MEM_Adr: entity work.PipelineRegisters
-	generic map( datawidth => 16)
-	port map(	Clk	=> CLK,
-					Ena	=> GLOBAL_EN,
-					Rst	=> RST,
-					Din	=> EX_ADR2,
-					Dout	=> EX_ADR);
 	
 	----> Stage Four <----
 	RA4ADR_Reg: entity work.PipelineRegisters
@@ -369,8 +355,8 @@ begin
 	port map( 	Clk	=> CLK,
 					Ena	=> GLOBAL_EN,
 					Rst	=> RST,
-					Din	=> ALU_VAL,
-					Dout	=> ALU_RESULT);
+					Din	=> ALU_EX_MUX,
+					Dout	=> ALU_DATA);
 	
 	ALU_FLAGS_Reg: entity work.PipelineRegisters
 	generic map( dataWidth => 4)
@@ -387,6 +373,12 @@ begin
 					Rst	=> RST,
 					Din	=> OP3,
 					Dout	=> OP4);
+					
+	---->EXTERNAL_MEMORY_MUX<------
+	-------------------------------
+	with OP3 select
+		ALU_EX_MUX <= EX_DATA when "1011",
+						  ALU_RESULT when others;
 	
 	----> DC Stage 1 <----
 	ALU_OUT1_Reg: entity work.PipelineRegisters
@@ -394,7 +386,7 @@ begin
 	port map(	Clk	=> CLK,
 					Ena	=> GLOBAL_EN,
 					Rst	=> RST,
-					Din	=> ALU_RESULT,
+					Din	=> ALU_DATA,
 					Dout	=> ALU_DC1);
 	
 	RA_DC1_Reg:	entity work.PipelineRegisters
@@ -447,34 +439,77 @@ begin
 	--------  Memory Entities  --------
 	-----------------------------------
 	
-	ProgCounter: entity work.programCounter
-	generic map(PCWIDTH 	=> 5)
-	port map(	CLK		=> CLK,
-					EN			=> PC_EN,
-					RST		=> RST,
-					INSADR	=> PC0);
+--	ProgCounter: entity work.ProgramCounter
+--	generic map(PCWIDTH 	=> 5)
+--	port map(	CLK		=> CLK,
+--					EN			=> PC_EN,
+--					RST		=> RST,
+--					INSADR	=> PC0);
 	
 	RegisterBank_Unit: entity work.RegisterBank
 	port map(	RAddr		=> RA1,
 					RBddr 	=> RB1,
 					RWddr 	=> RA4,
-					DATAIN	=> ALU_RESULT,
+					DATAIN	=> ALU_DATA,
 					clk 		=> CLK,
 					R 			=> RD_EN,
 					W 			=> WR_EN,
 					RAout 	=> OPR1,
 					RBout 	=> OPR2);
+					
+------------------------------------------
+--   			  Project lab 2				 --
+------------------------------------------
+	
+	Shadow_Reg: entity work.Shadow_Reg
+	port map(	RAddr 	=> RB1(3 downto 2),
+					--RBddr 	=> RB1(1 downto 0),
+					--RWddr 	=> ,
+					--DATAIN   => RB1,
+					CLK 		=> CLK,
+					RST		=> RST,
+					R 			=> RD_EN,
+					W 			=> WR_EN,
+					RAout 	=> SHADOW_DAT);--Goes to "Shadow_Reg + IMM" MUX
+--					RBout 	=> SHADOW_DAT(1 downto 0));--Goes to "Shadow_Reg + IMM" MUX
+
+	Shadow_IMM_Add: entity work.Shadow_IMM_Add
+	port map(	SHADOW 	=> SHADOW_DAT,
+					IMM 	 	=> IMM2(3 downto 0),
+					EX_ADDR 	=> EX_ADDR0);
+					
+	EX_MEM_REG:  entity work.PipelineRegisters
+	generic map( dataWidth => 14)
+	port map(	Clk	=> CLK,
+					Ena	=> GLOBAL_EN,
+					Rst	=> RST,
+					Din	=> EX_ADDR0,
+					Dout	=> EX_ADDR_OUT);
+					
+	EXTERNAL_MEM: entity work.EXTERNAL_MEMORY
+	port map(	CLKA	 => CLK,
+					ADDRA  => EX_ADDR_OUT,
+					DINA 	 => RA_OUT,
+					WEA(0) => EX_WR,
+					DOUTA	 => EX_DATA);
+					
+	EX_MEM_CTL: entity work.EX_MEM_CTL				
+	port map(	CLK	=> CLK,
+					EN		=> GLOBAL_EN,
+					OP		=> OP3,
+					RD_EN	=> EX_RD,
+					WR_EN	=> EX_WR);
 	
 	--------  Data Contention Handler  --------
 	-------------------------------------------
 	
-	with OP1_SEL select RA_OUT <=
+	with OP1_SELECT select RA_OUT <=
 		ALU_RESULT	when "01",
 		ALU_DC1		when "10",
 		ALU_DC2		when "11",
 		RA_IN			when OTHERS;
 	
-	with OP2_SEL select RB_OUT <=
+	with OP2_SELECT select RB_OUT <=
 		ALU_RESUlt 	when "01",
 		ALU_DC1		when "10",
 		ALU_DC2		when "11",
