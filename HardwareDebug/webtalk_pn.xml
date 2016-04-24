@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Sun Apr 24 15:14:48 2016">
+<application name="pn" timeStamp="Sun Apr 24 18:41:21 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="AF4175F799FA52C3167A3A69058BEAAF" type="project"/>
-<property name="ProjectIteration" value="24" type="project"/>
+<property name="ProjectIteration" value="27" type="project"/>
 <property name="ProjectFile" value="/home/robert/UMD_RISC-16G5/HardwareDebug/HardwareDebug.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2016-04-22T10:26:27" type="project"/>
 </section>
@@ -26,7 +26,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2016-04-22T10:26:27" type="design"/>
 <property name="PROP_intWbtProjectID" value="AF4175F799FA52C3167A3A69058BEAAF" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="24" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="27" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
@@ -44,7 +44,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FILE_NGC" value="1" type="source"/>
 <property name="FILE_UCF" value="1" type="source"/>
 <property name="FILE_USERDOC" value="1" type="source"/>
-<property name="FILE_VHDL" value="42" type="source"/>
+<property name="FILE_VHDL" value="46" type="source"/>
 </section>
 </application>
 </document>

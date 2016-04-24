@@ -4,14 +4,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.06 secs
  
 --> 
@@ -112,10 +112,17 @@ Cores Search Directories           : {"../ProjectLab2/NewCombined" "../ProjectLa
 =========================================================================
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/DATAMEM.vhd" in Library work.
 Architecture datamem_a of Entity datamem is up to date.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/programCounter.vhd" in Library work.
-Architecture behavioral of Entity programcounter is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PC_INC.vhd" in Library work.
+Architecture combinational of Entity pc_inc is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PC_OFFSET.vhd" in Library work.
+Architecture combinational of Entity pc_offset is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/SH_PCREG.vhd" in Library work.
+Architecture behavioral of Entity sh_pcreg is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ADR_LATCH.vhd" in Library work.
+Architecture behavioral of Entity adr_latch is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/Instr_Mem.vhd" in Library work.
-Architecture instr_mem_a of Entity instr_mem is up to date.
+Entity <instr_mem> compiled.
+Entity <instr_mem> (Architecture <instr_mem_a>) compiled.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/arith_unit.vhd" in Library work.
 Architecture combinational of Entity arith_unit is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/logical_unit.vhd" in Library work.
@@ -123,7 +130,8 @@ Architecture combinational of Entity logical_unit is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/shift_unit.vhd" in Library work.
 Architecture combinational of Entity shift_unit is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/word_unit.vhd" in Library work.
-Architecture combinational of Entity word_unit is up to date.
+Entity <word_unit> compiled.
+Entity <word_unit> (Architecture <combinational>) compiled.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/HardwareDebug/clk2Hz.vhd" in Library work.
 Architecture behavioral of Entity clk2hz is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/HardwareDebug/clk4Hz.vhd" in Library work.
@@ -157,7 +165,8 @@ Architecture behavioral of Entity pipelineregisters is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/RegisterBank.vhd" in Library work.
 Architecture behavioral of Entity registerbank is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd" in Library work.
-Architecture structural of Entity projlab01 is up to date.
+Entity <projlab01> compiled.
+Entity <projlab01> (Architecture <structural>) compiled.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/HardwareDebug/SevenSeg_toplevel.vhd" in Library work.
 Architecture structural of Entity sseg_toplevel is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/HardwareDebug/button_controller.vhd" in Library work.
@@ -165,8 +174,7 @@ Architecture structural of Entity buttoncontrol is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/HardwareDebug/counter_toplevel.vhd" in Library work.
 Architecture structural of Entity clock_toplevel is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.vhd" in Library work.
-Entity <hardware_tl> compiled.
-Entity <hardware_tl> (Architecture <structural>) compiled.
+Architecture structural of Entity hardware_tl is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -183,7 +191,8 @@ Analyzing hierarchy for entity <clock_toplevel> in library <work> (architecture 
 
 Analyzing hierarchy for entity <ALU_Toplevel> in library <work> (architecture <Structural>).
 
-Analyzing hierarchy for entity <Instruction_Memory_TL> in library <work> (architecture <Structural>).
+Analyzing hierarchy for entity <Instruction_Memory_TL> in library <work> (architecture <Structural>) with generics.
+	PCWIDTH = 5
 
 Analyzing hierarchy for entity <REG_CTL> in library <work> (architecture <Dataflow>).
 
@@ -211,9 +220,6 @@ Analyzing hierarchy for entity <PipelineRegisters> in library <work> (architectu
 Analyzing hierarchy for entity <PipelineRegisters> in library <work> (architecture <Behavioral>) with generics.
 	dataWidth = 16
 
-Analyzing hierarchy for entity <programCounter> in library <work> (architecture <Behavioral>) with generics.
-	PCWIDTH = 5
-
 Analyzing hierarchy for entity <RegisterBank> in library <work> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <SSegDriver> in library <work> (architecture <Behavioral>).
@@ -233,6 +239,19 @@ Analyzing hierarchy for entity <shift_unit> in library <work> (architecture <Com
 
 Analyzing hierarchy for entity <word_unit> in library <work> (architecture <Combinational>).
 
+Analyzing hierarchy for entity <PC_INC> in library <work> (architecture <Combinational>) with generics.
+	PCWIDTH = 5
+
+Analyzing hierarchy for entity <PC_OFFSET> in library <work> (architecture <Combinational>) with generics.
+	PCWIDTH = 5
+
+Analyzing hierarchy for entity <SH_PCREG> in library <work> (architecture <Behavioral>) with generics.
+	PCWIDTH = 5
+	STACKDEPTH = 4
+
+Analyzing hierarchy for entity <ADR_LATCH> in library <work> (architecture <Behavioral>) with generics.
+	PCWIDTH = 5
+
 
 =========================================================================
 *                            HDL Analysis                               *
@@ -244,7 +263,7 @@ Entity <Hardware_TL> analyzed. Unit <Hardware_TL> generated.
 
 Analyzing Entity <ProjLab01> in library <work> (Architecture <Structural>).
 WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd" line 103: Unconnected output port 'LDST_ADR' of component 'ALU_Toplevel'.
-WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd" line 191: Instantiating black box module <EXTERNAL_MEMORY>.
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd" line 194: Instantiating black box module <EXTERNAL_MEMORY>.
 Entity <ProjLab01> analyzed. Unit <ProjLab01> generated.
 
 Analyzing Entity <ALU_Toplevel> in library <work> (Architecture <Structural>).
@@ -263,9 +282,30 @@ Analyzing Entity <word_unit> in library <work> (Architecture <Combinational>).
 WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/word_unit.vhd" line 52: Instantiating black box module <DATAMEM>.
 Entity <word_unit> analyzed. Unit <word_unit> generated.
 
-Analyzing Entity <Instruction_Memory_TL> in library <work> (Architecture <Structural>).
-WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" line 72: Instantiating black box module <Instr_Mem>.
+Analyzing generic Entity <Instruction_Memory_TL> in library <work> (Architecture <Structural>).
+	PCWIDTH = 5
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" line 98: Unconnected output port 'OVFLW' of component 'SH_PCREG'.
+INFO:Xst:1739 - HDL ADVISOR - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" line 42: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" line 117: Instantiating black box module <Instr_Mem>.
 Entity <Instruction_Memory_TL> analyzed. Unit <Instruction_Memory_TL> generated.
+
+Analyzing generic Entity <PC_INC> in library <work> (Architecture <Combinational>).
+	PCWIDTH = 5
+Entity <PC_INC> analyzed. Unit <PC_INC> generated.
+
+Analyzing generic Entity <PC_OFFSET> in library <work> (Architecture <Combinational>).
+	PCWIDTH = 5
+Entity <PC_OFFSET> analyzed. Unit <PC_OFFSET> generated.
+
+Analyzing generic Entity <SH_PCREG> in library <work> (Architecture <Behavioral>).
+	PCWIDTH = 5
+	STACKDEPTH = 4
+INFO:Xst:1561 - "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/SH_PCREG.vhd" line 77: Mux is complete : default of case is discarded
+Entity <SH_PCREG> analyzed. Unit <SH_PCREG> generated.
+
+Analyzing generic Entity <ADR_LATCH> in library <work> (Architecture <Behavioral>).
+	PCWIDTH = 5
+Entity <ADR_LATCH> analyzed. Unit <ADR_LATCH> generated.
 
 Analyzing Entity <REG_CTL> in library <work> (Architecture <Dataflow>).
 Entity <REG_CTL> analyzed. Unit <REG_CTL> generated.
@@ -313,10 +353,6 @@ Analyzing generic Entity <PipelineRegisters.4> in library <work> (Architecture <
 WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <Ena>
 Entity <PipelineRegisters.4> analyzed. Unit <PipelineRegisters.4> generated.
-
-Analyzing generic Entity <programCounter> in library <work> (Architecture <Behavioral>).
-	PCWIDTH = 5
-Entity <programCounter> analyzed. Unit <programCounter> generated.
 
 Analyzing Entity <RegisterBank> in library <work> (Architecture <Behavioral>).
 Entity <RegisterBank> analyzed. Unit <RegisterBank> generated.
@@ -456,14 +492,6 @@ Synthesizing Unit <PipelineRegisters_4>.
 Unit <PipelineRegisters_4> synthesized.
 
 
-Synthesizing Unit <programCounter>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/programCounter.vhd".
-    Found 5-bit up counter for signal <COUNTER>.
-    Summary:
-	inferred   1 Counter(s).
-Unit <programCounter> synthesized.
-
-
 Synthesizing Unit <RegisterBank>.
     Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/RegisterBank.vhd".
 WARNING:Xst:647 - Input <RST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -516,6 +544,40 @@ WARNING:Xst:653 - Signal <sreg<1>> is used but never assigned. This sourceless s
     Summary:
 	inferred   2 Combinational logic shifter(s).
 Unit <shift_unit> synthesized.
+
+
+Synthesizing Unit <PC_INC>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PC_INC.vhd".
+    Found 5-bit adder for signal <NEXT_ADR>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <PC_INC> synthesized.
+
+
+Synthesizing Unit <PC_OFFSET>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PC_OFFSET.vhd".
+    Found 5-bit adder for signal <NEW_ADR>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <PC_OFFSET> synthesized.
+
+
+Synthesizing Unit <SH_PCREG>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/SH_PCREG.vhd".
+WARNING:Xst:1305 - Output <OVFLW> is never assigned. Tied to value 0.
+    Found 5-bit register for signal <ADROUT>.
+    Found 15-bit register for signal <PC_STACK>.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+Unit <SH_PCREG> synthesized.
+
+
+Synthesizing Unit <ADR_LATCH>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ADR_LATCH.vhd".
+    Found 5-bit register for signal <ADOUT>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <ADR_LATCH> synthesized.
 
 
 Synthesizing Unit <SSegDriver>.
@@ -595,10 +657,12 @@ Unit <clock_toplevel> synthesized.
 
 Synthesizing Unit <Instruction_Memory_TL>.
     Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd".
+WARNING:Xst:653 - Signal <ZERO_ADR> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
 WARNING:Xst:653 - Signal <WEA> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:1780 - Signal <INSADR> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <EN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:1780 - Signal <EN> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <DINA> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+    Using one-hot encoding for signal <MODE>.
 Unit <Instruction_Memory_TL> synthesized.
 
 
@@ -618,7 +682,8 @@ Synthesizing Unit <ProjLab01>.
 WARNING:Xst:646 - Signal <RB_DC2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <PC_RST> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <PC_INC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <PC_EN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:1780 - Signal <PC_EN> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <PC0> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
 WARNING:Xst:1780 - Signal <INST_EN> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <IMM_SEL> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <IMM3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -658,21 +723,21 @@ Macro Statistics
 # ROMs                                                 : 2
  16x7-bit ROM                                          : 1
  4x4-bit ROM                                           : 1
-# Adders/Subtractors                                   : 2
+# Adders/Subtractors                                   : 4
  16-bit adder                                          : 1
  17-bit addsub                                         : 1
-# Counters                                             : 10
+ 5-bit adder                                           : 2
+# Counters                                             : 8
  15-bit up counter                                     : 1
  17-bit up counter                                     : 1
  2-bit up counter                                      : 1
  21-bit up counter                                     : 4
  26-bit up counter                                     : 1
- 5-bit up counter                                      : 2
-# Registers                                            : 91
+# Registers                                            : 96
  1-bit register                                        : 20
  16-bit register                                       : 29
  4-bit register                                        : 30
- 5-bit register                                        : 8
+ 5-bit register                                        : 13
  8-bit register                                        : 4
 # Latches                                              : 4
  16-bit latch                                          : 4
@@ -789,18 +854,18 @@ Macro Statistics
 # ROMs                                                 : 2
  16x7-bit ROM                                          : 1
  4x4-bit ROM                                           : 1
-# Adders/Subtractors                                   : 2
+# Adders/Subtractors                                   : 4
  16-bit adder                                          : 1
  17-bit addsub                                         : 1
-# Counters                                             : 10
+ 5-bit adder                                           : 2
+# Counters                                             : 8
  15-bit up counter                                     : 1
  17-bit up counter                                     : 1
  2-bit up counter                                      : 1
  21-bit up counter                                     : 4
  26-bit up counter                                     : 1
- 5-bit up counter                                      : 2
-# Registers                                            : 676
- Flip-Flops                                            : 676
+# Registers                                            : 701
+ Flip-Flops                                            : 701
 # Latches                                              : 4
  16-bit latch                                          : 4
 # Comparators                                          : 6
@@ -829,7 +894,6 @@ WARNING:Xst:1293 - FF/Latch <R2dat_0> has a constant value of 0 in block <Shadow
 WARNING:Xst:2677 - Node <DATA_CTL/WR> of sequential type is unconnected in block <ProjLab01>.
 WARNING:Xst:2677 - Node <DATA_CTL/RD> of sequential type is unconnected in block <ProjLab01>.
 WARNING:Xst:2677 - Node <EXMEM_CTL/RD_0> of sequential type is unconnected in block <ProjLab01>.
-INFO:Xst:2146 - In block <ProjLab01>, Counter <ProgCounter/COUNTER> <Fetch_UNIT/U1/COUNTER> are equivalent, XST will keep only <ProgCounter/COUNTER>.
 WARNING:Xst:1710 - FF/Latch <DP_OUT> (without init value) has a constant value of 1 in block <SSegDriver>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <RAout_0> (without init value) has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAout_1> (without init value) has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
@@ -859,9 +923,13 @@ Optimizing unit <RegisterBank> ...
 
 Optimizing unit <shift_unit> ...
 
+Optimizing unit <SH_PCREG> ...
+
 Optimizing unit <SSegDriver> ...
 
 Optimizing unit <debounce> ...
+
+Optimizing unit <Instruction_Memory_TL> ...
 
 Optimizing unit <ALU_Toplevel> ...
 
@@ -931,18 +999,26 @@ INFO:Xst:2261 - The FF/Latch <UUT/IMM1_Reg/DataOutSignal_4> in Unit <Hardware_TL
 INFO:Xst:2261 - The FF/Latch <UUT/IMM1_Reg/DataOutSignal_5> in Unit <Hardware_TL> is equivalent to the following FF/Latch, which will be removed : <UUT/RB1_Reg/DataOutSignal_1> 
 INFO:Xst:2261 - The FF/Latch <UUT/IMM1_Reg/DataOutSignal_6> in Unit <Hardware_TL> is equivalent to the following FF/Latch, which will be removed : <UUT/RB1_Reg/DataOutSignal_2> 
 INFO:Xst:2261 - The FF/Latch <UUT/IMM1_Reg/DataOutSignal_7> in Unit <Hardware_TL> is equivalent to the following FF/Latch, which will be removed : <UUT/RB1_Reg/DataOutSignal_3> 
+INFO:Xst:2261 - The FF/Latch <UUT/PC1_Reg/DataOutSignal_0> in Unit <Hardware_TL> is equivalent to the following 4 FFs/Latches, which will be removed : <UUT/PC1_Reg/DataOutSignal_1> <UUT/PC1_Reg/DataOutSignal_2> <UUT/PC1_Reg/DataOutSignal_3> <UUT/PC1_Reg/DataOutSignal_4> 
 INFO:Xst:2261 - The FF/Latch <UUT/IMM1_Reg/Dout_4> in Unit <Hardware_TL> is equivalent to the following FF/Latch, which will be removed : <UUT/RB1_Reg/Dout_0> 
 INFO:Xst:2261 - The FF/Latch <UUT/IMM1_Reg/Dout_5> in Unit <Hardware_TL> is equivalent to the following FF/Latch, which will be removed : <UUT/RB1_Reg/Dout_1> 
 INFO:Xst:2261 - The FF/Latch <UUT/IMM1_Reg/Dout_6> in Unit <Hardware_TL> is equivalent to the following FF/Latch, which will be removed : <UUT/RB1_Reg/Dout_2> 
 INFO:Xst:2261 - The FF/Latch <UUT/IMM1_Reg/Dout_7> in Unit <Hardware_TL> is equivalent to the following FF/Latch, which will be removed : <UUT/RB1_Reg/Dout_3> 
+INFO:Xst:2261 - The FF/Latch <UUT/PC1_Reg/Dout_0> in Unit <Hardware_TL> is equivalent to the following 4 FFs/Latches, which will be removed : <UUT/PC1_Reg/Dout_1> <UUT/PC1_Reg/Dout_2> <UUT/PC1_Reg/Dout_3> <UUT/PC1_Reg/Dout_4> 
 INFO:Xst:2261 - The FF/Latch <UUT/OPR0_Reg/DataOutSignal_7> in Unit <Hardware_TL> is equivalent to the following FF/Latch, which will be removed : <UUT/RB2ADR_Reg/DataOutSignal_3> 
 INFO:Xst:2261 - The FF/Latch <UUT/OPR0_Reg/DataOutSignal_5> in Unit <Hardware_TL> is equivalent to the following FF/Latch, which will be removed : <UUT/RB2ADR_Reg/DataOutSignal_1> 
 INFO:Xst:2261 - The FF/Latch <UUT/OPR0_Reg/DataOutSignal_6> in Unit <Hardware_TL> is equivalent to the following FF/Latch, which will be removed : <UUT/RB2ADR_Reg/DataOutSignal_2> 
+INFO:Xst:2261 - The FF/Latch <UUT/PC2_Reg/DataOutSignal_0> in Unit <Hardware_TL> is equivalent to the following 4 FFs/Latches, which will be removed : <UUT/PC2_Reg/DataOutSignal_1> <UUT/PC2_Reg/DataOutSignal_2> <UUT/PC2_Reg/DataOutSignal_3> <UUT/PC2_Reg/DataOutSignal_4> 
 INFO:Xst:2261 - The FF/Latch <UUT/OPR0_Reg/DataOutSignal_4> in Unit <Hardware_TL> is equivalent to the following FF/Latch, which will be removed : <UUT/RB2ADR_Reg/DataOutSignal_0> 
+INFO:Xst:2261 - The FF/Latch <UUT/PC2_Reg/Dout_0> in Unit <Hardware_TL> is equivalent to the following 4 FFs/Latches, which will be removed : <UUT/PC2_Reg/Dout_1> <UUT/PC2_Reg/Dout_2> <UUT/PC2_Reg/Dout_3> <UUT/PC2_Reg/Dout_4> 
 INFO:Xst:2261 - The FF/Latch <UUT/OPR0_Reg/Dout_4> in Unit <Hardware_TL> is equivalent to the following FF/Latch, which will be removed : <UUT/RB2ADR_Reg/Dout_0> 
 INFO:Xst:2261 - The FF/Latch <UUT/OPR0_Reg/Dout_5> in Unit <Hardware_TL> is equivalent to the following FF/Latch, which will be removed : <UUT/RB2ADR_Reg/Dout_1> 
 INFO:Xst:2261 - The FF/Latch <UUT/OPR0_Reg/Dout_6> in Unit <Hardware_TL> is equivalent to the following FF/Latch, which will be removed : <UUT/RB2ADR_Reg/Dout_2> 
 INFO:Xst:2261 - The FF/Latch <UUT/OPR0_Reg/Dout_7> in Unit <Hardware_TL> is equivalent to the following FF/Latch, which will be removed : <UUT/RB2ADR_Reg/Dout_3> 
+INFO:Xst:2261 - The FF/Latch <UUT/PC3_Reg/DataOutSignal_0> in Unit <Hardware_TL> is equivalent to the following 4 FFs/Latches, which will be removed : <UUT/PC3_Reg/DataOutSignal_1> <UUT/PC3_Reg/DataOutSignal_2> <UUT/PC3_Reg/DataOutSignal_3> <UUT/PC3_Reg/DataOutSignal_4> 
+INFO:Xst:2261 - The FF/Latch <UUT/PC3_Reg/Dout_0> in Unit <Hardware_TL> is equivalent to the following 4 FFs/Latches, which will be removed : <UUT/PC3_Reg/Dout_1> <UUT/PC3_Reg/Dout_2> <UUT/PC3_Reg/Dout_3> <UUT/PC3_Reg/Dout_4> 
+INFO:Xst:2261 - The FF/Latch <UUT/PC4_Reg/DataOutSignal_0> in Unit <Hardware_TL> is equivalent to the following 4 FFs/Latches, which will be removed : <UUT/PC4_Reg/DataOutSignal_1> <UUT/PC4_Reg/DataOutSignal_2> <UUT/PC4_Reg/DataOutSignal_3> <UUT/PC4_Reg/DataOutSignal_4> 
+INFO:Xst:2261 - The FF/Latch <UUT/PC4_Reg/Dout_0> in Unit <Hardware_TL> is equivalent to the following 4 FFs/Latches, which will be removed : <UUT/PC4_Reg/Dout_1> <UUT/PC4_Reg/Dout_2> <UUT/PC4_Reg/Dout_3> <UUT/PC4_Reg/Dout_4> 
 Found area constraint ratio of 100 (+ 5) on block Hardware_TL, actual ratio is 16.
 
 Final Macro Processing ...
@@ -951,8 +1027,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 734
- Flip-Flops                                            : 734
+# Registers                                            : 722
+ Flip-Flops                                            : 722
 
 =========================================================================
 
@@ -981,30 +1057,31 @@ Design Statistics
 # IOs                              : 61
 
 Cell Usage :
-# BELS                             : 1552
+# BELS                             : 1659
 #      GND                         : 4
 #      INV                         : 15
 #      LUT1                        : 99
-#      LUT2                        : 80
+#      LUT2                        : 96
 #      LUT2_D                      : 1
+#      LUT2_L                      : 1
 #      LUT3                        : 511
-#      LUT3_D                      : 4
-#      LUT3_L                      : 5
-#      LUT4                        : 198
-#      LUT4_D                      : 11
-#      LUT4_L                      : 33
-#      MUXCY                       : 122
-#      MUXF5                       : 237
+#      LUT3_D                      : 3
+#      LUT3_L                      : 2
+#      LUT4                        : 266
+#      LUT4_D                      : 13
+#      LUT4_L                      : 39
+#      MUXCY                       : 126
+#      MUXF5                       : 246
 #      MUXF6                       : 73
 #      MUXF7                       : 32
 #      VCC                         : 4
-#      XORCY                       : 123
-# FlipFlops/Latches                : 738
-#      FDC                         : 52
-#      FDCE                        : 25
+#      XORCY                       : 128
+# FlipFlops/Latches                : 726
+#      FDC                         : 57
+#      FDCE                        : 40
 #      FDE                         : 44
-#      FDE_1                       : 415
-#      FDPE                        : 159
+#      FDE_1                       : 399
+#      FDPE                        : 143
 #      FDRE                        : 42
 #      LD                          : 1
 # RAMS                             : 17
@@ -1023,9 +1100,9 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      776  out of   4656    16%  
- Number of Slice Flip Flops:            738  out of   9312     7%  
- Number of 4 input LUTs:                957  out of   9312    10%  
+ Number of Slices:                      791  out of   4656    16%  
+ Number of Slice Flip Flops:            726  out of   9312     7%  
+ Number of 4 input LUTs:               1046  out of   9312    11%  
  Number of IOs:                          61
  Number of bonded IOBs:                  54  out of    232    23%  
  Number of BRAMs:                        17  out of     20    85%  
@@ -1054,7 +1131,7 @@ Clock Signal                           | Clock buffer(FF name)                  
 ---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 CLK                                    | IBUF+BUFG                                                                                                                                          | 109   |
 SSeg_unit/SSeg/clk240hz                | NONE(SSeg_unit/SSeg/pos_1)                                                                                                                         | 10    |
-software_clk1(ClkGen/Mmux_SWCLK_2_f5:O)| BUFG(*)(UUT/ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram)| 635   |
+software_clk1(ClkGen/Mmux_SWCLK_2_f5:O)| BUFG(*)(UUT/ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram)| 623   |
 Buttons/BTN_0/OUTPUT                   | NONE(UUT/SHREG/R2dat_9)                                                                                                                            | 1     |
 UUT/EX_MEM/N1                          | NONE(UUT/EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_init.ram/dpram.dp1x1.ram)                    | 15    |
 ---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+-------+
@@ -1068,7 +1145,7 @@ Asynchronous Control Signals Information:
 --------------------------------------------+---------------------------------------+-------+
 Control Signal                              | Buffer(FF name)                       | Load  |
 --------------------------------------------+---------------------------------------+-------+
-Buttons/BTN_0/OUTPUT(Buttons/BTN_0/OUTPUT:Q)| NONE(UUT/ALU_OUT1_Reg/DataOutSignal_0)| 164   |
+Buttons/BTN_0/OUTPUT(Buttons/BTN_0/OUTPUT:Q)| NONE(UUT/ALU_OUT1_Reg/DataOutSignal_0)| 168   |
 Buttons/BTN_3/OUTPUT(Buttons/BTN_3/OUTPUT:Q)| NONE(ClkGen/clk1Hz/clkdv)             | 43    |
 JC_0_OBUF(XST_GND:G)                        | NONE(SSeg_unit/SSeg/AN_OUT_0)         | 29    |
 --------------------------------------------+---------------------------------------+-------+
@@ -1077,7 +1154,7 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 28.040ns (Maximum Frequency: 35.663MHz)
+   Minimum period: 26.568ns (Maximum Frequency: 37.640MHz)
    Minimum input arrival time before clock: 4.963ns
    Maximum output required time after clock: 5.870ns
    Maximum combinational path delay: No path found
@@ -1159,35 +1236,35 @@ Delay:               3.099ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'software_clk1'
-  Clock period: 28.040ns (frequency: 35.663MHz)
-  Total number of paths / destination ports: 118185 / 1146
+  Clock period: 26.568ns (frequency: 37.640MHz)
+  Total number of paths / destination ports: 121905 / 1153
 -------------------------------------------------------------------------
-Delay:               14.020ns (Levels of Logic = 11)
-  Source:            UUT/RA_DC1_Reg/Dout_2 (FF)
-  Destination:       UUT/ALU_OUT_Reg/DataOutSignal_6 (FF)
+Delay:               13.284ns (Levels of Logic = 11)
+  Source:            UUT/RA4ADR_Reg/Dout_3 (FF)
+  Destination:       UUT/ALU_OUT_Reg/DataOutSignal_7 (FF)
   Source Clock:      software_clk1 falling
   Destination Clock: software_clk1 rising
 
-  Data Path: UUT/RA_DC1_Reg/Dout_2 to UUT/ALU_OUT_Reg/DataOutSignal_6
+  Data Path: UUT/RA4ADR_Reg/Dout_3 to UUT/ALU_OUT_Reg/DataOutSignal_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE_1:C->Q            3   0.591   0.706  UUT/RA_DC1_Reg/Dout_2 (UUT/RA_DC1_Reg/Dout_2)
-     LUT4:I0->O            2   0.704   0.526  UUT/DCCTL/OP1_cmp_eq0001453 (UUT/DCCTL/OP1_cmp_eq0001453)
-     LUT3:I1->O           14   0.704   1.004  UUT/DCCTL/OP1<0>1_SW0 (N98)
-     LUT4:I3->O           18   0.704   1.103  UUT/DCCTL/OP1<0>1_1 (UUT/DCCTL/OP1<0>1)
-     LUT3:I2->O            1   0.704   0.000  UUT/Mmux_RA_OUT_313 (UUT/Mmux_RA_OUT_313)
-     MUXF5:I1->O          25   0.321   1.295  UUT/Mmux_RA_OUT_2_f5_12 (UUT/RA_OUT<7>)
-     LUT3:I2->O            2   0.704   0.526  UUT/ALU_UNIT/shift_unit/Sh6_SW0 (N50)
-     LUT3:I1->O            1   0.704   0.000  UUT/ALUMUX_OUT<6>59_SW0_F (N232)
-     MUXF5:I0->O           1   0.321   0.455  UUT/ALUMUX_OUT<6>59_SW0 (N78)
-     LUT3:I2->O            1   0.704   0.424  UUT/ALUMUX_OUT<6>71_SW0 (N169)
-     LUT4_L:I3->LO         1   0.704   0.104  UUT/ALUMUX_OUT<6>164_SW0 (N120)
-     LUT4:I3->O            1   0.704   0.000  UUT/ALUMUX_OUT<6>164 (UUT/ALUMUX_OUT<6>)
-     FDPE:D                    0.308          UUT/ALU_OUT_Reg/DataOutSignal_6
+     FDE_1:C->Q           19   0.591   1.120  UUT/RA4ADR_Reg/Dout_3 (UUT/RA4ADR_Reg/Dout_3)
+     LUT4:I2->O           26   0.704   1.435  UUT/DCCTL/OP2_cmp_eq0000453 (UUT/DCCTL/OP2_cmp_eq0000453)
+     LUT4:I0->O            1   0.704   0.000  UUT/DCCTL/OP2_SEL<0>_SW2101 (UUT/DCCTL/OP2_SEL<0>_SW210)
+     MUXF5:I0->O           1   0.321   0.455  UUT/DCCTL/OP2_SEL<0>_SW210_f5 (N134)
+     LUT3:I2->O            1   0.704   0.000  UUT/Mmux_RB_OUT_3 (UUT/Mmux_RB_OUT_3)
+     MUXF5:I1->O          87   0.321   1.315  UUT/Mmux_RB_OUT_2_f5 (UUT/RB_OUT<0>)
+     LUT3:I2->O            2   0.704   0.482  UUT/ALU_UNIT/shift_unit/Sh7_SW0 (N49)
+     LUT4:I2->O            1   0.704   0.000  UUT/ALUMUX_OUT<7>60_F (N356)
+     MUXF5:I0->O           1   0.321   0.455  UUT/ALUMUX_OUT<7>60 (UUT/ALUMUX_OUT<7>60)
+     LUT3:I2->O            1   0.704   0.424  UUT/ALUMUX_OUT<7>72_SW0 (N198)
+     LUT4_L:I3->LO         1   0.704   0.104  UUT/ALUMUX_OUT<7>138_SW0 (N122)
+     LUT4:I3->O            1   0.704   0.000  UUT/ALUMUX_OUT<7>164 (UUT/ALUMUX_OUT<7>)
+     FDPE:D                    0.308          UUT/ALU_OUT_Reg/DataOutSignal_7
     ----------------------------------------
-    Total                     14.020ns (7.877ns logic, 6.143ns route)
-                                       (56.2% logic, 43.8% route)
+    Total                     13.284ns (7.494ns logic, 5.790ns route)
+                                       (56.4% logic, 43.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SSeg_unit/SSeg/clk240hz'
@@ -1254,33 +1331,33 @@ Offset:              5.870ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'software_clk1'
   Total number of paths / destination ports: 5 / 5
 -------------------------------------------------------------------------
-Offset:              4.283ns (Levels of Logic = 1)
-  Source:            UUT/PC4_Reg/Dout_4 (FF)
+Offset:              4.496ns (Levels of Logic = 1)
+  Source:            UUT/PC4_Reg/Dout_0 (FF)
   Destination:       LED<4> (PAD)
   Source Clock:      software_clk1 falling
 
-  Data Path: UUT/PC4_Reg/Dout_4 to LED<4>
+  Data Path: UUT/PC4_Reg/Dout_0 to LED<4>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE_1:C->Q            1   0.591   0.420  UUT/PC4_Reg/Dout_4 (UUT/PC4_Reg/Dout_4)
-     OBUF:I->O                 3.272          LED_4_OBUF (LED<4>)
+     FDE_1:C->Q            5   0.591   0.633  UUT/PC4_Reg/Dout_0 (UUT/PC4_Reg/Dout_0)
+     OBUF:I->O                 3.272          LED_0_OBUF (LED<0>)
     ----------------------------------------
-    Total                      4.283ns (3.863ns logic, 0.420ns route)
-                                       (90.2% logic, 9.8% route)
+    Total                      4.496ns (3.863ns logic, 0.633ns route)
+                                       (85.9% logic, 14.1% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 18.86 secs
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 19.24 secs
  
 --> 
 
 
-Total memory usage is 553288 kilobytes
+Total memory usage is 555192 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  198 (   0 filtered)
-Number of infos    :   22 (   0 filtered)
+Number of warnings :  202 (   0 filtered)
+Number of infos    :   31 (   0 filtered)
 

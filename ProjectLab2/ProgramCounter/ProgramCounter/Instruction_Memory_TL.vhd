@@ -38,14 +38,12 @@ entity Instruction_Memory_TL is
 	generic(PCWIDTH:integer := 5);
    Port (CLK 		: in STD_LOGIC;
 			RST		: in STD_LOGIC;
-			JMP		: in STD_LOGIC;
-			OFFSET	: in STD_LOGIC_VECTOR(11 downto 0);
-			RTN		: in STD_LOGIC;
+			BRANCH	: in STD_LOGIC;
+			BRNCH_ADR: in STD_LOGIC_VECTOR(PCWIDTH-1 downto 0);
 			RA 		: out  STD_LOGIC_VECTOR (3 downto 0);
          RB 		: out  STD_LOGIC_VECTOR (3 downto 0);
          OP 		: out  STD_LOGIC_VECTOR (3 downto 0);
-         IMM 		: out  STD_LOGIC_VECTOR (7 downto 0);
-			INS_OFFSET	: out STD_LOGIC_VECTOR (11 downto 0));
+         IMM 		: out  STD_LOGIC_VECTOR (7 downto 0));
 end Instruction_Memory_TL;
 
 architecture Structural of Instruction_Memory_TL is
@@ -54,7 +52,7 @@ architecture Structural of Instruction_Memory_TL is
 signal EN :   STD_LOGIC := '1';
 --signal RST :  STD_LOGIC := '0';
 signal INSADR 	: STD_LOGIC_VECTOR (PCWIDTH-1 downto 0) := (OTHERS => '0');
-signal MODE		: STD_LOGIC_VECTOR (1 downto 0) := (OTHERS => '0');
+signal MODE		: STD_LOGIC_VECTOR (2 downto 0) := (OTHERS => '0');
 signal STACKEN	: STD_LOGIC := '0';
 
 --INSTRUCTION MEMORY--
@@ -102,7 +100,7 @@ begin
 						STACKDEPTH => 4)
 		port map(CLK		=> CLK,
 					RST		=> RST,
-					ADRIN		=> CRNT_ADR,
+					ADRIN		=> INC_ADR,
 					EN			=> STACKEN,
 					WR			=> DOUTA(12),	-- '1' is Push, '0' is Pop
 					ADROUT	=> POP_ADR);
@@ -124,20 +122,22 @@ begin
 					DOUTA => DOUTA);
 	
 	----> JAL/RTL Controller <----
-	MODE <= 	"00" when RST = '1' else
-				"10" when DOUTA(15 downto 12) = "1101" else -- JMP = '1' else
-				"11" when DOUTA(15 downto 12) = "1110" else -- RTN = '1' else
-				"01";
+	MODE <= 	"000" when RST = '1' else
+				"100" when BRANCH = '1' else
+				"010" when DOUTA(15 downto 12) = "1101" else -- JMP = '1' else
+				"011" when DOUTA(15 downto 12) = "1110" else -- RTN = '1' else
+				"001";
 	
 	with DOUTA(15 downto 12) select STACKEN <=
 		'1' when "1101" | "1110",
 		'0' when OTHERS;
 	
 	with MODE select NEXT_ADDR <=
-		ZERO_ADR	when "00",
-		OFS_ADR	when "10",
-		POP_ADR	when "11",
-		INC_ADR	when OTHERS;
+		ZERO_ADR		when "000",
+		OFS_ADR		when "010",
+		POP_ADR		when "011",
+		BRNCH_ADR	when "100",
+		INC_ADR		when OTHERS;
 		
 			
 end Structural;

@@ -47,7 +47,6 @@ Instr_Mem.asy
 Instr_Mem.gise
 Instr_Mem.mif
 Instr_Mem.ngc
-Instr_Mem.sym
 Instr_Mem.vhd
 Instr_Mem.vho
 Instr_Mem.xco

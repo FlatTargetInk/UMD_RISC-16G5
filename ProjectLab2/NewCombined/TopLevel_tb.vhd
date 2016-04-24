@@ -98,11 +98,10 @@ BEGIN
 		RST <= '1';
 		
 		wait for CLK_period*2;
-		wait for CLK_period/2;
 		
 		RST <= '0';
 
-      wait for CLK_period*10;
+      wait for CLK_period*40;
 		
 --		instruction <= X"5002";
 --		
@@ -146,7 +145,6 @@ BEGIN
 
       -- insert stimulus here 
 
-      wait;
    end process;
 
 END;

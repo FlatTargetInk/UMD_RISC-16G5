@@ -111,74 +111,66 @@ Cores Search Directories           : {"ipcore_dir"  }
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/DATAMEM.vhd" in Library work.
-Entity <DATAMEM> compiled.
-Entity <DATAMEM> (Architecture <DATAMEM_a>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/programCounter.vhd" in Library work.
-Entity <programCounter> compiled.
-Entity <programCounter> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/Instr_Mem.vhd" in Library work.
-Entity <Instr_Mem> compiled.
-Entity <Instr_Mem> (Architecture <Instr_Mem_a>) compiled.
+Architecture datamem_a of Entity datamem is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PC_INC.vhd" in Library work.
+Entity <PC_INC> compiled.
+Entity <PC_INC> (Architecture <Combinational>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PC_OFFSET.vhd" in Library work.
+Entity <PC_OFFSET> compiled.
+Entity <PC_OFFSET> (Architecture <Combinational>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/SH_PCREG.vhd" in Library work.
+Entity <SH_PCREG> compiled.
+Entity <SH_PCREG> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ADR_LATCH.vhd" in Library work.
+Entity <ADR_LATCH> compiled.
+Entity <ADR_LATCH> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/arith_unit.vhd" in Library work.
-Entity <arith_unit> compiled.
-Entity <arith_unit> (Architecture <Combinational>) compiled.
+Architecture combinational of Entity arith_unit is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/logical_unit.vhd" in Library work.
-Entity <logical_unit> compiled.
-Entity <logical_unit> (Architecture <Combinational>) compiled.
+Architecture combinational of Entity logical_unit is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/shift_unit.vhd" in Library work.
-Entity <shift_unit> compiled.
-Entity <shift_unit> (Architecture <Combinational>) compiled.
+Architecture combinational of Entity shift_unit is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/word_unit.vhd" in Library work.
 Entity <word_unit> compiled.
-Entity <word_unit> (Architecture <Combinational>) compiled.
+Entity <word_unit> (Architecture <combinational>) compiled.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/alu_toplevel.vhd" in Library work.
-Entity <ALU_Toplevel> compiled.
-Entity <ALU_Toplevel> (Architecture <Structural>) compiled.
+Architecture structural of Entity alu_toplevel is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" in Library work.
-Entity <Instruction_Memory_TL> compiled.
-Entity <Instruction_Memory_TL> (Architecture <Structural>) compiled.
+Entity <instruction_memory_tl> compiled.
+Entity <instruction_memory_tl> (Architecture <structural>) compiled.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/REG_CTL.vhd" in Library work.
-Entity <REG_CTL> compiled.
-Entity <REG_CTL> (Architecture <Dataflow>) compiled.
+Architecture dataflow of Entity reg_ctl is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DC_CTL.vhd" in Library work.
-Entity <DC_CTL> compiled.
-Entity <DC_CTL> (Architecture <Mixed>) compiled.
+Architecture mixed of Entity dc_ctl is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DATA_CTL.vhd" in Library work.
-Entity <DATA_CTL> compiled.
-Entity <DATA_CTL> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity data_ctl is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/IMSEL.vhd" in Library work.
-Entity <IMSEL> compiled.
-Entity <IMSEL> (Architecture <Dataflow>) compiled.
+Architecture dataflow of Entity imsel is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/EX_MEM_CTL.vhd" in Library work.
-Entity <EX_MEM_CTL> compiled.
-Entity <EX_MEM_CTL> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity ex_mem_ctl is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Shadow_Register_Bank.vhd" in Library work.
-Entity <Shadow_Reg> compiled.
-Entity <Shadow_Reg> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity shadow_reg is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Shadow_IMM_Add.vhd" in Library work.
-Entity <Shadow_IMM_Add> compiled.
-Entity <Shadow_IMM_Add> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity shadow_imm_add is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/EXTERNAL_MEMORY.vhd" in Library work.
-Entity <EXTERNAL_MEMORY> compiled.
-Entity <EXTERNAL_MEMORY> (Architecture <EXTERNAL_MEMORY_a>) compiled.
+Architecture external_memory_a of Entity external_memory is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd" in Library work.
-Entity <PipelineRegisters> compiled.
-Entity <PipelineRegisters> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity pipelineregisters is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/RegisterBank.vhd" in Library work.
-Entity <RegisterBank> compiled.
-Entity <RegisterBank> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity registerbank is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd" in Library work.
-Entity <ProjLab01> compiled.
-Entity <ProjLab01> (Architecture <Structural>) compiled.
+Entity <projlab01> compiled.
+Entity <projlab01> (Architecture <structural>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <ProjLab01> in library <work> (architecture <Structural>).
+Analyzing hierarchy for entity <ProjLab01> in library <work> (architecture <structural>).
 
 Analyzing hierarchy for entity <ALU_Toplevel> in library <work> (architecture <Structural>).
 
-Analyzing hierarchy for entity <Instruction_Memory_TL> in library <work> (architecture <Structural>).
+Analyzing hierarchy for entity <Instruction_Memory_TL> in library <work> (architecture <Structural>) with generics.
+	PCWIDTH = 5
 
 Analyzing hierarchy for entity <REG_CTL> in library <work> (architecture <Dataflow>).
 
@@ -206,9 +198,6 @@ Analyzing hierarchy for entity <PipelineRegisters> in library <work> (architectu
 Analyzing hierarchy for entity <PipelineRegisters> in library <work> (architecture <Behavioral>) with generics.
 	dataWidth = 16
 
-Analyzing hierarchy for entity <programCounter> in library <work> (architecture <Behavioral>) with generics.
-	PCWIDTH = 5
-
 Analyzing hierarchy for entity <RegisterBank> in library <work> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <arith_unit> in library <work> (architecture <Combinational>).
@@ -219,13 +208,26 @@ Analyzing hierarchy for entity <shift_unit> in library <work> (architecture <Com
 
 Analyzing hierarchy for entity <word_unit> in library <work> (architecture <Combinational>).
 
+Analyzing hierarchy for entity <PC_INC> in library <work> (architecture <Combinational>) with generics.
+	PCWIDTH = 5
+
+Analyzing hierarchy for entity <PC_OFFSET> in library <work> (architecture <Combinational>) with generics.
+	PCWIDTH = 5
+
+Analyzing hierarchy for entity <SH_PCREG> in library <work> (architecture <Behavioral>) with generics.
+	PCWIDTH = 5
+	STACKDEPTH = 4
+
+Analyzing hierarchy for entity <ADR_LATCH> in library <work> (architecture <Behavioral>) with generics.
+	PCWIDTH = 5
+
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <ProjLab01> in library <work> (Architecture <Structural>).
+Analyzing Entity <ProjLab01> in library <work> (Architecture <structural>).
 WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd" line 103: Unconnected output port 'LDST_ADR' of component 'ALU_Toplevel'.
-WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd" line 191: Instantiating black box module <EXTERNAL_MEMORY>.
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd" line 194: Instantiating black box module <EXTERNAL_MEMORY>.
 Entity <ProjLab01> analyzed. Unit <ProjLab01> generated.
 
 Analyzing Entity <ALU_Toplevel> in library <work> (Architecture <Structural>).
@@ -244,9 +246,30 @@ Analyzing Entity <word_unit> in library <work> (Architecture <Combinational>).
 WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/word_unit.vhd" line 52: Instantiating black box module <DATAMEM>.
 Entity <word_unit> analyzed. Unit <word_unit> generated.
 
-Analyzing Entity <Instruction_Memory_TL> in library <work> (Architecture <Structural>).
-WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" line 72: Instantiating black box module <Instr_Mem>.
+Analyzing generic Entity <Instruction_Memory_TL> in library <work> (Architecture <Structural>).
+	PCWIDTH = 5
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" line 98: Unconnected output port 'OVFLW' of component 'SH_PCREG'.
+INFO:Xst:1739 - HDL ADVISOR - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" line 42: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" line 117: Instantiating black box module <Instr_Mem>.
 Entity <Instruction_Memory_TL> analyzed. Unit <Instruction_Memory_TL> generated.
+
+Analyzing generic Entity <PC_INC> in library <work> (Architecture <Combinational>).
+	PCWIDTH = 5
+Entity <PC_INC> analyzed. Unit <PC_INC> generated.
+
+Analyzing generic Entity <PC_OFFSET> in library <work> (Architecture <Combinational>).
+	PCWIDTH = 5
+Entity <PC_OFFSET> analyzed. Unit <PC_OFFSET> generated.
+
+Analyzing generic Entity <SH_PCREG> in library <work> (Architecture <Behavioral>).
+	PCWIDTH = 5
+	STACKDEPTH = 4
+INFO:Xst:1561 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/SH_PCREG.vhd" line 77: Mux is complete : default of case is discarded
+Entity <SH_PCREG> analyzed. Unit <SH_PCREG> generated.
+
+Analyzing generic Entity <ADR_LATCH> in library <work> (Architecture <Behavioral>).
+	PCWIDTH = 5
+Entity <ADR_LATCH> analyzed. Unit <ADR_LATCH> generated.
 
 Analyzing Entity <REG_CTL> in library <work> (Architecture <Dataflow>).
 Entity <REG_CTL> analyzed. Unit <REG_CTL> generated.
@@ -294,10 +317,6 @@ Analyzing generic Entity <PipelineRegisters.4> in library <work> (Architecture <
 WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <Ena>
 Entity <PipelineRegisters.4> analyzed. Unit <PipelineRegisters.4> generated.
-
-Analyzing generic Entity <programCounter> in library <work> (Architecture <Behavioral>).
-	PCWIDTH = 5
-Entity <programCounter> analyzed. Unit <programCounter> generated.
 
 Analyzing Entity <RegisterBank> in library <work> (Architecture <Behavioral>).
 Entity <RegisterBank> analyzed. Unit <RegisterBank> generated.
@@ -412,14 +431,6 @@ Synthesizing Unit <PipelineRegisters_4>.
 Unit <PipelineRegisters_4> synthesized.
 
 
-Synthesizing Unit <programCounter>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/programCounter.vhd".
-    Found 5-bit up counter for signal <COUNTER>.
-    Summary:
-	inferred   1 Counter(s).
-Unit <programCounter> synthesized.
-
-
 Synthesizing Unit <RegisterBank>.
     Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/RegisterBank.vhd".
 WARNING:Xst:647 - Input <RST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -474,12 +485,48 @@ WARNING:Xst:653 - Signal <sreg<1>> is used but never assigned. This sourceless s
 Unit <shift_unit> synthesized.
 
 
+Synthesizing Unit <PC_INC>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PC_INC.vhd".
+    Found 5-bit adder for signal <NEXT_ADR>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <PC_INC> synthesized.
+
+
+Synthesizing Unit <PC_OFFSET>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PC_OFFSET.vhd".
+    Found 5-bit adder for signal <NEW_ADR>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <PC_OFFSET> synthesized.
+
+
+Synthesizing Unit <SH_PCREG>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/SH_PCREG.vhd".
+WARNING:Xst:1305 - Output <OVFLW> is never assigned. Tied to value 0.
+    Found 5-bit register for signal <ADROUT>.
+    Found 15-bit register for signal <PC_STACK>.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+Unit <SH_PCREG> synthesized.
+
+
+Synthesizing Unit <ADR_LATCH>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ADR_LATCH.vhd".
+    Found 5-bit register for signal <ADOUT>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <ADR_LATCH> synthesized.
+
+
 Synthesizing Unit <Instruction_Memory_TL>.
     Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd".
+WARNING:Xst:653 - Signal <ZERO_ADR> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
 WARNING:Xst:653 - Signal <WEA> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:1780 - Signal <INSADR> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <EN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:1780 - Signal <EN> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <DINA> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+    Using one-hot encoding for signal <MODE>.
 Unit <Instruction_Memory_TL> synthesized.
 
 
@@ -499,7 +546,8 @@ Synthesizing Unit <ProjLab01>.
 WARNING:Xst:646 - Signal <RB_DC2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <PC_RST> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <PC_INC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <PC_EN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:1780 - Signal <PC_EN> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <PC0> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
 WARNING:Xst:1780 - Signal <INST_EN> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <IMM_SEL> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <IMM3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -526,16 +574,15 @@ WARNING:Xst:524 - All outputs of the instance <RB_DC2_Reg> of the block <Pipelin
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
+# Adders/Subtractors                                   : 4
  16-bit adder                                          : 1
  17-bit addsub                                         : 1
-# Counters                                             : 2
- 5-bit up counter                                      : 2
-# Registers                                            : 73
+ 5-bit adder                                           : 2
+# Registers                                            : 78
  1-bit register                                        : 4
  16-bit register                                       : 29
  4-bit register                                        : 28
- 5-bit register                                        : 8
+ 5-bit register                                        : 13
  8-bit register                                        : 4
 # Latches                                              : 4
  16-bit latch                                          : 4
@@ -641,13 +688,12 @@ WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <0>. This FF/
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
+# Adders/Subtractors                                   : 4
  16-bit adder                                          : 1
  17-bit addsub                                         : 1
-# Counters                                             : 2
- 5-bit up counter                                      : 2
-# Registers                                            : 652
- Flip-Flops                                            : 652
+ 5-bit adder                                           : 2
+# Registers                                            : 677
+ Flip-Flops                                            : 677
 # Latches                                              : 4
  16-bit latch                                          : 4
 # Comparators                                          : 6
@@ -777,13 +823,19 @@ Optimizing unit <PipelineRegisters_3> ...
 
 Optimizing unit <PipelineRegisters_4> ...
 
-Optimizing unit <programCounter> ...
-
 Optimizing unit <RegisterBank> ...
 
 Optimizing unit <arith_unit> ...
 
 Optimizing unit <shift_unit> ...
+
+Optimizing unit <PC_INC> ...
+
+Optimizing unit <PC_OFFSET> ...
+
+Optimizing unit <SH_PCREG> ...
+
+Optimizing unit <ADR_LATCH> ...
 
 Optimizing unit <word_unit> ...
 
@@ -800,7 +852,7 @@ WARNING:Xst:2677 - Node <Dout_0> of sequential type is unconnected in block <OP4
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block ProjLab01, actual ratio is 17.
+Found area constraint ratio of 100 (+ 5) on block ProjLab01, actual ratio is 18.
 
 Final Macro Processing ...
 
@@ -808,8 +860,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 644
- Flip-Flops                                            : 644
+# Registers                                            : 659
+ Flip-Flops                                            : 659
 
 =========================================================================
 
@@ -838,27 +890,27 @@ Design Statistics
 # IOs                              : 70
 
 Cell Usage :
-# BELS                             : 1162
-#      GND                         : 9
-#      INV                         : 6
-#      LUT2                        : 26
+# BELS                             : 1204
+#      GND                         : 10
+#      INV                         : 5
+#      LUT2                        : 35
 #      LUT2_D                      : 1
 #      LUT2_L                      : 10
-#      LUT3                        : 508
+#      LUT3                        : 521
 #      LUT3_D                      : 2
 #      LUT3_L                      : 4
-#      LUT4                        : 177
+#      LUT4                        : 188
 #      LUT4_D                      : 13
 #      LUT4_L                      : 29
-#      MUXCY                       : 16
-#      MUXF5                       : 226
+#      MUXCY                       : 20
+#      MUXF5                       : 227
 #      MUXF6                       : 73
 #      MUXF7                       : 32
-#      VCC                         : 6
-#      XORCY                       : 24
-# FlipFlops/Latches                : 648
-#      FDC                         : 1
-#      FDCE                        : 10
+#      VCC                         : 5
+#      XORCY                       : 29
+# FlipFlops/Latches                : 663
+#      FDC                         : 6
+#      FDCE                        : 20
 #      FDE                         : 38
 #      FDE_1                       : 427
 #      FDPE                        : 171
@@ -880,9 +932,9 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      770  out of   4656    16%  
- Number of Slice Flip Flops:            648  out of   9312     6%  
- Number of 4 input LUTs:                776  out of   9312     8%  
+ Number of Slices:                      791  out of   4656    16%  
+ Number of Slice Flip Flops:            663  out of   9312     7%  
+ Number of 4 input LUTs:                808  out of   9312     8%  
  Number of IOs:                          70
  Number of bonded IOBs:                  70  out of    232    30%  
  Number of BRAMs:                        17  out of     20    85%  
@@ -909,7 +961,7 @@ Clock Information:
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                      | Load  |
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
-CLK                                | BUFGP                                                                                                                      | 664   |
+CLK                                | BUFGP                                                                                                                      | 679   |
 EX_MEM/N1                          | NONE(EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_init.ram/dpram.dp1x1.ram)| 15    |
 RST                                | IBUF+BUFG                                                                                                                  | 1     |
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
@@ -920,7 +972,7 @@ Asynchronous Control Signals Information:
 -------------------------------------+------------------------+-------+
 Control Signal                       | Buffer(FF name)        | Load  |
 -------------------------------------+------------------------+-------+
-RST                                  | IBUF                   | 181   |
+RST                                  | IBUF                   | 196   |
 EXMEM_CTL/EN_inv(EXMEM_CTL/XST_GND:G)| NONE(EXMEM_CTL/WR_0)   | 1     |
 -------------------------------------+------------------------+-------+
 
@@ -929,7 +981,7 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 32.256ns (Maximum Frequency: 31.002MHz)
-   Minimum input arrival time before clock: 6.222ns
+   Minimum input arrival time before clock: 6.227ns
    Maximum output required time after clock: 11.155ns
    Maximum combinational path delay: No path found
 
@@ -940,7 +992,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 32.256ns (frequency: 31.002MHz)
-  Total number of paths / destination ports: 230159 / 1175
+  Total number of paths / destination ports: 230369 / 1205
 -------------------------------------------------------------------------
 Delay:               16.128ns (Levels of Logic = 30)
   Source:            RB3ADR_Reg/Dout_0 (FF)
@@ -994,9 +1046,9 @@ Delay:               16.128ns (Levels of Logic = 30)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 3 / 3
+  Total number of paths / destination ports: 13 / 8
 -------------------------------------------------------------------------
-Offset:              6.222ns (Levels of Logic = 4)
+Offset:              6.227ns (Levels of Logic = 4)
   Source:            RST (PAD)
   Destination:       SHREG/RAout_8 (FF)
   Destination Clock: CLK rising
@@ -1005,13 +1057,13 @@ Offset:              6.222ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           182   1.218   1.310  RST_IBUF (RST_IBUF1)
+     IBUF:I->O           199   1.218   1.315  RST_IBUF (RST_IBUF1)
      BUFG:I->O             2   1.457   0.447  RST_IBUF_BUFG (RST_IBUF)
      begin scope: 'SHREG'
      INV:I->O              3   0.704   0.531  RAout_and00001_INV_0 (RAout_and0000)
      FDE:CE                    0.555          RAout_8
     ----------------------------------------
-    Total                      6.222ns (3.934ns logic, 2.288ns route)
+    Total                      6.227ns (3.934ns logic, 2.293ns route)
                                        (63.2% logic, 36.8% route)
 
 =========================================================================
@@ -1048,15 +1100,15 @@ Offset:              11.155ns (Levels of Logic = 10)
 =========================================================================
 
 
-Total REAL time to Xst completion: 17.00 secs
-Total CPU time to Xst completion: 16.82 secs
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.43 secs
  
 --> 
 
 
-Total memory usage is 548488 kilobytes
+Total memory usage is 549996 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  186 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :  190 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 

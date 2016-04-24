@@ -1,4 +1,4 @@
-Running: /home/robert/XilinxISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/IM_tb_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/IM_tb_beh.prj" "work.IM_tb" 
+Running: /home/robert/XilinxISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Fetch_tb_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Fetch_tb_beh.prj" "work.Fetch_tb" 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -9,12 +9,12 @@ Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/Program
 Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instr_Mem.vhd" into library work
 Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/ADR_LATCH.vhd" into library work
 Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd" into library work
-WARNING:HDLCompiler:946 - "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd" Line 120: Actual for formal port clka is neither a static name nor a globally static expression
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/IM_tb.vhd" into library work
+WARNING:HDLCompiler:946 - "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Instruction_Memory_TL.vhd" Line 118: Actual for formal port clka is neither a static name nor a globally static expression
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Fetch_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 99800 KB
-Fuse CPU Usage: 1440 ms
+Fuse Memory Usage: 99796 KB
+Fuse CPU Usage: 1330 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
@@ -31,11 +31,11 @@ Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_modu
 Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
 Compiling architecture instr_mem_a of entity Instr_Mem [instr_mem_default]
 Compiling architecture structural of entity Instruction_Memory_TL [\Instruction_Memory_TL(5)\]
-Compiling architecture behavior of entity im_tb
+Compiling architecture behavior of entity fetch_tb
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 27 VHDL Units
-Built simulation executable /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/IM_tb_isim_beh.exe
-Fuse Memory Usage: 676508 KB
-Fuse CPU Usage: 1590 ms
-GCC CPU Usage: 200 ms
+Built simulation executable /home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Fetch_tb_isim_beh.exe
+Fuse Memory Usage: 676512 KB
+Fuse CPU Usage: 1490 ms
+GCC CPU Usage: 120 ms

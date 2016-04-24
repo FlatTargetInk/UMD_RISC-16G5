@@ -164,3 +164,21 @@ map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Hardwar
 par -w -intstyle ise -ol high -t 1 Hardware_TL_map.ncd Hardware_TL.ncd Hardware_TL.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Hardware_TL.twx Hardware_TL.ncd -o Hardware_TL.twr Hardware_TL.pcf -ucf {UMD RISC-16.ucf} 
 bitgen -intstyle ise -f Hardware_TL.ut Hardware_TL.ncd 
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.xst" -ofn "/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ProjectLab2/NewCombined -sd ../ProjectLab2/NewCombined/ipcore_dir -nt timestamp -uc "UMD RISC-16.ucf" -p xc3s500e-fg320-4 Hardware_TL.ngc Hardware_TL.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Hardware_TL_map.ncd Hardware_TL.ngd Hardware_TL.pcf 
+par -w -intstyle ise -ol high -t 1 Hardware_TL_map.ncd Hardware_TL.ncd Hardware_TL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Hardware_TL.twx Hardware_TL.ncd -o Hardware_TL.twr Hardware_TL.pcf -ucf {UMD RISC-16.ucf} 
+bitgen -intstyle ise -f Hardware_TL.ut Hardware_TL.ncd 
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.xst" -ofn "/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ProjectLab2/NewCombined -sd ../ProjectLab2/NewCombined/ipcore_dir -nt timestamp -uc "UMD RISC-16.ucf" -p xc3s500e-fg320-4 Hardware_TL.ngc Hardware_TL.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Hardware_TL_map.ncd Hardware_TL.ngd Hardware_TL.pcf 
+par -w -intstyle ise -ol high -t 1 Hardware_TL_map.ncd Hardware_TL.ncd Hardware_TL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Hardware_TL.twx Hardware_TL.ncd -o Hardware_TL.twr Hardware_TL.pcf -ucf {UMD RISC-16.ucf} 
+bitgen -intstyle ise -f Hardware_TL.ut Hardware_TL.ncd 
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.xst" -ofn "/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../ProjectLab2/NewCombined -sd ../ProjectLab2/NewCombined/ipcore_dir -nt timestamp -uc "UMD RISC-16.ucf" -p xc3s500e-fg320-4 Hardware_TL.ngc Hardware_TL.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Hardware_TL_map.ncd Hardware_TL.ngd Hardware_TL.pcf 
+par -w -intstyle ise -ol high -t 1 Hardware_TL_map.ncd Hardware_TL.ncd Hardware_TL.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Hardware_TL.twx Hardware_TL.ncd -o Hardware_TL.twr Hardware_TL.pcf -ucf {UMD RISC-16.ucf} 
+bitgen -intstyle ise -f Hardware_TL.ut Hardware_TL.ncd 

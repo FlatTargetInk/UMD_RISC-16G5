@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/IM_tb_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/IM_tb_beh.prj" "work.IM_tb" 
+-intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Fetch_tb_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Fetch_tb_beh.prj" "work.Fetch_tb" 

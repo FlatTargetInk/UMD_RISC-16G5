@@ -45,8 +45,8 @@ Setup/Hold to clock CLK
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-BTN<0>      |    1.618(R)|   -0.091(R)|CLK_IBUF          |   0.000|
-BTN<3>      |    1.347(R)|    0.132(R)|CLK_IBUF          |   0.000|
+BTN<0>      |    1.107(R)|    0.322(R)|CLK_IBUF          |   0.000|
+BTN<3>      |    0.798(R)|    0.570(R)|CLK_IBUF          |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
@@ -54,11 +54,11 @@ Clock CLK to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-LED<0>      |   10.501(F)|software_clk      |   0.000|
-LED<1>      |   10.300(F)|software_clk      |   0.000|
-LED<2>      |   10.288(F)|software_clk      |   0.000|
-LED<3>      |   10.497(F)|software_clk      |   0.000|
-LED<4>      |   10.557(F)|software_clk      |   0.000|
+LED<0>      |   14.373(F)|software_clk      |   0.000|
+LED<1>      |   14.650(F)|software_clk      |   0.000|
+LED<2>      |   13.781(F)|software_clk      |   0.000|
+LED<3>      |   14.299(F)|software_clk      |   0.000|
+LED<4>      |   15.587(F)|software_clk      |   0.000|
 ------------+------------+------------------+--------+
 
 Clock SW<6> to Pad
@@ -66,11 +66,11 @@ Clock SW<6> to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-LED<0>      |   13.155(F)|software_clk      |   0.000|
-LED<1>      |   12.954(F)|software_clk      |   0.000|
-LED<2>      |   12.942(F)|software_clk      |   0.000|
-LED<3>      |   13.151(F)|software_clk      |   0.000|
-LED<4>      |   13.211(F)|software_clk      |   0.000|
+LED<0>      |   13.471(F)|software_clk      |   0.000|
+LED<1>      |   13.748(F)|software_clk      |   0.000|
+LED<2>      |   12.879(F)|software_clk      |   0.000|
+LED<3>      |   13.397(F)|software_clk      |   0.000|
+LED<4>      |   14.685(F)|software_clk      |   0.000|
 ------------+------------+------------------+--------+
 
 Clock SW<7> to Pad
@@ -78,11 +78,11 @@ Clock SW<7> to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-LED<0>      |   13.206(F)|software_clk      |   0.000|
-LED<1>      |   13.005(F)|software_clk      |   0.000|
-LED<2>      |   12.993(F)|software_clk      |   0.000|
-LED<3>      |   13.202(F)|software_clk      |   0.000|
-LED<4>      |   13.262(F)|software_clk      |   0.000|
+LED<0>      |   13.583(F)|software_clk      |   0.000|
+LED<1>      |   13.860(F)|software_clk      |   0.000|
+LED<2>      |   12.991(F)|software_clk      |   0.000|
+LED<3>      |   13.509(F)|software_clk      |   0.000|
+LED<4>      |   14.797(F)|software_clk      |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -90,9 +90,9 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    5.343|   12.977|    8.308|   10.775|
-SW<6>          |    3.748|   12.977|    8.308|   10.775|
-SW<7>          |    3.748|   12.977|    8.308|   10.775|
+CLK            |    6.427|   12.520|    6.324|    9.570|
+SW<6>          |    6.427|   12.520|    6.324|    9.570|
+SW<7>          |    6.427|   12.520|    6.324|    9.570|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SW<6>
@@ -100,9 +100,9 @@ Clock to Setup on destination clock SW<6>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.450|   12.977|    8.308|   10.775|
-SW<6>          |    3.748|   12.977|    8.308|   10.775|
-SW<7>          |    3.748|   12.977|    8.308|   10.775|
+CLK            |    6.427|   12.520|    6.324|    9.570|
+SW<6>          |    6.427|   12.520|    6.324|    9.570|
+SW<7>          |    6.427|   12.520|    6.324|    9.570|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SW<7>
@@ -110,20 +110,20 @@ Clock to Setup on destination clock SW<7>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.450|   12.977|    8.308|   10.775|
-SW<6>          |    3.748|   12.977|    8.308|   10.775|
-SW<7>          |    3.748|   12.977|    8.308|   10.775|
+CLK            |    6.427|   12.520|    6.324|    9.570|
+SW<6>          |    6.427|   12.520|    6.324|    9.570|
+SW<7>          |    6.427|   12.520|    6.324|    9.570|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun Apr 24 15:15:31 2016 
+Analysis completed Sun Apr 24 18:42:04 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 362 MB
+Peak Memory Usage: 363 MB
 
 
 

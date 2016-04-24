@@ -105,16 +105,12 @@ BEGIN
 		RB <= X"0004";
 		
 		wait for CLK_period;
-		RB <= X"0001";
+		
+		OP <= X"A";
 		
 		wait for CLK_period;
-		RB <= X"0002";
 		
-		wait for CLK_period;
-		RB <= X"0003";
-		
-		wait for CLK_period;
-		RB <= X"0004";
+		OP <= X"9";
 
       -- insert stimulus here 
 

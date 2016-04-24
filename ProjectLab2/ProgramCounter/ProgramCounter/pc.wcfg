@@ -3,9 +3,9 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/IM_tb_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="/home/robert/UMD_RISC-16G5/ProjectLab2/ProgramCounter/ProgramCounter/Fetch_tb_isim_beh.wdb" id="1" type="auto">
          <top_modules>
-            <top_module name="im_tb" />
+            <top_module name="fetch_tb" />
             <top_module name="std_logic_1164" />
             <top_module name="std_logic_arith" />
             <top_module name="std_logic_textio" />
@@ -14,65 +14,45 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="15" />
-   <wvobject fp_name="/im_tb/clk" type="logic" db_ref_id="1">
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/fetch_tb/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/im_tb/offset" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">offset[11:0]</obj_property>
-      <obj_property name="ObjectShortName">offset[11:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/im_tb/rst" type="logic" db_ref_id="1">
+   <wvobject fp_name="/fetch_tb/rst" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/im_tb/rtn" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">rtn</obj_property>
-      <obj_property name="ObjectShortName">rtn</obj_property>
+   <wvobject fp_name="/fetch_tb/branch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
    </wvobject>
-   <wvobject fp_name="/im_tb/ra" type="array" db_ref_id="1">
+   <wvobject fp_name="/fetch_tb/brnch_adr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">brnch_adr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">brnch_adr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fetch_tb/ra" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">ra[3:0]</obj_property>
       <obj_property name="ObjectShortName">ra[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/im_tb/rb" type="array" db_ref_id="1">
+   <wvobject fp_name="/fetch_tb/rb" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">rb[3:0]</obj_property>
       <obj_property name="ObjectShortName">rb[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/im_tb/op" type="array" db_ref_id="1">
+   <wvobject fp_name="/fetch_tb/op" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">op[3:0]</obj_property>
       <obj_property name="ObjectShortName">op[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/im_tb/imm" type="array" db_ref_id="1">
+   <wvobject fp_name="/fetch_tb/imm" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">imm[7:0]</obj_property>
       <obj_property name="ObjectShortName">imm[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/im_tb/ins_offset" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">ins_offset[11:0]</obj_property>
-      <obj_property name="ObjectShortName">ins_offset[11:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/im_tb/clk_period" type="other" db_ref_id="1">
+   <wvobject fp_name="/fetch_tb/clk_period" type="other" db_ref_id="1">
       <obj_property name="ElementShortName">clk_period</obj_property>
       <obj_property name="ObjectShortName">clk_period</obj_property>
    </wvobject>
-   <wvobject fp_name="/im_tb/uut/crnt_adr" type="array" db_ref_id="1">
+   <wvobject fp_name="/fetch_tb/uut/crnt_adr" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">crnt_adr[4:0]</obj_property>
       <obj_property name="ObjectShortName">crnt_adr[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/im_tb/uut/next_addr" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">next_addr[4:0]</obj_property>
-      <obj_property name="ObjectShortName">next_addr[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/im_tb/uut/inc_adr" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">inc_adr[4:0]</obj_property>
-      <obj_property name="ObjectShortName">inc_adr[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/im_tb/uut/ofs_adr" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">ofs_adr[4:0]</obj_property>
-      <obj_property name="ObjectShortName">ofs_adr[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/im_tb/uut/pop_adr" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">pop_adr[4:0]</obj_property>
-      <obj_property name="ObjectShortName">pop_adr[4:0]</obj_property>
    </wvobject>
 </wave_config>

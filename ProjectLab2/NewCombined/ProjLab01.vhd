@@ -113,12 +113,15 @@ begin
 	--------  Fetch  --------
 	-------------------------
 	Fetch_UNIT : entity work.Instruction_Memory_TL
-	port map(	CLK	=> CLK,
-					RST	=> RST,
-					RA 	=> RAIN,
-					RB 	=> RBIN,
-					OP 	=> OPIN,
-					IMM 	=> IMMIN);
+	port map(	CLK			=> CLK,
+					RST			=> RST,
+					BRANCH		=> '0',
+					BRNCH_ADR	=> "00000",
+					RA 			=> RAIN,
+					RB 			=> RBIN,
+					OP 			=> OPIN,
+					IMM 			=> IMMIN);
+					
 
 	--------  Control Units  --------
 	---------------------------------
@@ -457,13 +460,13 @@ begin
 	--------  Memory Entities  --------
 	-----------------------------------
 	
-	ProgCounter: entity work.programCounter
-	generic map(PCWIDTH 	=> 5)
-	port map(	CLK		=> CLK,
-					EN			=> PC_EN,
-					RST		=> RST,
-					INSADR	=> PC0);
-	
+--	ProgCounter: entity work.programCounter
+--	generic map(PCWIDTH 	=> 5)
+--	port map(	CLK		=> CLK,
+--					EN			=> PC_EN,
+--					RST		=> RST,
+--					INSADR	=> PC0);
+
 	RegisterBank_Unit: entity work.RegisterBank
 	port map(	RST		=> RST,
 					RAddr		=> RA1,

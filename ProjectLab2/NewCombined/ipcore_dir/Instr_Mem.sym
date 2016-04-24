@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="Instr_Mem">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2016-4-23T19:50:39</timestamp>
+    <timestamp>2016-4-24T22:25:57</timestamp>
     <pin polarity="Input" x="0" y="80" name="addra[4:0]" />
     <pin polarity="Input" x="0" y="112" name="dina[15:0]" />
     <pin polarity="Input" x="0" y="208" name="wea[0:0]" />

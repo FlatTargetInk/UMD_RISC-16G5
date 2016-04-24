@@ -1,1 +1,6 @@
+work	"ADR_LATCH.vhd"
+work	"Instr_Mem.vhd"
+work	"Instruction_Memory_TL.vhd"
+work	"PC_INC.vhd"
+work	"PC_OFFSET.vhd"
 work	"SH_PCREG.vhd"
