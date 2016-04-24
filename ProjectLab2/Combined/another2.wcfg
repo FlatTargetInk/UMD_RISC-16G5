@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Combined_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="combined_tb" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/combined_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/alu_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/dst_adr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dst_adr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dst_adr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/store_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">store_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">store_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/ccr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ccr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ccr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/op3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">op3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/ra3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ra3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ra3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/rb3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rb3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rb3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/oprb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">oprb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">oprb[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/rb_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rb_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rb_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/rb_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rb_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rb_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/op2_sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op2_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">op2_sel[1:0]</obj_property>
+   </wvobject>
+</wave_config>

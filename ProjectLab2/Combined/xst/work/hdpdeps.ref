@@ -1,0 +1,177 @@
+V3 92
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ADR_LATCH.vhd 2016/04/23.13:17:11 P.20131013
+EN work/ADR_LATCH 1461448867 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ADR_LATCH.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ADR_LATCH/Behavioral 1461448868 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ADR_LATCH.vhd \
+      EN work/ADR_LATCH 1461448867
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/alu_toplevel.vhd 2016/04/10.15:54:32 P.20131013
+EN work/ALU_Toplevel 1461448879 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/alu_toplevel.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
+AR work/ALU_Toplevel/Structural 1461448880 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/alu_toplevel.vhd \
+      EN work/ALU_Toplevel 1461448879 CP work/arith_unit CP work/logical_unit \
+      CP work/shift_unit CP work/word_unit
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/arith_unit.vhd 2016/04/10.15:54:32 P.20131013
+EN work/arith_unit 1461448871 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/arith_unit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_SIGNED 1381692178
+AR work/arith_unit/Combinational 1461448872 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/arith_unit.vhd \
+      EN work/arith_unit 1461448871
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DATAMEM.vhd 2016/04/10.15:54:32 P.20131013
+EN work/DATAMEM 1461448859 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DATAMEM.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DATAMEM/DATAMEM_a 1461448860 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DATAMEM.vhd \
+      EN work/DATAMEM 1461448859
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DATA_CTL.vhd 2016/04/12.14:04:31 P.20131013
+EN work/DATA_CTL 1461448887 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DATA_CTL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DATA_CTL/Behavioral 1461448888 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DATA_CTL.vhd \
+      EN work/DATA_CTL 1461448887
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DC_CTL.vhd 2016/04/23.17:55:15 P.20131013
+EN work/DC_CTL 1461448885 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DC_CTL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DC_CTL/Combinational 1461448886 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DC_CTL.vhd \
+      EN work/DC_CTL 1461448885
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/EX_MEM_CTL.vhd 2016/04/15.16:16:11 P.20131013
+EN work/EX_MEM_CTL 1461448901 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/EX_MEM_CTL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/EX_MEM_CTL/Behavioral 1461448902 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/EX_MEM_CTL.vhd \
+      EN work/EX_MEM_CTL 1461448901
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/IMSEL.vhd 2016/04/12.14:04:31 P.20131013
+EN work/IMSEL 1461448889 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/IMSEL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/IMSEL/Dataflow 1461448890 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/IMSEL.vhd EN work/IMSEL 1461448889
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd 2016/04/23.17:10:36 P.20131013
+EN work/Instruction_Memory_TL 1461448881 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
+AR work/Instruction_Memory_TL/Structural 1461448882 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd \
+      EN work/Instruction_Memory_TL 1461448881 CP work/PC_INC CP work/PC_OFFSET \
+      CP work/SH_PCREG CP work/ADR_LATCH CP work/Instr_Mem
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instr_Mem.vhd 2016/04/10.15:54:32 P.20131013
+EN work/Instr_Mem 1461448869 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instr_Mem.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Instr_Mem/Instr_Mem_a 1461448870 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instr_Mem.vhd \
+      EN work/Instr_Mem 1461448869
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ipcore_dir/EXTERNAL_MEMORY.vhd 2016/04/20.15:50:38 P.20131013
+EN work/EXTERNAL_MEMORY 1461448899 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ipcore_dir/EXTERNAL_MEMORY.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/EXTERNAL_MEMORY/EXTERNAL_MEMORY_a 1461448900 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ipcore_dir/EXTERNAL_MEMORY.vhd \
+      EN work/EXTERNAL_MEMORY 1461448899
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/logical_unit.vhd 2016/04/10.15:54:32 P.20131013
+EN work/logical_unit 1461448873 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/logical_unit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/logical_unit/Combinational 1461448874 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/logical_unit.vhd \
+      EN work/logical_unit 1461448873
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PC_INC.vhd 2016/04/22.18:02:15 P.20131013
+EN work/PC_INC 1461448861 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PC_INC.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/PC_INC/Combinational 1461448862 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PC_INC.vhd \
+      EN work/PC_INC 1461448861
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PC_OFFSET.vhd 2016/04/22.18:22:48 P.20131013
+EN work/PC_OFFSET 1461448863 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PC_OFFSET.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/PC_OFFSET/Combinational 1461448864 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PC_OFFSET.vhd \
+      EN work/PC_OFFSET 1461448863
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd 2016/04/12.14:04:31 P.20131013
+EN work/PipelineRegisters 1461448891 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/PipelineRegisters/Behavioral 1461448892 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd \
+      EN work/PipelineRegisters 1461448891
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd 2016/04/22.15:26:51 P.20131013
+EN work/ProjLab01 1461448903 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
+AR work/ProjLab01/Structural 1461448904 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd \
+      EN work/ProjLab01 1461448903 CP work/ALU_Toplevel \
+      CP work/Instruction_Memory_TL CP work/REG_CTL CP work/DC_CTL CP work/DATA_CTL \
+      CP work/IMSEL CP work/PipelineRegisters CP work/RegisterBank \
+      CP work/Shadow_Reg CP work/Shadow_IMM_Add CP work/EXTERNAL_MEMORY \
+      CP work/EX_MEM_CTL
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/RegisterBank.vhd 2016/04/12.14:04:31 P.20131013
+EN work/RegisterBank 1461448893 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/RegisterBank.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/RegisterBank/Behavioral 1461448894 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/RegisterBank.vhd \
+      EN work/RegisterBank 1461448893
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/REG_CTL.vhd 2016/04/12.14:04:31 P.20131013
+EN work/REG_CTL 1461448883 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/REG_CTL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/REG_CTL/Dataflow 1461448884 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/REG_CTL.vhd \
+      EN work/REG_CTL 1461448883
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_IMM_Add.vhd 2016/04/15.14:31:54 P.20131013
+EN work/Shadow_IMM_Add 1461448897 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_IMM_Add.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Shadow_IMM_Add/Behavioral 1461448898 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_IMM_Add.vhd \
+      EN work/Shadow_IMM_Add 1461448897
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_Register_Bank.vhd 2016/04/13.16:20:08 P.20131013
+EN work/Shadow_Reg 1461448895 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_Register_Bank.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Shadow_Reg/Behavioral 1461448896 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_Register_Bank.vhd \
+      EN work/Shadow_Reg 1461448895
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/shift_unit.vhd 2016/04/10.15:54:32 P.20131013
+EN work/shift_unit 1461448875 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/shift_unit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/shift_unit/Combinational 1461448876 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/shift_unit.vhd \
+      EN work/shift_unit 1461448875
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/SH_PCREG.vhd 2016/04/23.12:35:49 P.20131013
+EN work/SH_PCREG 1461448865 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/SH_PCREG.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SH_PCREG/Behavioral 1461448866 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/SH_PCREG.vhd \
+      EN work/SH_PCREG 1461448865
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/word_unit.vhd 2016/04/23.16:45:20 P.20131013
+EN work/word_unit 1461448877 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/word_unit.vhd \
+      PB ieee/std_logic_1164 1381692176 LB work
+AR work/word_unit/Combinational 1461448878 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/Combined/word_unit.vhd \
+      EN work/word_unit 1461448877 CP work/DATAMEM

@@ -46,13 +46,13 @@ begin
 DST_ADR <= IMMAddr;
 STORE_DATA <= DATAIN;
 
-WREN <= "0" when OP = x"9" else -- x"9" is load word
-		  "1" when OP = x"A"; -- x"A" is store word
+WREN <= "1" when OP = x"A" else -- x"9" is load word
+		  "0"; -- when OP = x"A"; -- x"A" is store word
 		  
 DATAMEMORY : entity work.DATAMEM port map(ADDRA => IMMAddr,
 														DINA  => DATAIN,
 														WEA   => WREN, -- Write enable
-														CLKA  => CLK,
+														CLKA  => not CLK,
 														DOUTA => RESULT);
 														
 -- When OP = 1 then WRITE is enabled, IMMAddr gives us the address to write to, DATAIN gives us the data to write. RESULT will soon show data written if untouched

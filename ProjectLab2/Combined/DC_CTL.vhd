@@ -44,43 +44,49 @@ entity DC_CTL is
            OP2_SEL : out  STD_LOGIC_VECTOR (1 downto 0));
 end DC_CTL;
 
-architecture Mixed of DC_CTL is
+architecture Combinational of DC_CTL is
 
 signal OP1, OP2 : STD_LOGIC_VECTOR (1 downto 0) := (OTHERS => '0');
 
 begin
 	
-	process(RA, RB, RA0, RA1, RA2)
-	begin
 	--	if (rising_edge(CLK)) then
-			if (RA = RA0) then
-				OP1 <= "01";
---				OP1_SEL <= OP1;
-			elsif (RA = RA1) then
-				OP1 <= "10";
---				OP1_SEL <= OP1;
-			elsif (RA = RA2) then
-				OP1 <= "11";
---				OP1_SEL <= OP1;
-			else
-				OP1 <= "00";
---				OP1_SEL <= OP1;
-			end if;
+	OP1 <= 	"01" when RA=RA0 else
+				"10" when RA=RA1 else
+				"11" when RA=RA2 else
+				"00";
+--			if (RA = RA0) then
+--				OP1 <= "01";
+----				OP1_SEL <= OP1;
+--			elsif (RA = RA1) then
+--				OP1 <= "10";
+----				OP1_SEL <= OP1;
+--			elsif (RA = RA2) then
+--				OP1 <= "11";
+----				OP1_SEL <= OP1;
+--			else
+--				OP1 <= "00";
+----				OP1_SEL <= OP1;
+--			end if;
 --			OP1_SEL <= OP1;
-			
-			if (RB = RA0) then
-				OP2 <= "01";
-			elsif (RB = RA1) then
-				OP2 <= "10";
-			elsif (RB = RA2) then
-				OP2 <= "11";
-			else
-				OP2 <= "00";
-			end if;
+	OP2 <= 	"01" when RB = RA0 else
+				"10" when RB = RA1 else
+				"11" when RB = RA2 else
+				"00";
+--			
+--			if (RB = RA0) then
+--				OP2 <= "01";
+--			elsif (RB = RA1) then
+--				OP2 <= "10";
+--			elsif (RB = RA2) then
+--				OP2 <= "11";
+--			else
+--				OP2 <= "00";
+--			end if;
 			
 	--	end if;
 		
-	end process;
+--	end process;
 
 	OP1_SEL <= OP1;
 	
@@ -89,5 +95,5 @@ begin
 		"00" 	when "0101" | "0110" | "0111" | "1000" | "1001" | "1010",
 		"00"	when OTHERS;
 
-end Mixed;
+end Combinational;
 
