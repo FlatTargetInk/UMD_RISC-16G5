@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DC_CTL.vhd";
+static const char *ng0 = "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DC_CTL.vhd";
 
 
 
@@ -82,7 +82,7 @@ LAB23:    if (t4 != 0)
         goto LAB19;
 
 LAB20:    xsi_set_current_line(66, ng0);
-    t1 = (t0 + 7571);
+    t1 = (t0 + 7683);
     t3 = (t0 + 4712);
     t6 = (t3 + 56U);
     t7 = *((char **)t6);
@@ -132,7 +132,7 @@ LAB48:    if (t4 != 0)
         goto LAB44;
 
 LAB45:    xsi_set_current_line(78, ng0);
-    t1 = (t0 + 7579);
+    t1 = (t0 + 7691);
     t3 = (t0 + 4776);
     t6 = (t3 + 56U);
     t7 = *((char **)t6);
@@ -146,7 +146,7 @@ LAB28:    t1 = (t0 + 4600);
 
 LAB1:    return;
 LAB2:    xsi_set_current_line(57, ng0);
-    t7 = (t0 + 7565);
+    t7 = (t0 + 7677);
     t9 = (t0 + 4712);
     t10 = (t9 + 56U);
     t11 = *((char **)t10);
@@ -172,7 +172,7 @@ LAB10:    t5 = (t5 + 1);
     goto LAB8;
 
 LAB11:    xsi_set_current_line(60, ng0);
-    t7 = (t0 + 7567);
+    t7 = (t0 + 7679);
     t9 = (t0 + 4712);
     t10 = (t9 + 56U);
     t11 = *((char **)t10);
@@ -198,7 +198,7 @@ LAB18:    t5 = (t5 + 1);
     goto LAB16;
 
 LAB19:    xsi_set_current_line(63, ng0);
-    t7 = (t0 + 7569);
+    t7 = (t0 + 7681);
     t9 = (t0 + 4712);
     t10 = (t9 + 56U);
     t11 = *((char **)t10);
@@ -224,7 +224,7 @@ LAB26:    t5 = (t5 + 1);
     goto LAB24;
 
 LAB27:    xsi_set_current_line(72, ng0);
-    t7 = (t0 + 7573);
+    t7 = (t0 + 7685);
     t9 = (t0 + 4776);
     t10 = (t9 + 56U);
     t11 = *((char **)t10);
@@ -250,7 +250,7 @@ LAB35:    t5 = (t5 + 1);
     goto LAB33;
 
 LAB36:    xsi_set_current_line(74, ng0);
-    t7 = (t0 + 7575);
+    t7 = (t0 + 7687);
     t9 = (t0 + 4776);
     t10 = (t9 + 56U);
     t11 = *((char **)t10);
@@ -276,7 +276,7 @@ LAB43:    t5 = (t5 + 1);
     goto LAB41;
 
 LAB44:    xsi_set_current_line(76, ng0);
-    t7 = (t0 + 7577);
+    t7 = (t0 + 7689);
     t9 = (t0 + 4776);
     t10 = (t9 + 56U);
     t11 = *((char **)t10);
@@ -379,64 +379,64 @@ LAB3:    goto *t2;
 LAB2:    xsi_set_current_line(87, ng0);
     t2 = (t0 + 1992U);
     t3 = *((char **)t2);
-    t2 = (t0 + 7581);
+    t2 = (t0 + 7693);
     t5 = xsi_mem_cmp(t2, t3, 4U);
     if (t5 == 1)
         goto LAB5;
 
-LAB8:    t6 = (t0 + 7585);
+LAB8:    t6 = (t0 + 7697);
     t8 = xsi_mem_cmp(t6, t3, 4U);
     if (t8 == 1)
         goto LAB5;
 
-LAB9:    t9 = (t0 + 7589);
+LAB9:    t9 = (t0 + 7701);
     t11 = xsi_mem_cmp(t9, t3, 4U);
     if (t11 == 1)
         goto LAB5;
 
-LAB10:    t12 = (t0 + 7593);
+LAB10:    t12 = (t0 + 7705);
     t14 = xsi_mem_cmp(t12, t3, 4U);
     if (t14 == 1)
         goto LAB5;
 
-LAB11:    t15 = (t0 + 7597);
+LAB11:    t15 = (t0 + 7709);
     t17 = xsi_mem_cmp(t15, t3, 4U);
     if (t17 == 1)
         goto LAB5;
 
-LAB12:    t18 = (t0 + 7601);
+LAB12:    t18 = (t0 + 7713);
     t20 = xsi_mem_cmp(t18, t3, 4U);
     if (t20 == 1)
         goto LAB6;
 
-LAB13:    t21 = (t0 + 7605);
+LAB13:    t21 = (t0 + 7717);
     t23 = xsi_mem_cmp(t21, t3, 4U);
     if (t23 == 1)
         goto LAB6;
 
-LAB14:    t24 = (t0 + 7609);
+LAB14:    t24 = (t0 + 7721);
     t26 = xsi_mem_cmp(t24, t3, 4U);
     if (t26 == 1)
         goto LAB6;
 
-LAB15:    t27 = (t0 + 7613);
+LAB15:    t27 = (t0 + 7725);
     t29 = xsi_mem_cmp(t27, t3, 4U);
     if (t29 == 1)
         goto LAB6;
 
-LAB16:    t30 = (t0 + 7617);
+LAB16:    t30 = (t0 + 7729);
     t32 = xsi_mem_cmp(t30, t3, 4U);
     if (t32 == 1)
         goto LAB6;
 
-LAB17:    t33 = (t0 + 7621);
+LAB17:    t33 = (t0 + 7733);
     t35 = xsi_mem_cmp(t33, t3, 4U);
     if (t35 == 1)
         goto LAB6;
 
 LAB18:
 LAB7:    xsi_set_current_line(88, ng0);
-    t2 = (t0 + 7627);
+    t2 = (t0 + 7739);
     t4 = (t0 + 4904);
     t6 = (t4 + 56U);
     t7 = *((char **)t6);
@@ -465,7 +465,7 @@ LAB5:    xsi_set_current_line(88, ng0);
     goto LAB4;
 
 LAB6:    xsi_set_current_line(88, ng0);
-    t2 = (t0 + 7625);
+    t2 = (t0 + 7737);
     t4 = (t0 + 4904);
     t6 = (t4 + 56U);
     t7 = *((char **)t6);

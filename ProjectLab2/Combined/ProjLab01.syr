@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: ProjLab01.prj
@@ -110,80 +110,105 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DATAMEM.vhd" in Library work.
-Entity <DATAMEM> compiled.
-Entity <DATAMEM> (Architecture <DATAMEM_a>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PC_INC.vhd" in Library work.
-Entity <PC_INC> compiled.
-Entity <PC_INC> (Architecture <Combinational>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PC_OFFSET.vhd" in Library work.
-Entity <PC_OFFSET> compiled.
-Entity <PC_OFFSET> (Architecture <Combinational>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/SH_PCREG.vhd" in Library work.
-Entity <SH_PCREG> compiled.
-Entity <SH_PCREG> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ADR_LATCH.vhd" in Library work.
-Entity <ADR_LATCH> compiled.
-Entity <ADR_LATCH> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instr_Mem.vhd" in Library work.
-Entity <Instr_Mem> compiled.
-Entity <Instr_Mem> (Architecture <Instr_Mem_a>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/arith_unit.vhd" in Library work.
-Entity <arith_unit> compiled.
-Entity <arith_unit> (Architecture <Combinational>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/logical_unit.vhd" in Library work.
-Entity <logical_unit> compiled.
-Entity <logical_unit> (Architecture <Combinational>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/shift_unit.vhd" in Library work.
-Entity <shift_unit> compiled.
-Entity <shift_unit> (Architecture <Combinational>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/word_unit.vhd" in Library work.
-Entity <word_unit> compiled.
-Entity <word_unit> (Architecture <Combinational>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/alu_toplevel.vhd" in Library work.
-Entity <ALU_Toplevel> compiled.
-Entity <ALU_Toplevel> (Architecture <Structural>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd" in Library work.
-Entity <Instruction_Memory_TL> compiled.
-Entity <Instruction_Memory_TL> (Architecture <Structural>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/REG_CTL.vhd" in Library work.
-Entity <REG_CTL> compiled.
-Entity <REG_CTL> (Architecture <Dataflow>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DC_CTL.vhd" in Library work.
-Entity <DC_CTL> compiled.
-Entity <DC_CTL> (Architecture <Combinational>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DATA_CTL.vhd" in Library work.
-Entity <DATA_CTL> compiled.
-Entity <DATA_CTL> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/IMSEL.vhd" in Library work.
-Entity <IMSEL> compiled.
-Entity <IMSEL> (Architecture <Dataflow>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd" in Library work.
-Entity <PipelineRegisters> compiled.
-Entity <PipelineRegisters> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/RegisterBank.vhd" in Library work.
-Entity <RegisterBank> compiled.
-Entity <RegisterBank> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_Register_Bank.vhd" in Library work.
-Entity <Shadow_Reg> compiled.
-Entity <Shadow_Reg> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_IMM_Add.vhd" in Library work.
-Entity <Shadow_IMM_Add> compiled.
-Entity <Shadow_IMM_Add> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ipcore_dir/EXTERNAL_MEMORY.vhd" in Library work.
-Entity <EXTERNAL_MEMORY> compiled.
-Entity <EXTERNAL_MEMORY> (Architecture <EXTERNAL_MEMORY_a>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/EX_MEM_CTL.vhd" in Library work.
-Entity <EX_MEM_CTL> compiled.
-Entity <EX_MEM_CTL> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd" in Library work.
-Entity <ProjLab01> compiled.
-Entity <ProjLab01> (Architecture <Structural>) compiled.
+WARNING:HDLParsers:3607 - Unit work/ProjLab01 is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd".
+WARNING:HDLParsers:3607 - Unit work/ProjLab01/Structural is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU_Toplevel is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/alu_toplevel.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/alu_toplevel.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU_Toplevel/Structural is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/alu_toplevel.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/alu_toplevel.vhd".
+WARNING:HDLParsers:3607 - Unit work/DATA_CTL is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DATA_CTL.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/DATA_CTL.vhd".
+WARNING:HDLParsers:3607 - Unit work/DATA_CTL/Behavioral is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DATA_CTL.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/DATA_CTL.vhd".
+WARNING:HDLParsers:3607 - Unit work/DC_CTL is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DC_CTL.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/DC_CTL.vhd".
+WARNING:HDLParsers:3607 - Unit work/DC_CTL/Combinational is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DC_CTL.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/DC_CTL.vhd".
+WARNING:HDLParsers:3607 - Unit work/EX_MEM_CTL is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/EX_MEM_CTL.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/EX_MEM_CTL.vhd".
+WARNING:HDLParsers:3607 - Unit work/EX_MEM_CTL/Behavioral is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/EX_MEM_CTL.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/EX_MEM_CTL.vhd".
+WARNING:HDLParsers:3607 - Unit work/IMSEL is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/IMSEL.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/IMSEL.vhd".
+WARNING:HDLParsers:3607 - Unit work/IMSEL/Dataflow is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/IMSEL.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/IMSEL.vhd".
+WARNING:HDLParsers:3607 - Unit work/Instruction_Memory_TL is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd".
+WARNING:HDLParsers:3607 - Unit work/Instruction_Memory_TL/Structural is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd".
+WARNING:HDLParsers:3607 - Unit work/PipelineRegisters is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd".
+WARNING:HDLParsers:3607 - Unit work/PipelineRegisters/Behavioral is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd".
+WARNING:HDLParsers:3607 - Unit work/RegisterBank is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/RegisterBank.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/RegisterBank.vhd".
+WARNING:HDLParsers:3607 - Unit work/RegisterBank/Behavioral is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/RegisterBank.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/RegisterBank.vhd".
+WARNING:HDLParsers:3607 - Unit work/REG_CTL is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/REG_CTL.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/REG_CTL.vhd".
+WARNING:HDLParsers:3607 - Unit work/REG_CTL/Dataflow is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/REG_CTL.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/REG_CTL.vhd".
+WARNING:HDLParsers:3607 - Unit work/Shadow_IMM_Add is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_IMM_Add.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_IMM_Add.vhd".
+WARNING:HDLParsers:3607 - Unit work/Shadow_IMM_Add/Behavioral is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_IMM_Add.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_IMM_Add.vhd".
+WARNING:HDLParsers:3607 - Unit work/Shadow_Reg is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_Register_Bank.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_Register_Bank.vhd".
+WARNING:HDLParsers:3607 - Unit work/Shadow_Reg/Behavioral is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_Register_Bank.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_Register_Bank.vhd".
+WARNING:HDLParsers:3607 - Unit work/ADR_LATCH is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ADR_LATCH.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/ADR_LATCH.vhd".
+WARNING:HDLParsers:3607 - Unit work/ADR_LATCH/Behavioral is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ADR_LATCH.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/ADR_LATCH.vhd".
+WARNING:HDLParsers:3607 - Unit work/arith_unit is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/arith_unit.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/arith_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/arith_unit/Combinational is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/arith_unit.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/arith_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/Instr_Mem is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instr_Mem.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Instr_Mem.vhd".
+WARNING:HDLParsers:3607 - Unit work/Instr_Mem/Instr_Mem_a is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instr_Mem.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Instr_Mem.vhd".
+WARNING:HDLParsers:3607 - Unit work/logical_unit is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/logical_unit.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/logical_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/logical_unit/Combinational is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/logical_unit.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/logical_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/PC_INC is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PC_INC.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PC_INC.vhd".
+WARNING:HDLParsers:3607 - Unit work/PC_INC/Combinational is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PC_INC.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PC_INC.vhd".
+WARNING:HDLParsers:3607 - Unit work/PC_OFFSET is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PC_OFFSET.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PC_OFFSET.vhd".
+WARNING:HDLParsers:3607 - Unit work/PC_OFFSET/Combinational is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PC_OFFSET.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PC_OFFSET.vhd".
+WARNING:HDLParsers:3607 - Unit work/shift_unit is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/shift_unit.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/shift_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/shift_unit/Combinational is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/shift_unit.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/shift_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/SH_PCREG is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/SH_PCREG.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/SH_PCREG.vhd".
+WARNING:HDLParsers:3607 - Unit work/SH_PCREG/Behavioral is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/SH_PCREG.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/SH_PCREG.vhd".
+WARNING:HDLParsers:3607 - Unit work/word_unit is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/word_unit.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/word_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/word_unit/Combinational is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/word_unit.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/word_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/DATAMEM is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DATAMEM.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/DATAMEM.vhd".
+WARNING:HDLParsers:3607 - Unit work/DATAMEM/DATAMEM_a is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DATAMEM.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/DATAMEM.vhd".
+WARNING:HDLParsers:3607 - Unit work/EXTERNAL_MEMORY is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ipcore_dir/EXTERNAL_MEMORY.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/ipcore_dir/EXTERNAL_MEMORY.vhd".
+WARNING:HDLParsers:3607 - Unit work/EXTERNAL_MEMORY/EXTERNAL_MEMORY_a is now defined in a different file.  It was defined in "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ipcore_dir/EXTERNAL_MEMORY.vhd", and is now defined in "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/ipcore_dir/EXTERNAL_MEMORY.vhd".
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/DATAMEM.vhd" in Library work.
+Architecture datamem_a of Entity datamem is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PC_INC.vhd" in Library work.
+Architecture combinational of Entity pc_inc is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PC_OFFSET.vhd" in Library work.
+Architecture combinational of Entity pc_offset is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/SH_PCREG.vhd" in Library work.
+Architecture behavioral of Entity sh_pcreg is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/ADR_LATCH.vhd" in Library work.
+Architecture behavioral of Entity adr_latch is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Instr_Mem.vhd" in Library work.
+Architecture instr_mem_a of Entity instr_mem is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/arith_unit.vhd" in Library work.
+Architecture combinational of Entity arith_unit is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/logical_unit.vhd" in Library work.
+Architecture combinational of Entity logical_unit is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/shift_unit.vhd" in Library work.
+Architecture combinational of Entity shift_unit is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/word_unit.vhd" in Library work.
+Architecture combinational of Entity word_unit is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/alu_toplevel.vhd" in Library work.
+Entity <alu_toplevel> compiled.
+Entity <alu_toplevel> (Architecture <structural>) compiled.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd" in Library work.
+Architecture structural of Entity instruction_memory_tl is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/REG_CTL.vhd" in Library work.
+Architecture dataflow of Entity reg_ctl is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/DC_CTL.vhd" in Library work.
+Architecture combinational of Entity dc_ctl is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/DATA_CTL.vhd" in Library work.
+Architecture behavioral of Entity data_ctl is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/IMSEL.vhd" in Library work.
+Architecture dataflow of Entity imsel is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd" in Library work.
+Architecture behavioral of Entity pipelineregisters is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/RegisterBank.vhd" in Library work.
+Architecture behavioral of Entity registerbank is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_Register_Bank.vhd" in Library work.
+Architecture behavioral of Entity shadow_reg is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_IMM_Add.vhd" in Library work.
+Architecture behavioral of Entity shadow_imm_add is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/ipcore_dir/EXTERNAL_MEMORY.vhd" in Library work.
+Architecture external_memory_a of Entity external_memory is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/EX_MEM_CTL.vhd" in Library work.
+Architecture behavioral of Entity ex_mem_ctl is up to date.
+Compiling vhdl file "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd" in Library work.
+Entity <projlab01> compiled.
+Entity <projlab01> (Architecture <structural>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <ProjLab01> in library <work> (architecture <Structural>).
+Analyzing hierarchy for entity <ProjLab01> in library <work> (architecture <structural>).
 
 Analyzing hierarchy for entity <ALU_Toplevel> in library <work> (architecture <Structural>).
 
@@ -246,9 +271,9 @@ Analyzing hierarchy for entity <ADR_LATCH> in library <work> (architecture <Beha
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <ProjLab01> in library <work> (Architecture <Structural>).
-WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd" line 119: Unconnected output port 'INS_OFFSET' of component 'Instruction_Memory_TL'.
-WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd" line 489: Instantiating black box module <EXTERNAL_MEMORY>.
+Analyzing Entity <ProjLab01> in library <work> (Architecture <structural>).
+WARNING:Xst:753 - "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd" line 119: Unconnected output port 'INS_OFFSET' of component 'Instruction_Memory_TL'.
+WARNING:Xst:2211 - "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd" line 489: Instantiating black box module <EXTERNAL_MEMORY>.
 Entity <ProjLab01> analyzed. Unit <ProjLab01> generated.
 
 Analyzing Entity <ALU_Toplevel> in library <work> (Architecture <Structural>).
@@ -264,14 +289,14 @@ Analyzing Entity <shift_unit> in library <work> (Architecture <Combinational>).
 Entity <shift_unit> analyzed. Unit <shift_unit> generated.
 
 Analyzing Entity <word_unit> in library <work> (Architecture <Combinational>).
-WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/word_unit.vhd" line 52: Instantiating black box module <DATAMEM>.
+WARNING:Xst:2211 - "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/word_unit.vhd" line 52: Instantiating black box module <DATAMEM>.
 Entity <word_unit> analyzed. Unit <word_unit> generated.
 
 Analyzing generic Entity <Instruction_Memory_TL> in library <work> (Architecture <Structural>).
 	PCWIDTH = 5
-WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd" line 100: Unconnected output port 'OVFLW' of component 'SH_PCREG'.
-INFO:Xst:1739 - HDL ADVISOR - "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd" line 42: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
-WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd" line 119: Instantiating black box module <Instr_Mem>.
+WARNING:Xst:753 - "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd" line 100: Unconnected output port 'OVFLW' of component 'SH_PCREG'.
+INFO:Xst:1739 - HDL ADVISOR - "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd" line 42: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+WARNING:Xst:2211 - "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd" line 119: Instantiating black box module <Instr_Mem>.
 Entity <Instruction_Memory_TL> analyzed. Unit <Instruction_Memory_TL> generated.
 
 Analyzing generic Entity <PC_INC> in library <work> (Architecture <Combinational>).
@@ -285,7 +310,7 @@ Entity <PC_OFFSET> analyzed. Unit <PC_OFFSET> generated.
 Analyzing generic Entity <SH_PCREG> in library <work> (Architecture <Behavioral>).
 	PCWIDTH = 5
 	STACKDEPTH = 4
-INFO:Xst:1561 - "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/SH_PCREG.vhd" line 77: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/SH_PCREG.vhd" line 77: Mux is complete : default of case is discarded
 Entity <SH_PCREG> analyzed. Unit <SH_PCREG> generated.
 
 Analyzing generic Entity <ADR_LATCH> in library <work> (Architecture <Behavioral>).
@@ -306,25 +331,25 @@ Entity <IMSEL> analyzed. Unit <IMSEL> generated.
 
 Analyzing generic Entity <PipelineRegisters.1> in library <work> (Architecture <Behavioral>).
 	dataWidth = 4
-WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <Ena>
 Entity <PipelineRegisters.1> analyzed. Unit <PipelineRegisters.1> generated.
 
 Analyzing generic Entity <PipelineRegisters.2> in library <work> (Architecture <Behavioral>).
 	dataWidth = 8
-WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <Ena>
 Entity <PipelineRegisters.2> analyzed. Unit <PipelineRegisters.2> generated.
 
 Analyzing generic Entity <PipelineRegisters.3> in library <work> (Architecture <Behavioral>).
 	dataWidth = 5
-WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <Ena>
 Entity <PipelineRegisters.3> analyzed. Unit <PipelineRegisters.3> generated.
 
 Analyzing generic Entity <PipelineRegisters.4> in library <work> (Architecture <Behavioral>).
 	dataWidth = 16
-WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <Ena>
 Entity <PipelineRegisters.4> analyzed. Unit <PipelineRegisters.4> generated.
 
@@ -339,12 +364,12 @@ Entity <Shadow_IMM_Add> analyzed. Unit <Shadow_IMM_Add> generated.
 
 Analyzing generic Entity <PipelineRegisters.5> in library <work> (Architecture <Behavioral>).
 	dataWidth = 14
-WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <Ena>
 Entity <PipelineRegisters.5> analyzed. Unit <PipelineRegisters.5> generated.
 
 Analyzing Entity <EX_MEM_CTL> in library <work> (Architecture <Behavioral>).
-WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/EX_MEM_CTL.vhd" line 46: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/EX_MEM_CTL.vhd" line 46: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <EN>
 Entity <EX_MEM_CTL> analyzed. Unit <EX_MEM_CTL> generated.
 
@@ -356,13 +381,13 @@ Entity <EX_MEM_CTL> analyzed. Unit <EX_MEM_CTL> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <REG_CTL>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/REG_CTL.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/REG_CTL.vhd".
 WARNING:Xst:647 - Input <CLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <REG_CTL> synthesized.
 
 
 Synthesizing Unit <DC_CTL>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DC_CTL.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/DC_CTL.vhd".
 WARNING:Xst:647 - Input <CLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit comparator equal for signal <OP1$cmp_eq0000> created at line 54.
     Found 4-bit comparator equal for signal <OP1$cmp_eq0001> created at line 54.
@@ -376,7 +401,7 @@ Unit <DC_CTL> synthesized.
 
 
 Synthesizing Unit <DATA_CTL>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/DATA_CTL.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/DATA_CTL.vhd".
 WARNING:Xst:647 - Input <EN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <RD>.
     Found 1-bit register for signal <WR>.
@@ -386,12 +411,12 @@ Unit <DATA_CTL> synthesized.
 
 
 Synthesizing Unit <IMSEL>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/IMSEL.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/IMSEL.vhd".
 Unit <IMSEL> synthesized.
 
 
 Synthesizing Unit <PipelineRegisters_1>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd".
     Found 4-bit register for signal <Dout>.
     Found 4-bit register for signal <DataOutSignal>.
     Summary:
@@ -400,7 +425,7 @@ Unit <PipelineRegisters_1> synthesized.
 
 
 Synthesizing Unit <PipelineRegisters_2>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd".
     Found 8-bit register for signal <Dout>.
     Found 8-bit register for signal <DataOutSignal>.
     Summary:
@@ -409,7 +434,7 @@ Unit <PipelineRegisters_2> synthesized.
 
 
 Synthesizing Unit <PipelineRegisters_3>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd".
     Found 5-bit register for signal <Dout>.
     Found 5-bit register for signal <DataOutSignal>.
     Summary:
@@ -418,7 +443,7 @@ Unit <PipelineRegisters_3> synthesized.
 
 
 Synthesizing Unit <PipelineRegisters_4>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd".
     Found 16-bit register for signal <Dout>.
     Found 16-bit register for signal <DataOutSignal>.
     Summary:
@@ -427,7 +452,7 @@ Unit <PipelineRegisters_4> synthesized.
 
 
 Synthesizing Unit <RegisterBank>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/RegisterBank.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/RegisterBank.vhd".
     Found 16-bit register for signal <RBout>.
     Found 16-bit register for signal <RAout>.
     Found 16-bit register for signal <R0dat>.
@@ -455,7 +480,7 @@ Unit <RegisterBank> synthesized.
 
 
 Synthesizing Unit <Shadow_Reg>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_Register_Bank.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_Register_Bank.vhd".
 WARNING:Xst:647 - Input <W> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:737 - Found 16-bit latch for signal <R1dat>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 16-bit latch for signal <R3dat>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -470,7 +495,7 @@ Unit <Shadow_Reg> synthesized.
 
 
 Synthesizing Unit <Shadow_IMM_Add>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_IMM_Add.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Shadow_IMM_Add.vhd".
 WARNING:Xst:647 - Input <SHADOW<15:14>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 14-bit adder for signal <RESULT>.
     Summary:
@@ -479,7 +504,7 @@ Unit <Shadow_IMM_Add> synthesized.
 
 
 Synthesizing Unit <PipelineRegisters_5>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PipelineRegisters.vhd".
     Found 14-bit register for signal <Dout>.
     Found 14-bit register for signal <DataOutSignal>.
     Summary:
@@ -488,7 +513,7 @@ Unit <PipelineRegisters_5> synthesized.
 
 
 Synthesizing Unit <EX_MEM_CTL>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/EX_MEM_CTL.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/EX_MEM_CTL.vhd".
     Found 1-bit register for signal <RD>.
     Found 1-bit register for signal <WR>.
     Summary:
@@ -497,7 +522,7 @@ Unit <EX_MEM_CTL> synthesized.
 
 
 Synthesizing Unit <arith_unit>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/arith_unit.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/arith_unit.vhd".
     Found 17-bit addsub for signal <RESULT$addsub0000>.
     Found 1-bit xor2 for signal <SREG<1>>.
     Summary:
@@ -506,12 +531,12 @@ Unit <arith_unit> synthesized.
 
 
 Synthesizing Unit <logical_unit>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/logical_unit.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/logical_unit.vhd".
 Unit <logical_unit> synthesized.
 
 
 Synthesizing Unit <shift_unit>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/shift_unit.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/shift_unit.vhd".
 WARNING:Xst:653 - Signal <sreg<3>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <sreg<1>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
     Found 24-bit shifter logical left for signal <shift_left$shift0001> created at line 52.
@@ -522,7 +547,7 @@ Unit <shift_unit> synthesized.
 
 
 Synthesizing Unit <PC_INC>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PC_INC.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PC_INC.vhd".
     Found 5-bit adder for signal <NEXT_ADR>.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -530,7 +555,7 @@ Unit <PC_INC> synthesized.
 
 
 Synthesizing Unit <PC_OFFSET>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/PC_OFFSET.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/PC_OFFSET.vhd".
     Found 5-bit adder for signal <NEW_ADR>.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -538,7 +563,7 @@ Unit <PC_OFFSET> synthesized.
 
 
 Synthesizing Unit <SH_PCREG>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/SH_PCREG.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/SH_PCREG.vhd".
 WARNING:Xst:1305 - Output <OVFLW> is never assigned. Tied to value 0.
     Found 5-bit register for signal <ADROUT>.
     Found 15-bit register for signal <PC_STACK>.
@@ -548,7 +573,7 @@ Unit <SH_PCREG> synthesized.
 
 
 Synthesizing Unit <ADR_LATCH>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ADR_LATCH.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/ADR_LATCH.vhd".
     Found 5-bit register for signal <ADOUT>.
     Summary:
 	inferred   5 D-type flip-flop(s).
@@ -556,7 +581,7 @@ Unit <ADR_LATCH> synthesized.
 
 
 Synthesizing Unit <Instruction_Memory_TL>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Instruction_Memory_TL.vhd".
 WARNING:Xst:1305 - Output <INS_OFFSET> is never assigned. Tied to value 000000000000.
 WARNING:Xst:653 - Signal <ZERO_ADR> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
 WARNING:Xst:653 - Signal <WEA> is used but never assigned. This sourceless signal will be automatically connected to value 0.
@@ -568,18 +593,22 @@ Unit <Instruction_Memory_TL> synthesized.
 
 
 Synthesizing Unit <word_unit>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/word_unit.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/word_unit.vhd".
 Unit <word_unit> synthesized.
 
 
 Synthesizing Unit <ALU_Toplevel>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/alu_toplevel.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/alu_toplevel.vhd".
+WARNING:Xst:646 - Signal <WORD_OUT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SHIFT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <LOGIC> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <LD_MEM> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ARITH> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <ALU_Toplevel> synthesized.
 
 
 Synthesizing Unit <ProjLab01>.
-    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd".
+    Related source file is "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.vhd".
 WARNING:Xst:646 - Signal <RB_DC2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <PC_RST> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <PC_INC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -904,24 +933,24 @@ WARNING:Xst:2677 - Node <Dout_0> of sequential type is unconnected in block <OP4
 WARNING:Xst:2677 - Node <RD> of sequential type is unconnected in block <EX_MEM_CTL>.
 
 Mapping all equations...
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ProjLab01/Mmux_RA_OUT_412, ALU_UNIT/ALU_OUT<6>4, ALU_UNIT/ALU_OUT<6>7, ProjLab01/RA_OUT<6>, ProjLab01/ALU_RESULT<6>, dina<6>, ALU_UNIT/ALU_OUT<6>, ALU_UNIT/RA<6>.
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ALU_UNIT/ALU_OUT<5>1, ProjLab01/Mmux_RA_OUT_411, ALU_UNIT/ALU_OUT<5>, dina<5>, ProjLab01/RA_OUT<5>, ProjLab01/ALU_RESULT<5>, ALU_UNIT/ALU_OUT<5>8, ALU_UNIT/RA<5>.
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ALU_UNIT/ALU_OUT<4>7, ALU_UNIT/ALU_OUT<4>, ALU_UNIT/RA<4>, ProjLab01/Mmux_RA_OUT_410, dina<4>, ProjLab01/RA_OUT<4>, ProjLab01/ALU_RESULT<4>, ALU_UNIT/ALU_OUT<4>4.
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: dina<3>, ALU_UNIT/ALU_OUT<3>, ALU_UNIT/ALU_OUT<3>8, ProjLab01/RA_OUT<3>, ProjLab01/ALU_RESULT<3>, ProjLab01/Mmux_RA_OUT_49, ALU_UNIT/ALU_OUT<3>1, ALU_UNIT/RA<3>.
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ProjLab01/ALU_RESULT<2>, ALU_UNIT/RA<2>, ALU_UNIT/ALU_OUT<2>, dina<2>, ALU_UNIT/ALU_OUT<2>1, ProjLab01/Mmux_RA_OUT_48, ALU_UNIT/ALU_OUT<2>8, ProjLab01/RA_OUT<2>.
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ALU_UNIT/ALU_OUT<1>4, ALU_UNIT/ALU_OUT<1>7, ALU_UNIT/RA<1>, ProjLab01/RA_OUT<1>, ProjLab01/ALU_RESULT<1>, ProjLab01/Mmux_RA_OUT_47, ALU_UNIT/ALU_OUT<1>, dina<1>.
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ALU_UNIT/ALU_OUT<0>, ProjLab01/RA_OUT<0>, ProjLab01/ALU_RESULT<0>, dina<0>, ALU_UNIT/RA<0>, ProjLab01/Mmux_RA_OUT_4, ALU_UNIT/ALU_OUT<0>1, ALU_UNIT/ALU_OUT<0>8.
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ProjLab01/ALU_RESULT<14>, ProjLab01/Mmux_RA_OUT_45, ALU_UNIT/RA<14>, ALU_UNIT/ALU_OUT<14>, dina<14>, ProjLab01/RA_OUT<14>, ALU_UNIT/ALU_OUT<14>8, ALU_UNIT/ALU_OUT<14>1.
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ALU_UNIT/ALU_OUT<13>, ALU_UNIT/ALU_OUT<13>8, ProjLab01/Mmux_RA_OUT_44, ALU_UNIT/ALU_OUT<13>1, ALU_UNIT/RA<13>, ProjLab01/ALU_RESULT<13>, dina<13>, ProjLab01/RA_OUT<13>.
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ALU_UNIT/ALU_OUT<12>, ProjLab01/RA_OUT<12>, ALU_UNIT/RA<12>, ProjLab01/ALU_RESULT<12>, dina<12>, ProjLab01/Mmux_RA_OUT_43, ALU_UNIT/ALU_OUT<12>8, ALU_UNIT/ALU_OUT<12>1.
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ProjLab01/Mmux_RA_OUT_42, ALU_UNIT/RA<11>, ALU_UNIT/ALU_OUT<11>8, dina<11>, ALU_UNIT/ALU_OUT<11>, ProjLab01/RA_OUT<11>, ProjLab01/ALU_RESULT<11>, ALU_UNIT/ALU_OUT<11>1.
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: dina<10>, ALU_UNIT/ALU_OUT<10>1, ProjLab01/RA_OUT<10>, ProjLab01/ALU_RESULT<10>, ProjLab01/Mmux_RA_OUT_41, ALU_UNIT/ALU_OUT<10>8, ALU_UNIT/RA<10>, ALU_UNIT/ALU_OUT<10>.
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ALU_UNIT/ALU_OUT<9>1, ALU_UNIT/ALU_OUT<9>8, ALU_UNIT/RA<9>, dina<9>, ProjLab01/Mmux_RA_OUT_415, ALU_UNIT/ALU_OUT<9>, ProjLab01/RA_OUT<9>, ProjLab01/ALU_RESULT<9>.
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ALU_UNIT/RA<8>, ALU_UNIT/ALU_OUT<8>, ALU_UNIT/ALU_OUT<8>8, ProjLab01/RA_OUT<8>, ALU_UNIT/ALU_OUT<8>1, ProjLab01/ALU_RESULT<8>, ProjLab01/Mmux_RA_OUT_414, dina<8>.
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ProjLab01/RA_OUT<7>, ProjLab01/ALU_RESULT<7>, ALU_UNIT/ALU_OUT<7>7, dina<7>, ALU_UNIT/ALU_OUT<7>, ALU_UNIT/ALU_OUT<7>4, ALU_UNIT/RA<7>, ProjLab01/Mmux_RA_OUT_413.
-WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ALU_UNIT/RA<15>, ProjLab01/ALU_RESULT<15>, ALU_UNIT/ALU_OUT<15>1, ALU_UNIT/ALU_OUT<15>, ALU_UNIT/ALU_OUT<15>8, ProjLab01/RA_OUT<15>, ProjLab01/Mmux_RA_OUT_46, dina<15>.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ProjLab01/Mmux_RA_OUT_412, dina<6>, ProjLab01/RA_OUT<6>, ALU_UNIT/RA<6>, ProjLab01/ALU_RESULT<6>.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ProjLab01/Mmux_RA_OUT_411, ALU_UNIT/RA<5>, ProjLab01/ALU_RESULT<5>, dina<5>, ProjLab01/RA_OUT<5>.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: dina<4>, ProjLab01/ALU_RESULT<4>, ProjLab01/RA_OUT<4>, ProjLab01/Mmux_RA_OUT_410, ALU_UNIT/RA<4>.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ALU_UNIT/RA<3>, dina<3>, ProjLab01/Mmux_RA_OUT_49, ProjLab01/ALU_RESULT<3>, ProjLab01/RA_OUT<3>.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ProjLab01/ALU_RESULT<2>, ProjLab01/RA_OUT<2>, ProjLab01/Mmux_RA_OUT_48, dina<2>, ALU_UNIT/RA<2>.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: dina<1>, ProjLab01/ALU_RESULT<1>, ProjLab01/RA_OUT<1>, ProjLab01/Mmux_RA_OUT_47, ALU_UNIT/RA<1>.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ProjLab01/ALU_RESULT<0>, ProjLab01/RA_OUT<0>, ALU_UNIT/RA<0>, dina<0>, ProjLab01/Mmux_RA_OUT_4.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ProjLab01/Mmux_RA_OUT_45, ProjLab01/RA_OUT<14>, ProjLab01/ALU_RESULT<14>, ALU_UNIT/RA<14>, dina<14>.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ProjLab01/Mmux_RA_OUT_44, ALU_UNIT/RA<13>, ProjLab01/RA_OUT<13>, dina<13>, ProjLab01/ALU_RESULT<13>.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: dina<12>, ProjLab01/ALU_RESULT<12>, ProjLab01/Mmux_RA_OUT_43, ProjLab01/RA_OUT<12>, ALU_UNIT/RA<12>.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ALU_UNIT/RA<11>, ProjLab01/RA_OUT<11>, dina<11>, ProjLab01/Mmux_RA_OUT_42, ProjLab01/ALU_RESULT<11>.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ProjLab01/ALU_RESULT<10>, ALU_UNIT/RA<10>, ProjLab01/Mmux_RA_OUT_41, ProjLab01/RA_OUT<10>, dina<10>.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ALU_UNIT/RA<9>, ProjLab01/ALU_RESULT<9>, ProjLab01/RA_OUT<9>, dina<9>, ProjLab01/Mmux_RA_OUT_415.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ProjLab01/RA_OUT<8>, ProjLab01/Mmux_RA_OUT_414, dina<8>, ALU_UNIT/RA<8>, ProjLab01/ALU_RESULT<8>.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ProjLab01/Mmux_RA_OUT_413, ProjLab01/ALU_RESULT<7>, ProjLab01/RA_OUT<7>, dina<7>, ALU_UNIT/RA<7>.
+WARNING:Xst:2170 - Unit EXTERNAL_MEM : the following signal(s) form a combinatorial loop: ProjLab01/Mmux_RA_OUT_46, ProjLab01/RA_OUT<15>, ProjLab01/ALU_RESULT<15>, ALU_UNIT/RA<15>, dina<15>.
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block ProjLab01, actual ratio is 18.
+Found area constraint ratio of 100 (+ 5) on block ProjLab01, actual ratio is 17.
 
 Final Macro Processing ...
 
@@ -959,23 +988,23 @@ Design Statistics
 # IOs                              : 54
 
 Cell Usage :
-# BELS                             : 1235
+# BELS                             : 1137
 #      GND                         : 10
-#      INV                         : 4
-#      LUT2                        : 77
-#      LUT2_D                      : 2
-#      LUT2_L                      : 15
-#      LUT3                        : 532
-#      LUT3_D                      : 8
-#      LUT3_L                      : 3
-#      LUT4                        : 170
-#      LUT4_D                      : 15
-#      LUT4_L                      : 24
-#      MUXCY                       : 23
-#      MUXF5                       : 212
+#      INV                         : 3
+#      LUT2                        : 34
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 514
+#      LUT3_D                      : 9
+#      LUT3_L                      : 2
+#      LUT4                        : 155
+#      LUT4_D                      : 8
+#      LUT4_L                      : 18
+#      MUXCY                       : 20
+#      MUXF5                       : 223
 #      MUXF6                       : 73
 #      MUXF7                       : 32
-#      VCC                         : 6
+#      VCC                         : 5
 #      XORCY                       : 29
 # FlipFlops/Latches                : 651
 #      FDC                         : 6
@@ -1001,9 +1030,9 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      808  out of   4656    17%  
+ Number of Slices:                      752  out of   4656    16%  
  Number of Slice Flip Flops:            651  out of   9312     6%  
- Number of 4 input LUTs:                850  out of   9312     9%  
+ Number of 4 input LUTs:                745  out of   9312     8%  
  Number of IOs:                          54
  Number of bonded IOBs:                  54  out of    232    23%  
  Number of BRAMs:                        17  out of     20    85%  
@@ -1049,9 +1078,9 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 268.651ns (Maximum Frequency: 3.722MHz)
+   Minimum period: 37.277ns (Maximum Frequency: 26.826MHz)
    Minimum input arrival time before clock: 6.400ns
-   Maximum output required time after clock: 138.610ns
+   Maximum output required time after clock: 13.460ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -1060,222 +1089,49 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 268.651ns (frequency: 3.722MHz)
-  Total number of paths / destination ports: 1343594554 / 1285
+  Clock period: 37.277ns (frequency: 26.826MHz)
+  Total number of paths / destination ports: 191322 / 1285
 -------------------------------------------------------------------------
-Delay:               134.325ns (Levels of Logic = 164)
-  Source:            RB3ADR_Reg/Dout_0 (FF)
-  Destination:       ALU_OUT_Reg/DataOutSignal_7 (FF)
+Delay:               18.639ns (Levels of Logic = 20)
+  Source:            RA_DC1_Reg/Dout_3 (FF)
+  Destination:       ALU_FLAGS_Reg/DataOutSignal_2 (FF)
   Source Clock:      CLK falling
   Destination Clock: CLK rising
 
-  Data Path: RB3ADR_Reg/Dout_0 to ALU_OUT_Reg/DataOutSignal_7
+  Data Path: RA_DC1_Reg/Dout_3 to ALU_FLAGS_Reg/DataOutSignal_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE_1:C->Q            3   0.591   0.706  Dout_0 (Dout_0)
-     end scope: 'RB3ADR_Reg'
+     FDE_1:C->Q            3   0.591   0.706  Dout_3 (Dout_3)
+     end scope: 'RA_DC1_Reg'
      begin scope: 'DCCTL'
-     LUT4:I0->O            2   0.704   0.526  OP2_cmp_eq0001426 (OP2_cmp_eq0001426)
-     LUT4:I1->O            1   0.704   0.424  OP2_SEL<0>_SW0 (N4)
-     LUT4:I3->O           32   0.704   1.437  OP2_SEL<0> (OP2_SEL<0>)
+     LUT4:I0->O            2   0.704   0.526  OP1_cmp_eq0001453 (OP1_cmp_eq0001453)
+     LUT3:I1->O            1   0.704   0.424  OP1<0>1_SW0 (N6)
+     LUT4:I3->O           32   0.704   1.437  OP1<0>1 (OP1_SEL<0>)
      end scope: 'DCCTL'
-     LUT3:I0->O            1   0.704   0.000  Mmux_RB_OUT_4 (Mmux_RB_OUT_4)
-     MUXF5:I0->O          71   0.321   1.310  Mmux_RB_OUT_2_f5 (RB_OUT<0>)
+     LUT3:I0->O            1   0.704   0.000  Mmux_RA_OUT_4 (Mmux_RA_OUT_4)
+     MUXF5:I0->O          13   0.321   1.018  Mmux_RA_OUT_2_f5 (RA_OUT<0>)
+     begin scope: 'ALU_UNIT'
+     end scope: 'ALU_UNIT'
+     LUT3:I2->O            1   0.704   0.000  Mmux_RB_OUT_2_f5_F (N4)
+     MUXF5:I0->O          77   0.321   1.311  Mmux_RB_OUT_2_f5 (RB_OUT<0>)
      begin scope: 'ALU_UNIT'
      begin scope: 'shift_unit'
-     LUT3:I2->O            2   0.704   0.482  Sh77_SW1 (N101)
-     LUT3:I2->O            3   0.704   0.566  Sh77 (Sh77)
-     LUT4_L:I2->LO         1   0.704   0.275  shift_result<9>27 (shift_result<9>27)
-     LUT4:I0->O            1   0.704   0.595  shift_result<9>70 (shift_result<9>70)
-     LUT2:I0->O            2   0.704   0.451  shift_result<9>86 (SHIFT_OUT<9>)
+     LUT3:I2->O            2   0.704   0.482  Sh75_SW1 (N49)
+     LUT3:I2->O            4   0.704   0.622  Sh75 (Sh75)
+     LUT3:I2->O            1   0.704   0.000  shift_result<15>31_G (N113)
+     MUXF5:I1->O           1   0.321   0.424  shift_result<15>31 (shift_result<15>31)
+     LUT4:I3->O            1   0.704   0.424  shift_result<15>99 (SHIFT_OUT<15>)
+     LUT4:I3->O            1   0.704   0.499  sreg_2_cmp_eq000062 (sreg_2_cmp_eq000062)
+     LUT4:I1->O            1   0.704   0.455  sreg_2_cmp_eq000076 (SREG_OUT<2>)
      end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<9>22 (ALU_OUT<9>)
+     LUT4:I2->O            1   0.704   0.000  SREG<2>41 (SREG<2>)
      end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_415 (Mmux_RA_OUT_415)
-     MUXF5:I0->O          21   0.321   1.207  Mmux_RA_OUT_2_f5_14 (RA_OUT<9>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3:I1->O            1   0.704   0.000  Sh812 (Sh812)
-     MUXF5:I0->O           4   0.321   0.622  Sh81_f5 (Sh81)
-     LUT4_L:I2->LO         1   0.704   0.135  shift_result<13>25 (shift_result<13>25)
-     LUT4:I2->O            1   0.704   0.595  shift_result<13>71 (shift_result<13>71)
-     LUT2:I0->O            2   0.704   0.451  shift_result<13>87 (SHIFT_OUT<13>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<13>22 (ALU_OUT<13>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_44 (Mmux_RA_OUT_44)
-     MUXF5:I0->O          21   0.321   1.163  Mmux_RA_OUT_2_f5_3 (RA_OUT<13>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3:I2->O            1   0.704   0.000  Sh86312 (Sh86311)
-     MUXF5:I0->O           3   0.321   0.535  Sh8631_f5 (Sh86)
-     LUT4_L:I3->LO         1   0.704   0.275  shift_result<14>40 (shift_result<14>40)
-     LUT4:I0->O            1   0.704   0.499  shift_result<14>71 (shift_result<14>71)
-     LUT3:I1->O            2   0.704   0.451  shift_result<14>86 (SHIFT_OUT<14>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<14>22 (ALU_OUT<14>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_45 (Mmux_RA_OUT_45)
-     MUXF5:I0->O          22   0.321   1.164  Mmux_RA_OUT_2_f5_4 (RA_OUT<14>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'arith_unit'
-     MUXCY:DI->O           1   0.888   0.000  Maddsub_RESULT_addsub0000_cy<14> (Maddsub_RESULT_addsub0000_cy<14>)
-     XORCY:CI->O           1   0.804   0.499  Maddsub_RESULT_addsub0000_xor<15> (RESULT_addsub0000<15>)
-     LUT2:I1->O            4   0.704   0.666  RESULT<15>1 (SREG_OUT<3>)
-     end scope: 'arith_unit'
-     LUT2_L:I1->LO         1   0.704   0.179  ALU_OUT<15>11 (ALU_OUT<15>11)
-     LUT4:I1->O            3   0.704   0.566  ALU_OUT<15>22 (ALU_OUT<15>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_2_f5_5_F (N2)
-     MUXF5:I0->O          24   0.321   1.331  Mmux_RA_OUT_2_f5_5 (RA_OUT<15>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT4:I1->O            1   0.704   0.455  Sh13_SW0 (N23)
-     LUT3:I2->O            5   0.704   0.668  Sh13 (Sh13)
-     LUT3:I2->O            1   0.704   0.000  shift_result<5>182 (shift_result<5>182)
-     MUXF5:I0->O           1   0.321   0.499  shift_result<5>18_f5 (shift_result<5>18)
-     LUT4_L:I1->LO         1   0.704   0.275  shift_result<5>33 (shift_result<5>33)
-     LUT3:I0->O            2   0.704   0.451  shift_result<5>64 (SHIFT_OUT<5>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<5>22 (ALU_OUT<5>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_411 (Mmux_RA_OUT_411)
-     MUXF5:I0->O          14   0.321   1.035  Mmux_RA_OUT_2_f5_10 (RA_OUT<5>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3:I2->O            1   0.704   0.000  Sh782 (Sh782)
-     MUXF5:I0->O           4   0.321   0.622  Sh78_f5 (Sh78)
-     LUT4_L:I2->LO         1   0.704   0.275  shift_result<10>27 (shift_result<10>27)
-     LUT4:I0->O            1   0.704   0.499  shift_result<10>70 (shift_result<10>70)
-     LUT3:I1->O            2   0.704   0.451  shift_result<10>86 (SHIFT_OUT<10>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<10>22 (ALU_OUT<10>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_41 (Mmux_RA_OUT_41)
-     MUXF5:I0->O          21   0.321   1.207  Mmux_RA_OUT_2_f5_0 (RA_OUT<10>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3:I1->O            1   0.704   0.000  Sh84291 (Sh8429)
-     MUXF5:I1->O           3   0.321   0.535  Sh8429_f5 (Sh84)
-     LUT4_L:I3->LO         1   0.704   0.275  shift_result<12>38 (shift_result<12>38)
-     LUT4:I0->O            1   0.704   0.595  shift_result<12>71 (shift_result<12>71)
-     LUT2:I0->O            2   0.704   0.451  shift_result<12>87 (SHIFT_OUT<12>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<12>22 (ALU_OUT<12>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_43 (Mmux_RA_OUT_43)
-     MUXF5:I0->O          21   0.321   1.207  Mmux_RA_OUT_2_f5_2 (RA_OUT<12>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3:I1->O            1   0.704   0.000  Sh12302 (Sh12301)
-     MUXF5:I0->O           4   0.321   0.622  Sh1230_f5 (Sh12)
-     LUT4_L:I2->LO         1   0.704   0.135  shift_result<8>12 (shift_result<8>12)
-     LUT4:I2->O            1   0.704   0.455  shift_result<8>70 (shift_result<8>70)
-     LUT3:I2->O            2   0.704   0.451  shift_result<8>87 (SHIFT_OUT<8>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<8>22 (ALU_OUT<8>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_414 (Mmux_RA_OUT_414)
-     MUXF5:I0->O          21   0.321   1.128  Mmux_RA_OUT_2_f5_13 (RA_OUT<8>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'arith_unit'
-     MUXCY:DI->O           1   0.888   0.000  Maddsub_RESULT_addsub0000_cy<8> (Maddsub_RESULT_addsub0000_cy<8>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<9> (Maddsub_RESULT_addsub0000_cy<9>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<10> (Maddsub_RESULT_addsub0000_cy<10>)
-     XORCY:CI->O           1   0.804   0.499  Maddsub_RESULT_addsub0000_xor<11> (RESULT_addsub0000<11>)
-     LUT2:I1->O            2   0.704   0.526  RESULT<11>1 (AR_OUT<11>)
-     end scope: 'arith_unit'
-     LUT2_L:I1->LO         1   0.704   0.179  ALU_OUT<11>11 (ALU_OUT<11>11)
-     LUT4:I1->O            3   0.704   0.566  ALU_OUT<11>22 (ALU_OUT<11>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_2_f5_1_F (N01)
-     MUXF5:I0->O          21   0.321   1.207  Mmux_RA_OUT_2_f5_1 (RA_OUT<11>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3:I1->O            1   0.704   0.000  Sh11302 (Sh11301)
-     MUXF5:I0->O           3   0.321   0.610  Sh1130_f5 (Sh11)
-     LUT4_L:I1->LO         1   0.704   0.135  shift_result<3>86 (shift_result<3>86)
-     LUT4:I2->O            1   0.704   0.455  shift_result<3>145 (shift_result<3>145)
-     LUT3:I2->O            2   0.704   0.451  shift_result<3>162 (SHIFT_OUT<3>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<3>22 (ALU_OUT<3>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RB_OUT_49 (Mmux_RB_OUT_49)
-     MUXF5:I0->O          68   0.321   1.449  Mmux_RB_OUT_2_f5_8 (RB_OUT<3>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT4:I0->O            1   0.704   0.000  shift_result<1>57_F (N109)
-     MUXF5:I0->O           1   0.321   0.595  shift_result<1>57 (shift_result<1>57)
-     LUT4_L:I0->LO         1   0.704   0.135  shift_result<1>86 (shift_result<1>86)
-     LUT4:I2->O            1   0.704   0.455  shift_result<1>143 (shift_result<1>143)
-     LUT3:I2->O            2   0.704   0.451  shift_result<1>158 (SHIFT_OUT<1>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<1>22 (ALU_OUT<1>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_47 (Mmux_RA_OUT_47)
-     MUXF5:I0->O          12   0.321   0.996  Mmux_RA_OUT_2_f5_6 (RA_OUT<1>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3:I2->O            1   0.704   0.000  Sh742 (Sh742)
-     MUXF5:I0->O           5   0.321   0.808  Sh74_f5 (Sh74)
-     LUT4_L:I0->LO         1   0.704   0.179  shift_result<2>140 (shift_result<2>140)
-     LUT4:I1->O            1   0.704   0.455  shift_result<2>143 (shift_result<2>143)
-     LUT3:I2->O            2   0.704   0.451  shift_result<2>158 (SHIFT_OUT<2>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<2>22 (ALU_OUT<2>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RB_OUT_48 (Mmux_RB_OUT_48)
-     MUXF5:I0->O          75   0.321   1.355  Mmux_RB_OUT_2_f5_7 (RB_OUT<2>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT4:I1->O            1   0.704   0.000  shift_result<4>34_F (N1011)
-     MUXF5:I0->O           1   0.321   0.455  shift_result<4>34 (shift_result<4>34)
-     LUT4:I2->O            2   0.704   0.451  shift_result<4>81 (SHIFT_OUT<4>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<4>22 (ALU_OUT<4>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RB_OUT_410 (Mmux_RB_OUT_410)
-     MUXF5:I0->O          29   0.321   1.436  Mmux_RB_OUT_2_f5_9 (RB_OUT<4>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT4_L:I0->LO         1   0.704   0.275  shift_result<6>62 (shift_result<6>62)
-     LUT4:I0->O            2   0.704   0.451  shift_result<6>64 (SHIFT_OUT<6>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<6>22 (ALU_OUT<6>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RB_OUT_412 (Mmux_RB_OUT_412)
-     MUXF5:I0->O          13   0.321   1.062  Mmux_RB_OUT_2_f5_11 (RB_OUT<6>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3_D:I1->LO         1   0.704   0.275  shift_right_or00001 (N124)
-     LUT3:I0->O            1   0.704   0.424  shift_result<0>149 (SHIFT_OUT<0>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<0>22 (ALU_OUT<0>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_4 (Mmux_RA_OUT_4)
-     MUXF5:I0->O          11   0.321   0.933  Mmux_RA_OUT_2_f5 (RA_OUT<0>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'arith_unit'
-     MUXCY:DI->O           1   0.888   0.000  Maddsub_RESULT_addsub0000_cy<0> (Maddsub_RESULT_addsub0000_cy<0>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<1> (Maddsub_RESULT_addsub0000_cy<1>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<2> (Maddsub_RESULT_addsub0000_cy<2>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<3> (Maddsub_RESULT_addsub0000_cy<3>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<4> (Maddsub_RESULT_addsub0000_cy<4>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<5> (Maddsub_RESULT_addsub0000_cy<5>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<6> (Maddsub_RESULT_addsub0000_cy<6>)
-     XORCY:CI->O           2   0.804   0.451  Maddsub_RESULT_addsub0000_xor<7> (RESULT_addsub0000<7>)
-     LUT4:I3->O            1   0.704   0.499  RESULT<7>1 (AR_OUT<7>)
-     end scope: 'arith_unit'
-     LUT2_L:I1->LO         1   0.704   0.179  ALU_OUT<7>11 (ALU_OUT<7>11)
-     LUT4:I1->O            3   0.704   0.566  ALU_OUT<7>22 (ALU_OUT<7>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  ALU_EX_MUX<7>1 (ALU_EX_MUX<7>)
-     begin scope: 'ALU_OUT_Reg'
-     FDPE:D                    0.308          DataOutSignal_7
+     begin scope: 'ALU_FLAGS_Reg'
+     FDPE:D                    0.308          DataOutSignal_2
     ----------------------------------------
-    Total                    134.325ns (78.153ns logic, 56.172ns route)
-                                       (58.2% logic, 41.8% route)
+    Total                     18.639ns (10.310ns logic, 8.329ns route)
+                                       (55.3% logic, 44.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
@@ -1301,237 +1157,51 @@ Offset:              6.400ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 267959902 / 44
+  Total number of paths / destination ports: 2516 / 44
 -------------------------------------------------------------------------
-Offset:              138.610ns (Levels of Logic = 168)
-  Source:            RB3ADR_Reg/Dout_0 (FF)
-  Destination:       DST_ADR<7> (PAD)
+Offset:              13.460ns (Levels of Logic = 13)
+  Source:            RA_DC1_Reg/Dout_3 (FF)
+  Destination:       DST_ADR<3> (PAD)
   Source Clock:      CLK falling
 
-  Data Path: RB3ADR_Reg/Dout_0 to DST_ADR<7>
+  Data Path: RA_DC1_Reg/Dout_3 to DST_ADR<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE_1:C->Q            3   0.591   0.706  Dout_0 (Dout_0)
-     end scope: 'RB3ADR_Reg'
+     FDE_1:C->Q            3   0.591   0.706  Dout_3 (Dout_3)
+     end scope: 'RA_DC1_Reg'
      begin scope: 'DCCTL'
-     LUT4:I0->O            2   0.704   0.526  OP2_cmp_eq0001426 (OP2_cmp_eq0001426)
-     LUT4:I1->O            1   0.704   0.424  OP2_SEL<0>_SW0 (N4)
-     LUT4:I3->O           32   0.704   1.437  OP2_SEL<0> (OP2_SEL<0>)
+     LUT4:I0->O            2   0.704   0.526  OP1_cmp_eq0001453 (OP1_cmp_eq0001453)
+     LUT3:I1->O            1   0.704   0.424  OP1<0>1_SW0 (N6)
+     LUT4:I3->O           32   0.704   1.437  OP1<0>1 (OP1_SEL<0>)
      end scope: 'DCCTL'
-     LUT3:I0->O            1   0.704   0.000  Mmux_RB_OUT_4 (Mmux_RB_OUT_4)
-     MUXF5:I0->O          71   0.321   1.310  Mmux_RB_OUT_2_f5 (RB_OUT<0>)
+     LUT3:I0->O            1   0.704   0.000  Mmux_RA_OUT_49 (Mmux_RA_OUT_49)
+     MUXF5:I0->O          16   0.321   1.069  Mmux_RA_OUT_2_f5_8 (RA_OUT<3>)
      begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3:I2->O            2   0.704   0.482  Sh77_SW1 (N101)
-     LUT3:I2->O            3   0.704   0.566  Sh77 (Sh77)
-     LUT4_L:I2->LO         1   0.704   0.275  shift_result<9>27 (shift_result<9>27)
-     LUT4:I0->O            1   0.704   0.595  shift_result<9>70 (shift_result<9>70)
-     LUT2:I0->O            2   0.704   0.451  shift_result<9>86 (SHIFT_OUT<9>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<9>22 (ALU_OUT<9>)
      end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_415 (Mmux_RA_OUT_415)
-     MUXF5:I0->O          21   0.321   1.207  Mmux_RA_OUT_2_f5_14 (RA_OUT<9>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3:I1->O            1   0.704   0.000  Sh812 (Sh812)
-     MUXF5:I0->O           4   0.321   0.622  Sh81_f5 (Sh81)
-     LUT4_L:I2->LO         1   0.704   0.135  shift_result<13>25 (shift_result<13>25)
-     LUT4:I2->O            1   0.704   0.595  shift_result<13>71 (shift_result<13>71)
-     LUT2:I0->O            2   0.704   0.451  shift_result<13>87 (SHIFT_OUT<13>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<13>22 (ALU_OUT<13>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_44 (Mmux_RA_OUT_44)
-     MUXF5:I0->O          21   0.321   1.163  Mmux_RA_OUT_2_f5_3 (RA_OUT<13>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3:I2->O            1   0.704   0.000  Sh86312 (Sh86311)
-     MUXF5:I0->O           3   0.321   0.535  Sh8631_f5 (Sh86)
-     LUT4_L:I3->LO         1   0.704   0.275  shift_result<14>40 (shift_result<14>40)
-     LUT4:I0->O            1   0.704   0.499  shift_result<14>71 (shift_result<14>71)
-     LUT3:I1->O            2   0.704   0.451  shift_result<14>86 (SHIFT_OUT<14>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<14>22 (ALU_OUT<14>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_45 (Mmux_RA_OUT_45)
-     MUXF5:I0->O          22   0.321   1.164  Mmux_RA_OUT_2_f5_4 (RA_OUT<14>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'arith_unit'
-     MUXCY:DI->O           1   0.888   0.000  Maddsub_RESULT_addsub0000_cy<14> (Maddsub_RESULT_addsub0000_cy<14>)
-     XORCY:CI->O           1   0.804   0.499  Maddsub_RESULT_addsub0000_xor<15> (RESULT_addsub0000<15>)
-     LUT2:I1->O            4   0.704   0.666  RESULT<15>1 (SREG_OUT<3>)
-     end scope: 'arith_unit'
-     LUT2_L:I1->LO         1   0.704   0.179  ALU_OUT<15>11 (ALU_OUT<15>11)
-     LUT4:I1->O            3   0.704   0.566  ALU_OUT<15>22 (ALU_OUT<15>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_2_f5_5_F (N2)
-     MUXF5:I0->O          24   0.321   1.331  Mmux_RA_OUT_2_f5_5 (RA_OUT<15>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT4:I1->O            1   0.704   0.455  Sh13_SW0 (N23)
-     LUT3:I2->O            5   0.704   0.668  Sh13 (Sh13)
-     LUT3:I2->O            1   0.704   0.000  shift_result<5>182 (shift_result<5>182)
-     MUXF5:I0->O           1   0.321   0.499  shift_result<5>18_f5 (shift_result<5>18)
-     LUT4_L:I1->LO         1   0.704   0.275  shift_result<5>33 (shift_result<5>33)
-     LUT3:I0->O            2   0.704   0.451  shift_result<5>64 (SHIFT_OUT<5>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<5>22 (ALU_OUT<5>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_411 (Mmux_RA_OUT_411)
-     MUXF5:I0->O          14   0.321   1.035  Mmux_RA_OUT_2_f5_10 (RA_OUT<5>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3:I2->O            1   0.704   0.000  Sh782 (Sh782)
-     MUXF5:I0->O           4   0.321   0.622  Sh78_f5 (Sh78)
-     LUT4_L:I2->LO         1   0.704   0.275  shift_result<10>27 (shift_result<10>27)
-     LUT4:I0->O            1   0.704   0.499  shift_result<10>70 (shift_result<10>70)
-     LUT3:I1->O            2   0.704   0.451  shift_result<10>86 (SHIFT_OUT<10>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<10>22 (ALU_OUT<10>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_41 (Mmux_RA_OUT_41)
-     MUXF5:I0->O          21   0.321   1.207  Mmux_RA_OUT_2_f5_0 (RA_OUT<10>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3:I1->O            1   0.704   0.000  Sh84291 (Sh8429)
-     MUXF5:I1->O           3   0.321   0.535  Sh8429_f5 (Sh84)
-     LUT4_L:I3->LO         1   0.704   0.275  shift_result<12>38 (shift_result<12>38)
-     LUT4:I0->O            1   0.704   0.595  shift_result<12>71 (shift_result<12>71)
-     LUT2:I0->O            2   0.704   0.451  shift_result<12>87 (SHIFT_OUT<12>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<12>22 (ALU_OUT<12>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_43 (Mmux_RA_OUT_43)
-     MUXF5:I0->O          21   0.321   1.207  Mmux_RA_OUT_2_f5_2 (RA_OUT<12>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3:I1->O            1   0.704   0.000  Sh12302 (Sh12301)
-     MUXF5:I0->O           4   0.321   0.622  Sh1230_f5 (Sh12)
-     LUT4_L:I2->LO         1   0.704   0.135  shift_result<8>12 (shift_result<8>12)
-     LUT4:I2->O            1   0.704   0.455  shift_result<8>70 (shift_result<8>70)
-     LUT3:I2->O            2   0.704   0.451  shift_result<8>87 (SHIFT_OUT<8>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<8>22 (ALU_OUT<8>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_414 (Mmux_RA_OUT_414)
-     MUXF5:I0->O          21   0.321   1.128  Mmux_RA_OUT_2_f5_13 (RA_OUT<8>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'arith_unit'
-     MUXCY:DI->O           1   0.888   0.000  Maddsub_RESULT_addsub0000_cy<8> (Maddsub_RESULT_addsub0000_cy<8>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<9> (Maddsub_RESULT_addsub0000_cy<9>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<10> (Maddsub_RESULT_addsub0000_cy<10>)
-     XORCY:CI->O           1   0.804   0.499  Maddsub_RESULT_addsub0000_xor<11> (RESULT_addsub0000<11>)
-     LUT2:I1->O            2   0.704   0.526  RESULT<11>1 (AR_OUT<11>)
-     end scope: 'arith_unit'
-     LUT2_L:I1->LO         1   0.704   0.179  ALU_OUT<11>11 (ALU_OUT<11>11)
-     LUT4:I1->O            3   0.704   0.566  ALU_OUT<11>22 (ALU_OUT<11>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_2_f5_1_F (N01)
-     MUXF5:I0->O          21   0.321   1.207  Mmux_RA_OUT_2_f5_1 (RA_OUT<11>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3:I1->O            1   0.704   0.000  Sh11302 (Sh11301)
-     MUXF5:I0->O           3   0.321   0.610  Sh1130_f5 (Sh11)
-     LUT4_L:I1->LO         1   0.704   0.135  shift_result<3>86 (shift_result<3>86)
-     LUT4:I2->O            1   0.704   0.455  shift_result<3>145 (shift_result<3>145)
-     LUT3:I2->O            2   0.704   0.451  shift_result<3>162 (SHIFT_OUT<3>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<3>22 (ALU_OUT<3>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RB_OUT_49 (Mmux_RB_OUT_49)
-     MUXF5:I0->O          68   0.321   1.449  Mmux_RB_OUT_2_f5_8 (RB_OUT<3>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT4:I0->O            1   0.704   0.000  shift_result<1>57_F (N109)
-     MUXF5:I0->O           1   0.321   0.595  shift_result<1>57 (shift_result<1>57)
-     LUT4_L:I0->LO         1   0.704   0.135  shift_result<1>86 (shift_result<1>86)
-     LUT4:I2->O            1   0.704   0.455  shift_result<1>143 (shift_result<1>143)
-     LUT3:I2->O            2   0.704   0.451  shift_result<1>158 (SHIFT_OUT<1>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<1>22 (ALU_OUT<1>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_47 (Mmux_RA_OUT_47)
-     MUXF5:I0->O          12   0.321   0.996  Mmux_RA_OUT_2_f5_6 (RA_OUT<1>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3:I2->O            1   0.704   0.000  Sh742 (Sh742)
-     MUXF5:I0->O           5   0.321   0.808  Sh74_f5 (Sh74)
-     LUT4_L:I0->LO         1   0.704   0.179  shift_result<2>140 (shift_result<2>140)
-     LUT4:I1->O            1   0.704   0.455  shift_result<2>143 (shift_result<2>143)
-     LUT3:I2->O            2   0.704   0.451  shift_result<2>158 (SHIFT_OUT<2>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<2>22 (ALU_OUT<2>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RB_OUT_48 (Mmux_RB_OUT_48)
-     MUXF5:I0->O          75   0.321   1.355  Mmux_RB_OUT_2_f5_7 (RB_OUT<2>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT4:I1->O            1   0.704   0.000  shift_result<4>34_F (N1011)
-     MUXF5:I0->O           1   0.321   0.455  shift_result<4>34 (shift_result<4>34)
-     LUT4:I2->O            2   0.704   0.451  shift_result<4>81 (SHIFT_OUT<4>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<4>22 (ALU_OUT<4>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RB_OUT_410 (Mmux_RB_OUT_410)
-     MUXF5:I0->O          29   0.321   1.436  Mmux_RB_OUT_2_f5_9 (RB_OUT<4>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT4_L:I0->LO         1   0.704   0.275  shift_result<6>62 (shift_result<6>62)
-     LUT4:I0->O            2   0.704   0.451  shift_result<6>64 (SHIFT_OUT<6>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<6>22 (ALU_OUT<6>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RB_OUT_412 (Mmux_RB_OUT_412)
-     MUXF5:I0->O          13   0.321   1.062  Mmux_RB_OUT_2_f5_11 (RB_OUT<6>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'shift_unit'
-     LUT3_D:I1->LO         1   0.704   0.275  shift_right_or00001 (N124)
-     LUT3:I0->O            1   0.704   0.424  shift_result<0>149 (SHIFT_OUT<0>)
-     end scope: 'shift_unit'
-     LUT4:I3->O            3   0.704   0.566  ALU_OUT<0>22 (ALU_OUT<0>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_4 (Mmux_RA_OUT_4)
-     MUXF5:I0->O          11   0.321   0.933  Mmux_RA_OUT_2_f5 (RA_OUT<0>)
-     begin scope: 'ALU_UNIT'
-     begin scope: 'arith_unit'
-     MUXCY:DI->O           1   0.888   0.000  Maddsub_RESULT_addsub0000_cy<0> (Maddsub_RESULT_addsub0000_cy<0>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<1> (Maddsub_RESULT_addsub0000_cy<1>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<2> (Maddsub_RESULT_addsub0000_cy<2>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<3> (Maddsub_RESULT_addsub0000_cy<3>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<4> (Maddsub_RESULT_addsub0000_cy<4>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<5> (Maddsub_RESULT_addsub0000_cy<5>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<6> (Maddsub_RESULT_addsub0000_cy<6>)
-     XORCY:CI->O           2   0.804   0.451  Maddsub_RESULT_addsub0000_xor<7> (RESULT_addsub0000<7>)
-     LUT4:I3->O            1   0.704   0.499  RESULT<7>1 (AR_OUT<7>)
-     end scope: 'arith_unit'
-     LUT2_L:I1->LO         1   0.704   0.179  ALU_OUT<7>11 (ALU_OUT<7>11)
-     LUT4:I1->O            3   0.704   0.566  ALU_OUT<7>22 (ALU_OUT<7>)
-     end scope: 'ALU_UNIT'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RB_OUT_413 (Mmux_RB_OUT_413)
-     MUXF5:I0->O          14   0.321   1.000  Mmux_RB_OUT_2_f5_12 (RB_OUT<7>)
+     LUT3:I2->O            1   0.704   0.000  Mmux_RB_OUT_2_f5_8_F (N6)
+     MUXF5:I0->O          66   0.321   1.273  Mmux_RB_OUT_2_f5_8 (RB_OUT<3>)
      begin scope: 'ALU_UNIT'
      begin scope: 'word_unit'
      end scope: 'word_unit'
      end scope: 'ALU_UNIT'
-     OBUF:I->O                 3.272          DST_ADR_7_OBUF (DST_ADR<7>)
+     OBUF:I->O                 3.272          DST_ADR_3_OBUF (DST_ADR<3>)
     ----------------------------------------
-    Total                    138.610ns (81.438ns logic, 57.172ns route)
-                                       (58.8% logic, 41.2% route)
+    Total                     13.460ns (8.025ns logic, 5.435ns route)
+                                       (59.6% logic, 40.4% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 18.53 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.13 secs
  
 --> 
 
 
-Total memory usage is 550852 kilobytes
+Total memory usage is 549400 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  217 (   0 filtered)
+Number of warnings :  267 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 

@@ -1,31 +1,31 @@
-Running: /home/robert/XilinxISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/TopLevel_tb_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/TopLevel_tb_beh.prj" "work.TopLevel_tb" 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/TopLevel_tb_isim_beh.exe -prj /home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/TopLevel_tb_beh.prj work.TopLevel_tb 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ipcore_dir/DATAMEM.vhd" into library work
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ipcore_dir/Instr_Mem.vhd" into library work
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/word_unit.vhd" into library work
-WARNING:HDLCompiler:946 - "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/word_unit.vhd" Line 55: Actual for formal port clka is neither a static name nor a globally static expression
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/shift_unit.vhd" into library work
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/programCounter.vhd" into library work
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/logical_unit.vhd" into library work
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/arith_unit.vhd" into library work
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/REG_CTL.vhd" into library work
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/RegisterBank.vhd" into library work
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/PipelineRegisters.vhd" into library work
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/Instruction_Memory_TL.vhd" into library work
-WARNING:HDLCompiler:946 - "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/Instruction_Memory_TL.vhd" Line 73: Actual for formal port clka is neither a static name nor a globally static expression
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/IMSEL.vhd" into library work
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DC_CTL.vhd" into library work
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DATA_CTL.vhd" into library work
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/alu_toplevel.vhd" into library work
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ProjLab01.vhd" into library work
-Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/TopLevel_tb.vhd" into library work
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ipcore_dir/DATAMEM.vhd" into library work
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ipcore_dir/Instr_Mem.vhd" into library work
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/word_unit.vhd" into library work
+WARNING:HDLCompiler:946 - "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/word_unit.vhd" Line 55: Actual for formal port clka is neither a static name nor a globally static expression
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/shift_unit.vhd" into library work
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/programCounter.vhd" into library work
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/logical_unit.vhd" into library work
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/arith_unit.vhd" into library work
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/REG_CTL.vhd" into library work
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/RegisterBank.vhd" into library work
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/PipelineRegisters.vhd" into library work
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/Instruction_Memory_TL.vhd" into library work
+WARNING:HDLCompiler:946 - "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/Instruction_Memory_TL.vhd" Line 73: Actual for formal port clka is neither a static name nor a globally static expression
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/IMSEL.vhd" into library work
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DC_CTL.vhd" into library work
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/DATA_CTL.vhd" into library work
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/alu_toplevel.vhd" into library work
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/ProjLab01.vhd" into library work
+Parsing VHDL file "/home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/TopLevel_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 101752 KB
-Fuse CPU Usage: 1810 ms
+Fuse Memory Usage: 101736 KB
+Fuse CPU Usage: 910 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
@@ -62,9 +62,9 @@ Compiling architecture behavioral of entity RegisterBank [registerbank_default]
 Compiling architecture structural of entity ProjLab01 [projlab01_default]
 Compiling architecture behavior of entity toplevel_tb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
+Waiting for 20 sub-compilation(s) to finish...
 Compiled 62 VHDL Units
-Built simulation executable /home/robert/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/TopLevel_tb_isim_beh.exe
-Fuse Memory Usage: 680960 KB
-Fuse CPU Usage: 2130 ms
-GCC CPU Usage: 120 ms
+Built simulation executable /home/robert/Github/UMD_RISC-16G5/ProjectLab1/Poject_Lab01/Project1/TopLevel_tb_isim_beh.exe
+Fuse Memory Usage: 680696 KB
+Fuse CPU Usage: 1050 ms
+GCC CPU Usage: 2180 ms

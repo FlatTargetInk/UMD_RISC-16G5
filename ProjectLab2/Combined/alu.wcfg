@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Combined_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="combined_tb" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/combined_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/alu_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/dst_adr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dst_adr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dst_adr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/store_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">store_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">store_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/ccr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ccr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ccr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/ALU_UNIT/op" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op[3:0]</obj_property>
+      <obj_property name="ObjectShortName">op[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/ALU_UNIT/ra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ra[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ra[15:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/ALU_UNIT/rb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rb[15:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/ALU_UNIT/arith" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">arith[15:0]</obj_property>
+      <obj_property name="ObjectShortName">arith[15:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/ALU_UNIT/logic" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">logic[15:0]</obj_property>
+      <obj_property name="ObjectShortName">logic[15:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/ALU_UNIT/shift" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">shift[15:0]</obj_property>
+      <obj_property name="ObjectShortName">shift[15:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/ALU_UNIT/ld_mem" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ld_mem[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ld_mem[15:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/ALU_UNIT/word_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">word_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">word_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/ALU_UNIT/word_unit/datain" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datain[15:0]</obj_property>
+      <obj_property name="ObjectShortName">datain[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/ALU_UNIT/word_unit/immaddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">immaddr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">immaddr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/ALU_UNIT/word_unit/dst_adr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dst_adr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dst_adr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/ALU_UNIT/word_unit/store_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">store_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">store_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/ALU_UNIT/word_unit/wren" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wren[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wren[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/combined_tb/uut/ALU_UNIT/word_unit/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[15:0]</obj_property>
+      <obj_property name="ObjectShortName">result[15:0]</obj_property>
+   </wvobject>
+</wave_config>

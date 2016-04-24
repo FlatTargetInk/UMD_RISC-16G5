@@ -1,0 +1,109 @@
+ISim log file
+Running: /home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Combined_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/Combined_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0xfbc00daa)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /combined_tb/uut/Fetch_UNIT/PCINC/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Finished circuit initialization process.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# restart
+# run 30ms
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 500 us(1), Instance /combined_tb/uut/EXTERNAL_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1 ms(2), Instance /combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4 ms(3), Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4 ms(3), Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4500 us(1), Instance /combined_tb/uut/EXTERNAL_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ms(2), Instance /combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5500 us(1), Instance /combined_tb/uut/EXTERNAL_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 6 ms(2), Instance /combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 9 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/).
+ERROR: at 10 ms(10000): Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation can not advance in time because signals can not resolve to a stable value in File "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/alu_toplevel.vhd" Line 93. Please correct this code in order to advance past the current simulation time.
+
+INFO: Simulator is stopped.
+ISim P.20131013 (signature 0xfbc00daa)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /combined_tb/uut/Fetch_UNIT/PCINC/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Finished circuit initialization process.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# run 30ms
+at 500 us(1), Instance /combined_tb/uut/EXTERNAL_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1 ms(2), Instance /combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4 ms(3), Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4 ms(3), Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4500 us(1), Instance /combined_tb/uut/EXTERNAL_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ms(2), Instance /combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5500 us(1), Instance /combined_tb/uut/EXTERNAL_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 6 ms(2), Instance /combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 9 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/).
+ISim P.20131013 (signature 0xfbc00daa)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /combined_tb/uut/Fetch_UNIT/PCINC/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Finished circuit initialization process.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# run 30ms
+at 500 us(1), Instance /combined_tb/uut/EXTERNAL_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1 ms(2), Instance /combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4 ms(3), Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4 ms(3), Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4500 us(1), Instance /combined_tb/uut/EXTERNAL_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ms(2), Instance /combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5500 us(1), Instance /combined_tb/uut/EXTERNAL_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 6 ms(2), Instance /combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 9 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/).
+ISim P.20131013 (signature 0xfbc00daa)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /combined_tb/uut/Fetch_UNIT/PCINC/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Finished circuit initialization process.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# run 30ms
+at 500 us(1), Instance /combined_tb/uut/EXTERNAL_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1 ms(2), Instance /combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4 ms(3), Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4 ms(3), Instance /combined_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4500 us(1), Instance /combined_tb/uut/EXTERNAL_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ms(2), Instance /combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5500 us(1), Instance /combined_tb/uut/EXTERNAL_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 6 ms(2), Instance /combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 9 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/combined_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/).
+ERROR: at 10 ms(10000): Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation can not advance in time because signals can not resolve to a stable value in File "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/alu_toplevel.vhd" Line 93. Please correct this code in order to advance past the current simulation time.
+
+INFO: Simulator is stopped.
+# exit 0

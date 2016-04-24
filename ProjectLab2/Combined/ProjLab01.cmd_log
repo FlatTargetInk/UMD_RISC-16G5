@@ -1,1 +1,2 @@
 xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.xst" -ofn "/home/robert/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.syr" 
+xst -intstyle ise -ifn "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.xst" -ofn "/home/robert/Github/UMD_RISC-16G5/ProjectLab2/Combined/ProjLab01.syr" 

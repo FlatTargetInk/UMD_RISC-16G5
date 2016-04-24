@@ -88,7 +88,8 @@ LDST_ADR <= X"00" & LDST_ADR_8;
 					RESULT	=> WORD_OUT,
 					DST_ADR	=> LDST_ADR_8,
 					STORE_DATA	=> LDST_DAT);
-	
+
+--	ALU_OUT <= RA;
 	with OP select 
 		ALU_OUT <=
 			ARITH 	when "0000", -- ADD (ARITHMETIC)
