@@ -189,7 +189,7 @@ begin
 				EX_ADDR 	=> EXMEM_ADR);
 	
 	EX_MEM: entity work.EXTERNAL_MEMORY
-	port map(clka 	=> CLK,
+	port map(clka 	=> not CLK,
 				wea 	=> EXMEM_WREN,
 				addra => EXMEM_ADR(13 downto 0),
 				dina 	=> RA_OUT,

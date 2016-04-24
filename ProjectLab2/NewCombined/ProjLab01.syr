@@ -1,0 +1,1062 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: ProjLab01.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ProjLab01.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ProjLab01"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : ProjLab01
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/DATAMEM.vhd" in Library work.
+Entity <DATAMEM> compiled.
+Entity <DATAMEM> (Architecture <DATAMEM_a>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/programCounter.vhd" in Library work.
+Entity <programCounter> compiled.
+Entity <programCounter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/Instr_Mem.vhd" in Library work.
+Entity <Instr_Mem> compiled.
+Entity <Instr_Mem> (Architecture <Instr_Mem_a>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/arith_unit.vhd" in Library work.
+Entity <arith_unit> compiled.
+Entity <arith_unit> (Architecture <Combinational>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/logical_unit.vhd" in Library work.
+Entity <logical_unit> compiled.
+Entity <logical_unit> (Architecture <Combinational>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/shift_unit.vhd" in Library work.
+Entity <shift_unit> compiled.
+Entity <shift_unit> (Architecture <Combinational>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/word_unit.vhd" in Library work.
+Entity <word_unit> compiled.
+Entity <word_unit> (Architecture <Combinational>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/alu_toplevel.vhd" in Library work.
+Entity <ALU_Toplevel> compiled.
+Entity <ALU_Toplevel> (Architecture <Structural>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" in Library work.
+Entity <Instruction_Memory_TL> compiled.
+Entity <Instruction_Memory_TL> (Architecture <Structural>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/REG_CTL.vhd" in Library work.
+Entity <REG_CTL> compiled.
+Entity <REG_CTL> (Architecture <Dataflow>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DC_CTL.vhd" in Library work.
+Entity <DC_CTL> compiled.
+Entity <DC_CTL> (Architecture <Mixed>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DATA_CTL.vhd" in Library work.
+Entity <DATA_CTL> compiled.
+Entity <DATA_CTL> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/IMSEL.vhd" in Library work.
+Entity <IMSEL> compiled.
+Entity <IMSEL> (Architecture <Dataflow>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/EX_MEM_CTL.vhd" in Library work.
+Entity <EX_MEM_CTL> compiled.
+Entity <EX_MEM_CTL> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Shadow_Register_Bank.vhd" in Library work.
+Entity <Shadow_Reg> compiled.
+Entity <Shadow_Reg> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Shadow_IMM_Add.vhd" in Library work.
+Entity <Shadow_IMM_Add> compiled.
+Entity <Shadow_IMM_Add> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/EXTERNAL_MEMORY.vhd" in Library work.
+Entity <EXTERNAL_MEMORY> compiled.
+Entity <EXTERNAL_MEMORY> (Architecture <EXTERNAL_MEMORY_a>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd" in Library work.
+Entity <PipelineRegisters> compiled.
+Entity <PipelineRegisters> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/RegisterBank.vhd" in Library work.
+Entity <RegisterBank> compiled.
+Entity <RegisterBank> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd" in Library work.
+Entity <ProjLab01> compiled.
+Entity <ProjLab01> (Architecture <Structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ProjLab01> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <ALU_Toplevel> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <Instruction_Memory_TL> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <REG_CTL> in library <work> (architecture <Dataflow>).
+
+Analyzing hierarchy for entity <DC_CTL> in library <work> (architecture <Mixed>).
+
+Analyzing hierarchy for entity <DATA_CTL> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <IMSEL> in library <work> (architecture <Dataflow>).
+
+Analyzing hierarchy for entity <EX_MEM_CTL> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Shadow_Reg> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Shadow_IMM_Add> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <PipelineRegisters> in library <work> (architecture <Behavioral>) with generics.
+	dataWidth = 4
+
+Analyzing hierarchy for entity <PipelineRegisters> in library <work> (architecture <Behavioral>) with generics.
+	dataWidth = 8
+
+Analyzing hierarchy for entity <PipelineRegisters> in library <work> (architecture <Behavioral>) with generics.
+	dataWidth = 5
+
+Analyzing hierarchy for entity <PipelineRegisters> in library <work> (architecture <Behavioral>) with generics.
+	dataWidth = 16
+
+Analyzing hierarchy for entity <programCounter> in library <work> (architecture <Behavioral>) with generics.
+	PCWIDTH = 5
+
+Analyzing hierarchy for entity <RegisterBank> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <arith_unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <logical_unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <shift_unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <word_unit> in library <work> (architecture <Combinational>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ProjLab01> in library <work> (Architecture <Structural>).
+WARNING:Xst:753 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd" line 103: Unconnected output port 'LDST_ADR' of component 'ALU_Toplevel'.
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd" line 191: Instantiating black box module <EXTERNAL_MEMORY>.
+Entity <ProjLab01> analyzed. Unit <ProjLab01> generated.
+
+Analyzing Entity <ALU_Toplevel> in library <work> (Architecture <Structural>).
+Entity <ALU_Toplevel> analyzed. Unit <ALU_Toplevel> generated.
+
+Analyzing Entity <arith_unit> in library <work> (Architecture <Combinational>).
+Entity <arith_unit> analyzed. Unit <arith_unit> generated.
+
+Analyzing Entity <logical_unit> in library <work> (Architecture <Combinational>).
+Entity <logical_unit> analyzed. Unit <logical_unit> generated.
+
+Analyzing Entity <shift_unit> in library <work> (Architecture <Combinational>).
+Entity <shift_unit> analyzed. Unit <shift_unit> generated.
+
+Analyzing Entity <word_unit> in library <work> (Architecture <Combinational>).
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/word_unit.vhd" line 52: Instantiating black box module <DATAMEM>.
+Entity <word_unit> analyzed. Unit <word_unit> generated.
+
+Analyzing Entity <Instruction_Memory_TL> in library <work> (Architecture <Structural>).
+WARNING:Xst:2211 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" line 72: Instantiating black box module <Instr_Mem>.
+Entity <Instruction_Memory_TL> analyzed. Unit <Instruction_Memory_TL> generated.
+
+Analyzing Entity <REG_CTL> in library <work> (Architecture <Dataflow>).
+Entity <REG_CTL> analyzed. Unit <REG_CTL> generated.
+
+Analyzing Entity <DC_CTL> in library <work> (Architecture <Mixed>).
+Entity <DC_CTL> analyzed. Unit <DC_CTL> generated.
+
+Analyzing Entity <DATA_CTL> in library <work> (Architecture <Behavioral>).
+Entity <DATA_CTL> analyzed. Unit <DATA_CTL> generated.
+
+Analyzing Entity <IMSEL> in library <work> (Architecture <Dataflow>).
+Entity <IMSEL> analyzed. Unit <IMSEL> generated.
+
+Analyzing Entity <EX_MEM_CTL> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/EX_MEM_CTL.vhd" line 46: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <EN>
+Entity <EX_MEM_CTL> analyzed. Unit <EX_MEM_CTL> generated.
+
+Analyzing Entity <Shadow_Reg> in library <work> (Architecture <Behavioral>).
+Entity <Shadow_Reg> analyzed. Unit <Shadow_Reg> generated.
+
+Analyzing Entity <Shadow_IMM_Add> in library <work> (Architecture <Behavioral>).
+Entity <Shadow_IMM_Add> analyzed. Unit <Shadow_IMM_Add> generated.
+
+Analyzing generic Entity <PipelineRegisters.1> in library <work> (Architecture <Behavioral>).
+	dataWidth = 4
+WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Ena>
+Entity <PipelineRegisters.1> analyzed. Unit <PipelineRegisters.1> generated.
+
+Analyzing generic Entity <PipelineRegisters.2> in library <work> (Architecture <Behavioral>).
+	dataWidth = 8
+WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Ena>
+Entity <PipelineRegisters.2> analyzed. Unit <PipelineRegisters.2> generated.
+
+Analyzing generic Entity <PipelineRegisters.3> in library <work> (Architecture <Behavioral>).
+	dataWidth = 5
+WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Ena>
+Entity <PipelineRegisters.3> analyzed. Unit <PipelineRegisters.3> generated.
+
+Analyzing generic Entity <PipelineRegisters.4> in library <work> (Architecture <Behavioral>).
+	dataWidth = 16
+WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd" line 33: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Ena>
+Entity <PipelineRegisters.4> analyzed. Unit <PipelineRegisters.4> generated.
+
+Analyzing generic Entity <programCounter> in library <work> (Architecture <Behavioral>).
+	PCWIDTH = 5
+Entity <programCounter> analyzed. Unit <programCounter> generated.
+
+Analyzing Entity <RegisterBank> in library <work> (Architecture <Behavioral>).
+Entity <RegisterBank> analyzed. Unit <RegisterBank> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <REG_CTL>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/REG_CTL.vhd".
+WARNING:Xst:647 - Input <CLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <REG_CTL> synthesized.
+
+
+Synthesizing Unit <DC_CTL>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DC_CTL.vhd".
+WARNING:Xst:647 - Input <CLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit comparator equal for signal <OP1$cmp_eq0000> created at line 56.
+    Found 4-bit comparator equal for signal <OP1$cmp_eq0001> created at line 57.
+    Found 4-bit comparator equal for signal <OP1$cmp_eq0002> created at line 60.
+    Found 4-bit comparator equal for signal <OP2$cmp_eq0000> created at line 71.
+    Found 4-bit comparator equal for signal <OP2$cmp_eq0001> created at line 72.
+    Found 4-bit comparator equal for signal <OP2$cmp_eq0002> created at line 74.
+    Summary:
+	inferred   6 Comparator(s).
+Unit <DC_CTL> synthesized.
+
+
+Synthesizing Unit <DATA_CTL>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DATA_CTL.vhd".
+WARNING:Xst:647 - Input <EN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <RD>.
+    Found 1-bit register for signal <WR>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <DATA_CTL> synthesized.
+
+
+Synthesizing Unit <IMSEL>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/IMSEL.vhd".
+Unit <IMSEL> synthesized.
+
+
+Synthesizing Unit <EX_MEM_CTL>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/EX_MEM_CTL.vhd".
+    Found 1-bit register for signal <RD<0>>.
+    Found 1-bit register for signal <WR<0>>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <EX_MEM_CTL> synthesized.
+
+
+Synthesizing Unit <Shadow_Reg>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Shadow_Register_Bank.vhd".
+WARNING:Xst:647 - Input <W> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 16-bit latch for signal <R1dat>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <R3dat>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <R0dat>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <R2dat>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 16-bit register for signal <RAout>.
+    Found 16-bit 4-to-1 multiplexer for signal <RAout$mux0001> created at line 52.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <Shadow_Reg> synthesized.
+
+
+Synthesizing Unit <Shadow_IMM_Add>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Shadow_IMM_Add.vhd".
+    Found 16-bit adder for signal <RESULT>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Shadow_IMM_Add> synthesized.
+
+
+Synthesizing Unit <PipelineRegisters_1>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd".
+    Found 4-bit register for signal <Dout>.
+    Found 4-bit register for signal <DataOutSignal>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <PipelineRegisters_1> synthesized.
+
+
+Synthesizing Unit <PipelineRegisters_2>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd".
+    Found 8-bit register for signal <Dout>.
+    Found 8-bit register for signal <DataOutSignal>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <PipelineRegisters_2> synthesized.
+
+
+Synthesizing Unit <PipelineRegisters_3>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd".
+    Found 5-bit register for signal <Dout>.
+    Found 5-bit register for signal <DataOutSignal>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <PipelineRegisters_3> synthesized.
+
+
+Synthesizing Unit <PipelineRegisters_4>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd".
+    Found 16-bit register for signal <Dout>.
+    Found 16-bit register for signal <DataOutSignal>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <PipelineRegisters_4> synthesized.
+
+
+Synthesizing Unit <programCounter>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/programCounter.vhd".
+    Found 5-bit up counter for signal <COUNTER>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <programCounter> synthesized.
+
+
+Synthesizing Unit <RegisterBank>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/RegisterBank.vhd".
+WARNING:Xst:647 - Input <RST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <RBout>.
+    Found 16-bit register for signal <RAout>.
+    Found 16-bit register for signal <R0dat>.
+    Found 16-bit register for signal <R10dat>.
+    Found 16-bit register for signal <R11dat>.
+    Found 16-bit register for signal <R12dat>.
+    Found 16-bit register for signal <R13dat>.
+    Found 16-bit register for signal <R14dat>.
+    Found 16-bit register for signal <R15dat>.
+    Found 16-bit register for signal <R1dat>.
+    Found 16-bit register for signal <R2dat>.
+    Found 16-bit register for signal <R3dat>.
+    Found 16-bit register for signal <R4dat>.
+    Found 16-bit register for signal <R5dat>.
+    Found 16-bit register for signal <R6dat>.
+    Found 16-bit register for signal <R7dat>.
+    Found 16-bit register for signal <R8dat>.
+    Found 16-bit register for signal <R9dat>.
+    Found 16-bit 16-to-1 multiplexer for signal <RAout$mux0001> created at line 64.
+    Found 16-bit 16-to-1 multiplexer for signal <RBout$mux0001> created at line 84.
+    Summary:
+	inferred 288 D-type flip-flop(s).
+	inferred  32 Multiplexer(s).
+Unit <RegisterBank> synthesized.
+
+
+Synthesizing Unit <arith_unit>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/arith_unit.vhd".
+    Found 17-bit addsub for signal <RESULT$addsub0000>.
+    Found 1-bit xor2 for signal <SREG<1>>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <arith_unit> synthesized.
+
+
+Synthesizing Unit <logical_unit>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/logical_unit.vhd".
+Unit <logical_unit> synthesized.
+
+
+Synthesizing Unit <shift_unit>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/shift_unit.vhd".
+WARNING:Xst:653 - Signal <sreg<3>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <sreg<1>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+    Found 24-bit shifter logical left for signal <shift_left$shift0001> created at line 52.
+    Found 24-bit shifter logical right for signal <shift_right$shift0001> created at line 53.
+    Summary:
+	inferred   2 Combinational logic shifter(s).
+Unit <shift_unit> synthesized.
+
+
+Synthesizing Unit <Instruction_Memory_TL>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd".
+WARNING:Xst:653 - Signal <WEA> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <INSADR> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <EN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:653 - Signal <DINA> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+Unit <Instruction_Memory_TL> synthesized.
+
+
+Synthesizing Unit <word_unit>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/word_unit.vhd".
+Unit <word_unit> synthesized.
+
+
+Synthesizing Unit <ALU_Toplevel>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/alu_toplevel.vhd".
+WARNING:Xst:1780 - Signal <LD_MEM> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <ALU_Toplevel> synthesized.
+
+
+Synthesizing Unit <ProjLab01>.
+    Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd".
+WARNING:Xst:646 - Signal <RB_DC2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <PC_RST> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <PC_INC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <PC_EN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:1780 - Signal <INST_EN> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <IMM_SEL> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <IMM3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <GLOBAL_EN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:646 - Signal <EXMEM_RDEN<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <EXMEM_ADR<15:14>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <DATAWR_EN> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <DATARD_EN> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16-bit 4-to-1 multiplexer for signal <RA_OUT>.
+    Found 16-bit 4-to-1 multiplexer for signal <RB_OUT>.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <ProjLab01> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+WARNING:Xst:524 - All outputs of the instance <RB4ADR_Reg> of the block <PipelineRegisters_1> are unconnected in block <ProjLab01>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <RB_DC1_Reg> of the block <PipelineRegisters_1> are unconnected in block <ProjLab01>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <RB_DC2_Reg> of the block <PipelineRegisters_1> are unconnected in block <ProjLab01>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 1
+ 17-bit addsub                                         : 1
+# Counters                                             : 2
+ 5-bit up counter                                      : 2
+# Registers                                            : 73
+ 1-bit register                                        : 4
+ 16-bit register                                       : 29
+ 4-bit register                                        : 28
+ 5-bit register                                        : 8
+ 8-bit register                                        : 4
+# Latches                                              : 4
+ 16-bit latch                                          : 4
+# Comparators                                          : 6
+ 4-bit comparator equal                                : 6
+# Multiplexers                                         : 5
+ 16-bit 16-to-1 multiplexer                            : 2
+ 16-bit 4-to-1 multiplexer                             : 3
+# Logic shifters                                       : 2
+ 24-bit shifter logical left                           : 1
+ 24-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/EXTERNAL_MEMORY.ngc>.
+Reading core <ipcore_dir/DATAMEM.ngc>.
+Reading core <ipcore_dir/Instr_Mem.ngc>.
+Loading core <EXTERNAL_MEMORY> for timing and area information for instance <EX_MEM>.
+Loading core <DATAMEM> for timing and area information for instance <DATAMEMORY>.
+Loading core <Instr_Mem> for timing and area information for instance <U2>.
+WARNING:Xst:1290 - Hierarchical block <DATA_CTL> is unconnected in block <ProjLab01>.
+   It will be removed from the design.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block 12.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block 8.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block 12.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block 9.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block 12.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block 8.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block 9.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block 12.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 1
+ 17-bit addsub                                         : 1
+# Counters                                             : 2
+ 5-bit up counter                                      : 2
+# Registers                                            : 652
+ Flip-Flops                                            : 652
+# Latches                                              : 4
+ 16-bit latch                                          : 4
+# Comparators                                          : 6
+ 4-bit comparator equal                                : 6
+# Multiplexers                                         : 35
+ 1-bit 16-to-1 multiplexer                             : 32
+ 16-bit 4-to-1 multiplexer                             : 3
+# Logic shifters                                       : 2
+ 24-bit shifter logical left                           : 1
+ 24-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch R0dat_12 hinder the constant cleaning in the block Shadow_Reg.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch R1dat_12 hinder the constant cleaning in the block Shadow_Reg.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch R2dat_12 hinder the constant cleaning in the block Shadow_Reg.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch R3dat_12 hinder the constant cleaning in the block Shadow_Reg.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch R2dat_9 hinder the constant cleaning in the block Shadow_Reg.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch R3dat_9 hinder the constant cleaning in the block Shadow_Reg.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch R1dat_8 hinder the constant cleaning in the block Shadow_Reg.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch R3dat_8 hinder the constant cleaning in the block Shadow_Reg.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <R3dat_11> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R3dat_10> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R3dat_7> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R3dat_6> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R3dat_5> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R3dat_4> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R3dat_3> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R3dat_2> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R3dat_1> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R3dat_0> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R0dat_15> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R0dat_14> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R0dat_13> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R0dat_11> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R0dat_10> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R0dat_9> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R0dat_8> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R1dat_15> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R1dat_14> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R1dat_13> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R1dat_11> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R1dat_10> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R1dat_9> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R1dat_7> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R1dat_6> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R1dat_5> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R1dat_4> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R1dat_3> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R1dat_2> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R1dat_1> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R1dat_0> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R3dat_15> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R3dat_14> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R3dat_13> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R2dat_0> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R2dat_1> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R2dat_2> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R2dat_3> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R2dat_4> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R2dat_5> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R2dat_6> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R2dat_7> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R2dat_8> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R2dat_10> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R2dat_11> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R0dat_7> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R0dat_6> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R0dat_5> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R0dat_4> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R0dat_3> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R0dat_2> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R0dat_1> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R0dat_0> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R2dat_15> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R2dat_14> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R2dat_13> has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAout_0> (without init value) has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAout_1> (without init value) has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAout_2> (without init value) has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAout_3> (without init value) has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAout_4> (without init value) has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAout_5> (without init value) has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAout_6> (without init value) has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAout_7> (without init value) has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAout_10> (without init value) has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAout_11> (without init value) has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAout_13> (without init value) has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAout_14> (without init value) has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAout_15> (without init value) has a constant value of 0 in block <Shadow_Reg>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <R2dat_9> in Unit <Shadow_Reg> is equivalent to the following 7 FFs/Latches, which will be removed : <R2dat_12> <R0dat_12> <R3dat_8> <R3dat_9> <R3dat_12> <R1dat_8> <R1dat_12> 
+
+Optimizing unit <ProjLab01> ...
+
+Optimizing unit <REG_CTL> ...
+
+Optimizing unit <IMSEL> ...
+
+Optimizing unit <logical_unit> ...
+
+Optimizing unit <DC_CTL> ...
+
+Optimizing unit <DATA_CTL> ...
+
+Optimizing unit <EX_MEM_CTL> ...
+
+Optimizing unit <Shadow_IMM_Add> ...
+
+Optimizing unit <PipelineRegisters_1> ...
+
+Optimizing unit <PipelineRegisters_2> ...
+
+Optimizing unit <PipelineRegisters_3> ...
+
+Optimizing unit <PipelineRegisters_4> ...
+
+Optimizing unit <programCounter> ...
+
+Optimizing unit <RegisterBank> ...
+
+Optimizing unit <arith_unit> ...
+
+Optimizing unit <shift_unit> ...
+
+Optimizing unit <word_unit> ...
+
+Optimizing unit <Shadow_Reg> ...
+
+Optimizing unit <Instruction_Memory_TL> ...
+
+Optimizing unit <ALU_Toplevel> ...
+WARNING:Xst:1290 - Hierarchical block <DATA_CTL> is unconnected in block <ProjLab01>.
+   It will be removed from the design.
+WARNING:Xst:2677 - Node <RD_0> of sequential type is unconnected in block <EXMEM_CTL>.
+WARNING:Xst:2677 - Node <DataOutSignal_0> of sequential type is unconnected in block <OP4_Reg>.
+WARNING:Xst:2677 - Node <Dout_0> of sequential type is unconnected in block <OP4_Reg>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ProjLab01, actual ratio is 17.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 644
+ Flip-Flops                                            : 644
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ProjLab01.ngr
+Top Level Output File Name         : ProjLab01
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+
+Design Statistics
+# IOs                              : 70
+
+Cell Usage :
+# BELS                             : 1162
+#      GND                         : 9
+#      INV                         : 6
+#      LUT2                        : 26
+#      LUT2_D                      : 1
+#      LUT2_L                      : 10
+#      LUT3                        : 508
+#      LUT3_D                      : 2
+#      LUT3_L                      : 4
+#      LUT4                        : 177
+#      LUT4_D                      : 13
+#      LUT4_L                      : 29
+#      MUXCY                       : 16
+#      MUXF5                       : 226
+#      MUXF6                       : 73
+#      MUXF7                       : 32
+#      VCC                         : 6
+#      XORCY                       : 24
+# FlipFlops/Latches                : 648
+#      FDC                         : 1
+#      FDCE                        : 10
+#      FDE                         : 38
+#      FDE_1                       : 427
+#      FDPE                        : 171
+#      LD                          : 1
+# RAMS                             : 17
+#      RAMB16_S1_S1                : 7
+#      RAMB16_S36_S36              : 2
+#      RAMB16_S9_S9                : 8
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 69
+#      IBUF                        : 1
+#      OBUF                        : 68
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      770  out of   4656    16%  
+ Number of Slice Flip Flops:            648  out of   9312     6%  
+ Number of 4 input LUTs:                776  out of   9312     8%  
+ Number of IOs:                          70
+ Number of bonded IOBs:                  70  out of    232    30%  
+ Number of BRAMs:                        17  out of     20    85%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                      | Load  |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+CLK                                | BUFGP                                                                                                                      | 664   |
+EX_MEM/N1                          | NONE(EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_init.ram/dpram.dp1x1.ram)| 15    |
+RST                                | IBUF+BUFG                                                                                                                  | 1     |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------+------------------------+-------+
+Control Signal                       | Buffer(FF name)        | Load  |
+-------------------------------------+------------------------+-------+
+RST                                  | IBUF                   | 181   |
+EXMEM_CTL/EN_inv(EXMEM_CTL/XST_GND:G)| NONE(EXMEM_CTL/WR_0)   | 1     |
+-------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 32.256ns (Maximum Frequency: 31.002MHz)
+   Minimum input arrival time before clock: 6.222ns
+   Maximum output required time after clock: 11.155ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 32.256ns (frequency: 31.002MHz)
+  Total number of paths / destination ports: 230159 / 1175
+-------------------------------------------------------------------------
+Delay:               16.128ns (Levels of Logic = 30)
+  Source:            RB3ADR_Reg/Dout_0 (FF)
+  Destination:       ALU_FLAGS_Reg/DataOutSignal_2 (FF)
+  Source Clock:      CLK falling
+  Destination Clock: CLK rising
+
+  Data Path: RB3ADR_Reg/Dout_0 to ALU_FLAGS_Reg/DataOutSignal_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            3   0.591   0.706  Dout_0 (Dout_0)
+     end scope: 'RB3ADR_Reg'
+     begin scope: 'DCCTL'
+     LUT4:I0->O            2   0.704   0.526  OP2_cmp_eq0001426 (OP2_cmp_eq0001426)
+     LUT4:I1->O            1   0.704   0.424  OP2_SEL<0>_SW0 (N4)
+     LUT4:I3->O           32   0.704   1.297  OP2_SEL<0> (OP2_SEL<0>)
+     end scope: 'DCCTL'
+     LUT3:I2->O            1   0.704   0.000  Mmux_RB_OUT_4 (Mmux_RB_OUT_4)
+     MUXF5:I0->O          75   0.321   1.311  Mmux_RB_OUT_2_f5 (RB_OUT<0>)
+     begin scope: 'ALU_UNIT'
+     begin scope: 'arith_unit'
+     LUT3:I2->O            1   0.704   0.000  Maddsub_RESULT_addsub0000_lut<0> (Maddsub_RESULT_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Maddsub_RESULT_addsub0000_cy<0> (Maddsub_RESULT_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<1> (Maddsub_RESULT_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<2> (Maddsub_RESULT_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<3> (Maddsub_RESULT_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<4> (Maddsub_RESULT_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<5> (Maddsub_RESULT_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<6> (Maddsub_RESULT_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<7> (Maddsub_RESULT_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<8> (Maddsub_RESULT_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<9> (Maddsub_RESULT_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<10> (Maddsub_RESULT_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<11> (Maddsub_RESULT_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<12> (Maddsub_RESULT_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<13> (Maddsub_RESULT_addsub0000_cy<13>)
+     XORCY:CI->O           2   0.804   0.482  Maddsub_RESULT_addsub0000_xor<14> (RESULT_addsub0000<14>)
+     LUT3_L:I2->LO         1   0.704   0.104  SREG_2_cmp_eq000076 (SREG_2_cmp_eq000076)
+     LUT4:I3->O            1   0.704   0.424  SREG_2_cmp_eq000022_SW1 (N2)
+     LUT4:I3->O            1   0.704   0.424  SREG_2_cmp_eq000086 (SREG_OUT<2>)
+     end scope: 'arith_unit'
+     LUT4_L:I3->LO         1   0.704   0.135  SREG<2>_SW0 (N0)
+     LUT3:I2->O            1   0.704   0.000  SREG<2> (SREG<2>)
+     end scope: 'ALU_UNIT'
+     begin scope: 'ALU_FLAGS_Reg'
+     FDPE:D                    0.308          DataOutSignal_2
+    ----------------------------------------
+    Total                     16.128ns (10.295ns logic, 5.833ns route)
+                                       (63.8% logic, 36.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              6.222ns (Levels of Logic = 4)
+  Source:            RST (PAD)
+  Destination:       SHREG/RAout_8 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RST to SHREG/RAout_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           182   1.218   1.310  RST_IBUF (RST_IBUF1)
+     BUFG:I->O             2   1.457   0.447  RST_IBUF_BUFG (RST_IBUF)
+     begin scope: 'SHREG'
+     INV:I->O              3   0.704   0.531  RAout_and00001_INV_0 (RAout_and0000)
+     FDE:CE                    0.555          RAout_8
+    ----------------------------------------
+    Total                      6.222ns (3.934ns logic, 2.288ns route)
+                                       (63.2% logic, 36.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 1257 / 57
+-------------------------------------------------------------------------
+Offset:              11.155ns (Levels of Logic = 10)
+  Source:            RA_DC1_Reg/Dout_3 (FF)
+  Destination:       STORE_DATA<15> (PAD)
+  Source Clock:      CLK falling
+
+  Data Path: RA_DC1_Reg/Dout_3 to STORE_DATA<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            3   0.591   0.706  Dout_3 (Dout_3)
+     end scope: 'RA_DC1_Reg'
+     begin scope: 'DCCTL'
+     LUT4:I0->O            2   0.704   0.526  OP1_cmp_eq0001453 (OP1_cmp_eq0001453)
+     LUT3:I1->O            1   0.704   0.424  OP1<0>1_SW0 (N10)
+     LUT4:I3->O           32   0.704   1.297  OP1<0>1 (OP1_SEL<0>)
+     end scope: 'DCCTL'
+     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_415 (Mmux_RA_OUT_415)
+     MUXF5:I0->O          23   0.321   1.202  Mmux_RA_OUT_2_f5_14 (RA_OUT<9>)
+     begin scope: 'ALU_UNIT'
+     begin scope: 'word_unit'
+     end scope: 'word_unit'
+     end scope: 'ALU_UNIT'
+     OBUF:I->O                 3.272          STORE_DATA_9_OBUF (STORE_DATA<9>)
+    ----------------------------------------
+    Total                     11.155ns (7.000ns logic, 4.155ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 16.82 secs
+ 
+--> 
+
+
+Total memory usage is 548488 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  186 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

@@ -1,4 +1,5 @@
-/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.ngc 1461444382
-../ProjectLab1/Poject_Lab01/Project1/ipcore_dir/DATAMEM.ngc 1460318072
-../ProjectLab1/Poject_Lab01/Project1/ipcore_dir/Instr_Mem.ngc 1461441035
+/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.ngc 1461525276
+../ProjectLab2/NewCombined/ipcore_dir/DATAMEM.ngc 1461517124
+../ProjectLab2/NewCombined/ipcore_dir/Instr_Mem.ngc 1461521797
+../ProjectLab2/NewCombined/ipcore_dir/EXTERNAL_MEMORY.ngc 1461517124
 OK

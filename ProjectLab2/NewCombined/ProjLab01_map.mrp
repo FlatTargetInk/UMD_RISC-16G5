@@ -1,0 +1,1008 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'ProjLab01'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
+-c 100 -o ProjLab01_map.ncd ProjLab01.ngd ProjLab01.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Sun Apr 24 14:37:06 2016
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:  100
+Logic Utilization:
+  Total Number Slice Registers:         646 out of   9,312    6%
+    Number used as Flip Flops:          645
+    Number used as Latches:               1
+  Number of 4 input LUTs:               723 out of   9,312    7%
+Logic Distribution:
+  Number of occupied Slices:            703 out of   4,656   15%
+    Number of Slices containing only related logic:     703 out of     703 100%
+    Number of Slices containing unrelated logic:          0 out of     703   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         749 out of   9,312    8%
+    Number used as logic:               723
+    Number used as a route-thru:         26
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 70 out of     232   30%
+  Number of RAMB16s:                     11 out of      20   55%
+  Number of BUFGMUXs:                     2 out of      24    8%
+
+Average Fanout of Non-Clock Nets:                3.07
+
+Peak Memory Usage:  627 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   3 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol "physical_group_RST_IBUF/RST_IBUF_BUFG" (output signal=RST_IBUF) has a
+   mix of clock and non-clock loads. The non-clock loads are:
+   Pin CE of SHREG/RAout_8
+   Pin CE of SHREG/RAout_9
+   Pin CE of SHREG/RAout_12
+WARNING:PhysDesignRules:367 - The signal <RA_DC2_Reg/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <RA_DC1_Reg/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <OP4_Reg/GLOBAL_LOGIC1> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ALU_FLAGS_Reg/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <RA4ADR_Reg/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <OP3_Reg/GLOBAL_LOGIC1> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <RB3ADR_Reg/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <RA3ADR_Reg/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <RB2ADR_Reg/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <RA2ADR_Reg/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <OP2_Reg/GLOBAL_LOGIC1> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <RB1_Reg/GLOBAL_LOGIC1> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <RA1_Reg/GLOBAL_LOGIC1> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <OP1_Reg/GLOBAL_LOGIC1> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <OPR0_Reg/GLOBAL_LOGIC1> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IMM1_Reg/GLOBAL_LOGIC1> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PC4_Reg/GLOBAL_LOGIC1> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PC3_Reg/GLOBAL_LOGIC1> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PC2_Reg/GLOBAL_LOGIC1> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <PC1_Reg/GLOBAL_LOGIC1> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ALU_OUT2_Reg/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ALU_OUT1_Reg/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ALU_OUT_Reg/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <RB_DATA/GLOBAL_LOGIC1> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <RA_DATA/GLOBAL_LOGIC1> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <ProgCounter/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Fetch_UNIT/U1/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB2> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB3> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB4> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB5> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB6> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB7> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB10> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB11> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB12> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB13> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB14> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB15> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB18> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB19> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB20> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB21> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB22> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB23> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB26> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB27> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB28> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB29> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB30> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB31> on
+   block:<Fetch_UNIT/U2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/v
+   alid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA2> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA3> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA4> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA5> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA6> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA10> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA11> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA18> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA20> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA21> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA22> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA23> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA26> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA27> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA28> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA29> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_R
+   AMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB2> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB3> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB4> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB5> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB6> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB7> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB10> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB11> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB12> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB13> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB14> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB15> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB18> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB19> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB20> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB21> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB22> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB23> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB26> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB27> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB28> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB29> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB30> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB31> on
+   block:<ALU_UNIT/word_unit/DATAMEMORY/U0/xst_blk_mem_generator/gnativebmg.nati
+   ve_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_R
+   AMB16B>.
+
+Section 3 - Informational
+-------------------------
+INFO:Map:110 - output buffer 'CCR_0_OBUF' driving design level port 'CCR<0>' is
+   being pushed into module 'ALU_FLAGS_Reg' to enable I/O register usage. The
+   buffer has been renamed as 'ALU_FLAGS_Reg/CCR_0_OBUF'.
+INFO:Map:110 - output buffer 'CCR_1_OBUF' driving design level port 'CCR<1>' is
+   being pushed into module 'ALU_FLAGS_Reg' to enable I/O register usage. The
+   buffer has been renamed as 'ALU_FLAGS_Reg/CCR_1_OBUF'.
+INFO:Map:110 - output buffer 'CCR_2_OBUF' driving design level port 'CCR<2>' is
+   being pushed into module 'ALU_FLAGS_Reg' to enable I/O register usage. The
+   buffer has been renamed as 'ALU_FLAGS_Reg/CCR_2_OBUF'.
+INFO:Map:110 - output buffer 'CCR_3_OBUF' driving design level port 'CCR<3>' is
+   being pushed into module 'ALU_FLAGS_Reg' to enable I/O register usage. The
+   buffer has been renamed as 'ALU_FLAGS_Reg/CCR_3_OBUF'.
+INFO:Map:110 - output buffer 'DST_ADR_0_OBUF' driving design level port
+   'DST_ADR<0>' is being pushed into module 'PC4_Reg' to enable I/O register
+   usage. The buffer has been renamed as 'PC4_Reg/DST_ADR_0_OBUF'.
+INFO:Map:110 - output buffer 'DST_ADR_1_OBUF' driving design level port
+   'DST_ADR<1>' is being pushed into module 'PC4_Reg' to enable I/O register
+   usage. The buffer has been renamed as 'PC4_Reg/DST_ADR_1_OBUF'.
+INFO:Map:110 - output buffer 'DST_ADR_2_OBUF' driving design level port
+   'DST_ADR<2>' is being pushed into module 'PC4_Reg' to enable I/O register
+   usage. The buffer has been renamed as 'PC4_Reg/DST_ADR_2_OBUF'.
+INFO:Map:110 - output buffer 'DST_ADR_3_OBUF' driving design level port
+   'DST_ADR<3>' is being pushed into module 'PC4_Reg' to enable I/O register
+   usage. The buffer has been renamed as 'PC4_Reg/DST_ADR_3_OBUF'.
+INFO:Map:110 - output buffer 'DST_ADR_4_OBUF' driving design level port
+   'DST_ADR<4>' is being pushed into module 'PC4_Reg' to enable I/O register
+   usage. The buffer has been renamed as 'PC4_Reg/DST_ADR_4_OBUF'.
+INFO:LIT:243 - Logical network OP4<0> has no load.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  39 block(s) removed
+  17 block(s) optimized away
+  99 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "EXMEM_CTL/EN_inv" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "OP4<0>" is unused and has been removed.
+The signal "RB_OUT<0>" is unused and has been removed.
+The signal "RB_OUT<1>" is unused and has been removed.
+The signal "RB_OUT<2>" is unused and has been removed.
+The signal "RB_OUT<3>" is unused and has been removed.
+The signal "RB_OUT<4>" is unused and has been removed.
+The signal "RB_OUT<5>" is unused and has been removed.
+The signal "RB_OUT<6>" is unused and has been removed.
+The signal "RB_OUT<7>" is unused and has been removed.
+The signal "SH_DATA<0>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[13].ram.ram_douta<3>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[14].ram.ram_douta<3>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_4" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_4" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[11].ram.ram_douta<3>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[12].ram.ram_douta<3>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_5" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_5" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f5" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f5" (MUX) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[10].ram.ram_douta<3>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[8].ram.ram_douta<3>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/sel_pipe<2>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[13].ram.ram_douta<4>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[14].ram.ram_douta<4>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_41" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_41" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[11].ram.ram_douta<4>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[12].ram.ram_douta<4>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_52" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_52" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f51" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f5_0" (MUX) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[10].ram.ram_douta<4>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[8].ram.ram_douta<4>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[13].ram.ram_douta<5>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[14].ram.ram_douta<5>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_42" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_42" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[11].ram.ram_douta<5>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[12].ram.ram_douta<5>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_54" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_54" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f52" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f5_1" (MUX) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[10].ram.ram_douta<5>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[8].ram.ram_douta<5>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[13].ram.ram_douta<6>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[14].ram.ram_douta<6>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_43" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_43" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[11].ram.ram_douta<6>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[12].ram.ram_douta<6>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_56" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_56" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f53" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f5_2" (MUX) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[10].ram.ram_douta<6>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[8].ram.ram_douta<6>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[13].ram.ram_douta<7>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[14].ram.ram_douta<7>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_44" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_44" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[11].ram.ram_douta<7>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[12].ram.ram_douta<7>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_58" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_58" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f54" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f5_3" (MUX) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[10].ram.ram_douta<7>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[8].ram.ram_douta<7>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[13].ram.ram_douta<8>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[14].ram.ram_douta<8>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_45" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_45" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[11].ram.ram_douta<8>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[12].ram.ram_douta<8>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_510" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_510" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f55" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f5_4" (MUX) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[10].ram.ram_douta<8>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[8].ram.ram_douta<8>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[13].ram.ram_douta<0>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[14].ram.ram_douta<0>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_46" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_46" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[11].ram.ram_douta<0>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[12].ram.ram_douta<0>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_512" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_512" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f56" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f5_5" (MUX) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[10].ram.ram_douta<0>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[8].ram.ram_douta<0>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[13].ram.ram_douta<1>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[14].ram.ram_douta<1>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_47" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_47" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[11].ram.ram_douta<1>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[12].ram.ram_douta<1>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_514" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_514" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f57" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f5_6" (MUX) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[10].ram.ram_douta<1>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[8].ram.ram_douta<1>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[13].ram.ram_douta<2>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[14].ram.ram_douta<2>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_48" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_48" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[11].ram.ram_douta<2>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[12].ram.ram_douta<2>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_516" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_516" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f58" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux_3_f5_7" (MUX) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[10].ram.ram_douta<2>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[8].ram.ram_douta<2>" is unused and has been removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_ar
+ray<4>" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec
+_a.bindec_inst_a/ADDR[2]_PWR_16_o_equal_5_o<2>1" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_ar
+ray<5>" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec
+_a.bindec_inst_a/ADDR[2]_PWR_16_o_equal_6_o<2>1" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_ar
+ray<6>" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec
+_a.bindec_inst_a/ADDR[2]_PWR_16_o_equal_7_o<2>1" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_ar
+ray<7>" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec
+_a.bindec_inst_a/ADDR[2]_PWR_16_o_equal_8_o<2>1" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_ar
+ray<3>" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec
+_a.bindec_inst_a/ADDR[2]_GND_16_o_equal_4_o<2>1" (ROM) removed.
+The signal
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_ar
+ray<1>" is unused and has been removed.
+ Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec
+_a.bindec_inst_a/ADDR[2]_GND_16_o_equal_2_o<2>1" (ROM) removed.
+Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[10].ram.r/s3_init.ram/dpram.dp9x9.ram" (RAMB16_S9_S9) removed.
+Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[11].ram.r/s3_init.ram/dpram.dp9x9.ram" (RAMB16_S9_S9) removed.
+Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[12].ram.r/s3_init.ram/dpram.dp9x9.ram" (RAMB16_S9_S9) removed.
+Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[13].ram.r/s3_init.ram/dpram.dp9x9.ram" (RAMB16_S9_S9) removed.
+Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[14].ram.r/s3_init.ram/dpram.dp9x9.ram" (RAMB16_S9_S9) removed.
+Unused block
+"EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[8].ram.r/s3_init.ram/dpram.dp9x9.ram" (RAMB16_S9_S9) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+FDE
+		EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_m
+ux_a.A/sel_pipe_0
+   optimized to 0
+FDE
+		EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_m
+ux_a.A/sel_pipe_2
+   optimized to 0
+GND 		EX_MEM/XST_GND
+VCC 		EX_MEM/XST_VCC
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		ALU_UNIT/shift_unit/XST_GND
+GND 		ALU_UNIT/word_unit/DATAMEMORY/XST_GND
+VCC 		ALU_UNIT/word_unit/DATAMEMORY/XST_VCC
+GND 		EXMEM_ADDER/XST_GND
+GND 		EXMEM_CTL/XST_GND
+GND 		Fetch_UNIT/U2/XST_GND
+VCC 		Fetch_UNIT/U2/XST_VCC
+GND 		Fetch_UNIT/XST_GND
+VCC 		Fetch_UNIT/XST_VCC
+GND 		SHREG/XST_GND
+VCC 		SHREG/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ALU_OUT<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ALU_OUT<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ALU_OUT<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ALU_OUT<3>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ALU_OUT<4>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ALU_OUT<5>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ALU_OUT<6>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ALU_OUT<7>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ALU_OUT<8>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ALU_OUT<9>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ALU_OUT<10>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ALU_OUT<11>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ALU_OUT<12>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ALU_OUT<13>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ALU_OUT<14>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ALU_OUT<15>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| CCR<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| CCR<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| CCR<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| CCR<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| CLK                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| DEBUG_OUT<0>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBUG_OUT<1>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBUG_OUT<2>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBUG_OUT<3>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBUG_OUT<4>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBUG_OUT<5>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBUG_OUT<6>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBUG_OUT<7>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBUG_OUT<8>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBUG_OUT<9>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBUG_OUT<10>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBUG_OUT<11>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBUG_OUT<12>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBUG_OUT<13>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBUG_OUT<14>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBUG_OUT<15>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<3>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<4>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<5>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<6>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<7>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<8>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<9>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<10>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<11>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<12>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<13>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<14>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| DST_ADR<15>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| RST                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| STORE_DATA<0>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| STORE_DATA<1>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| STORE_DATA<2>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| STORE_DATA<3>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| STORE_DATA<4>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| STORE_DATA<5>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| STORE_DATA<6>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| STORE_DATA<7>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| STORE_DATA<8>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| STORE_DATA<9>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| STORE_DATA<10>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| STORE_DATA<11>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| STORE_DATA<12>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| STORE_DATA<13>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| STORE_DATA<14>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| STORE_DATA<15>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

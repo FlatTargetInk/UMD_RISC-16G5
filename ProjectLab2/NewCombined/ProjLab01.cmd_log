@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.xst" -ofn "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-4 ProjLab01.ngc ProjLab01.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ProjLab01_map.ncd ProjLab01.ngd ProjLab01.pcf 
+par -w -intstyle ise -ol high -t 1 ProjLab01_map.ncd ProjLab01.ncd ProjLab01.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ProjLab01.twx ProjLab01.ncd -o ProjLab01.twr ProjLab01.pcf 
+bitgen -intstyle ise -f ProjLab01.ut ProjLab01.ncd 

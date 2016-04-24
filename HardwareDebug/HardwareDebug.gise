@@ -22,8 +22,6 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="HardwareDebug.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/ipcore_dir/Instr_Mem.sym" xil_pn:origination="imported"/>
-    <file xil_pn:fileType="FILE_LOG" xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/ipcore_dir/coregen.log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Hardware_TL.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="Hardware_TL.bit" xil_pn:subbranch="FPGAConfiguration"/>
@@ -67,6 +65,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ProjLab01.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ProjLab01.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="ProjLab01.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TopLevel_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TopLevel_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TopLevel_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_CMD" xil_pn:name="_impact.cmd"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="_impact.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
@@ -82,6 +83,7 @@
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -95,7 +97,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1461356331" xil_pn:in_ck="-7826386966773319449" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1461356331">
+    <transform xil_pn:end_ts="1461524856" xil_pn:in_ck="1541961959395495354" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1461524856">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -103,27 +105,39 @@
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/ALU_tb.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/DATA_CTL.vhd"/>
       <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/DCCTL_tb.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/DC_CTL.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/Dispatch.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/Fetch_CTL.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/IMSEL.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/Instruction_Memory.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/Instruction_Memory_TL.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/PipelineRegisters.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/ProjLab01.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/REG_CTL.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/RegisterBank.vhd"/>
       <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/TopLevel_tb.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/alu_toplevel.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/arith_unit.vhd"/>
       <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/fetch_tb.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/ipcore_dir/DATAMEM.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/logical_unit.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/programCounter.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/shift_unit.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/word_unit.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/ALU_tb.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/DATA_CTL.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/DCCTL_tb.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/DC_CTL.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/Dispatch.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/EXTERNAL_MEMORY.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/EX_MEM_CTL.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/Fetch_CTL.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/Fetch_tb.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/IMSEL.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/Instruction_Memory.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/Instruction_Memory_TL.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/PipelineRegisters.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/ProjLab01.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/REG_CTL.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/RegisterBank.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/Shadow_IMM_Add.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/Shadow_Register_Bank.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/TopLevel_tb.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/alu_toplevel.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/arith_unit.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/fetch_tb.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/ipcore_dir/DATAMEM.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/ipcore_dir/EXTERNAL_MEMORY.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/ipcore_dir/Instr_Mem.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/ipcore_dir/Instruction_Memory.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/logical_unit.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/programCounter.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/shift_unit.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/word_unit.vhd"/>
       <outfile xil_pn:name="Hardware_TL.vhd"/>
       <outfile xil_pn:name="SevenSeg.vhd"/>
       <outfile xil_pn:name="SevenSeg_toplevel.vhd"/>
@@ -133,21 +147,19 @@
       <outfile xil_pn:name="counter_toplevel.vhd"/>
       <outfile xil_pn:name="debounce.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1461356004" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7636040909010696277" xil_pn:start_ts="1461356004">
+    <transform xil_pn:end_ts="1461524856" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6417879768481499082" xil_pn:start_ts="1461524856">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1461356004" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2628052898269632919" xil_pn:start_ts="1461356004">
+    <transform xil_pn:end_ts="1461524856" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4527772937859024968" xil_pn:start_ts="1461524856">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1461355772" xil_pn:in_ck="-2835995385923178581" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1802377015841337816" xil_pn:start_ts="1461355772">
+    <transform xil_pn:end_ts="1461524856" xil_pn:in_ck="-5797213000575073208" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1802377015841337816" xil_pn:start_ts="1461524856">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1461356331" xil_pn:in_ck="3510820479227931711" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1461356331">
+    <transform xil_pn:end_ts="1461524856" xil_pn:in_ck="1541961959395495354" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1461524856">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -156,28 +168,39 @@
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/ALU_tb.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/DATA_CTL.vhd"/>
       <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/DCCTL_tb.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/DC_CTL.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/Dispatch.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/Fetch_CTL.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/IMSEL.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/Instruction_Memory.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/Instruction_Memory_TL.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/PipelineRegisters.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/ProjLab01.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/REG_CTL.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/RegisterBank.vhd"/>
       <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/TopLevel_tb.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/alu_toplevel.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/arith_unit.vhd"/>
       <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/fetch_tb.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/ipcore_dir/DATAMEM.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/ipcore_dir/Instr_Mem.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/logical_unit.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/programCounter.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/shift_unit.vhd"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/word_unit.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/ALU_tb.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/DATA_CTL.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/DCCTL_tb.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/DC_CTL.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/Dispatch.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/EXTERNAL_MEMORY.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/EX_MEM_CTL.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/Fetch_CTL.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/Fetch_tb.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/IMSEL.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/Instruction_Memory.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/Instruction_Memory_TL.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/PipelineRegisters.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/ProjLab01.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/REG_CTL.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/RegisterBank.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/Shadow_IMM_Add.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/Shadow_Register_Bank.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/TopLevel_tb.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/alu_toplevel.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/arith_unit.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/fetch_tb.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/ipcore_dir/DATAMEM.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/ipcore_dir/EXTERNAL_MEMORY.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/ipcore_dir/Instr_Mem.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/ipcore_dir/Instruction_Memory.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/logical_unit.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/programCounter.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/shift_unit.vhd"/>
+      <outfile xil_pn:name="../ProjectLab2/NewCombined/word_unit.vhd"/>
       <outfile xil_pn:name="Hardware_TL.vhd"/>
       <outfile xil_pn:name="SevenSeg.vhd"/>
       <outfile xil_pn:name="SevenSeg_toplevel.vhd"/>
@@ -187,30 +210,30 @@
       <outfile xil_pn:name="counter_toplevel.vhd"/>
       <outfile xil_pn:name="debounce.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1461356335" xil_pn:in_ck="3510820479227931711" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6359473909979519700" xil_pn:start_ts="1461356331">
+    <transform xil_pn:end_ts="1461524861" xil_pn:in_ck="1541961959395495354" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3158204554956819122" xil_pn:start_ts="1461524856">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="fetch_tb_beh.prj"/>
-      <outfile xil_pn:name="fetch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="TopLevel_tb_beh.prj"/>
+      <outfile xil_pn:name="TopLevel_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1461356335" xil_pn:in_ck="2225489255015867886" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="9208139051972672025" xil_pn:start_ts="1461356335">
+    <transform xil_pn:end_ts="1461524861" xil_pn:in_ck="-12933083403777137" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3165499859492085445" xil_pn:start_ts="1461524861">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="fetch_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="TopLevel_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1461341692" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1461341692">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -220,11 +243,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1461441055" xil_pn:in_ck="-2835995385923178581" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1802377015841337816" xil_pn:start_ts="1461441055">
+    <transform xil_pn:end_ts="1461524298" xil_pn:in_ck="-5797213000575073208" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1802377015841337816" xil_pn:start_ts="1461524298">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/ipcore_dir/Instr_Mem.ngc"/>
-      <outfile xil_pn:name="../ProjectLab1/Poject_Lab01/Project1/ipcore_dir/Instr_Mem.vhd"/>
     </transform>
     <transform xil_pn:end_ts="1461341692" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1461341692">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -242,7 +263,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1461444382" xil_pn:in_ck="6877922661617474526" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-633283044683343371" xil_pn:start_ts="1461444360">
+    <transform xil_pn:end_ts="1461525276" xil_pn:in_ck="2967931967316700633" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-633283044683343371" xil_pn:start_ts="1461525253">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -265,7 +286,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1461444390" xil_pn:in_ck="-1616527825594335727" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8831871039280450523" xil_pn:start_ts="1461444382">
+    <transform xil_pn:end_ts="1461525281" xil_pn:in_ck="-3061715180753583284" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8831871039280450523" xil_pn:start_ts="1461525276">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Hardware_TL.bld"/>
@@ -274,7 +295,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1461444398" xil_pn:in_ck="9071098028980773739" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1461444390">
+    <transform xil_pn:end_ts="1461525288" xil_pn:in_ck="9071098028980773739" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1461525281">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -288,7 +309,7 @@
       <outfile xil_pn:name="Hardware_TL_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1461444438" xil_pn:in_ck="-2891187099479175324" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1461444398">
+    <transform xil_pn:end_ts="1461525331" xil_pn:in_ck="-2891187099479175324" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1461525288">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -303,7 +324,7 @@
       <outfile xil_pn:name="Hardware_TL_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1461444445" xil_pn:in_ck="7184005088633174224" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1461444438">
+    <transform xil_pn:end_ts="1461525339" xil_pn:in_ck="7184005088633174224" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1461525331">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -320,11 +341,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="_impact.cmd"/>
-      <outfile xil_pn:name="_impact.log"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1461444438" xil_pn:in_ck="5925670336124001127" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1461444434">
+    <transform xil_pn:end_ts="1461525331" xil_pn:in_ck="5925670336124001127" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1461525327">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Hardware_TL.twr"/>

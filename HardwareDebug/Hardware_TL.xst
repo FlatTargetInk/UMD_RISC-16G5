@@ -15,7 +15,7 @@ run
 -rtlview Yes
 -glob_opt AllClockNets
 -read_cores YES
--sd {"../ProjectLab1/Poject_Lab01/Project1/ipcore_dir"  }
+-sd {"../ProjectLab2/NewCombined" "../ProjectLab2/NewCombined/ipcore_dir"  }
 -write_timing_constraints NO
 -cross_clock_analysis NO
 -hierarchy_separator /

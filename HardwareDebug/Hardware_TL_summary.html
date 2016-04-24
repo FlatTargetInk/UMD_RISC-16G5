@@ -2,7 +2,7 @@
 <BODY TEXT='#000000' BGCOLOR='#FFFFFF' LINK='#0000EE' VLINK='#551A8B' ALINK='#FF0000'>
 <TABLE BORDER CELLSPACING=0 CELLPADDING=3 WIDTH='100%'>
 <TR ALIGN=CENTER BGCOLOR='#99CCFF'>
-<TD ALIGN=CENTER COLSPAN='4'><B>Hardware_TL Project Status (04/23/2016 - 15:54:01)</B></TD></TR>
+<TD ALIGN=CENTER COLSPAN='4'><B>Hardware_TL Project Status (04/24/2016 - 15:15:39)</B></TD></TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Project File:</B></TD>
 <TD>HardwareDebug.xise</TD>
@@ -58,50 +58,62 @@ System Settings</A>
 <TR ALIGN=CENTER BGCOLOR='#FFFF99'>
 <TD ALIGN=LEFT><B>Logic Utilization</B></TD><TD><B>Used</B></TD><TD><B>Available</B></TD><TD><B>Utilization</B></TD><TD COLSPAN='2'><B>Note(s)</B></TD>
 </TR>
-<TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of Slice Flip Flops</TD>
-<TD ALIGN=RIGHT>731</TD>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>Total Number Slice Registers</TD>
+<TD ALIGN=RIGHT>736</TD>
 <TD ALIGN=RIGHT>9,312</TD>
 <TD ALIGN=RIGHT>7%</TD>
 <TD COLSPAN='2'>&nbsp;</TD>
 </TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;Number used as Flip Flops</TD>
+<TD ALIGN=RIGHT>735</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;Number used as Latches</TD>
+<TD ALIGN=RIGHT>1</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD COLSPAN='2'>&nbsp;</TD>
+</TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of 4 input LUTs</TD>
-<TD ALIGN=RIGHT>805</TD>
+<TD ALIGN=RIGHT>807</TD>
 <TD ALIGN=RIGHT>9,312</TD>
 <TD ALIGN=RIGHT>8%</TD>
 <TD COLSPAN='2'>&nbsp;</TD>
 </TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of occupied Slices</TD>
-<TD ALIGN=RIGHT>746</TD>
+<TD ALIGN=RIGHT>764</TD>
 <TD ALIGN=RIGHT>4,656</TD>
 <TD ALIGN=RIGHT>16%</TD>
 <TD COLSPAN='2'>&nbsp;</TD>
 </TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;Number of Slices containing only related logic</TD>
-<TD ALIGN=RIGHT>746</TD>
-<TD ALIGN=RIGHT>746</TD>
+<TD ALIGN=RIGHT>764</TD>
+<TD ALIGN=RIGHT>764</TD>
 <TD ALIGN=RIGHT>100%</TD>
 <TD COLSPAN='2'>&nbsp;</TD>
 </TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;Number of Slices containing unrelated logic</TD>
 <TD ALIGN=RIGHT>0</TD>
-<TD ALIGN=RIGHT>746</TD>
+<TD ALIGN=RIGHT>764</TD>
 <TD ALIGN=RIGHT>0%</TD>
 <TD COLSPAN='2'>&nbsp;</TD>
 </TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>Total Number of 4 input LUTs</TD>
-<TD ALIGN=RIGHT>903</TD>
+<TD ALIGN=RIGHT>929</TD>
 <TD ALIGN=RIGHT>9,312</TD>
 <TD ALIGN=RIGHT>9%</TD>
 <TD COLSPAN='2'>&nbsp;</TD>
 </TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;Number used as logic</TD>
-<TD ALIGN=RIGHT>805</TD>
+<TD ALIGN=RIGHT>807</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD COLSPAN='2'>&nbsp;</TD>
 </TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>&nbsp;&nbsp;&nbsp;&nbsp;Number used as a route-thru</TD>
-<TD ALIGN=RIGHT>98</TD>
+<TD ALIGN=RIGHT>122</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD COLSPAN='2'>&nbsp;</TD>
@@ -113,9 +125,9 @@ System Settings</A>
 <TD COLSPAN='2'>&nbsp;</TD>
 </TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of RAMB16s</TD>
-<TD ALIGN=RIGHT>2</TD>
+<TD ALIGN=RIGHT>11</TD>
 <TD ALIGN=RIGHT>20</TD>
-<TD ALIGN=RIGHT>10%</TD>
+<TD ALIGN=RIGHT>55%</TD>
 <TD COLSPAN='2'>&nbsp;</TD>
 </TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of BUFGMUXs</TD>
@@ -125,7 +137,7 @@ System Settings</A>
 <TD COLSPAN='2'>&nbsp;</TD>
 </TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>Average Fanout of Non-Clock Nets</TD>
-<TD ALIGN=RIGHT>3.10</TD>
+<TD ALIGN=RIGHT>2.99</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD COLSPAN='2'>&nbsp;</TD>
@@ -162,22 +174,22 @@ System Settings</A>
 <TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD ALIGN=CENTER COLSPAN='6'><B>Detailed Reports</B></TD><TD ALIGN=RIGHT WIDTH='10%'COLSPAN=1> <A HREF_DISABLED="?&ExpandedTable=DetailedReports"><B>[-]</B></a></TD></TR>
 <TR BGCOLOR='#FFFF99'><TD><B>Report Name</B></TD><TD><B>Status</B></TD><TD><B>Generated</B></TD>
 <TD ALIGN=LEFT><B>Errors</B></TD><TD ALIGN=LEFT><B>Warnings</B></TD><TD ALIGN=LEFT COLSPAN='2'><B>Infos</B></TD></TR>
-<TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.syr'>Synthesis Report</A></TD><TD>Current</TD><TD>Sat Apr 23 16:46:22 2016</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/_xmsgs/xst.xmsgs?&DataKey=Warning'>109 Warnings (0 new)</A></TD><TD ALIGN=LEFT COLSPAN='2'><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/_xmsgs/xst.xmsgs?&DataKey=Info'>20 Infos (0 new)</A></TD></TR>
-<TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.bld'>Translation Report</A></TD><TD>Current</TD><TD>Sat Apr 23 16:46:30 2016</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT COLSPAN='2'>0</TD></TR>
-<TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL_map.mrp'>Map Report</A></TD><TD>Current</TD><TD>Sat Apr 23 16:46:38 2016</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/_xmsgs/map.xmsgs?&DataKey=Warning'>79 Warnings (0 new)</A></TD><TD ALIGN=LEFT COLSPAN='2'><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/_xmsgs/map.xmsgs?&DataKey=Info'>4 Infos (0 new)</A></TD></TR>
-<TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.par'>Place and Route Report</A></TD><TD>Current</TD><TD>Sat Apr 23 16:47:14 2016</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/_xmsgs/par.xmsgs?&DataKey=Warning'>10 Warnings (0 new)</A></TD><TD ALIGN=LEFT COLSPAN='2'><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/_xmsgs/par.xmsgs?&DataKey=Info'>2 Infos (0 new)</A></TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.syr'>Synthesis Report</A></TD><TD>Current</TD><TD>Sun Apr 24 15:14:36 2016</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/_xmsgs/xst.xmsgs?&DataKey=Warning'>198 Warnings (0 new)</A></TD><TD ALIGN=LEFT COLSPAN='2'><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/_xmsgs/xst.xmsgs?&DataKey=Info'>22 Infos (0 new)</A></TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.bld'>Translation Report</A></TD><TD>Current</TD><TD>Sun Apr 24 15:14:41 2016</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT COLSPAN='2'>0</TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL_map.mrp'>Map Report</A></TD><TD>Current</TD><TD>Sun Apr 24 15:14:48 2016</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/_xmsgs/map.xmsgs?&DataKey=Warning'>79 Warnings (0 new)</A></TD><TD ALIGN=LEFT COLSPAN='2'><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/_xmsgs/map.xmsgs?&DataKey=Info'>4 Infos (0 new)</A></TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.par'>Place and Route Report</A></TD><TD>Current</TD><TD>Sun Apr 24 15:15:27 2016</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/_xmsgs/par.xmsgs?&DataKey=Warning'>11 Warnings (1 new)</A></TD><TD ALIGN=LEFT COLSPAN='2'><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/_xmsgs/par.xmsgs?&DataKey=Info'>2 Infos (0 new)</A></TD></TR>
 <TR ALIGN=LEFT><TD>Power Report</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
-<TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.twr'>Post-PAR Static Timing Report</A></TD><TD>Current</TD><TD>Sat Apr 23 16:47:18 2016</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT COLSPAN='2'><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/_xmsgs/trce.xmsgs?&DataKey=Info'>6 Infos (0 new)</A></TD></TR>
-<TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.bgn'>Bitgen Report</A></TD><TD>Current</TD><TD>Sat Apr 23 16:47:25 2016</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.twr'>Post-PAR Static Timing Report</A></TD><TD>Current</TD><TD>Sun Apr 24 15:15:31 2016</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT COLSPAN='2'><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/_xmsgs/trce.xmsgs?&DataKey=Info'>6 Infos (0 new)</A></TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/Hardware_TL.bgn'>Bitgen Report</A></TD><TD>Current</TD><TD>Sun Apr 24 15:15:39 2016</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
 </TABLE>
 &nbsp;<BR><TABLE BORDER CELLSPACING=0 CELLPADDING=3 WIDTH='100%'>
 <TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD ALIGN=CENTER COLSPAN='3'><B>Secondary Reports</B></TD><TD ALIGN=RIGHT WIDTH='10%'COLSPAN=1> <A HREF_DISABLED="?&ExpandedTable=SecondaryReports"><B>[-]</B></a></TD></TR>
 <TR BGCOLOR='#FFFF99'><TD><B>Report Name</B></TD><TD><B>Status</B></TD><TD COLSPAN='2'><B>Generated</B></TD></TR>
-<TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/isim.log'>ISIM Simulator Log</A></TD><TD>Out of Date</TD><TD COLSPAN='2'>Fri Apr 22 18:59:21 2016</TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/isim.log'>ISIM Simulator Log</A></TD><TD>Out of Date</TD><TD COLSPAN='2'>Sun Apr 24 15:09:27 2016</TD></TR>
 <TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/usage_statistics_webtalk.html'>WebTalk Report</A></TD><TD>Out of Date</TD><TD COLSPAN='2'>Fri Apr 22 14:23:38 2016</TD></TR>
 <TR ALIGN=LEFT><TD><A HREF_DISABLED='/home/robert/UMD_RISC-16G5/HardwareDebug/webtalk.log'>WebTalk Log File</A></TD><TD>Out of Date</TD><TD COLSPAN='2'>Fri Apr 22 14:23:39 2016</TD></TR>
 </TABLE>
 
 
-<br><center><b>Date Generated:</b> 04/23/2016 - 17:03:16</center>
+<br><center><b>Date Generated:</b> 04/24/2016 - 15:15:39</center>
 </BODY></HTML>

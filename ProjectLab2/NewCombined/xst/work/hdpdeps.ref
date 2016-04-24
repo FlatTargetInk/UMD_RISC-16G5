@@ -1,0 +1,154 @@
+V3 80
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/alu_toplevel.vhd 2016/04/24.12:58:44 P.20131013
+EN work/ALU_Toplevel 1461523016 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/alu_toplevel.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
+AR work/ALU_Toplevel/Structural 1461523017 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/alu_toplevel.vhd \
+      EN work/ALU_Toplevel 1461523016 CP work/arith_unit CP work/logical_unit \
+      CP work/shift_unit CP work/word_unit
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/arith_unit.vhd 2016/04/24.12:58:44 P.20131013
+EN work/arith_unit 1461523008 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/arith_unit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_SIGNED 1381692178
+AR work/arith_unit/Combinational 1461523009 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/arith_unit.vhd \
+      EN work/arith_unit 1461523008
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DATA_CTL.vhd 2016/04/24.12:58:44 P.20131013
+EN work/DATA_CTL 1461523024 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DATA_CTL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DATA_CTL/Behavioral 1461523025 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DATA_CTL.vhd \
+      EN work/DATA_CTL 1461523024
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DC_CTL.vhd 2016/04/24.12:58:44 P.20131013
+EN work/DC_CTL 1461523022 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DC_CTL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DC_CTL/Mixed 1461523023 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DC_CTL.vhd \
+      EN work/DC_CTL 1461523022
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/EXTERNAL_MEMORY.vhd 2016/04/24.12:58:44 P.20131013
+EN work/EXTERNAL_MEMORY 1461523034 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/EXTERNAL_MEMORY.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/EXTERNAL_MEMORY/EXTERNAL_MEMORY_a 1461523035 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/EXTERNAL_MEMORY.vhd \
+      EN work/EXTERNAL_MEMORY 1461523034
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/EX_MEM_CTL.vhd 2016/04/24.12:58:44 P.20131013
+EN work/EX_MEM_CTL 1461523028 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/EX_MEM_CTL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/EX_MEM_CTL/Behavioral 1461523029 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/EX_MEM_CTL.vhd \
+      EN work/EX_MEM_CTL 1461523028
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/IMSEL.vhd 2016/04/24.12:58:44 P.20131013
+EN work/IMSEL 1461523026 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/IMSEL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/IMSEL/Dataflow 1461523027 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/IMSEL.vhd \
+      EN work/IMSEL 1461523026
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd 2016/04/24.12:58:44 P.20131013
+EN work/Instruction_Memory_TL 1461523018 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Instruction_Memory_TL/Structural 1461523019 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd \
+      EN work/Instruction_Memory_TL 1461523018 CP work/programCounter \
+      CP work/Instr_Mem
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/DATAMEM.vhd 2016/04/24.12:58:44 P.20131013
+EN work/DATAMEM 1461523002 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/DATAMEM.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DATAMEM/DATAMEM_a 1461523003 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/DATAMEM.vhd \
+      EN work/DATAMEM 1461523002
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/Instr_Mem.vhd 2016/04/24.14:16:38 P.20131013
+EN work/Instr_Mem 1461523006 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/Instr_Mem.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Instr_Mem/Instr_Mem_a 1461523007 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/Instr_Mem.vhd \
+      EN work/Instr_Mem 1461523006
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/logical_unit.vhd 2016/04/24.12:58:44 P.20131013
+EN work/logical_unit 1461523010 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/logical_unit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/logical_unit/Combinational 1461523011 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/logical_unit.vhd \
+      EN work/logical_unit 1461523010
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd 2016/04/24.12:58:44 P.20131013
+EN work/PipelineRegisters 1461523036 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/PipelineRegisters/Behavioral 1461523037 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd \
+      EN work/PipelineRegisters 1461523036
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/programCounter.vhd 2016/04/24.12:58:44 P.20131013
+EN work/programCounter 1461523004 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/programCounter.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/programCounter/Behavioral 1461523005 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/programCounter.vhd \
+      EN work/programCounter 1461523004
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd 2016/04/24.14:33:43 P.20131013
+EN work/ProjLab01 1461523040 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB work
+AR work/ProjLab01/Structural 1461523041 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd \
+      EN work/ProjLab01 1461523040 CP work/ALU_Toplevel \
+      CP work/Instruction_Memory_TL CP work/REG_CTL CP work/DC_CTL CP work/DATA_CTL \
+      CP work/IMSEL CP work/EX_MEM_CTL CP work/Shadow_Reg CP work/Shadow_IMM_Add \
+      CP work/EXTERNAL_MEMORY CP work/PipelineRegisters CP work/programCounter \
+      CP work/RegisterBank
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/RegisterBank.vhd 2016/04/24.12:58:44 P.20131013
+EN work/RegisterBank 1461523038 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/RegisterBank.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/RegisterBank/Behavioral 1461523039 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/RegisterBank.vhd \
+      EN work/RegisterBank 1461523038
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/REG_CTL.vhd 2016/04/24.12:58:44 P.20131013
+EN work/REG_CTL 1461523020 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/REG_CTL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/REG_CTL/Dataflow 1461523021 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/REG_CTL.vhd \
+      EN work/REG_CTL 1461523020
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Shadow_IMM_Add.vhd 2016/04/24.12:58:44 P.20131013
+EN work/Shadow_IMM_Add 1461523032 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Shadow_IMM_Add.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Shadow_IMM_Add/Behavioral 1461523033 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Shadow_IMM_Add.vhd \
+      EN work/Shadow_IMM_Add 1461523032
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Shadow_Register_Bank.vhd 2016/04/24.12:58:44 P.20131013
+EN work/Shadow_Reg 1461523030 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Shadow_Register_Bank.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Shadow_Reg/Behavioral 1461523031 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Shadow_Register_Bank.vhd \
+      EN work/Shadow_Reg 1461523030
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/shift_unit.vhd 2016/04/24.12:58:44 P.20131013
+EN work/shift_unit 1461523012 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/shift_unit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/shift_unit/Combinational 1461523013 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/shift_unit.vhd \
+      EN work/shift_unit 1461523012
+FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/word_unit.vhd 2016/04/24.12:58:44 P.20131013
+EN work/word_unit 1461523014 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/word_unit.vhd \
+      PB ieee/std_logic_1164 1381692176 LB work
+AR work/word_unit/Combinational 1461523015 \
+      FL /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/word_unit.vhd \
+      EN work/word_unit 1461523014 CP work/DATAMEM

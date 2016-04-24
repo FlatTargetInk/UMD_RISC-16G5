@@ -39,7 +39,7 @@ entity Hardware_TL is
 			LED	: out STD_LOGIC_VECTOR(7 downto 0);
 			SEG	: out STD_LOGIC_VECTOR(6 downto 0);
 			DP		: out STD_LOGIC;
-			AN		: out	STD_LOGIC_VECTOR(3 downto 0);
+			AN		: out	STD_LOGIC_VECTOR(0 to 3);
 			JA		: out STD_LOGIC_VECTOR(7 downto 0);
 			JB		: out STD_LOGIC_VECTOR(7 downto 0);
 			JC		: out STD_LOGIC_VECTOR(7 downto 0);

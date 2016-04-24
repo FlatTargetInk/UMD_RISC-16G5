@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/HardwareDebug/fetch_tb_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/HardwareDebug/fetch_tb_beh.prj" "work.fetch_tb" 
+-intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/HardwareDebug/TopLevel_tb_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/HardwareDebug/TopLevel_tb_beh.prj" "work.TopLevel_tb" 
