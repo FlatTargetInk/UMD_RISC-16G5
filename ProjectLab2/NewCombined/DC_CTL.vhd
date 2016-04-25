@@ -36,9 +36,9 @@ entity DC_CTL is
 			  RA0	: in STD_LOGIC_VECTOR (3 downto 0);
            RA1	: in STD_LOGIC_VECTOR (3 downto 0);
 			  RA2	: in STD_LOGIC_VECTOR (3 downto 0);
---			  RB0 : in STD_LOGIC_VECTOR (3 downto 0);
---			  RB1	: in STD_LOGIC_VECTOR (3 downto 0);
---			  RB2	: in STD_LOGIC_VECTOR (3 downto 0);
+			  OPC0	: in STD_LOGIC_VECTOR (3 downto 0);
+			  OPC1 : in STD_LOGIC_VECTOR (3 downto 0);
+			  OPC2	: in STD_LOGIC_VECTOR (3 downto 0);
            OPC : in  STD_LOGIC_VECTOR (3 downto 0);
 			  OP1_SEL : out  STD_LOGIC_VECTOR (1 downto 0);
            OP2_SEL : out  STD_LOGIC_VECTOR (1 downto 0));
@@ -53,13 +53,13 @@ begin
 	process(RA, RB, RA0, RA1, RA2)
 	begin
 	--	if (rising_edge(CLK)) then
-			if (RA = RA0) then
+			if (RA = RA0 and OPC0(3 downto 2) /= "11") then
 				OP1 <= "01";
 --				OP1_SEL <= OP1;
-			elsif (RA = RA1) then
+			elsif (RA = RA1 and OPC1(3 downto 2) /= "11") then
 				OP1 <= "10";
 --				OP1_SEL <= OP1;
-			elsif (RA = RA2) then
+			elsif (RA = RA2 and OPC1(3 downto 2) /= "11") then
 				OP1 <= "11";
 --				OP1_SEL <= OP1;
 			else
@@ -68,11 +68,11 @@ begin
 			end if;
 --			OP1_SEL <= OP1;
 			
-			if (RB = RA0) then
+			if (RB = RA0 and OPC0(3 downto 2) /= "11") then
 				OP2 <= "01";
-			elsif (RB = RA1) then
+			elsif (RB = RA1 and OPC1(3 downto 2) /= "11") then
 				OP2 <= "10";
-			elsif (RB = RA2) then
+			elsif (RB = RA2 and OPC2(3 downto 2) /= "11") then
 				OP2 <= "11";
 			else
 				OP2 <= "00";

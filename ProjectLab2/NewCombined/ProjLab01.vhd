@@ -42,7 +42,7 @@ end ProjLab01;
 
 
 architecture Structural of ProjLab01 is
-	signal OP1, OP2, OP3, OP4	  : STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');
+	signal OP1, OP2, OP3, OP4, OP_DC1, OP_DC2	  : STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');
 	signal RA1, RA2, RA3    	  : STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');
 	signal RA4						  : STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '1');
 	signal RB1, RB2, RB3, RB4	  : STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');
@@ -85,7 +85,7 @@ architecture Structural of ProjLab01 is
 begin
 	ALU_OUT <= ALU_RESULT;
 	CCR <= ALU_FLAGS;
-	DST_ADR <= "00000000000" & PC4;
+	DST_ADR <= "00000000" & PC4(3 downto 0) & RA4;
 	DEBUG_OUT <= OPIN & RAIN & IMMIN;
 	
 	--------  Debugging I/O  --------
@@ -151,11 +151,11 @@ begin
 														 RA => RA3, -- (in)
 														 RB => RB3,
 														RA0 => RA4,
---														RB0 => RB4,
 														RA1 => RA_DC1,
 														RA2 => RA_DC2,
---														RB1 => RB_DC1,
---														RB2 => RB_DC2,
+														OPC0 => OP4,
+														OPC1 => OP_DC1,
+														OPC2 => OP_DC2,
 														OPC => OP3, -- (in)
 														OP1_SEL => OP1_SEL, -- (out)
 														OP2_SEL => OP2_SEL); -- Data contention (out)
@@ -201,6 +201,9 @@ begin
 	with OP3 select ALUMUX_OUT <=
 		EXMEM_OUT	when "1011",
 		ALU_VAL		when OTHERS;
+		
+		-- Added OP Code pipeline registers so DC CTL
+		-- doesn't compare non address addresses
 				
 	--------  Pipeline Registers  --------
 	--------------------------------------
@@ -426,6 +429,14 @@ begin
 					Din	=> RB4,
 					Dout	=> RB_DC1);
 	
+	OP_DC1_Reg: entitY work.PipelineRegisters
+	generic map(dataWidth => 4)
+	port map(Clk	=> CLK,
+				Ena	=> GLOBAL_EN,
+				Rst	=> RST,
+				Din	=> OP4,
+				Dout	=> OP_DC1);
+	
 	----> DC Stage 2 <----
 	ALU_OUT2_Reg: entity work.PipelineRegisters
 	generic map( dataWidth => 16)
@@ -450,6 +461,14 @@ begin
 					Rst	=> RST,
 					Din	=> RB_DC1,
 					Dout	=> RB_DC2);
+					
+	OP_DC2_Reg: entity work.PipelineRegisters
+	generic map(dataWidth => 4)
+	port map(Clk	=> CLK,
+				Ena	=> GLOBAL_EN,
+				Rst	=> RST,
+				Din	=> OP_DC1,
+				Dout	=> OP_DC2);
 					
 	--------  Immediate Select Mux  --------
 	----------------------------------------

@@ -124,7 +124,7 @@ BEGIN
 
       -- insert stimulus here 
 
-      wait;
+--      wait;
    end process;
 
 END;

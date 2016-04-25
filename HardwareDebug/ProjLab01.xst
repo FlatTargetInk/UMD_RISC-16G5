@@ -1,5 +1,0 @@
-set -tmpdir "/home/robert/UMD_RISC-16G5/HardwareDebug/xst/projnav.tmp"
-set -xsthdpdir "/home/robert/UMD_RISC-16G5/HardwareDebug/xst"
-elaborate
--ifn ProjLab01.prj
--ifmt mixed

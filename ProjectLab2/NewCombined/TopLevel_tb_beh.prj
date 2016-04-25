@@ -1,3 +1,4 @@
+vhdl work "ipcore_dir/Instr_Mem.vhd"
 vhdl work "ipcore_dir/DATAMEM.vhd"
 vhdl work "word_unit.vhd"
 vhdl work "SH_PCREG.vhd"

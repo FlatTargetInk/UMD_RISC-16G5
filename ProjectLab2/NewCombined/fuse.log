@@ -1,8 +1,9 @@
-Running: /home/robert/XilinxISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/TopLevel_tb_isim_beh.exe -prj /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/TopLevel_tb_beh.prj work.TopLevel_tb 
+Running: /home/robert/XilinxISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/TopLevel_tb_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/TopLevel_tb_beh.prj" "work.TopLevel_tb" 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/Instr_Mem.vhd" into library work
 Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/DATAMEM.vhd" into library work
 Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/word_unit.vhd" into library work
 WARNING:HDLCompiler:946 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/word_unit.vhd" Line 55: Actual for formal port clka is neither a static name nor a globally static expression
@@ -19,6 +20,70 @@ Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/REG_CTL.vh
 Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/RegisterBank.vhd" into library work
 Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PipelineRegisters.vhd" into library work
 Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" into library work
-ERROR:HDLCompiler:104 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" Line 117: Cannot find <instr_mem> in library <work>. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
-ERROR:HDLCompiler:854 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" Line 49: Unit <structural> ignored due to previous errors.
-VHDL file /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd ignored due to errors
+WARNING:HDLCompiler:946 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" Line 118: Actual for formal port clka is neither a static name nor a globally static expression
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/IMSEL.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/EX_MEM_CTL.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/EXTERNAL_MEMORY.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DC_CTL.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DATA_CTL.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/alu_toplevel.vhd" into library work
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd" into library work
+WARNING:HDLCompiler:946 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ProjLab01.vhd" Line 195: Actual for formal port clka is neither a static name nor a globally static expression
+Parsing VHDL file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/TopLevel_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 140340 KB
+Fuse CPU Usage: 2020 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package std_logic_signed
+Compiling architecture combinational of entity arith_unit [arith_unit_default]
+Compiling architecture combinational of entity logical_unit [logical_unit_default]
+Compiling architecture combinational of entity shift_unit [shift_unit_default]
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V7_3_softecc_output_reg_stage [\BLK_MEM_GEN_V7_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_module [\BLK_MEM_GEN_V7_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
+Compiling architecture datamem_a of entity DATAMEM [datamem_default]
+Compiling architecture combinational of entity word_unit [word_unit_default]
+Compiling architecture structural of entity ALU_Toplevel [alu_toplevel_default]
+Compiling architecture combinational of entity PC_INC [\PC_INC(5)\]
+Compiling architecture combinational of entity PC_OFFSET [\PC_OFFSET(5)\]
+Compiling architecture behavioral of entity SH_PCREG [\SH_PCREG(5,4)\]
+Compiling architecture behavioral of entity ADR_LATCH [\ADR_LATCH(5)\]
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V7_3_softecc_output_reg_stage [\BLK_MEM_GEN_V7_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_module [\BLK_MEM_GEN_V7_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
+Compiling architecture instr_mem_a of entity Instr_Mem [instr_mem_default]
+Compiling architecture structural of entity Instruction_Memory_TL [instruction_memory_tl_default]
+Compiling architecture dataflow of entity REG_CTL [reg_ctl_default]
+Compiling architecture mixed of entity DC_CTL [dc_ctl_default]
+Compiling architecture behavioral of entity DATA_CTL [data_ctl_default]
+Compiling architecture dataflow of entity IMSEL [imsel_default]
+Compiling architecture behavioral of entity EX_MEM_CTL [ex_mem_ctl_default]
+Compiling architecture behavioral of entity Shadow_Reg [shadow_reg_default]
+Compiling architecture behavioral of entity Shadow_IMM_Add [shadow_imm_add_default]
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V7_3_softecc_output_reg_stage [\BLK_MEM_GEN_V7_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_module [\BLK_MEM_GEN_V7_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
+Compiling architecture external_memory_a of entity EXTERNAL_MEMORY [external_memory_default]
+Compiling architecture behavioral of entity PipelineRegisters [\PipelineRegisters(4)\]
+Compiling architecture behavioral of entity PipelineRegisters [\PipelineRegisters(8)\]
+Compiling architecture behavioral of entity PipelineRegisters [\PipelineRegisters(5)\]
+Compiling architecture behavioral of entity PipelineRegisters [\PipelineRegisters(16)\]
+Compiling architecture behavioral of entity RegisterBank [registerbank_default]
+Compiling architecture structural of entity ProjLab01 [projlab01_default]
+Compiling architecture behavior of entity toplevel_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 84 VHDL Units
+Built simulation executable /home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/TopLevel_tb_isim_beh.exe
+Fuse Memory Usage: 707680 KB
+Fuse CPU Usage: 2440 ms
+GCC CPU Usage: 260 ms

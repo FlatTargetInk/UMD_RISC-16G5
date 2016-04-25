@@ -17,13 +17,15 @@ at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER:
 at 1 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 1 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 2 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 5 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 6 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 17 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/).
+at 19 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/).
+# run 50ms
 # restart
 # run 50ms
 Simulator is doing circuit initialization process.
@@ -35,13 +37,14 @@ at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER:
 at 1 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 1 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 2 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 5 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 6 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 17 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/).
+at 19 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/).
 # restart
 # run 50ms
 Simulator is doing circuit initialization process.
@@ -53,13 +56,52 @@ at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER:
 at 1 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 1 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 2 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 5 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 6 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 17 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/).
+at 19 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/).
+# restart
+# run 50ms
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 17 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/).
+at 19 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/).
+# restart
+# run 50ms
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 4 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 17 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/).
+at 19 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/).
 ISim P.20131013 (signature 0xfbc00daa)
 This is a Full version of ISim.
 # run 1000 ns
@@ -80,88 +122,6 @@ at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEG
 at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 4 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 5 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 15 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/).
-at 17 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/).
-# restart
-# run 50ms
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 1 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 1 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 2 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 5 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 15 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/).
-at 17 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/).
-# restart
-# run 50ms
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 1 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 1 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 2 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 5 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 15 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/).
-at 17 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/).
-ISim P.20131013 (signature 0xfbc00daa)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /toplevel_tb/uut/Fetch_UNIT/PCINC/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-Finished circuit initialization process.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# run 50ms
-at 1 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 1 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 2 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 5 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 15 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/).
-at 17 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/).
-ISim P.20131013 (signature 0xfbc00daa)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /toplevel_tb/uut/Fetch_UNIT/PCINC/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-Finished circuit initialization process.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 0 ps, Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# run 50ms
-at 1 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 1 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 2 ms(2), Instance /toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(3), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 3 ms(4), Instance /toplevel_tb/uut/ALU_UNIT/shift_unit/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 4 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 5 ms(2), Instance /toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 15 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/).
-at 17 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/).
+at 17 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/ALU_UNIT/word_unit/DATAMEMORY/U0/native_mem_module/mem_module/).
+at 19 ms(2): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/toplevel_tb/uut/EX_MEM/U0/native_mem_module/mem_module/).
 # exit 0

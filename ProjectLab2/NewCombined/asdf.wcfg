@@ -15,7 +15,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="13" />
+   <WVObjectSize size="14" />
    <wvobject fp_name="/toplevel_tb/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -28,46 +28,48 @@
       <obj_property name="ElementShortName">alu_out[15:0]</obj_property>
       <obj_property name="ObjectShortName">alu_out[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/toplevel_tb/dst_adr" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">dst_adr[15:0]</obj_property>
-      <obj_property name="ObjectShortName">dst_adr[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/toplevel_tb/store_data" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">store_data[15:0]</obj_property>
-      <obj_property name="ObjectShortName">store_data[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/toplevel_tb/ccr" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">ccr[3:0]</obj_property>
-      <obj_property name="ObjectShortName">ccr[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/toplevel_tb/clk_period" type="other" db_ref_id="1">
-      <obj_property name="ElementShortName">clk_period</obj_property>
-      <obj_property name="ObjectShortName">clk_period</obj_property>
-   </wvobject>
    <wvobject fp_name="/toplevel_tb/uut/ALU_UNIT/op" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">op[3:0]</obj_property>
       <obj_property name="ObjectShortName">op[3:0]</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="CustomSignalColor">#0000ff</obj_property>
    </wvobject>
-   <wvobject fp_name="/toplevel_tb/uut/ALU_UNIT/word_out" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">word_out[15:0]</obj_property>
-      <obj_property name="ObjectShortName">word_out[15:0]</obj_property>
+   <wvobject fp_name="/toplevel_tb/uut/ALU_UNIT/ra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ra[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ra[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/toplevel_tb/uut/ALU_UNIT/ldst_adr_8" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">ldst_adr_8[7:0]</obj_property>
-      <obj_property name="ObjectShortName">ldst_adr_8[7:0]</obj_property>
+   <wvobject fp_name="/toplevel_tb/uut/ALU_UNIT/rb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rb[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/toplevel_tb/uut/ALU_UNIT/word_unit/store_data" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">store_data[15:0]</obj_property>
-      <obj_property name="ObjectShortName">store_data[15:0]</obj_property>
+   <wvobject fp_name="/toplevel_tb/uut/ALU_UNIT/alu_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_out[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/toplevel_tb/uut/ALU_UNIT/word_unit/result" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">result[15:0]</obj_property>
-      <obj_property name="ObjectShortName">result[15:0]</obj_property>
+   <wvobject fp_name="/toplevel_tb/uut/op1_sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op1_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">op1_sel[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/toplevel_tb/uut/ALU_UNIT/word_unit/wren[0]" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">[0]</obj_property>
-      <obj_property name="ObjectShortName">wren[0]</obj_property>
+   <wvobject fp_name="/toplevel_tb/uut/op2_sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op2_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">op2_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/ra3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ra3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ra3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/rb3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rb3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rb3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/ra4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ra4[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ra4[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/ra_dc1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ra_dc1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ra_dc1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toplevel_tb/uut/ra_dc2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ra_dc2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ra_dc2[3:0]</obj_property>
    </wvobject>
 </wave_config>

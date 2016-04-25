@@ -1,0 +1,14 @@
+ADDI	R0, 2	; R0=2
+ADDI	R1, 1 ; R1=2
+SL		R1, 2	;	R1=4
+SR		R0, 1 ; R0=1
+OR		R0,R1 ; R0=5
+AND		R1,R0 ; R1=4
+ADD		R1,R0	;	R1=9
+SUB		R1,R0	;	R1=4
+MOV		R9,R1	;	R9=4
+SW		R9, 2 ; 
+ANDI	R0, 4	;	R0=4
+LW		R10,2	;	R10=4
+
+

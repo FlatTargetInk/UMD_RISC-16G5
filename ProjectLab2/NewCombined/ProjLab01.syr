@@ -113,17 +113,15 @@ Cores Search Directories           : {"ipcore_dir"  }
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/DATAMEM.vhd" in Library work.
 Architecture datamem_a of Entity datamem is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PC_INC.vhd" in Library work.
-Entity <PC_INC> compiled.
-Entity <PC_INC> (Architecture <Combinational>) compiled.
+Architecture combinational of Entity pc_inc is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/PC_OFFSET.vhd" in Library work.
-Entity <PC_OFFSET> compiled.
-Entity <PC_OFFSET> (Architecture <Combinational>) compiled.
+Architecture combinational of Entity pc_offset is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/SH_PCREG.vhd" in Library work.
-Entity <SH_PCREG> compiled.
-Entity <SH_PCREG> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity sh_pcreg is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ADR_LATCH.vhd" in Library work.
-Entity <ADR_LATCH> compiled.
-Entity <ADR_LATCH> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity adr_latch is up to date.
+Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ipcore_dir/Instr_Mem.vhd" in Library work.
+Architecture instr_mem_a of Entity instr_mem is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/arith_unit.vhd" in Library work.
 Architecture combinational of Entity arith_unit is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/logical_unit.vhd" in Library work.
@@ -131,13 +129,11 @@ Architecture combinational of Entity logical_unit is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/shift_unit.vhd" in Library work.
 Architecture combinational of Entity shift_unit is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/word_unit.vhd" in Library work.
-Entity <word_unit> compiled.
-Entity <word_unit> (Architecture <combinational>) compiled.
+Architecture combinational of Entity word_unit is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/alu_toplevel.vhd" in Library work.
 Architecture structural of Entity alu_toplevel is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/Instruction_Memory_TL.vhd" in Library work.
-Entity <instruction_memory_tl> compiled.
-Entity <instruction_memory_tl> (Architecture <structural>) compiled.
+Architecture structural of Entity instruction_memory_tl is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/REG_CTL.vhd" in Library work.
 Architecture dataflow of Entity reg_ctl is up to date.
 Compiling vhdl file "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DC_CTL.vhd" in Library work.
@@ -275,6 +271,8 @@ Analyzing Entity <REG_CTL> in library <work> (Architecture <Dataflow>).
 Entity <REG_CTL> analyzed. Unit <REG_CTL> generated.
 
 Analyzing Entity <DC_CTL> in library <work> (Architecture <Mixed>).
+WARNING:Xst:819 - "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DC_CTL.vhd" line 53: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <OPC0>, <OPC1>, <OPC2>
 Entity <DC_CTL> analyzed. Unit <DC_CTL> generated.
 
 Analyzing Entity <DATA_CTL> in library <work> (Architecture <Behavioral>).
@@ -337,6 +335,9 @@ Unit <REG_CTL> synthesized.
 Synthesizing Unit <DC_CTL>.
     Related source file is "/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/DC_CTL.vhd".
 WARNING:Xst:647 - Input <CLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <OPC0<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <OPC1<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <OPC2<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit comparator equal for signal <OP1$cmp_eq0000> created at line 56.
     Found 4-bit comparator equal for signal <OP1$cmp_eq0001> created at line 57.
     Found 4-bit comparator equal for signal <OP1$cmp_eq0002> created at line 60.
@@ -578,10 +579,10 @@ Macro Statistics
  16-bit adder                                          : 1
  17-bit addsub                                         : 1
  5-bit adder                                           : 2
-# Registers                                            : 78
+# Registers                                            : 82
  1-bit register                                        : 4
  16-bit register                                       : 29
- 4-bit register                                        : 28
+ 4-bit register                                        : 32
  5-bit register                                        : 13
  8-bit register                                        : 4
 # Latches                                              : 4
@@ -683,6 +684,14 @@ WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <13>. This FF
 WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <DataOutSignal_0> of sequential type is unconnected in block <OP_DC1_Reg>.
+WARNING:Xst:2677 - Node <DataOutSignal_1> of sequential type is unconnected in block <OP_DC1_Reg>.
+WARNING:Xst:2677 - Node <Dout_0> of sequential type is unconnected in block <OP_DC1_Reg>.
+WARNING:Xst:2677 - Node <Dout_1> of sequential type is unconnected in block <OP_DC1_Reg>.
+WARNING:Xst:2677 - Node <DataOutSignal_0> of sequential type is unconnected in block <OP_DC2_Reg>.
+WARNING:Xst:2677 - Node <DataOutSignal_1> of sequential type is unconnected in block <OP_DC2_Reg>.
+WARNING:Xst:2677 - Node <Dout_0> of sequential type is unconnected in block <OP_DC2_Reg>.
+WARNING:Xst:2677 - Node <Dout_1> of sequential type is unconnected in block <OP_DC2_Reg>.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -692,8 +701,8 @@ Macro Statistics
  16-bit adder                                          : 1
  17-bit addsub                                         : 1
  5-bit adder                                           : 2
-# Registers                                            : 677
- Flip-Flops                                            : 677
+# Registers                                            : 693
+ Flip-Flops                                            : 693
 # Latches                                              : 4
  16-bit latch                                          : 4
 # Comparators                                          : 6
@@ -847,6 +856,14 @@ Optimizing unit <ALU_Toplevel> ...
 WARNING:Xst:1290 - Hierarchical block <DATA_CTL> is unconnected in block <ProjLab01>.
    It will be removed from the design.
 WARNING:Xst:2677 - Node <RD_0> of sequential type is unconnected in block <EXMEM_CTL>.
+WARNING:Xst:2677 - Node <DataOutSignal_0> of sequential type is unconnected in block <OP_DC2_Reg>.
+WARNING:Xst:2677 - Node <DataOutSignal_1> of sequential type is unconnected in block <OP_DC2_Reg>.
+WARNING:Xst:2677 - Node <Dout_0> of sequential type is unconnected in block <OP_DC2_Reg>.
+WARNING:Xst:2677 - Node <Dout_1> of sequential type is unconnected in block <OP_DC2_Reg>.
+WARNING:Xst:2677 - Node <DataOutSignal_0> of sequential type is unconnected in block <OP_DC1_Reg>.
+WARNING:Xst:2677 - Node <DataOutSignal_1> of sequential type is unconnected in block <OP_DC1_Reg>.
+WARNING:Xst:2677 - Node <Dout_0> of sequential type is unconnected in block <OP_DC1_Reg>.
+WARNING:Xst:2677 - Node <Dout_1> of sequential type is unconnected in block <OP_DC1_Reg>.
 WARNING:Xst:2677 - Node <DataOutSignal_0> of sequential type is unconnected in block <OP4_Reg>.
 WARNING:Xst:2677 - Node <Dout_0> of sequential type is unconnected in block <OP4_Reg>.
 
@@ -860,8 +877,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 659
- Flip-Flops                                            : 659
+# Registers                                            : 667
+ Flip-Flops                                            : 667
 
 =========================================================================
 
@@ -890,30 +907,30 @@ Design Statistics
 # IOs                              : 70
 
 Cell Usage :
-# BELS                             : 1204
+# BELS                             : 1210
 #      GND                         : 10
 #      INV                         : 5
-#      LUT2                        : 35
+#      LUT2                        : 37
 #      LUT2_D                      : 1
-#      LUT2_L                      : 10
-#      LUT3                        : 521
-#      LUT3_D                      : 2
-#      LUT3_L                      : 4
-#      LUT4                        : 188
-#      LUT4_D                      : 13
-#      LUT4_L                      : 29
+#      LUT2_L                      : 12
+#      LUT3                        : 519
+#      LUT3_D                      : 9
+#      LUT3_L                      : 3
+#      LUT4                        : 193
+#      LUT4_D                      : 6
+#      LUT4_L                      : 34
 #      MUXCY                       : 20
-#      MUXF5                       : 227
+#      MUXF5                       : 222
 #      MUXF6                       : 73
 #      MUXF7                       : 32
 #      VCC                         : 5
 #      XORCY                       : 29
-# FlipFlops/Latches                : 663
+# FlipFlops/Latches                : 671
 #      FDC                         : 6
 #      FDCE                        : 20
 #      FDE                         : 38
-#      FDE_1                       : 427
-#      FDPE                        : 171
+#      FDE_1                       : 431
+#      FDPE                        : 175
 #      LD                          : 1
 # RAMS                             : 17
 #      RAMB16_S1_S1                : 7
@@ -932,9 +949,9 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      791  out of   4656    16%  
- Number of Slice Flip Flops:            663  out of   9312     7%  
- Number of 4 input LUTs:                808  out of   9312     8%  
+ Number of Slices:                      801  out of   4656    17%  
+ Number of Slice Flip Flops:            671  out of   9312     7%  
+ Number of 4 input LUTs:                819  out of   9312     8%  
  Number of IOs:                          70
  Number of bonded IOBs:                  70  out of    232    30%  
  Number of BRAMs:                        17  out of     20    85%  
@@ -961,7 +978,7 @@ Clock Information:
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                      | Load  |
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
-CLK                                | BUFGP                                                                                                                      | 679   |
+CLK                                | BUFGP                                                                                                                      | 687   |
 EX_MEM/N1                          | NONE(EX_MEM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_init.ram/dpram.dp1x1.ram)| 15    |
 RST                                | IBUF+BUFG                                                                                                                  | 1     |
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
@@ -972,7 +989,7 @@ Asynchronous Control Signals Information:
 -------------------------------------+------------------------+-------+
 Control Signal                       | Buffer(FF name)        | Load  |
 -------------------------------------+------------------------+-------+
-RST                                  | IBUF                   | 196   |
+RST                                  | IBUF                   | 200   |
 EXMEM_CTL/EN_inv(EXMEM_CTL/XST_GND:G)| NONE(EXMEM_CTL/WR_0)   | 1     |
 -------------------------------------+------------------------+-------+
 
@@ -980,9 +997,9 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 32.256ns (Maximum Frequency: 31.002MHz)
-   Minimum input arrival time before clock: 6.227ns
-   Maximum output required time after clock: 11.155ns
+   Minimum period: 33.565ns (Maximum Frequency: 29.793MHz)
+   Minimum input arrival time before clock: 6.228ns
+   Maximum output required time after clock: 11.174ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -991,64 +1008,51 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 32.256ns (frequency: 31.002MHz)
-  Total number of paths / destination ports: 230369 / 1205
+  Clock period: 33.565ns (frequency: 29.793MHz)
+  Total number of paths / destination ports: 272299 / 1213
 -------------------------------------------------------------------------
-Delay:               16.128ns (Levels of Logic = 30)
-  Source:            RB3ADR_Reg/Dout_0 (FF)
+Delay:               16.783ns (Levels of Logic = 17)
+  Source:            RA_DC1_Reg/Dout_0 (FF)
   Destination:       ALU_FLAGS_Reg/DataOutSignal_2 (FF)
   Source Clock:      CLK falling
   Destination Clock: CLK rising
 
-  Data Path: RB3ADR_Reg/Dout_0 to ALU_FLAGS_Reg/DataOutSignal_2
+  Data Path: RA_DC1_Reg/Dout_0 to ALU_FLAGS_Reg/DataOutSignal_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE_1:C->Q            3   0.591   0.706  Dout_0 (Dout_0)
-     end scope: 'RB3ADR_Reg'
+     end scope: 'RA_DC1_Reg'
      begin scope: 'DCCTL'
-     LUT4:I0->O            2   0.704   0.526  OP2_cmp_eq0001426 (OP2_cmp_eq0001426)
-     LUT4:I1->O            1   0.704   0.424  OP2_SEL<0>_SW0 (N4)
-     LUT4:I3->O           32   0.704   1.297  OP2_SEL<0> (OP2_SEL<0>)
+     LUT4:I0->O            1   0.704   0.424  OP2_and000168_SW0 (N4)
+     LUT4:I3->O            2   0.704   0.451  OP2_and000168 (OP2_and0001)
+     LUT4_L:I3->LO         1   0.704   0.104  OP2_SEL<0>13 (OP2_SEL<0>13)
+     LUT4:I3->O           18   0.704   1.068  OP2_SEL<0>38 (OP2_SEL<0>)
      end scope: 'DCCTL'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RB_OUT_4 (Mmux_RB_OUT_4)
-     MUXF5:I0->O          75   0.321   1.311  Mmux_RB_OUT_2_f5 (RB_OUT<0>)
+     MUXF5:S->O           71   0.739   1.310  Mmux_RB_OUT_2_f5 (RB_OUT<0>)
      begin scope: 'ALU_UNIT'
-     begin scope: 'arith_unit'
-     LUT3:I2->O            1   0.704   0.000  Maddsub_RESULT_addsub0000_lut<0> (Maddsub_RESULT_addsub0000_lut<0>)
-     MUXCY:S->O            1   0.464   0.000  Maddsub_RESULT_addsub0000_cy<0> (Maddsub_RESULT_addsub0000_cy<0>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<1> (Maddsub_RESULT_addsub0000_cy<1>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<2> (Maddsub_RESULT_addsub0000_cy<2>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<3> (Maddsub_RESULT_addsub0000_cy<3>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<4> (Maddsub_RESULT_addsub0000_cy<4>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<5> (Maddsub_RESULT_addsub0000_cy<5>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<6> (Maddsub_RESULT_addsub0000_cy<6>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<7> (Maddsub_RESULT_addsub0000_cy<7>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<8> (Maddsub_RESULT_addsub0000_cy<8>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<9> (Maddsub_RESULT_addsub0000_cy<9>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<10> (Maddsub_RESULT_addsub0000_cy<10>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<11> (Maddsub_RESULT_addsub0000_cy<11>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<12> (Maddsub_RESULT_addsub0000_cy<12>)
-     MUXCY:CI->O           1   0.059   0.000  Maddsub_RESULT_addsub0000_cy<13> (Maddsub_RESULT_addsub0000_cy<13>)
-     XORCY:CI->O           2   0.804   0.482  Maddsub_RESULT_addsub0000_xor<14> (RESULT_addsub0000<14>)
-     LUT3_L:I2->LO         1   0.704   0.104  SREG_2_cmp_eq000076 (SREG_2_cmp_eq000076)
-     LUT4:I3->O            1   0.704   0.424  SREG_2_cmp_eq000022_SW1 (N2)
-     LUT4:I3->O            1   0.704   0.424  SREG_2_cmp_eq000086 (SREG_OUT<2>)
-     end scope: 'arith_unit'
-     LUT4_L:I3->LO         1   0.704   0.135  SREG<2>_SW0 (N0)
-     LUT3:I2->O            1   0.704   0.000  SREG<2> (SREG<2>)
+     begin scope: 'shift_unit'
+     LUT3:I2->O            2   0.704   0.482  Sh12_SW1 (N64)
+     LUT3:I2->O            3   0.704   0.566  Sh12 (Sh12)
+     LUT3:I2->O            1   0.704   0.000  shift_result<0>85_G (N111)
+     MUXF5:I1->O           1   0.321   0.424  shift_result<0>85 (shift_result<0>85)
+     LUT4:I3->O            2   0.704   0.451  shift_result<0>149 (SHIFT_OUT<0>)
+     LUT4:I3->O            1   0.704   0.595  sreg_2_cmp_eq000012 (sreg_2_cmp_eq000012)
+     LUT4:I0->O            1   0.704   0.499  sreg_2_cmp_eq000076 (SREG_OUT<2>)
+     end scope: 'shift_unit'
+     LUT3:I1->O            1   0.704   0.000  SREG<2> (SREG<2>)
      end scope: 'ALU_UNIT'
      begin scope: 'ALU_FLAGS_Reg'
      FDPE:D                    0.308          DataOutSignal_2
     ----------------------------------------
-    Total                     16.128ns (10.295ns logic, 5.833ns route)
-                                       (63.8% logic, 36.2% route)
+    Total                     16.783ns (9.703ns logic, 7.080ns route)
+                                       (57.8% logic, 42.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
   Total number of paths / destination ports: 13 / 8
 -------------------------------------------------------------------------
-Offset:              6.227ns (Levels of Logic = 4)
+Offset:              6.228ns (Levels of Logic = 4)
   Source:            RST (PAD)
   Destination:       SHREG/RAout_8 (FF)
   Destination Clock: CLK rising
@@ -1057,58 +1061,58 @@ Offset:              6.227ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           199   1.218   1.315  RST_IBUF (RST_IBUF1)
+     IBUF:I->O           203   1.218   1.316  RST_IBUF (RST_IBUF1)
      BUFG:I->O             2   1.457   0.447  RST_IBUF_BUFG (RST_IBUF)
      begin scope: 'SHREG'
      INV:I->O              3   0.704   0.531  RAout_and00001_INV_0 (RAout_and0000)
      FDE:CE                    0.555          RAout_8
     ----------------------------------------
-    Total                      6.227ns (3.934ns logic, 2.293ns route)
+    Total                      6.228ns (3.934ns logic, 2.294ns route)
                                        (63.2% logic, 36.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 1257 / 57
+  Total number of paths / destination ports: 1449 / 57
 -------------------------------------------------------------------------
-Offset:              11.155ns (Levels of Logic = 10)
-  Source:            RA_DC1_Reg/Dout_3 (FF)
+Offset:              11.174ns (Levels of Logic = 10)
+  Source:            RA4ADR_Reg/Dout_3 (FF)
   Destination:       STORE_DATA<15> (PAD)
   Source Clock:      CLK falling
 
-  Data Path: RA_DC1_Reg/Dout_3 to STORE_DATA<15>
+  Data Path: RA4ADR_Reg/Dout_3 to STORE_DATA<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE_1:C->Q            3   0.591   0.706  Dout_3 (Dout_3)
-     end scope: 'RA_DC1_Reg'
+     FDE_1:C->Q           19   0.591   1.120  Dout_3 (Dout_3)
+     end scope: 'RA4ADR_Reg'
      begin scope: 'DCCTL'
-     LUT4:I0->O            2   0.704   0.526  OP1_cmp_eq0001453 (OP1_cmp_eq0001453)
-     LUT3:I1->O            1   0.704   0.424  OP1<0>1_SW0 (N10)
-     LUT4:I3->O           32   0.704   1.297  OP1<0>1 (OP1_SEL<0>)
+     LUT4_L:I2->LO         1   0.704   0.104  OP1_cmp_eq0000453 (OP1_cmp_eq0000453)
+     LUT4:I3->O            2   0.704   0.451  OP1<1>_SW0 (N01)
+     LUT4:I3->O           32   0.704   1.297  OP1<0> (OP1_SEL<0>)
      end scope: 'DCCTL'
-     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_415 (Mmux_RA_OUT_415)
-     MUXF5:I0->O          23   0.321   1.202  Mmux_RA_OUT_2_f5_14 (RA_OUT<9>)
+     LUT3:I2->O            1   0.704   0.000  Mmux_RA_OUT_46 (Mmux_RA_OUT_46)
+     MUXF5:I0->O          23   0.321   1.202  Mmux_RA_OUT_2_f5_5 (RA_OUT<15>)
      begin scope: 'ALU_UNIT'
      begin scope: 'word_unit'
      end scope: 'word_unit'
      end scope: 'ALU_UNIT'
-     OBUF:I->O                 3.272          STORE_DATA_9_OBUF (STORE_DATA<9>)
+     OBUF:I->O                 3.272          STORE_DATA_15_OBUF (STORE_DATA<15>)
     ----------------------------------------
-    Total                     11.155ns (7.000ns logic, 4.155ns route)
-                                       (62.8% logic, 37.2% route)
+    Total                     11.174ns (7.000ns logic, 4.174ns route)
+                                       (62.6% logic, 37.4% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 16.00 secs
-Total CPU time to Xst completion: 16.43 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 17.41 secs
  
 --> 
 
 
-Total memory usage is 549996 kilobytes
+Total memory usage is 550820 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  190 (   0 filtered)
+Number of warnings :  210 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 
