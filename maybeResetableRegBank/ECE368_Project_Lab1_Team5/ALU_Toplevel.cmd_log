@@ -1,1 +1,0 @@
-vhdtdtfi -lib work word_unit.vhd -lib work shift_unit.vhd -lib work logical_unit.vhd -lib work jump_unit.vhd -lib work arith_unit.vhd -lib work alu_toplevel.vhd -prj Project1 -o ALU_Toplevel.spl -module ALU_Toplevel -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
