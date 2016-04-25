@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-04-25T13:43:16</DateModified>
+  <DateModified>2016-04-25T14:13:02</DateModified>
   <ModuleName>Hardware_TL</ModuleName>
-  <SummaryTimeStamp>2016-04-24T15:15:39</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-04-25T14:11:17</SummaryTimeStamp>
   <SavedFilePath>/home/robert/UMD_RISC-16G5/HardwareDebug/iseconfig/Hardware_TL.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/robert/UMD_RISC-16G5/HardwareDebug/</ImplementationReportsDirectory>
   <DateInitialized>2016-04-22T10:26:44</DateInitialized>

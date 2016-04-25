@@ -1,0 +1,30 @@
+Command line:
+   jump_unit_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  2375
+
+Fri Apr 22 16:24:10 2016
+
+
+ Elaboration Time: 0.078 sec
+
+ Current Memory Usage: 668.344 Meg
+
+ Total Signals          : 12
+ Total Nets             : 30
+ Total Signal Drivers   : 5
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 3
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 514
+Total Line Count : 28
+Total Line Count : 28
+
+ Total Simulation Time: 0.343202 sec
+
+ Current Memory Usage: 668.344 Meg
+
+Fri Apr 22 16:26:35 2016
+

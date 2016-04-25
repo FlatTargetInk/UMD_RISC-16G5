@@ -1,0 +1,29 @@
+Command line:
+   jump_unit_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  2324
+
+Fri Apr 22 16:10:43 2016
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 668.246 Meg
+
+ Total Signals          : 6
+ Total Nets             : 30
+ Total Signal Drivers   : 1
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 1
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 390
+Total Line Count : 1
+
+ Total Simulation Time: 0.0936 sec
+
+ Current Memory Usage: 668.246 Meg
+
+Fri Apr 22 16:28:07 2016
+
