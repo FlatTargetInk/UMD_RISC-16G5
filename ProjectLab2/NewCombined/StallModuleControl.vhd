@@ -17,8 +17,8 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity StallModuleControl is
     Port ( CLK : in  STD_LOGIC;
-			  GUESS : in STD_LOGIC;
-			  ACTUAL : in STD_LOGIC;
+			  BRANCH : in STD_LOGIC;
+			  CORRECTION : in STD_LOGIC;
            STALL : out  STD_LOGIC);
 end StallModuleControl;
 
@@ -35,9 +35,9 @@ begin
 				STALL <= '0';
 			END IF;
 			
-			IF((ACTUAL AND GUESS) = '1') then -- ACTUAL = '1', GUESS = '1'
+			IF((BRANCH = '1') AND (CORRECTION = '0')) then -- ACTUAL = '1', GUESS = '1'
 				NUM_STALL_CYCLES <= "001"; -- Stall for 1 CLK cycle
-			ELSIF((ACTUAL OR GUESS) = '1') then -- ACTUAL = '1', GUESS = '0' OR ACTUAL = '0', GUESS = '1'
+			ELSIF(CORRECTION = '1') then -- ACTUAL = '1', GUESS = '0' OR ACTUAL = '0', GUESS = '1'
 				NUM_STALL_CYCLES <= "100"; -- Stall for 4 CLK cycles
 			END IF;
 		END IF;

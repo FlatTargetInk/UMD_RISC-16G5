@@ -82,8 +82,12 @@ architecture Structural of ProjLab01 is
 	signal EXMEM_WREN, EXMEM_RDEN	: STD_LOGIC_VECTOR (0 downto 0) 	:= "0";
 	signal ALUMUX_OUT					: STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0');
 	signal ALU_BRANCH					: STD_LOGIC := '0';
-	signal BRANCH						: STD_LOGIC := '0';
-	signal STALL						: STD_LOGIC := '0';
+	signal BRANCH_SIG					: STD_LOGIC := '0';
+	signal STALL_SIG					: STD_LOGIC := '0';
+	signal CORRECT_SIG				: STD_LOGIC := '0';
+	signal OFF1, OFF2					: STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');	
+	signal FETCH_BRANCH				: STD_LOGIC_VECTOR (4 downto 0) := (OTHERS => '0');
+	
 
 begin
 	ALU_OUT <= ALU_RESULT;
@@ -120,7 +124,7 @@ begin
 	port map(	CLK			=> CLK,
 					RST			=> RST,
 					BRANCH		=> '0',
-					BRNCH_ADR	=> "00000",
+					BRNCH_ADR	=> FETCH_BRANCH,
 					RA 			=> RAIN,
 					RB 			=> RBIN,
 					OP 			=> OPIN,
@@ -166,7 +170,7 @@ begin
 														OP2_SEL => OP2_SEL); -- Data contention (out)
 	DATA_CTL	: entity work.DATA_CTL
 	port map(CLK 	=> CLK,
-				EN		=> GLOBAL_EN,
+				EN		=> NOT STALL_SIG,
 				OP		=> OP3,
 				RD_EN	=> DATARD_EN,
 				WR_EN	=>	DATAWR_EN);
@@ -177,7 +181,7 @@ begin
 												  
 	EXMEM_CTL : entity work.EX_MEM_CTL
    Port map(CLK	=> CLK,
-				EN		=> GLOBAL_EN,
+				EN		=> NOT STALL_SIG,
 				OP		=> OP3,
 				RD_EN	=> EXMEM_RDEN,
 				WR_EN	=> EXMEM_WREN);
@@ -214,8 +218,12 @@ begin
 	port map(CLK 			=> CLK,
 				ALUBranch 	=> ALU_BRANCH,
 				OPC1 			=> OP1,
-				OPC3 			=> OP3,
-				Branch 		=> BRANCH);
+				OPC3 			=> OP4,
+				OFFSET		=> OFF2,
+				PC4_DATIN	=> PC4,
+				PC4_DATOUT	=> FETCH_BRANCH,
+				VALID			=> CORRECT_SIG,
+				Branch 		=> BRANCH_SIG);
 				
 	--------  Pipeline Registers  --------
 	--------------------------------------
@@ -366,28 +374,36 @@ begin
 					Rst	=> RST,
 					Din	=> OPRB,
 					Dout	=> RB_IN);
+					
+	OFFSET1_DATA: entity work.PipelineRegisters
+	generic map( datawidth => 16)
+	port map(	Clk	=> CLK,
+					Ena	=> NOT STALL_SIG,
+					Rst	=> RST,
+					Din	=> IMM2,
+					Dout	=> OFF1);
 	
 	----> Stage Four <----
 	RA4ADR_Reg: entity work.PipelineRegisters
 	generic map( dataWidth => 4)
 	port map(	Clk	=> CLK,
-					Ena 	=> GLOBAL_EN,
+					Ena 	=> NOT STALL_SIG,
 					Rst	=> RST,
 					Din	=> RA3,
 					Dout	=> RA4);
 					
-	RB4ADR_Reg: entity work.PipelineRegisters
-	generic map( dataWidth => 4)
-	port map(	Clk	=> CLK,
-					Ena	=> GLOBAL_EN,
-					Rst	=> RST,
-					Din	=> RB3,
-					Dout	=> RB4);
+--	RB4ADR_Reg: entity work.PipelineRegisters
+--	generic map( dataWidth => 4)
+--	port map(	Clk	=> CLK,
+--					Ena	=> GLOBAL_EN,
+--					Rst	=> RST,
+--					Din	=> RB3,
+--					Dout	=> RB4);
 	
 	PC4_Reg: entity work.PipelineRegisters
 	generic map( dataWidth => 5)
 	port map(	Clk	=> CLK,
-					Ena	=> GLOBAL_EN,
+					Ena	=> NOT STALL_SIG,
 					Rst	=> RST,
 					Din	=> PC3,
 					Dout	=> PC4);
@@ -395,7 +411,7 @@ begin
 	ALU_OUT_Reg: entity work.PipelineRegisters
 	generic map( dataWidth => 16)
 	port map( 	Clk	=> CLK,
-					Ena	=> GLOBAL_EN,
+					Ena	=> NOT STALL_SIG,
 					Rst	=> RST,
 					Din	=> ALUMUX_OUT,
 					Dout	=> ALU_RESULT);
@@ -403,7 +419,7 @@ begin
 	ALU_FLAGS_Reg: entity work.PipelineRegisters
 	generic map( dataWidth => 4)
 	port map(	Clk	=> CLK,
-					Ena	=> GLOBAL_EN,
+					Ena	=> NOT STALL_SIG,
 					Rst	=> RST,
 					Din	=> ALU_OUT_FLAGS,
 					Dout	=> ALU_FLAGS);
@@ -411,16 +427,24 @@ begin
 	OP4_Reg: entity work.PipelineRegisters
 	generic map( dataWidth => 4)
 	port map(	Clk	=> CLK,
-					Ena	=> GLOBAL_EN,
+					Ena	=> NOT STALL_SIG,
 					Rst	=> RST,
 					Din	=> OP3,
 					Dout	=> OP4);
+					
+	OFFSET1_DATA: entity work.PipelineRegisters
+	generic map( datawidth => 16)
+	port map(	Clk	=> CLK,
+					Ena	=> NOT STALL_SIG,
+					Rst	=> RST,
+					Din	=> OFF1,
+					Dout	=> OFF2);
 	
 	----> DC Stage 1 <----
 	ALU_OUT1_Reg: entity work.PipelineRegisters
 	generic map( dataWidth => 16)
 	port map(	Clk	=> CLK,
-					Ena	=> GLOBAL_EN,
+					Ena	=> NOT STALL_SIG,
 					Rst	=> RST,
 					Din	=> ALU_RESULT,
 					Dout	=> ALU_DC1);
@@ -428,23 +452,23 @@ begin
 	RA_DC1_Reg:	entity work.PipelineRegisters
 	generic map( dataWidth	=> 4)
 	port map(	Clk	=> CLK,
-					Ena	=> GLOBAL_EN,
+					Ena	=> NOT STALL_SIG,
 					Rst	=> RST,
 					Din	=> RA4,
 					Dout	=> RA_DC1);
 	
-	RB_DC1_Reg: entity work.PipelineRegisters
-	generic map( dataWidth => 4)
-	port map(	Clk	=> CLK,
-					Ena	=> GLOBAL_EN,
-					Rst	=> RST,
-					Din	=> RB4,
-					Dout	=> RB_DC1);
+--	RB_DC1_Reg: entity work.PipelineRegisters
+--	generic map( dataWidth => 4)
+--	port map(	Clk	=> CLK,
+--					Ena	=> GLOBAL_EN,
+--					Rst	=> RST,
+--					Din	=> RB4,
+--					Dout	=> RB_DC1);
 	
 	OP_DC1_Reg: entitY work.PipelineRegisters
 	generic map(dataWidth => 4)
 	port map(Clk	=> CLK,
-				Ena	=> GLOBAL_EN,
+				Ena	=> NOT STALL_SIG,
 				Rst	=> RST,
 				Din	=> OP4,
 				Dout	=> OP_DC1);
@@ -453,7 +477,7 @@ begin
 	ALU_OUT2_Reg: entity work.PipelineRegisters
 	generic map( dataWidth => 16)
 	port map(	Clk 	=> CLK,
-					Ena	=> GLOBAL_EN,
+					Ena	=> NOT STALL_SIG,
 					Rst	=> RST,
 					Din	=> ALU_DC1,
 					Dout	=> ALU_DC2);
@@ -461,23 +485,23 @@ begin
 	RA_DC2_Reg: entity work.PipelineRegisters
 	generic map( dataWidth => 4)
 	port map(	Clk	=> CLK,
-					Ena	=> GLOBAL_EN,
+					Ena	=> NOT STALL_SIG,
 					Rst	=> RST,
 					Din	=> RA_DC1,
 					Dout	=> RA_DC2);
 	
-	RB_DC2_Reg: entity work.PipelineRegisters
-	generic map( dataWidth => 4)
-	port map(	Clk	=> CLK,
-					Ena	=> GLOBAL_EN,
-					Rst	=> RST,
-					Din	=> RB_DC1,
-					Dout	=> RB_DC2);
+--	RB_DC2_Reg: entity work.PipelineRegisters
+--	generic map( dataWidth => 4)
+--	port map(	Clk	=> CLK,
+--					Ena	=> GLOBAL_EN,
+--					Rst	=> RST,
+--					Din	=> RB_DC1,
+--					Dout	=> RB_DC2);
 					
 	OP_DC2_Reg: entity work.PipelineRegisters
 	generic map(dataWidth => 4)
 	port map(Clk	=> CLK,
-				Ena	=> GLOBAL_EN,
+				Ena	=> NOT STALL_SIG,
 				Rst	=> RST,
 				Din	=> OP_DC1,
 				Dout	=> OP_DC2);
@@ -509,6 +533,15 @@ begin
 					W 			=> WR_EN,
 					RAout 	=> OPR1,
 					RBout 	=> OPR2);
+					
+	--------  Branching Entities  --------
+	-----------------------------------
+	
+	StallModuleControl: entity work.StallModuleControl
+	port map(	CLK 	 => CLK,
+					BRANCH  => BRANCH_SIG,
+					CORRECTION => CORRECT_SIG,
+					STALL  => STALL_SIG);
 	
 	--------  Data Contention Handler  --------
 	-------------------------------------------
