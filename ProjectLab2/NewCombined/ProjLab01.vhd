@@ -375,7 +375,7 @@ begin
 					Din	=> OPRB,
 					Dout	=> RB_IN);
 					
-	OFFSET1_DATA: entity work.PipelineRegisters
+	OFFSET_DATA1: entity work.PipelineRegisters
 	generic map( datawidth => 16)
 	port map(	Clk	=> CLK,
 					Ena	=> NOT STALL_SIG,
@@ -432,7 +432,7 @@ begin
 					Din	=> OP3,
 					Dout	=> OP4);
 					
-	OFFSET1_DATA: entity work.PipelineRegisters
+	OFFSET_DATA2: entity work.PipelineRegisters
 	generic map( datawidth => 16)
 	port map(	Clk	=> CLK,
 					Ena	=> NOT STALL_SIG,
