@@ -1,0 +1,2 @@
+vhdl work "BranchPredictor.vhd"
+vhdl work "BranchPredictor_tb.vhd"

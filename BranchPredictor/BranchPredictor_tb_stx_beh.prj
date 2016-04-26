@@ -1,0 +1,2 @@
+vhdl isim_temp "BranchPredictor.vhd"
+vhdl isim_temp "BranchPredictor_tb.vhd"

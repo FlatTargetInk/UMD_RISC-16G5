@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/robert/UMD_RISC-16G5/JumpUnit/ECE368_Project_Lab1_Team5/jump_unit_tb_isim_beh.exe" -prj "/home/robert/UMD_RISC-16G5/JumpUnit/ECE368_Project_Lab1_Team5/jump_unit_tb_beh.prj" "work.jump_unit_tb" 

@@ -99,7 +99,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1461600014" xil_pn:in_ck="936596634059580754" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1461600014">
+    <transform xil_pn:end_ts="1461609780" xil_pn:in_ck="936596634059580754" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1461609780">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -107,7 +107,6 @@
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1461600014" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6417879768481499082" xil_pn:start_ts="1461600014">
@@ -118,7 +117,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1461601563" xil_pn:in_ck="8489034623533368684" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6634281375464242574" xil_pn:start_ts="1461601563">
+    <transform xil_pn:end_ts="1461609780" xil_pn:in_ck="8489034623533368684" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6634281375464242574" xil_pn:start_ts="1461609780">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -128,7 +127,17 @@
       <outfile xil_pn:name="ipcore_dir/Instr_Mem.ngc"/>
       <outfile xil_pn:name="ipcore_dir/Instr_Mem.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1461601563" xil_pn:in_ck="7111337664882125463" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1461601563">
+    <transform xil_pn:end_ts="1461609780" xil_pn:in_ck="7111337664882125463" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1461609780">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1461609785" xil_pn:in_ck="-7922369809004041148" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3158204554956819122" xil_pn:start_ts="1461609780">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -139,18 +148,7 @@
       <status xil_pn:value="OutputChanged"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1461601568" xil_pn:in_ck="-7922369809004041148" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3158204554956819122" xil_pn:start_ts="1461601563">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1461601568" xil_pn:in_ck="8305569939622711765" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3165499859492085445" xil_pn:start_ts="1461601568">
+    <transform xil_pn:end_ts="1461609785" xil_pn:in_ck="8305569939622711765" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3165499859492085445" xil_pn:start_ts="1461609785">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>

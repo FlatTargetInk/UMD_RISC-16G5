@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "Z:/Xilinx/StallModuleControl/StallModuleControl_tb_isim_beh.exe" -prj "Z:/Xilinx/StallModuleControl/StallModuleControl_tb_beh.prj" "work.StallModuleControl_tb" 

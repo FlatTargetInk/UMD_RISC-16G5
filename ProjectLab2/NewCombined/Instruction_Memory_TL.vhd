@@ -43,7 +43,8 @@ entity Instruction_Memory_TL is
 			RA 		: out  STD_LOGIC_VECTOR (3 downto 0);
          RB 		: out  STD_LOGIC_VECTOR (3 downto 0);
          OP 		: out  STD_LOGIC_VECTOR (3 downto 0);
-         IMM 		: out  STD_LOGIC_VECTOR (7 downto 0));
+         IMM 		: out  STD_LOGIC_VECTOR (7 downto 0);
+			PC			: out	 STD_LOGIC_VECTOR (PCWIDTH-1 downto 0));
 end Instruction_Memory_TL;
 
 architecture Structural of Instruction_Memory_TL is
@@ -74,6 +75,7 @@ begin
 	RA <= DOUTA(11 downto 8);
 	RB <= DOUTA(7 downto 4);
 	IMM <= DOUTA(7 downto 0);
+	PC <= CRNT_ADR;
 
 --	U1: entity work.programCounter
 --		generic map(PCWIDTH => 5)

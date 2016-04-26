@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Z:/Xilinx/StallModuleControl/StallModuleControl_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="stallmodulecontrol_tb" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/stallmodulecontrol_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/stallmodulecontrol_tb/guess" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">guess</obj_property>
+      <obj_property name="ObjectShortName">guess</obj_property>
+   </wvobject>
+   <wvobject fp_name="/stallmodulecontrol_tb/actual" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">actual</obj_property>
+      <obj_property name="ObjectShortName">actual</obj_property>
+   </wvobject>
+   <wvobject fp_name="/stallmodulecontrol_tb/stall" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stall</obj_property>
+      <obj_property name="ObjectShortName">stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/stallmodulecontrol_tb/uut/num_stall_cycles" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num_stall_cycles[2:0]</obj_property>
+      <obj_property name="ObjectShortName">num_stall_cycles[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

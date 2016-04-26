@@ -81,6 +81,9 @@ architecture Structural of ProjLab01 is
 	signal EXMEM_ADR, EXMEM_OUT	: STD_LOGIC_VECTOR (15 downto 0)	:= (OTHERS => '0');
 	signal EXMEM_WREN, EXMEM_RDEN	: STD_LOGIC_VECTOR (0 downto 0) 	:= "0";
 	signal ALUMUX_OUT					: STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0');
+	signal ALU_BRANCH					: STD_LOGIC := '0';
+	signal BRANCH						: STD_LOGIC := '0';
+	signal STALL						: STD_LOGIC := '0';
 
 begin
 	ALU_OUT <= ALU_RESULT;
@@ -107,7 +110,8 @@ begin
 				CLK		=> CLK,
 				ALU_OUT 	=> ALU_VAL,
 				SREG 		=> ALU_OUT_FLAGS,
-				LDST_DAT => STORE_DATA);
+				LDST_DAT => STORE_DATA,
+				BRANCH	=> ALU_BRANCH);
 				--LDST_ADR => DST_ADR);
 				
 	--------  Fetch  --------
@@ -120,7 +124,8 @@ begin
 					RA 			=> RAIN,
 					RB 			=> RBIN,
 					OP 			=> OPIN,
-					IMM 			=> IMMIN);
+					IMM 			=> IMMIN,
+					PC				=> PC0);
 					
 
 	--------  Control Units  --------
@@ -204,6 +209,13 @@ begin
 		
 		-- Added OP Code pipeline registers so DC CTL
 		-- doesn't compare non address addresses
+	
+	BranchPredict: entity work.BranchPredictor
+	port map(CLK 			=> CLK,
+				ALUBranch 	=> ALU_BRANCH,
+				OPC1 			=> OP1,
+				OPC3 			=> OP3,
+				Branch 		=> BRANCH);
 				
 	--------  Pipeline Registers  --------
 	--------------------------------------
