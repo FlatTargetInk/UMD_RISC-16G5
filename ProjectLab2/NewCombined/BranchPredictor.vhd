@@ -20,19 +20,20 @@ use ieee.std_logic_unsigned.all;
 --use IEEE.NUMERIC_STD.ALL;
 
 entity BranchPredictor is
+	generic(PCWIDTH:integer := 5);
     Port ( 		  CLK 		: in STD_LOGIC;
 			  ALUBranch 		: in STD_LOGIC;
 					 OPC1 		: in STD_LOGIC_VECTOR(3 downto 0); -- The OPCode at OP1
 					 OPC3 		: in STD_LOGIC_VECTOR(3 downto 0); -- The OPCode at OP3
 					 OFFSET     : in STD_LOGIC_VECTOR(3 downto 0);
-					 PC4_DATIN	: in STD_LOGIC_VECTOR(3 downto 0); 
-					 PC4_DATOUT	: out STD_LOGIC_VECTOR(4 downto 0);
+					 PC4_DATIN	: in STD_LOGIC_VECTOR(PCWIDTH-1 downto 0); 
+					 PC4_DATOUT	: out STD_LOGIC_VECTOR(PCWIDTH-1 downto 0);
 					VALID 		: out STD_LOGIC;
 				  Branch 		: out  STD_LOGIC);
 end BranchPredictor;
 architecture Combinational of BranchPredictor is
 
-signal ADR	 : STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');
+signal ADR, INADR	 : STD_LOGIC_VECTOR (PCWIDTH-1 downto 0) := (OTHERS => '0');
 signal OFF	 : STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');
 type BRANCH_STATE is (DONT_BRANCH, DO_BRANCH);
 signal STATE : BRANCH_STATE := DONT_BRANCH;
@@ -40,9 +41,9 @@ signal STATE : BRANCH_STATE := DONT_BRANCH;
 
 begin
 
-ADR <= PC4_DATIN;
+INADR <= PC4_DATIN;
 OFF <= OFFSET;	
-PC4_DATOUT <= '0' & ADR;
+PC4_DATOUT <= ADR;
 
 	process(CLK)
 	begin
@@ -57,28 +58,34 @@ PC4_DATOUT <= '0' & ADR;
 							when '1' => STATE  <=   DO_BRANCH; -- '1'/"11"
 											Branch <= '1';
 											VALID  <= '1';
-											ADR 	 <= ADR + OFF;
+											ADR 	 <= INADR + OFF;
 							when others => STATE <= DONT_BRANCH;
 						end case;
 					when   DO_BRANCH =>
 						case ALUBranch is
 							when '0' => STATE  <= DONT_BRANCH; -- '0'/"01"
-											Branch <= '0';
+											Branch <= '1';
 											VALID  <= '1';
 							when '1' => STATE  <= DO_BRANCH; -- '1'/"10"
-											Branch <= '1';
+											Branch <= '0';
 											VALID  <= '0';
-											ADR	 <= ADR + 1;
+											ADR	 <= INADR + 1;
 							when others => STATE <= DONT_BRANCH;
 						end case;
 				end case;
+			elsif OPC1 = X"F" then
+				case STATE is
+					when DO_BRANCH => Branch <= '1';
+					when OTHERS		=> Branch <= '0';
+				end case;
 			else
-				Branch <= '1' when STATE = DO_BRANCH AND OPC1 = x"F" else
-				 '0';
+				Branch <= '0';
+				VALID  <= '0';
 			end if;
-		else
-			STATE <= DONT_BRANCH;
-			--end if;
+--		else
+--			STATE <= DONT_BRANCH;
+--			--end if;
+--		end if;
 		end if;
 	end process;
 --	if(OPC1 = x"F") then

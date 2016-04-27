@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Mon Apr 25 16:23:21 2016
+# Date: Wed Apr 27 17:08:51 2016
 #
 ##############################################################
 #
@@ -46,7 +46,7 @@ CSET axi_id_width=4
 CSET axi_slave_type=Memory_Slave
 CSET axi_type=AXI4_Full
 CSET byte_size=9
-CSET coe_file=/home/robert/UMD_RISC-16G5/ProjectLab2/mem_with_jmp.coe
+CSET coe_file=/home/robert/UMD_RISC-16G5/ProjectLab2/branch_test.coe
 CSET collision_warnings=ALL
 CSET component_name=Instr_Mem
 CSET disable_collision_warnings=false
@@ -105,4 +105,4 @@ CSET write_width_b=16
 MISC pkg_timestamp=2012-11-19T16:22:25Z
 # END Extra information
 GENERATE
-# CRC: e1a7af21
+# CRC: 8b0ce9ab

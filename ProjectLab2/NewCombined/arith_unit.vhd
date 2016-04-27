@@ -56,10 +56,12 @@ begin
 			signed(a) - signed(b) when "001",	-- SUB
 			--a + b when "101",	-- ADDI
 			'0' & X"0000" when OTHERS;
-	SREG(3) <= RESULT(15); -- Negative with signed logic
+	SREG(3) <= RESULT(16); -- Negative with signed logic
 	SREG(2) <= '1' when RESULT(15 downto 0) = x"00000000" else '0';	-- Zero
 	SREG(1) <= RESULT(16) xor RESULT(15);	-- Overflow with signed logic
-	SREG(0) <= RESULT(16); -- Carry
+	with OP select SREG(0) <= 
+		RESULT(16) when "000" | "101", -- Carry
+		'0' when OTHERS;
 	
 	SREG_OUT <= SREG;
 	AR_OUT <= RESULT(15 downto 0);

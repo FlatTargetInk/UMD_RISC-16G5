@@ -106,7 +106,7 @@ BEGIN
 
       wait for CLK_period*20;
 		
-		BRNCH_ADR
+		--BRNCH_ADR
 		
 --		OFFSET <= "111111111100";
 --		JMP	<= '1';

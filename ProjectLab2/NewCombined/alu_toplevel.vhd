@@ -32,6 +32,7 @@ entity ALU_Toplevel is
            RB : in  STD_LOGIC_VECTOR (15 downto 0);
            OP : in  STD_LOGIC_VECTOR (3 downto 0);
 			  CLK	:		IN STD_LOGIC;
+			  RST	: in STD_LOGIC;
            ALU_OUT : out  STD_LOGIC_VECTOR (15 downto 0);
            SREG : out  STD_LOGIC_VECTOR (3 downto 0);
            LDST_DAT : out  STD_LOGIC_VECTOR (15 downto 0);
@@ -52,6 +53,7 @@ signal WORD_OUT	: STD_LOGIC_VECTOR (15 downto 0)	:= (OTHERS => '0');
 signal LDST_ADR_8	: STD_LOGIC_VECTOR (7 downto 0) 	:= (OTHERS => '0');
 signal BR			: STD_LOGIC								:= '0';
 signal CCR			: STD_LOGIC_VECTOR (3 downto 0)  := (OTHERS => '0');
+signal LATCHEDCCR	: STD_LOGIC_VECTOR (3 downto 0)	:= (OTHERS => '0');
 
 begin
 
@@ -90,10 +92,18 @@ LDST_ADR <= X"00" & LDST_ADR_8;
 	jump_unit: entity work.jump_unit
 	port map( CLK   => CLK,
 				 OP    => OP,
-			    CCR   => CCR,
+			    CCR   => LATCHEDCCR,
              MASK  => RA(3 downto 0),
              IMMD  => RB,
 			    BRSIG => BR);
+				 
+	CCR_Latch: entity work.PipelineRegisters
+	generic map(dataWidth => 4)
+	port map(Clk => CLK,
+				Ena => '1',
+				Rst => RST,
+				Din => CCR,
+				Dout	=> LATCHEDCCR);
 	
 	with OP select 
 		ALU_OUT <=

@@ -40,30 +40,33 @@ entity DC_CTL is
 			  OPC1 : in STD_LOGIC_VECTOR (3 downto 0);
 			  OPC2	: in STD_LOGIC_VECTOR (3 downto 0);
            OPC : in  STD_LOGIC_VECTOR (3 downto 0);
-			  OP1_SEL : out  STD_LOGIC_VECTOR (1 downto 0);
+			  OP1_SEL : out  STD_LOGIC_VECTOR (2 downto 0);
            OP2_SEL : out  STD_LOGIC_VECTOR (1 downto 0));
 end DC_CTL;
 
 architecture Mixed of DC_CTL is
 
-signal OP1, OP2 : STD_LOGIC_VECTOR (1 downto 0) := (OTHERS => '0');
+signal OP1	: STD_LOGIC_VECTOR (2 downto 0) := (OTHERS => '0');
+signal OP2	: STD_LOGIC_VECTOR (1 downto 0) := (OTHERS => '0');
 
 begin
 	
 	process(RA, RB, RA0, RA1, RA2)
 	begin
 	--	if (rising_edge(CLK)) then
-			if (RA = RA0 and OPC0(3 downto 2) /= "11") then
-				OP1 <= "01";
+			if(OPC = "1111") then
+				OP1 <= "100";
+			elsif (RA = RA0 and OPC0(3 downto 2) /= "11") then
+				OP1 <= "001";
 --				OP1_SEL <= OP1;
 			elsif (RA = RA1 and OPC1(3 downto 2) /= "11") then
-				OP1 <= "10";
+				OP1 <= "010";
 --				OP1_SEL <= OP1;
 			elsif (RA = RA2 and OPC1(3 downto 2) /= "11") then
-				OP1 <= "11";
+				OP1 <= "011";
 --				OP1_SEL <= OP1;
 			else
-				OP1 <= "00";
+				OP1 <= "000";
 --				OP1_SEL <= OP1;
 			end if;
 --			OP1_SEL <= OP1;

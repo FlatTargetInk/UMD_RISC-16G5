@@ -61,7 +61,8 @@ architecture Structural of ProjLab01 is
 	signal RBIN	: STD_LOGIC_VECTOR (3 downto 0) := (OTHERS => '0');
 	signal IMMIN	: STD_LOGIC_VECTOR (7 downto 0) := (OTHERS => '0');
 	signal IMSEL	: STD_LOGIC := '0';
-	signal OP1_SEL, OP2_SEL	: STD_LOGIC_VECTOR (1 downto 0):= (OTHERS => '0');	-- Selector for data contention
+	signal OP1_SEL	: STD_LOGIC_VECTOR (2 downto 0) := (OTHERS => '0');
+	signal OP2_SEL	: STD_LOGIC_VECTOR (1 downto 0) := (OTHERS => '0');	-- Selector for data contention
 	
 	signal ALU_RESULT		: STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0');	-- Latched Result of ALU
 	signal ALU_VAL			: STD_LOGIC_VECTOR (15 downto 0) := (OTHERS => '0');	-- Result direct from ALU
@@ -111,6 +112,7 @@ begin
 	port map(RA 		=> RA_OUT,
 				RB 		=> RB_OUT,
 				OP 		=> OP3,
+				RST		=> RST,
 				CLK		=> CLK,
 				ALU_OUT 	=> ALU_VAL,
 				SREG 		=> ALU_OUT_FLAGS,
@@ -218,7 +220,7 @@ begin
 	port map(CLK 			=> CLK,
 				ALUBranch 	=> ALU_BRANCH,
 				OPC1 			=> OP1,
-				OPC3 			=> OP4,
+				OPC3 			=> OP3,
 				OFFSET		=> OFF2,
 				PC4_DATIN	=> PC4,
 				PC4_DATOUT	=> FETCH_BRANCH,
@@ -376,11 +378,11 @@ begin
 					Dout	=> RB_IN);
 					
 	OFFSET_DATA1: entity work.PipelineRegisters
-	generic map( datawidth => 16)
+	generic map( datawidth => 4)
 	port map(	Clk	=> CLK,
 					Ena	=> NOT STALL_SIG,
 					Rst	=> RST,
-					Din	=> IMM2,
+					Din	=> IMM2(3 downto 0),
 					Dout	=> OFF1);
 	
 	----> Stage Four <----
@@ -433,7 +435,7 @@ begin
 					Dout	=> OP4);
 					
 	OFFSET_DATA2: entity work.PipelineRegisters
-	generic map( datawidth => 16)
+	generic map( datawidth => 4)
 	port map(	Clk	=> CLK,
 					Ena	=> NOT STALL_SIG,
 					Rst	=> RST,
@@ -547,9 +549,10 @@ begin
 	-------------------------------------------
 	
 	with OP1_SEL select RA_OUT <=
-		ALU_RESULT	when "01",
-		ALU_DC1		when "10",
-		ALU_DC2		when "11",
+		ALU_RESULT	when "001",
+		ALU_DC1		when "010",
+		ALU_DC2		when "011",
+		X"000" & RA3	when "100",
 		RA_IN			when OTHERS;
 	
 	with OP2_SEL select RB_OUT <=
