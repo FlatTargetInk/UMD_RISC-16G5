@@ -1,0 +1,677 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Reading design: Hardware_TL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Hardware_TL.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Hardware_TL"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Hardware_TL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../Combined" "../NewCombined/ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/clk2Hz.vhd" in Library work.
+Architecture behavioral of Entity clk2hz is up to date.
+Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/clk4Hz.vhd" in Library work.
+Architecture behavioral of Entity clk4hz is up to date.
+Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/debounce.vhd" in Library work.
+Architecture logic of Entity debounce is up to date.
+Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/SevenSeg.vhd" in Library work.
+Architecture behavioral of Entity ssegdriver is up to date.
+Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/SevenSeg_toplevel.vhd" in Library work.
+Architecture structural of Entity sseg_toplevel is up to date.
+Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/button_controller.vhd" in Library work.
+Architecture structural of Entity buttoncontrol is up to date.
+Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/counter_toplevel.vhd" in Library work.
+Architecture structural of Entity clock_toplevel is up to date.
+Compiling vhdl file "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/Hardware_TL.vhd" in Library work.
+Entity <hardware_tl> compiled.
+Entity <hardware_tl> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Hardware_TL> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <SSeg_toplevel> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <buttoncontrol> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <clock_toplevel> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <SSegDriver> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <debounce> in library <work> (architecture <Logic>) with generics.
+	wait_time = 20
+
+Analyzing hierarchy for entity <clk2Hz> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <clk4Hz> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Hardware_TL> in library <work> (Architecture <structural>).
+Entity <Hardware_TL> analyzed. Unit <Hardware_TL> generated.
+
+Analyzing Entity <SSeg_toplevel> in library <work> (Architecture <Structural>).
+Entity <SSeg_toplevel> analyzed. Unit <SSeg_toplevel> generated.
+
+Analyzing Entity <SSegDriver> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/SevenSeg.vhd" line 98: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <clk240hz>
+INFO:Xst:1561 - "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/SevenSeg.vhd" line 120: Mux is complete : default of case is discarded
+Entity <SSegDriver> analyzed. Unit <SSegDriver> generated.
+
+Analyzing Entity <buttoncontrol> in library <work> (Architecture <Structural>).
+Entity <buttoncontrol> analyzed. Unit <buttoncontrol> generated.
+
+Analyzing generic Entity <debounce> in library <work> (Architecture <Logic>).
+	wait_time = 20
+Entity <debounce> analyzed. Unit <debounce> generated.
+
+Analyzing Entity <clock_toplevel> in library <work> (Architecture <Structural>).
+Entity <clock_toplevel> analyzed. Unit <clock_toplevel> generated.
+
+Analyzing Entity <clk2Hz> in library <work> (Architecture <Behavioral>).
+Entity <clk2Hz> analyzed. Unit <clk2Hz> generated.
+
+Analyzing Entity <clk4Hz> in library <work> (Architecture <Behavioral>).
+Entity <clk4Hz> analyzed. Unit <clk4Hz> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <SSegDriver>.
+    Related source file is "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/SevenSeg.vhd".
+WARNING:Xst:647 - Input <COL_EN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16x7-bit ROM for signal <segnum>.
+    Found 4x4-bit ROM for signal <AN_OUT$mux0001> created at line 104.
+    Found 4-bit register for signal <AN_OUT>.
+    Found 1-bit register for signal <DP_OUT>.
+    Found 1-bit register for signal <clk240hz>.
+    Found 17-bit up counter for signal <count240hz>.
+    Found 1-bit 4-to-1 multiplexer for signal <DP_OUT$mux0001> created at line 104.
+    Found 4-bit register for signal <hexnum>.
+    Found 4-bit 4-to-1 multiplexer for signal <hexnum$mux0001> created at line 104.
+    Found 2-bit up counter for signal <pos>.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   2 Counter(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <SSegDriver> synthesized.
+
+
+Synthesizing Unit <debounce>.
+    Related source file is "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/debounce.vhd".
+    Found 1-bit register for signal <OUTPUT>.
+    Found 21-bit up counter for signal <Count>.
+    Found 1-bit xor2 for signal <D_SET>.
+    Found 2-bit register for signal <D_STATE>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <debounce> synthesized.
+
+
+Synthesizing Unit <clk2Hz>.
+    Related source file is "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/clk2Hz.vhd".
+    Found 1-bit register for signal <clkdv>.
+    Found 26-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <clk2Hz> synthesized.
+
+
+Synthesizing Unit <clk4Hz>.
+    Related source file is "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/clk4Hz.vhd".
+    Found 1-bit register for signal <clkdv>.
+    Found 15-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <clk4Hz> synthesized.
+
+
+Synthesizing Unit <SSeg_toplevel>.
+    Related source file is "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/SevenSeg_toplevel.vhd".
+WARNING:Xst:653 - Signal <enl> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:653 - Signal <dpc> is used but never assigned. This sourceless signal will be automatically connected to value 1111.
+WARNING:Xst:653 - Signal <cen> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <SSeg_toplevel> synthesized.
+
+
+Synthesizing Unit <buttoncontrol>.
+    Related source file is "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/button_controller.vhd".
+Unit <buttoncontrol> synthesized.
+
+
+Synthesizing Unit <clock_toplevel>.
+    Related source file is "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/counter_toplevel.vhd".
+WARNING:Xst:1780 - Signal <CLOCK_DIVIDER> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit 4-to-1 multiplexer for signal <SWCLK>.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <clock_toplevel> synthesized.
+
+
+Synthesizing Unit <Hardware_TL>.
+    Related source file is "/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/Hardware_TL.vhd".
+WARNING:Xst:646 - Signal <software_clk> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sft_rst> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <btn_sig<2:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <HW_RST> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <HW_EN> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:653 - Signal <DEBUG_DATA> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:1780 - Signal <DBUG_BUS> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <ALU_OUT> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+Unit <Hardware_TL> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Counters                                             : 8
+ 15-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 21-bit up counter                                     : 4
+ 26-bit up counter                                     : 1
+# Registers                                            : 18
+ 1-bit register                                        : 16
+ 4-bit register                                        : 2
+# Multiplexers                                         : 3
+ 1-bit 4-to-1 multiplexer                              : 2
+ 4-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <Buttons> is unconnected in block <Hardware_TL>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ClkGen> is unconnected in block <Hardware_TL>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Counters                                             : 8
+ 15-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 21-bit up counter                                     : 4
+ 26-bit up counter                                     : 1
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+# Multiplexers                                         : 3
+ 1-bit 4-to-1 multiplexer                              : 2
+ 4-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <ClkGen/clk2KHz/clkdv> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <ClkGen/clk1Hz/clkdv> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:1710 - FF/Latch <hexnum_0> (without init value) has a constant value of 0 in block <SSegDriver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hexnum_1> (without init value) has a constant value of 0 in block <SSegDriver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hexnum_2> (without init value) has a constant value of 0 in block <SSegDriver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hexnum_3> (without init value) has a constant value of 0 in block <SSegDriver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DP_OUT> (without init value) has a constant value of 1 in block <SSegDriver>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Hardware_TL> ...
+
+Optimizing unit <SSegDriver> ...
+
+Optimizing unit <debounce> ...
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_20> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_19> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_18> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_17> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_16> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_15> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_14> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_13> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_12> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_11> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_10> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_9> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_8> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_7> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_6> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_5> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_4> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_3> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_2> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_1> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/Count_0> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/OUTPUT> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/D_STATE_1> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_3/D_STATE_0> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_20> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_19> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_18> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_17> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_16> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_15> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_14> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_13> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_12> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_11> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_10> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_9> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_8> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_7> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_6> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_5> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_4> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_3> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_2> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_1> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/Count_0> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/OUTPUT> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/D_STATE_1> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_2/D_STATE_0> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_20> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_19> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_18> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_17> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_16> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_15> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_14> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_13> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_12> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_11> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_10> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_9> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_8> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_7> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_6> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_5> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_4> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_3> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_2> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_1> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/Count_0> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/OUTPUT> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/D_STATE_1> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_1/D_STATE_0> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_20> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_19> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_18> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_17> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_16> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_15> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_14> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_13> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_12> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_11> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_10> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_9> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_8> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_7> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_6> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_5> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_4> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_3> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_2> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_1> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/Count_0> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/OUTPUT> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/D_STATE_1> of sequential type is unconnected in block <Hardware_TL>.
+WARNING:Xst:2677 - Node <Buttons/BTN_0/D_STATE_0> of sequential type is unconnected in block <Hardware_TL>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Hardware_TL, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Hardware_TL.ngr
+Top Level Output File Name         : Hardware_TL
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 61
+
+Cell Usage :
+# BELS                             : 86
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 16
+#      LUT2                        : 22
+#      LUT4                        : 4
+#      MUXCY                       : 21
+#      VCC                         : 1
+#      XORCY                       : 17
+# FlipFlops/Latches                : 24
+#      FDC                         : 6
+#      FDCE                        : 18
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 56
+#      IBUF                        : 8
+#      OBUF                        : 48
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       26  out of   4656     0%  
+ Number of Slice Flip Flops:             24  out of   9312     0%  
+ Number of 4 input LUTs:                 46  out of   9312     0%  
+ Number of IOs:                          61
+ Number of bonded IOBs:                  57  out of    232    24%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)     | Load  |
+-----------------------------------+---------------------------+-------+
+SSeg_unit/SSeg/clk240hz            | NONE(SSeg_unit/SSeg/pos_1)| 6     |
+CLK                                | BUFGP                     | 18    |
+-----------------------------------+---------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------------+-------+
+Control Signal                     | Buffer(FF name)              | Load  |
+-----------------------------------+------------------------------+-------+
+LED_0_OBUF(XST_GND:G)              | NONE(SSeg_unit/SSeg/AN_OUT_0)| 24    |
+-----------------------------------+------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.522ns (Maximum Frequency: 181.094MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: 5.077ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SSeg_unit/SSeg/clk240hz'
+  Clock period: 2.692ns (frequency: 371.471MHz)
+  Total number of paths / destination ports: 11 / 6
+-------------------------------------------------------------------------
+Delay:               2.692ns (Levels of Logic = 1)
+  Source:            SSeg_unit/SSeg/pos_0 (FF)
+  Destination:       SSeg_unit/SSeg/pos_0 (FF)
+  Source Clock:      SSeg_unit/SSeg/clk240hz rising
+  Destination Clock: SSeg_unit/SSeg/clk240hz rising
+
+  Data Path: SSeg_unit/SSeg/pos_0 to SSeg_unit/SSeg/pos_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.591   0.669  SSeg_unit/SSeg/pos_0 (SSeg_unit/SSeg/pos_0)
+     INV:I->O              1   0.704   0.420  SSeg_unit/SSeg/Mcount_pos_xor<0>11_INV_0 (SSeg_unit/SSeg/Mcount_pos)
+     FDC:D                     0.308          SSeg_unit/SSeg/pos_0
+    ----------------------------------------
+    Total                      2.692ns (1.603ns logic, 1.089ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.522ns (frequency: 181.094MHz)
+  Total number of paths / destination ports: 460 / 19
+-------------------------------------------------------------------------
+Delay:               5.522ns (Levels of Logic = 18)
+  Source:            SSeg_unit/SSeg/count240hz_1 (FF)
+  Destination:       SSeg_unit/SSeg/count240hz_16 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: SSeg_unit/SSeg/count240hz_1 to SSeg_unit/SSeg/count240hz_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.591   0.622  SSeg_unit/SSeg/count240hz_1 (SSeg_unit/SSeg/count240hz_1)
+     LUT1:I0->O            1   0.704   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<1>_rt (SSeg_unit/SSeg/Mcount_count240hz_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<1> (SSeg_unit/SSeg/Mcount_count240hz_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<2> (SSeg_unit/SSeg/Mcount_count240hz_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<3> (SSeg_unit/SSeg/Mcount_count240hz_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<4> (SSeg_unit/SSeg/Mcount_count240hz_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<5> (SSeg_unit/SSeg/Mcount_count240hz_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<6> (SSeg_unit/SSeg/Mcount_count240hz_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<7> (SSeg_unit/SSeg/Mcount_count240hz_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<8> (SSeg_unit/SSeg/Mcount_count240hz_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<9> (SSeg_unit/SSeg/Mcount_count240hz_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<10> (SSeg_unit/SSeg/Mcount_count240hz_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<11> (SSeg_unit/SSeg/Mcount_count240hz_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<12> (SSeg_unit/SSeg/Mcount_count240hz_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<13> (SSeg_unit/SSeg/Mcount_count240hz_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<14> (SSeg_unit/SSeg/Mcount_count240hz_cy<14>)
+     MUXCY:CI->O           0   0.059   0.000  SSeg_unit/SSeg/Mcount_count240hz_cy<15> (SSeg_unit/SSeg/Mcount_count240hz_cy<15>)
+     XORCY:CI->O           1   0.804   0.499  SSeg_unit/SSeg/Mcount_count240hz_xor<16> (SSeg_unit/SSeg/Result<16>)
+     LUT2:I1->O            1   0.704   0.000  SSeg_unit/SSeg/Mcount_count240hz_eqn_161 (SSeg_unit/SSeg/Mcount_count240hz_eqn_16)
+     FDCE:D                    0.308          SSeg_unit/SSeg/count240hz_16
+    ----------------------------------------
+    Total                      5.522ns (4.401ns logic, 1.121ns route)
+                                       (79.7% logic, 20.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SSeg_unit/SSeg/clk240hz'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            SSeg_unit/SSeg/AN_OUT_3 (FF)
+  Destination:       AN<0> (PAD)
+  Source Clock:      SSeg_unit/SSeg/clk240hz rising
+
+  Data Path: SSeg_unit/SSeg/AN_OUT_3 to AN<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.591   0.420  SSeg_unit/SSeg/AN_OUT_3 (SSeg_unit/SSeg/AN_OUT_3)
+     OBUF:I->O                 3.272          AN_0_OBUF (AN<0>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 28 / 28
+-------------------------------------------------------------------------
+Delay:               5.077ns (Levels of Logic = 2)
+  Source:            SW<3> (PAD)
+  Destination:       JA<3> (PAD)
+
+  Data Path: SW<3> to JA<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  SW_3_IBUF (JD_3_OBUF)
+     OBUF:I->O                 3.272          JA_3_OBUF (JA<3>)
+    ----------------------------------------
+    Total                      5.077ns (4.490ns logic, 0.587ns route)
+                                       (88.4% logic, 11.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.19 secs
+ 
+--> 
+
+
+Total memory usage is 621332 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  119 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

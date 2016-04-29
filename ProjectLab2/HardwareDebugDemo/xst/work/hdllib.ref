@@ -1,0 +1,16 @@
+AR hardware_tl structural /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/Hardware_TL.vhd sub00/vhpl15 1461891001
+AR clk4hz behavioral /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/clk4Hz.vhd sub00/vhpl03 1461890989
+EN clk4hz NULL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/clk4Hz.vhd sub00/vhpl02 1461890988
+AR sseg_toplevel structural /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/SevenSeg_toplevel.vhd sub00/vhpl09 1461890995
+AR clock_toplevel structural /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/counter_toplevel.vhd sub00/vhpl13 1461890999
+EN hardware_tl NULL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/Hardware_TL.vhd sub00/vhpl14 1461891000
+EN debounce NULL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/debounce.vhd sub00/vhpl04 1461890990
+EN sseg_toplevel NULL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/SevenSeg_toplevel.vhd sub00/vhpl08 1461890994
+AR debounce logic /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/debounce.vhd sub00/vhpl05 1461890991
+EN clock_toplevel NULL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/counter_toplevel.vhd sub00/vhpl12 1461890998
+AR buttoncontrol structural /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/button_controller.vhd sub00/vhpl11 1461890997
+AR ssegdriver behavioral /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/SevenSeg.vhd sub00/vhpl07 1461890993
+EN ssegdriver NULL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/SevenSeg.vhd sub00/vhpl06 1461890992
+AR clk2hz behavioral /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/clk2Hz.vhd sub00/vhpl01 1461890987
+EN buttoncontrol NULL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/button_controller.vhd sub00/vhpl10 1461890996
+EN clk2hz NULL /home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/clk2Hz.vhd sub00/vhpl00 1461890986

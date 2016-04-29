@@ -1,0 +1,38 @@
+Release 14.7 ngdbuild P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -sd ../Combined -sd ../NewCombined/ipcore_dir -nt timestamp -uc UMD
+RISC-16.ucf -p xc3s500e-fg320-4 Hardware_TL.ngc Hardware_TL.ngd
+
+Reading NGO file
+"/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/Hardware_TL.ngc"
+...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "UMD RISC-16.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 497184 kilobytes
+
+Writing NGD file "Hardware_TL.ngd" ...
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   6 sec
+
+Writing NGDBUILD log file "Hardware_TL.bld"...

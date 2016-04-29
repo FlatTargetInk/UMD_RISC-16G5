@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/impact.xsl
+OUTFILE=/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo/impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/HardwareDebugDemo
+LICENSE=iMPACT
+USER_INFO=iMPACT

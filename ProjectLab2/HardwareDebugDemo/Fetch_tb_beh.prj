@@ -1,0 +1,4 @@
+vhdl work "../ProjectLab1/Poject_Lab01/Project1/programCounter.vhd"
+vhdl work "../ProjectLab1/Poject_Lab01/Project1/Instruction_Memory_TL.vhd"
+vhdl work "../ProjectLab1/Poject_Lab01/Project1/Fetch_tb.vhd"
+vhdl work "../ProjectLab1/Poject_Lab01/Project1/fetch_tb.vhd"

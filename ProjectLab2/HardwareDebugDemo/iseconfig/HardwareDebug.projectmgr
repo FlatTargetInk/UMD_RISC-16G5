@@ -2,38 +2,42 @@
 <!--This is an ISE project configuration file.-->
 <!--It holds project specific layout data for the projectmgr plugin.-->
 <!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
-<Project version="2" owner="projectmgr" name="Project1" >
+<Project version="2" owner="projectmgr" name="HardwareDebug" >
    <!--This is an ISE project configuration file.-->
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/ProjLab01 - Structural |home|robert|UMD_RISC-16G5|ProjectLab1|Poject_Lab01|Project1|ProjLab01.vhd/ALU_UNIT - ALU_Toplevel - Structural</ClosedNode>
-         <ClosedNode>/ProjLab01 - Structural |home|robert|UMD_RISC-16G5|ProjectLab1|Poject_Lab01|Project1|ProjLab01.vhd/ALU_UNIT - ALU_Toplevel - Structural/word_unit - word_unit - Combinational</ClosedNode>
-         <ClosedNode>/ProjLab01 - Structural |home|robert|UMD_RISC-16G5|ProjectLab2|NewCombined|ProjLab01.vhd/ALU_UNIT - ALU_Toplevel - Structural</ClosedNode>
-         <ClosedNode>/ProjLab01 - Structural |home|robert|UMD_RISC-16G5|ProjectLab2|NewCombined|ProjLab01.vhd/Fetch_UNIT - Instruction_Memory_TL - Structural</ClosedNode>
+         <ClosedNode>/Hardware_TL - Structural |home|robert|UMD_RISC-16G5|HardwareDebug|Hardware_TL.vhd/Buttons - buttoncontrol - Structural</ClosedNode>
+         <ClosedNode>/Hardware_TL - Structural |home|robert|UMD_RISC-16G5|HardwareDebug|Hardware_TL.vhd/ClkGen - clock_toplevel - Structural</ClosedNode>
+         <ClosedNode>/Hardware_TL - Structural |home|robert|UMD_RISC-16G5|HardwareDebug|Hardware_TL.vhd/SSeg - SSeg_toplevel - Structural</ClosedNode>
+         <ClosedNode>/Hardware_TL - Structural |home|robert|UMD_RISC-16G5|HardwareDebug|Hardware_TL.vhd/SSeg_unit - SSeg_toplevel - Structural</ClosedNode>
+         <ClosedNode>/buttoncontrol - Structural |home|robert|UMD_RISC-16G5|HardwareDebug|button_controller.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>StallModuleControl - StallModuleControl - Behavioral (/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/NewCombined/StallModuleControl.vhd)</SelectedItem>
+         <SelectedItem>EXTERNAL_MEMORY.vhd (/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/ProjectLab2/NewCombined/EXTERNAL_MEMORY.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >39</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >24</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000025c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000025c0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ed000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ed0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>StallModuleControl - StallModuleControl - Behavioral (/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/NewCombined/StallModuleControl.vhd)</CurrentItem>
+      <CurrentItem>EXTERNAL_MEMORY.vhd (/home/tj/Desktop/UMD_RISC-16G5/ProjectLab2/ProjectLab2/NewCombined/EXTERNAL_MEMORY.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
          <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000140000000010000000100000000000000000000000064ffffffff000000810000000000000001000001400000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -44,7 +48,7 @@
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000277000000040101000100000000000000000000000064ffffffff0000008100000000000000040000004f00000001000000000000002700000001000000000000007500000001000000000000018c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>DATA_CTL.vhd</CurrentItem>
+      <CurrentItem>button_controller.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -75,19 +79,42 @@
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000013f0000012001000000060100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALU_tb - behavior |home|robert|UMD_RISC-16G5|ProjectLab1|Poject_Lab01|Project1|ALU_tb.vhd</ClosedNode>
          <ClosedNode>/DCCTL_tb - behavior |home|robert|UMD_RISC-16G5|ProjectLab1|Poject_Lab01|Project1|DCCTL_tb.vhd</ClosedNode>
+         <ClosedNode>/Hardware_TL - Structural |home|robert|UMD_RISC-16G5|HardwareDebug|Hardware_TL.vhd/Buttons - buttoncontrol - Structural</ClosedNode>
+         <ClosedNode>/Hardware_TL - Structural |home|robert|UMD_RISC-16G5|HardwareDebug|Hardware_TL.vhd/ClkGen - clock_toplevel - Structural</ClosedNode>
+         <ClosedNode>/Hardware_TL - Structural |home|robert|UMD_RISC-16G5|HardwareDebug|Hardware_TL.vhd/SSeg_unit - SSeg_toplevel - Structural</ClosedNode>
+         <ClosedNode>/Hardware_TL - Structural |home|robert|UMD_RISC-16G5|HardwareDebug|Hardware_TL.vhd/UUT - ProjLab01 - Structural/ALU_UNIT - ALU_Toplevel - Structural</ClosedNode>
+         <ClosedNode>/Instruction_Memory - Instruction_Memory_a |home|robert|UMD_RISC-16G5|ProjectLab1|Poject_Lab01|Project1|Instruction_Memory.vhd</ClosedNode>
+         <ClosedNode>/TopLevel_tb - behavior |home|robert|UMD_RISC-16G5|ProjectLab1|Poject_Lab01|Project1|TopLevel_tb.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>ALU_tb - behavior (/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ALU_tb.vhd)</SelectedItem>
+         <SelectedItem>TopLevel_tb - behavior (/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/TopLevel_tb.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000025a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000025a0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>ALU_tb - behavior (/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/ALU_tb.vhd)</CurrentItem>
+      <CurrentItem>TopLevel_tb - behavior (/home/robert/UMD_RISC-16G5/ProjectLab2/NewCombined/TopLevel_tb.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -112,21 +139,6 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ef000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ef0000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
-   </ItemView>
-   <SourceProcessView>000000ff0000000000000002000001060000009601000000060100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
-   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
-      <ClosedNodes>
-         <ClosedNodesVersion>1</ClosedNodesVersion>
-      </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem/>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000140000000010000000100000000000000000000000064ffffffff000000810000000000000001000001400000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
@@ -136,11 +148,22 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>View HDL Functional Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000df000000010000000100000000000000000000000064ffffffff000000810000000000000001000000df0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000140000000010000000100000000000000000000000064ffffffff000000810000000000000001000001400000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>View HDL Functional Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_NGC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>

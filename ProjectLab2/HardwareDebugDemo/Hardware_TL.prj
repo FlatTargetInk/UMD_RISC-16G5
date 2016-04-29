@@ -1,0 +1,8 @@
+vhdl work "SevenSeg.vhd"
+vhdl work "debounce.vhd"
+vhdl work "clk4Hz.vhd"
+vhdl work "clk2Hz.vhd"
+vhdl work "SevenSeg_toplevel.vhd"
+vhdl work "counter_toplevel.vhd"
+vhdl work "button_controller.vhd"
+vhdl work "Hardware_TL.vhd"
